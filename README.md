@@ -5,11 +5,17 @@ Practical fixed-time distributed state observers (PFxTDSO) are developed to esti
 Leveraging the logarithmic mapping of rotational errors in Lie algebra space, a nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) is developed to attain practical fixed-time singularity-free anti-disturbance attitude tracking in rotational subsystem.<br/> 
 Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/><br/> 
 This README file includes four chapters : <br/>
-1. Significant theories and lemmas.
-2. 
+1. Significant theories and lemmas. <br/>
+2. Theories and Controller Design. <br/>
+3. Simulation on proposed controller. <br/>
+4. Simulation for comparison. <br/>
+5. Experimental Validation. <br/><br/>
+
+
 
 
 # Significant theories and lemmas <br/>
+
 
 # Theories and Controller Design <br/>
 
