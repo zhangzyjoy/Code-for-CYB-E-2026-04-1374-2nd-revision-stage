@@ -1,20 +1,18 @@
-This repository contains the simulation and experimental validation code for the revised manuscript for the journal IEEE Transactions on Cybernetics with a submission ID as CYB-E-2026-04-1374.<br/><br/> 
+This repository contains the simulation and experimental validation code for the revised manuscript for IEEE Transactions on Cybernetics with a submission ID as CYB-E-2026-04-1374.<br/><br/> 
 This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. <br/><br/>
 
-This README file includes four chapters : <br/>
+This README file includes five main sections : <br/>
 1. Significant theories and lemmas. <br/>
-2. Controller design scheme. <br/>
-3. Simulation on proposed controller. <br/>
-4. Simulation for comparison. <br/>
+2. Controller and observer design. <br/>
+3. Simulation on proposed control scheme. <br/>
+4. Simulation on methods for comparison. <br/>
 5. Experimental Validation. <br/><br/>
-
-
 
 # Significant theories and lemmas <br/>
 
 
 
-# Controller design scheme <br/>
+# Controller and observer design <br/>
 
 Each quadcopter UAV node is decoupled into rotational and translational subsystems, respectively. <br/><br/> 
 
@@ -57,54 +55,7 @@ $$
 \end{aligned}
 $$<br/>
 
-
-## Practical fixed-time distributed state observer (PFxTDSO)<br/>
-
-Observation error for follower UAV node $i$<br/>
-
-$$
-\begin{aligned}
-e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i
-\end{aligned}
-\quad\quad(1)$$<br/>
-
-$$
-\begin{aligned}
-e _{i,p} ^d = \hat p _i ^d - p_0 - \delta _i
-\end{aligned}
-\quad\quad(2)$$<br/>
-
-Lumped formation observation error for follower UAV node $i$<br/>
-
-$$
-\begin{aligned}
-\tilde e _{i,v} ^d &= b _{i0} e ^d _{i,v} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,v} - e ^d _{j,v} ) \\
-&= b _{i0} ( \hat v _i ^d - v_0 - \dot \delta _i ) + \sum ^N _{j=1} w _{ij} ( ( \hat v _i ^d - \dot \delta _i ) - ( \hat v _j ^d - \dot \delta _j ) )
-\end{aligned}
-\quad\quad(3)$$<br/>
-
-$$
-\begin{aligned}
-\tilde e _{i,p} ^d &= b _{i0} e ^d _{i,p} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,p} - e ^d _{j,p} ) \\
-&= b _{i0} ( \hat p _i ^d - p_0 - \delta _i ) + \sum ^N _{j=1} w _{ij} ( ( \hat p _i ^d - \delta _i ) - ( \hat p _j ^d - \delta _j ) )
-\end{aligned}
-\quad\quad(4)$$<br/>
-
-Update desired state observation for follower UAV node $i$<br/>
-
-$$
-\begin{aligned}
-\dot {\hat v} _i ^d = - \ell _1 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _1, \mu _o ^p ) - \ell _2 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _2, \mu _o ^p ) )
-\end{aligned}
-\quad\quad(5)$$<br/>
-
-$$
-\begin{aligned}
-\dot {\hat p} _i ^d = \hat v _i ^d - \ell _1 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _1, \mu _o ^p ) - \ell _2 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _2, \mu _o ^p ) )
-\end{aligned}
-\quad\quad(6)$$<br/>
-
-## Fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
+## Fixed-time rotational disturbance observer (FxTDO) <br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -239,7 +190,54 @@ $$
 \quad\quad(18)$$<br/>
 
 
-### Fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
+## Practical fixed-time distributed state observer (PFxTDSO) <br/>
+
+Observation error for follower UAV node $i$<br/>
+
+$$
+\begin{aligned}
+e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i
+\end{aligned}
+\quad\quad(1)$$<br/>
+
+$$
+\begin{aligned}
+e _{i,p} ^d = \hat p _i ^d - p_0 - \delta _i
+\end{aligned}
+\quad\quad(2)$$<br/>
+
+Lumped formation observation error for follower UAV node $i$<br/>
+
+$$
+\begin{aligned}
+\tilde e _{i,v} ^d &= b _{i0} e ^d _{i,v} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,v} - e ^d _{j,v} ) \\
+&= b _{i0} ( \hat v _i ^d - v_0 - \dot \delta _i ) + \sum ^N _{j=1} w _{ij} ( ( \hat v _i ^d - \dot \delta _i ) - ( \hat v _j ^d - \dot \delta _j ) )
+\end{aligned}
+\quad\quad(3)$$<br/>
+
+$$
+\begin{aligned}
+\tilde e _{i,p} ^d &= b _{i0} e ^d _{i,p} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,p} - e ^d _{j,p} ) \\
+&= b _{i0} ( \hat p _i ^d - p_0 - \delta _i ) + \sum ^N _{j=1} w _{ij} ( ( \hat p _i ^d - \delta _i ) - ( \hat p _j ^d - \delta _j ) )
+\end{aligned}
+\quad\quad(4)$$<br/>
+
+Update desired state observation for follower UAV node $i$<br/>
+
+$$
+\begin{aligned}
+\dot {\hat v} _i ^d = - \ell _1 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _1, \mu _o ^p ) - \ell _2 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _2, \mu _o ^p ) )
+\end{aligned}
+\quad\quad(5)$$<br/>
+
+$$
+\begin{aligned}
+\dot {\hat p} _i ^d = \hat v _i ^d - \ell _1 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _1, \mu _o ^p ) - \ell _2 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _2, \mu _o ^p ) )
+\end{aligned}
+\quad\quad(6)$$<br/>
+
+
+## Fixed-time translational disturbance observer (FxTDO) <br/>
 
 Update virtual linear velocity tracking vector<br/>
 
@@ -291,7 +289,7 @@ $$
 \quad\quad(23)$$<br/>
 
 
-## Practical fixed-time decentralized formation controller (PFxTDFC) in simulation <br/>
+## Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
 
 Position and linear velocity tracking error
 
@@ -343,7 +341,7 @@ $$
 \quad\quad(29)$$<br/>
 
 
-### Practical fixed-time decentralized formation controller (PFxTDFC) in experiment <br/>
+## Practical fixed-time decentralized formation controller (PFxTDFC) in experiment <br/>
 
 The translational dynamics Eq.(29) is simplified as a second-order agent with external disturbacne <br/>
 
