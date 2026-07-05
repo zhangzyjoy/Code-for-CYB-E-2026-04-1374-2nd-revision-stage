@@ -12,8 +12,6 @@ This README file includes four chapters : <br/>
 5. Experimental Validation. <br/><br/>
 
 
-
-
 # Significant theories and lemmas <br/>
 
 
