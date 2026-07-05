@@ -1,12 +1,14 @@
+The 
+
 # Theories and Controller Design <br/>
 
 
-# Numerical simulation for proposed controller <br/>
+# Simulation on proposed controller <br/>
 
 
-# Numerical simulation for comparison <br/>
+# Simulation for comparison <br/>
 
 
-# Experimental Validation
+# Experimental Validation <br/>
 
 
