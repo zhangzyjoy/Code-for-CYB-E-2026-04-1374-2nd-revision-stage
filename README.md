@@ -8,9 +8,30 @@ This README file includes four chapters : <br/>
 4. Simulation for comparison. <br/>
 5. Experimental Validation. <br/><br/>
 
-## Controller Instructions <br/>
 
-### Nonlinear smooth sigmoid function <br/>
+
+# Significant theories and lemmas <br/>
+
+
+
+# Controller design scheme <br/>
+
+Each quadcopter UAV node is decoupled into rotational and translational subsystems, respectively. <br/><br/> 
+
+The proposed control scheme includes five main modules: <br/>
+1. practical fixed-time distributed state observer (PFxTDSO) <br/>
+2. fixed-time disturbance observer in rotational subsystem (FxTDO) <br/>
+3. nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) <br/>
+4. fixed-time disturbance observer in translational subsystem (FxTDO) <br/>
+5. practical fixed-time decentralized formation controller (PFxTDFC) <br/><br/>
+
+Details are illustrated as follows. <br/>
+For the translational subsystem, a distributed practical fixed-time formation controller (PFxTDFC) is proposed to achieve formation consensus. <br/> 
+Practical fixed-time distributed state observers (PFxTDSO) are developed to estimate the desired velocity and position for each follower UAV and to maintain fully decentralized realization. <br/> 
+Leveraging the logarithmic mapping of rotational errors in Lie algebra space, a nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) is developed to attain practical fixed-time singularity-free anti-disturbance attitude tracking in rotational subsystem. <br/> 
+Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/><br/> 
+
+## Nonlinear smooth sigmoid function <br/>
 
 A newly introduced nonlinear smooth sigmoid vector is defined as <br/>
 
@@ -37,7 +58,7 @@ $$
 $$<br/>
 
 
-### Practical fixed-time distributed state observer (PFxTDSO)<br/>
+## Practical fixed-time distributed state observer (PFxTDSO)<br/>
 
 Observation error for follower UAV node $i$<br/>
 
@@ -83,7 +104,7 @@ $$
 \end{aligned}
 \quad\quad(6)$$<br/>
 
-### Fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
+## Fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -135,7 +156,7 @@ $$
 \quad\quad(11)$$<br/>
 
 
-### Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
+## Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
 For any $i \in {x,y,z}$, define auxiliary sliding mode surface
 
@@ -270,7 +291,7 @@ $$
 \quad\quad(23)$$<br/>
 
 
-### Practical fixed-time decentralized formation controller (PFxTDFC) in simulation <br/>
+## Practical fixed-time decentralized formation controller (PFxTDFC) in simulation <br/>
 
 Position and linear velocity tracking error
 
@@ -343,26 +364,6 @@ U _i = \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - 
 \end{aligned}
 \quad\quad(31)$$<br/>
 
-# Significant theories and lemmas <br/>
-
-
-
-# Controller design scheme <br/>
-
-Each quadcopter UAV node is decoupled into rotational and translational subsystems, respectively. <br/><br/> 
-
-The proposed control scheme includes five main modules: <br/>
-1. practical fixed-time distributed state observer (PFxTDSO) <br/>
-2. fixed-time disturbance observer in rotational subsystem (FxTDO) <br/>
-3. nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) <br/>
-4. fixed-time disturbance observer in translational subsystem (FxTDO) <br/>
-5. practical fixed-time decentralized formation controller (PFxTDFC) <br/><br/>
-
-Details are illustrated as follows. <br/>
-For the translational subsystem, a distributed practical fixed-time formation controller (PFxTDFC) is proposed to achieve formation consensus. <br/> 
-Practical fixed-time distributed state observers (PFxTDSO) are developed to estimate the desired velocity and position for each follower UAV and to maintain fully decentralized realization. <br/> 
-Leveraging the logarithmic mapping of rotational errors in Lie algebra space, a nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) is developed to attain practical fixed-time singularity-free anti-disturbance attitude tracking in rotational subsystem. <br/> 
-Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/><br/> 
 
 # Simulation on proposed controller <br/>
 
