@@ -8,11 +8,11 @@ This README file includes five main sections : <br/>
 4. Simulation on methods for comparison. <br/>
 5. Experimental Validation. <br/><br/>
 
-# Significant theories and lemmas <br/>
+# Significant Theories and Lemmas <br/>
 
 
 
-# Controller and observer design <br/>
+# Control Scheme Design <br/>
 
 Each quadcopter UAV node is decoupled into rotational and translational subsystems, respectively. <br/><br/> 
 
@@ -362,7 +362,9 @@ U _i = \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - 
 \end{aligned}
 \quad\quad(31)$$<br/>
 
-## Symbol Definition List <br/>
+
+## Symbol definition list <br/>
+
 - $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
@@ -389,11 +391,11 @@ U _i = \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - 
 - $\tau_i$ : applied torque rotational control input
 
 
-# Simulation on proposed controller <br/>
+# Simulation on Proposed Controller <br/>
 
 
 
-# Simulation for comparison <br/>
+# Simulation for Comparison <br/>
 
 
 
