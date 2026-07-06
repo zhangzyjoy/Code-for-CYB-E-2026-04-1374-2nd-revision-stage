@@ -1,4 +1,4 @@
-We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised version with a submission ID **CYB-E-2026-04-1374** in **IEEE Transactions on Cybernetics**. <br/> 
+We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised manuscript for **IEEE Transactions on Cybernetics** with a submission ID **CYB-E-2026-04-1374**. <br/> 
 
 **Note : Source code and instructions for the first revision under Revised & Resubmit decision can be accessed at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
 
