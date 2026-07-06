@@ -5,12 +5,12 @@ This link demonstrates the proposed control approach for the formation control i
 To address the reviewer's comments, the logical connection between theory and validation has been strengthened. The narrative follows a systematic progression. <br/> 
 First, the theoretical basis for controller design is introduced using fundamental lemmas. <br/> 
 Next, the derived parameter bounds for system stability are presented. <br/> 
-Then, the exact parameter configurations for simulation or experimental validation are specified. <br/> 
-Finally, the validation results are presented and discussed. <br/> 
+Then, the parameter configurations for simulation or experimental validation are specified. <br/> 
+Finally, the simulation or experimental validation results are presented and discussed. <br/> 
 
 Each section in this link follows the logic above, where the link theory-validation is enhanced. <br/> 
 
-The link includes four different sections.
+This link includes four different sections. <br/>
 
 
 **Note : Source code and instructions for the first revision under Revised & Resubmit decision is deposited at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
