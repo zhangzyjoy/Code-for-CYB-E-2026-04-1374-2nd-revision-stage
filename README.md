@@ -35,9 +35,13 @@ Consider a nonlinear system as <br/>
 
 $$
 \begin{aligned}
-\dot x ( t ) = f ( x ( t ) ), x ( t _0 ) = x _0
+& \dot x ( t ) = f ( x ( t ) ) \\
+& x ( t _0 ) = x _0
 \end{aligned}
-\quad\quad(1) $$br/>
+\quad\quad(1)
+$$<br/>
+
+where $t _0$ is the initial time and $x ( t _0 )$ is the state vector, and $f ( x ( t ) )$ is a nonlinear function of system dynamics.
 
 
 ## Nonlinear smooth sigmoid function <br/>
