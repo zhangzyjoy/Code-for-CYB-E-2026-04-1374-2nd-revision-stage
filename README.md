@@ -60,7 +60,13 @@ T _s \le \overline T _s = \frac { 1 } { a _1 \eta _0 ( b _1 - 1 )} + \frac { 1 }
 \end{aligned}
 $$<br/>
 
-**Lemma 6** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ ( 1 / 2 ) / 2 } ) }$
+**Lemma 6** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ 1 / 2 } ) }$ such that $k > 0$, $\gamma > 0$, $0 < p < 1$, then the origin of $x ( t )$ converges in fixed time upper bounded by
+
+$$
+\begin{aligned}
+T _s \le \overline T _s = \frac { 2 ^{ p + 2 } } { \gamma ^{ p + 2 } k p ( 1 - p ) }
+\end{aligned}
+$$<br/>
 
 
 ## 1.2 Design of nonlinear smooth sigmoid function <br/>
