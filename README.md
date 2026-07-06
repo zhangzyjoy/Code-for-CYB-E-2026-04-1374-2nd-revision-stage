@@ -60,7 +60,7 @@ T _s \le \overline T _s = \frac { 1 } { a _1 \eta _0 ( b _1 - 1 )} + \frac { 1 }
 \end{aligned}
 $$<br/>
 
-**Lemma 6** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ 1 / 2 } ) }$ such that $k > 0$, $\gamma > 0$, $0 < p < 1$, then the origin of $x ( t )$ converges in fixed time upper bounded by
+**Lemma 3** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ 1 / 2 } ) }$ such that $k > 0$, $\gamma > 0$, $0 < p < 1$, then the origin of $x ( t )$ converges in fixed time upper bounded by
 
 $$
 \begin{aligned}
@@ -137,7 +137,31 @@ $$
 
 # 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 
-In this section, <br/>
+In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics Eq.(6) and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
+
+## 2.1 Design principle <br/>
+
+Define a virtual velocity tracking variable as <br/>
+
+$$
+\begin{aligned}
+\dot \sigma _i ^{ \varpi } = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi } )
+\end{aligned}
+\quad\quad(8)
+$$<br/>
+
+Define an auxiliary velocity tracking error as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract Eq.(8) from the second differential equations of Eq.(6) and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
+
+$$
+\begin{aligned}
+\dot \overline \sigma _i ^{ \varpi } = ( \Lambda _i ) ^{-1} ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi } )
+\end{aligned}
+$$<br/>
+
+
+
+
+## 2.2 Observer implementation framework <br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -200,6 +224,8 @@ $$
 \end{cases}
 \end{aligned}
 \quad\quad(13)$$<br/>
+
+
 
 
 For any $i \in {x,y,z}$, define auxiliary sliding mode surface
@@ -330,7 +356,19 @@ $$
 \quad\quad(6)$$<br/>
 
 
-## 5. Fixed-time translational disturbance observer (FxTDO) <br/>
+# 5. Fixed-time translational disturbance observer (FxTDO) <br/>
+
+## 5.1 Design principle
+
+
+$$
+\begin{aligned}
+\dot \sigma _i ^v = - g \overline e _3 + \frac { T _i } { m _i } R ( Q _i ) \overline e _3 + c _i ^{ v, 3 } \overline sigma _i ^v
+\end{aligned}
+\quad\quad(8)
+$$<br/>
+
+## 5.2 Observer Implementation framework
 
 Update virtual linear velocity tracking vector<br/>
 
