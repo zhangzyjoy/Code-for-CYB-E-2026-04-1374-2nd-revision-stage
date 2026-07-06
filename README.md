@@ -41,7 +41,9 @@ $$
 \quad\quad(1)
 $$<br/>
 
-where $t _0$ is the initial time and $x ( t _0 )$ is the state vector, and $f ( x ( t ) )$ is a nonlinear function of system dynamics.
+where $t _0$ is the initial time and $x ( t _0 )$ is the state vector, and $f ( x ( t ) )$ is a nonlinear function of system dynamics. <br/>
+
+**Lemma 1 (Fixed-Time Stability)** : For a nonlinear function $V ( t , x ) : \mathbb R \times \mathbb R ^n \to \mathbb R ^+ \cup \lbrace \{ 0 \rbrace \}$ which is positive definite and radially unbounded, 
 
 
 ## Nonlinear smooth sigmoid function <br/>
