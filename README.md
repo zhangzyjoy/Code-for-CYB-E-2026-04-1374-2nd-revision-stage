@@ -29,6 +29,15 @@ Details are illustrated as follows. <br/>
 
 # Significant Lemmas and Deductions <br/>
 
+## Fixed-time / Practical fixed-time stability lemmas <br/>
+
+Consider a nonlinear system as <br/>
+
+$$
+\begin{aligned}
+\dot x ( t )
+\end{aligned}
+$$<br/>
 
 
 ## Nonlinear smooth sigmoid function <br/>
