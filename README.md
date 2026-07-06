@@ -103,12 +103,29 @@ $$
 \end{aligned}
 \quad\quad(5)$$<br/>
 
-where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$
+where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants.
 
 ## 1.3 System dynamics of a quadrotor UAV <br/>
 
+Each agent in the UAV team is considered as a quadrotor, which can be decoupled into rotational and translational subsystems as
 
+$$
+\begin{aligned}
+\begin{cases}
+&\dot R ( Q _i ) = R ( Q _i ) ( \varpi _i ) _{\times}  \\
+&\dot \varpi _i = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + d _i ^{\varpi} )
+\end{cases}
+\end{aligned}
+\quad\quad(6)$$<br/>
 
+$$
+\begin{aligned}
+\begin{cases}
+&\dot p _i = v _i  \\
+&\dot v _i = - g \overline e _3 + \frac { T _i } { m _i } R ( Q _i ) \overline e _3 + d _i ^v
+\end{cases}
+\end{aligned}
+\quad\quad(7)$$<br/>
 
 # 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 
