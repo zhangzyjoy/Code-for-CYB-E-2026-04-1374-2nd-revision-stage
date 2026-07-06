@@ -43,8 +43,14 @@ $$<br/>
 
 where $t _0$ is the initial time and $x ( t _0 )$ is the state vector, and $f ( x ( t ) )$ is a nonlinear function of system dynamics. <br/>
 
-**Lemma 1 (Fixed-Time Stability)** : If a nonlinear function $V ( t , x ) : \mathbb R \times \mathbb R ^n \to \mathbb R ^+ \cup \lbrace \{ 0 \rbrace \}$ is defined as positive definite and radially unbounded, and the inequality $\dot V ( t , x ) \le - a _1 ( V ( t, x ) ^ { b ^1 } )$ 
+**Lemma 1 (Fixed-Time Stability)** : If a nonlinear function $V ( t , x ) : \mathbb R \times \mathbb R ^n \to \mathbb R ^+ \cup \lbrace \{ 0 \rbrace \}$ is defined as positive definite and radially unbounded, and $\dot V ( t , x ) \le - a _1 ( V ( t, x ) ^ { b _1 } ) - a _2 * ( V ( t, x ) ^ { b _2 } )$ holds such that $a _1 >0$, $a _2 >0$, $b _1 > 1$, $0 < b _2 < 1$, respectively, then the origin of (1) is fixed-time stable and the settling time is bounded by <br/>
 
+$$
+\begin{aligned}
+T _s \le \overline T _s = \frac { 1 } { a _1 ( b _1 - 1 )} + \frac { 1 } { a _2 ( 1 - b _2 ) }
+\end{aligned}
+\quad\quad(2)
+$$<br/>
 
 
 ## Design of nonlinear smooth sigmoid function <br/>
