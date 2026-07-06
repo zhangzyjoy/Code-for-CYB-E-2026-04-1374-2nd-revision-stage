@@ -3,7 +3,7 @@ This link demonstrates the proposed control approach for the formation control i
 
 This README file includes five main sections : <br/>
 1. Significant theories and lemmas. <br/>
-2. Controller and observer design. <br/>
+2. Control scheme instruction. <br/>
 3. Simulation on proposed control scheme. <br/>
 4. Simulation on methods for comparison. <br/>
 5. Experimental Validation. <br/><br/>
@@ -12,7 +12,7 @@ This README file includes five main sections : <br/>
 
 
 
-# Control Scheme Design <br/>
+# Control Scheme Instruction <br/>
 
 Each quadcopter UAV node is decoupled into rotational and translational subsystems, respectively. <br/><br/> 
 
