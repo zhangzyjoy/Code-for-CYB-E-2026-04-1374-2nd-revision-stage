@@ -13,9 +13,9 @@ Finally, the simulation or experimental validation results are presented and dis
 **This link includes six main sections.** <br/>
 Each of the latter five ones indicates a specific module of the proposed control scheme. <br/>
 1. Significant lemmas and deductions. <br/>
-2. Practical fixed-time distributed state observer (PFxTDSO). <br/>
-3. Fixed-time rotational disturbance observer (FxTDO). <br/>
-4. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC). <br/>
+2. Fixed-time rotational disturbance observer (FxTDO). <br/>
+3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC). <br/>
+4. Practical fixed-time distributed state observer (PFxTDSO). <br/>
 5. Fixed-time translational disturbance observer (FxTDO). <br/>
 6. Practical fixed-time decentralized formation controller (PFxTDFC). <br/> <br/>
 
