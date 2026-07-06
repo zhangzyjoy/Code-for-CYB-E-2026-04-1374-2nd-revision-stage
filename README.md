@@ -1,21 +1,16 @@
 We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised version with a submission ID **CYB-E-2026-04-1374** in **IEEE Transactions on Cybernetics**.<br/><br/> 
 
+This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. <br/><br/>
+
 To address the reviewer's comments, the logical connection between theory and validation has been strengthened. The narrative follows a systematic progression. <br/> 
 First, the theoretical basis for controller design is introduced using fundamental lemmas. <br/> 
 Next, the derived parameter bounds for system stability are presented. <br/> 
 Then, the exact parameter configurations for simulation or experimental validation are specified. <br/> 
 Finally, the validation results are presented and discussed. <br/> 
 
-**Note : Source code and instructions for the first revision under Revised & Resubmit decision is deposited at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.**
 
-This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. <br/><br/>
 
-This README file includes five main sections : <br/>
-1. Significant theories and lemmas. <br/>
-2. Control scheme instruction. <br/>
-3. Simulation on proposed control scheme. <br/>
-4. Simulation on methods for comparison. <br/>
-5. Experimental Validation. <br/><br/>
+**Note : Source code and instructions for the first revision under Revised & Resubmit decision is deposited at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
 
 # Significant Theories and Lemmas <br/>
 
