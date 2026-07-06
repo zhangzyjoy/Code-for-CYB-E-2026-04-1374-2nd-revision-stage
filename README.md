@@ -35,9 +35,9 @@ Consider a nonlinear system as <br/>
 
 $$
 \begin{aligned}
-\dot x ( t )
+\dot x ( t ) = f ( x ( t ) ), x ( t _0 ) = x _0
 \end{aligned}
-$$<br/>
+\quad\quad(1)br/>
 
 
 ## Nonlinear smooth sigmoid function <br/>
