@@ -362,6 +362,32 @@ U _i = \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - 
 \end{aligned}
 \quad\quad(31)$$<br/>
 
+## Symbol Definition List <br/>
+- $g$ : gravitational acceleration
+- $\overline e _3$ : unit vector $[0,0,1]^{T}$
+- $m_{i}$ : mass
+- $\Lambda_{i}$ : inertia matrix 
+- $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
+- $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
+- $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
+- $\hat p_i ^d, \hat v_i ^d$ : desired position, linear velocity observation for follower UAV node $i$
+- $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, linear velocity for follower UAV node $i$
+- $\tilde e _{i,p} ^d$, $\tilde e _{i,v} ^d$ : lumped formation observation error of desired position, linear velocity for follower UAV node $i$
+- $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
+- $\chi_i$, $\phi_i$ : virtual linear velocity tracking vector, tracking error
+- $d _i ^v$, $\hat d _i ^v$ : translational disturbance, disturbance observation
+- $\sigma _i ^v$, $\overline \sigma _i ^v$, $\hat {\overline \sigma} _i ^v$ : virtual linear velocity tracking vector, tracking error, tracking error observation
+- $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^T$ : quaternion
+- $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
+- $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
+- $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
+- $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
+- $\overline S_i$ = $[ \overline S_{i,x}, \overline S_{i,y}, \overline S_{i,z} ]^T$ : auxiliary sliding mode surface
+- $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : piecewise auxiliary rotational error
+- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of piecewise auxiliary rotational error
+- $F_i^S$ : rotation compensation term
+- $\tau_i$ : applied torque rotational control input
+
 
 # Simulation on proposed controller <br/>
 
