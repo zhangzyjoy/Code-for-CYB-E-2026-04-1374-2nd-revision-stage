@@ -35,8 +35,7 @@ Consider a nonlinear system as <br/>
 
 $$
 \begin{aligned}
-& \dot x ( t ) = f ( x ( t ) ) \\
-& x ( t _0 ) = x _0
+\dot x ( t ) = f ( x ( t ) ) , x ( t _0 ) = x _0
 \end{aligned}
 \quad\quad(1)
 $$<br/>
@@ -49,11 +48,15 @@ $$
 \begin{aligned}
 T _s \le \overline T _s = \frac { 1 } { a _1 ( b _1 - 1 )} + \frac { 1 } { a _2 ( 1 - b _2 ) }
 \end{aligned}
-\quad\quad(2)
 $$<br/>
 
-**Lemma 2 (Practical Fixed-Time Stability)** : 
+**Lemma 2 (Practical Fixed-Time Stability)** : If a radially unbounded positive definite function satisfies $\dot V ( t , x ) \le - a _1 ( V ( t, x ) ^ { b _1 } ) - a _2 * ( V ( t, x ) ^ { b _2 } ) + c _0$ such that $a _1 >0$, $a _2 >0$, $b _1 > 1$, $0 < b _2 < 1$, and $c _0 > 0$, the origin of (1) is practical fixed-time stable. Moreover, there exists a constant $0 < \eta _0 < 1$ such that the settling time satisfies
 
+$$
+\begin{aligned}
+T _s \le \overline T _s = \frac { 1 } { a _1 \eta _0 ( b _1 - 1 )} + \frac { 1 } { a _2 \eta _0 ( 1 - b _2 ) }
+\end{aligned}
+$$<br/>
 
 
 ## 1.2 Design of nonlinear smooth sigmoid function <br/>
