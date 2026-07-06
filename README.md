@@ -2,7 +2,7 @@ We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** 
 
 To address the reviewer's comments, the logical connection between theory and validation has been strengthened. The narrative follows a systematic progression. <br/> 
 First, the theoretical basis for controller design is introduced using fundamental lemmas. <br/> 
-Next, the derived parameter bounds for system stability are presented.<br/>  
+Next, the derived parameter bounds for system stability are presented. <br/> 
 Then, the exact parameter configurations for simulation or experimental validation are specified. <br/> 
 Finally, the validation results are presented and discussed. <br/> 
 
