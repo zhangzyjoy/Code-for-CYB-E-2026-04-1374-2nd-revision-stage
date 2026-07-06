@@ -27,9 +27,9 @@ Details are illustrated as follows. <br/>
 <3> Leveraging the logarithmic mapping of rotational errors in Lie algebra space, a nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) is developed to attain practical fixed-time singularity-free anti-disturbance attitude tracking in rotational subsystem. <br/> 
 <4> Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/> <br/> 
 
-# Significant Lemmas and Deductions <br/>
+# 1. Significant Lemmas and Deductions <br/>
 
-## Fixed-time / Practical fixed-time stability lemmas <br/>
+## 1.1 Fixed-time / Practical fixed-time stability lemmas <br/>
 
 Consider a nonlinear system as <br/>
 
@@ -52,8 +52,11 @@ T _s \le \overline T _s = \frac { 1 } { a _1 ( b _1 - 1 )} + \frac { 1 } { a _2 
 \quad\quad(2)
 $$<br/>
 
+**Lemma 2 (Practical Fixed-Time Stability)** : 
 
-## Design of nonlinear smooth sigmoid function <br/>
+
+
+## 1.2 Design of nonlinear smooth sigmoid function <br/>
 
 A newly introduced nonlinear smooth sigmoid vector is defined as <br/>
 
@@ -81,7 +84,7 @@ $$<br/>
 
 
 
-# Fixed-time rotational disturbance observer (FxTDO) <br/>
+# 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -133,7 +136,7 @@ $$
 \quad\quad(11)$$<br/>
 
 
-## Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
+# 3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
 For any $i \in {x,y,z}$, define auxiliary sliding mode surface
 
@@ -216,7 +219,7 @@ $$
 \quad\quad(18)$$<br/>
 
 
-## Practical fixed-time distributed state observer (PFxTDSO) <br/>
+# 4. Practical fixed-time distributed state observer (PFxTDSO) <br/>
 
 Observation error for follower UAV node $i$<br/>
 
@@ -315,8 +318,9 @@ $$
 \quad\quad(23)$$<br/>
 
 
-## Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
+# 5. Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
 
+## 5.1 PFxTDFC for translational control simulation <br/>
 Position and linear velocity tracking error
 
 $$
@@ -367,7 +371,7 @@ $$
 \quad\quad(29)$$<br/>
 
 
-## Practical fixed-time decentralized formation controller (PFxTDFC) in experiment <br/>
+## 5.2 PFxTDFC for experimental validation <br/>
 
 The translational dynamics Eq.(29) is simplified as a second-order agent with external disturbacne <br/>
 
