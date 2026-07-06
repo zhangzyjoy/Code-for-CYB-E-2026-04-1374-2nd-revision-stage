@@ -8,6 +8,9 @@ Next, the derived parameter bounds for system stability are presented. <br/>
 Then, the exact parameter configurations for simulation or experimental validation are specified. <br/> 
 Finally, the validation results are presented and discussed. <br/> 
 
+Each section in this link follows the logic above, where the link theory-validation is enhanced. <br/> 
+
+The link includes four different sections.
 
 
 **Note : Source code and instructions for the first revision under Revised & Resubmit decision is deposited at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
