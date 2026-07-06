@@ -60,6 +60,8 @@ T _s \le \overline T _s = \frac { 1 } { a _1 \eta _0 ( b _1 - 1 )} + \frac { 1 }
 \end{aligned}
 $$<br/>
 
+**Lemma 6** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ ( 1 / 2 ) / 2 } ) }$
+
 
 ## 1.2 Design of nonlinear smooth sigmoid function <br/>
 
@@ -92,7 +94,7 @@ $$<br/>
 
 where $\gamma > 0$ controls the growth rate around the zero crossing. <br/>
 
-**Lemma 3** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
+**Lemma 4** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
 
 $$
 \begin{aligned}
@@ -103,7 +105,7 @@ $$
 \end{aligned}
 \quad\quad(5)$$<br/>
 
-where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants.
+where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants. <br/>
 
 ## 1.3 System dynamics of a quadrotor UAV <br/>
 
@@ -127,8 +129,6 @@ $$
 \end{aligned}
 \quad\quad(7)$$<br/>
 
-According to rotational dynamics Eq. (6) <br/>
-
 # 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 
 In this section, <br/>
@@ -139,7 +139,7 @@ $$
 \begin{aligned}
 \dot \sigma _i ^\varpi = ( \Lambda _i ) ^{-1} ( - ( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i + h _i ^{\varpi,3} \overline \sigma _i ^\varpi )
 \end{aligned}
-\quad\quad(7)$$<br/>
+\quad\quad(8)$$<br/>
 
 Virtual angular velocity tracking error
 
@@ -147,7 +147,7 @@ $$
 \begin{aligned}
 \overline \sigma _i ^\varpi = \varpi _i - \sigma _i ^\varpi
 \end{aligned}
-\quad\quad(8)$$<br/>
+\quad\quad(9)$$<br/>
 
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^\varpi$, a high-order nonlinear differentiator is given as
 
@@ -160,7 +160,7 @@ $$
 &\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
 \end{cases}
 \end{aligned}
-\quad\quad(9)$$<br/>
+\quad\quad(10)$$<br/>
 
 
 and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
@@ -172,7 +172,7 @@ $$
 \begin{aligned}
 \dot {\hat {\overline \sigma}} _i ^\varpi = \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,1} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _1 ^\varpi, \mu _d ^\varpi ) + h _i ^{\varpi,2} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _2 ^\varpi, \mu _d ^\varpi )
 \end{aligned}
-\quad\quad(10)$$<br/>
+\quad\quad(11)$$<br/>
 
 rotational disturbance observer<br/>
 
@@ -180,9 +180,21 @@ $$
 \begin{aligned}
 \hat d _i ^\varpi = \Lambda _i \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,3} \hat {\overline \sigma} _i ^\varpi
 \end{aligned}
-\quad\quad(11)$$<br/>
+\quad\quad(12)$$<br/>
 
 # 3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
+
+According to the rotational dynamics in Eq.(6), define an exponential coordination $\psi _i ^e = [ \Psi ( R ( Q _i ^e) ) ] _{\vee}$ which is derived through inverse logarithm mapping. We establish the rotational system error dynamics as
+
+$$
+\begin{aligned}
+\begin{cases}
+&\dot \psi _i ^e = \varpi _i ^e \\
+&\dot \varpi _i ^e = \Lambda _i ^{-1} ( -( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i ) + ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^e - ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c
+\end{cases}
+\end{aligned}
+\quad\quad(13)$$<br/>
+
 
 For any $i \in {x,y,z}$, define auxiliary sliding mode surface
 
@@ -190,7 +202,7 @@ $$
 \begin{aligned}
 \overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S {\frac {3 ^{p+1} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} }
 \end{aligned}
-\quad\quad(12)$$<br/>
+\quad\quad(14)$$<br/>
 
 For any $i \in {x,y,z}$, define piecewise auxiliary rotational error
 
@@ -204,7 +216,7 @@ $$
 & \quad\quad \text{  if } \overline S _{i,k} \ne 0,\text{ }|\psi ^e _{i,k}| \le \overline \varepsilon ^{S} _{i,k}
 \end{cases}
 \end{aligned}
-\quad\quad(13)$$<br/>
+\quad\quad(15)$$<br/>
 
 Sliding mode surface
 
@@ -212,7 +224,7 @@ $$
 \begin{aligned}
 S _{i,k} = \varpi ^e _{i,k} + c _i ^S \Phi _k ( \psi ^e _{i,k})
 \end{aligned}
-\quad\quad(14)$$<br/>
+\quad\quad(16)$$<br/>
 
 The derivative of piecewise auxiliary rotational error
 
@@ -227,7 +239,7 @@ $$
 & \quad\quad \text{             if } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| \le \overline \varepsilon ^{S} _{i,k} \\
 \end{cases}
 \end{aligned}
-\quad\quad(15)$$<br/>
+\quad\quad(17)$$<br/>
 
 
 The rotation compensation term
@@ -237,7 +249,7 @@ $$
 F _i ^S = &- ( \varpi _i ) _\times \Lambda _i \varpi _i + \Lambda _i ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^c \\
 &- \Lambda _i ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c + c _i ^S \Lambda _i \overline \Phi _k ( \psi ^e _{i,k})
 \end{aligned}
-\quad\quad(16)$$<br/>
+\quad\quad(18)$$<br/>
 
 The applied torque control input
 
@@ -365,6 +377,9 @@ $$
 
 
 # 6. Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
+
+According to the translational dynamics in Eq.(7), <br/>
+
 
 ## 6.1 PFxTDFC for translational control simulation <br/>
 Position and linear velocity tracking error
