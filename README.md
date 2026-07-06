@@ -150,13 +150,15 @@ $$
 \quad\quad(8)
 $$<br/>
 
-Define an auxiliary velocity tracking error as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract Eq.(8) from the second differential equations of Eq.(6) and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
+Define the auxiliary velocity tracking error as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract Eq.(8) from the second differential equations of Eq.(6) and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
 
 $$
 \begin{aligned}
 \dot {\overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^{-1} ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi } )
 \end{aligned}
 $$<br/>
+
+Introduce an observation value of $\overline { \sigma } _i ^{ \varpi }$, the auxiliary velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$<br/>. From $\tilde d _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi } = h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi }$ , it can be derived that the observation error $\tilde d _i ^{ \varpi }$ holds the same convergence behavior with $\overline \sigma _i ^{ \varpi }$.
 
 
 
