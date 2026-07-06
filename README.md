@@ -158,7 +158,7 @@ $$
 \end{aligned}
 $$<br/>
 
-Introduce an observation value of $\overline { \sigma } _i ^{ \varpi }$, the auxiliary velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$<br/>. From $\tilde d _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi } = h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi }$ , it can be derived that the observation error $\tilde d _i ^{ \varpi }$ holds the same convergence behavior with $\overline \sigma _i ^{ \varpi }$.
+Introduce an observation value of $\overline { \sigma } _i ^{ \varpi }$, the auxiliary velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$. From $\tilde d _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi } = h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi }$ , it can be derived that the observation error $\tilde d _i ^{ \varpi }$ holds the same convergence behavior with $\overline \sigma _i ^{ \varpi }$.
 
 
 
