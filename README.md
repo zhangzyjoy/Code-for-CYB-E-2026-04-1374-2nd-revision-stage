@@ -127,7 +127,11 @@ $$
 \end{aligned}
 \quad\quad(7)$$<br/>
 
+According to rotational dynamics Eq. (6) <br/>
+
 # 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
+
+In this section, <br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -177,7 +181,6 @@ $$
 \hat d _i ^\varpi = \Lambda _i \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,3} \hat {\overline \sigma} _i ^\varpi
 \end{aligned}
 \quad\quad(11)$$<br/>
-
 
 # 3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
