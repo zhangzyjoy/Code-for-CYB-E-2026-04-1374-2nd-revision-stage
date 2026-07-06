@@ -13,7 +13,9 @@ Each section in this link follows the logic above, where the link theory-validat
 This link includes four different sections. <br/>
 
 
-**Note : Source code and instructions for the first revision under Revised & Resubmit decision is deposited at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
+**Note : Source code and instructions for the first revision under Revised & Resubmit decision can be accessed at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
+
+
 
 # Significant Theories and Lemmas <br/>
 
