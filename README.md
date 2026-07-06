@@ -67,6 +67,7 @@ $$
 \begin{aligned}
 \vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _k ( \overline x _1, \alpha, \gamma ), ..., \vartheta _k ( \overline x _n, \alpha, \gamma ) ] ^T
 \end{aligned}
+\quad\quad(2)
 $$<br/>
 
 with each entry denoted as <br/>
@@ -75,16 +76,30 @@ $$
 \begin{aligned}
 \vartheta _k ( \overline x _k, \alpha, \gamma ) = | x _k | ^ \alpha \lambda _k ( x _k, \gamma )
 \end{aligned}
+\quad\quad(3)
 $$<br/>
 
-where the sigmoid function is <br/>
+$\lambda _k ( x _k, \gamma )$ is a sigmoid-like bounded function defined as <br/>
 
 $$
 \begin{aligned}
 \lambda _k ( x _k, \gamma ) = -1 + \frac 1 {1 + \exp ( - \gamma x _k )}
 \end{aligned}
+\quad\quad(4)
 $$<br/>
 
+where $\gamma > 0$ controls the growth rate around the zero crossing. <br/>
+
+**Lemma 3** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ),$ <br/> $..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
+
+$$
+\begin{aligned}
+\begin{cases}
+&- ( \overline x ) ^T \vartheta ( \overline x, \alpha, \gamma ) \le - 2 ^{ \frac { \alpha + 1 } { 2 } } K _{ \alpha } ( \frac { ( \overline x ) ^T \overline x } { 2 } ) ^{ \frac { \alpha + 1 } { 2 } } ), \\
+&
+\end{cases}
+\end{aligned}
+\quad\quad(9)$$<br/>
 
 
 ## 1.3 System dynamics of a quadrotor UAV <br/>
