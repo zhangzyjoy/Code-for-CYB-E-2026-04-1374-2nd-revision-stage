@@ -10,7 +10,13 @@ Finally, the simulation or experimental validation results are presented and dis
 
 Each section in this link follows the logic above, where the link theory-validation is enhanced. <br/> 
 
-This link includes four different sections. <br/>
+This link includes five main sections. <br/>
+Each of them indicates a specific module of the proposed control scheme. <br/>
+1. Practical fixed-time distributed state observer (PFxTDSO) <br/>
+2. Fixed-time rotational disturbance observer (FxTDO) <br/>
+3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) <br/>
+4. Fixed-time translational disturbance observer (FxTDO) <br/>
+5. Practical fixed-time decentralized formation controller (PFxTDFC) <br/><br/>
 
 
 **Note : Source code and instructions for the first revision under Revised & Resubmit decision can be accessed at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
@@ -25,12 +31,7 @@ This link includes four different sections. <br/>
 
 Each quadcopter UAV node is decoupled into rotational and translational subsystems, respectively. <br/><br/> 
 
-The proposed control scheme includes five main modules: <br/>
-1. practical fixed-time distributed state observer (PFxTDSO) <br/>
-2. fixed-time disturbance observer in rotational subsystem (FxTDO) <br/>
-3. nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) <br/>
-4. fixed-time disturbance observer in translational subsystem (FxTDO) <br/>
-5. practical fixed-time decentralized formation controller (PFxTDFC) <br/><br/>
+
 
 Details are illustrated as follows. <br/>
 <1> For the translational subsystem, a distributed practical fixed-time formation controller (PFxTDFC) is proposed to achieve formation consensus. <br/> 
