@@ -6,38 +6,25 @@ To address the reviewer's comments, the logical connection between theory and va
 First, the theoretical basis for controller design is introduced using fundamental lemmas. <br/> 
 Next, the derived parameter bounds for system stability are presented. <br/> 
 Then, the parameter configurations for simulation or experimental validation are specified. <br/> 
-Finally, the simulation or experimental validation results are presented and discussed. <br/> 
+Finally, the simulation or experimental validation results are presented and discussed. <br/> <br/> 
 
 Each section in this link follows the logic above, where the link theory-validation is enhanced. <br/> 
 
-This link includes five main sections. <br/>
-Each of them indicates a specific module of the proposed control scheme. <br/>
+This link includes six main sections. <br/>
+Each of the latter five ones indicates a specific module of the proposed control scheme. <br/>
 1. Practical fixed-time distributed state observer (PFxTDSO) <br/>
 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) <br/>
 4. Fixed-time translational disturbance observer (FxTDO) <br/>
-5. Practical fixed-time decentralized formation controller (PFxTDFC) <br/><br/>
+5. Practical fixed-time decentralized formation controller (PFxTDFC) <br/> <br/>
 
-
-**Note : Source code and instructions for the first revision under Revised & Resubmit decision can be accessed at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
-
-
-
-# Significant Theories and Lemmas <br/>
-
-
-
-# Control Scheme Instruction <br/>
-
-Each quadcopter UAV node is decoupled into rotational and translational subsystems, respectively. <br/><br/> 
-
-
+Each quadcopter UAV node is decoupled into rotational and translational subsystems. <br/> <br/> 
 
 Details are illustrated as follows. <br/>
 <1> For the translational subsystem, a distributed practical fixed-time formation controller (PFxTDFC) is proposed to achieve formation consensus. <br/> 
 <2> Practical fixed-time distributed state observers (PFxTDSO) are developed to estimate the desired velocity and position for each follower UAV and to maintain fully decentralized realization. <br/> 
 <3> Leveraging the logarithmic mapping of rotational errors in Lie algebra space, a nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) is developed to attain practical fixed-time singularity-free anti-disturbance attitude tracking in rotational subsystem. <br/> 
-<4> Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/><br/> 
+<4> Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/> <br/> 
 
 ## Nonlinear smooth sigmoid function <br/>
 
@@ -411,4 +398,7 @@ U _i = \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - 
 
 # Experimental Validation <br/>
 
+
+
+**Note : Source code and instructions for the first revision under Revised & Resubmit decision can be accessed at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
 
