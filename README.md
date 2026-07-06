@@ -87,6 +87,11 @@ $$<br/>
 
 
 
+## 1.3 System dynamics of a quadrotor UAV <br/>
+
+
+
+
 # 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 
 Update virtual angular velocity tracking vector<br/>
@@ -269,7 +274,7 @@ $$
 \quad\quad(6)$$<br/>
 
 
-## Fixed-time translational disturbance observer (FxTDO) <br/>
+## 5. Fixed-time translational disturbance observer (FxTDO) <br/>
 
 Update virtual linear velocity tracking vector<br/>
 
@@ -321,9 +326,9 @@ $$
 \quad\quad(23)$$<br/>
 
 
-# 5. Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
+# 6. Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
 
-## 5.1 PFxTDFC for translational control simulation <br/>
+## 6.1 PFxTDFC for translational control simulation <br/>
 Position and linear velocity tracking error
 
 $$
@@ -374,7 +379,7 @@ $$
 \quad\quad(29)$$<br/>
 
 
-## 5.2 PFxTDFC for experimental validation <br/>
+## 6.2 PFxTDFC for experimental validation <br/>
 
 The translational dynamics Eq.(29) is simplified as a second-order agent with external disturbacne <br/>
 
@@ -396,7 +401,7 @@ U _i = \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - 
 \quad\quad(31)$$<br/>
 
 
-## Symbol definition list <br/>
+# Appendix : Symbol definition list <br/>
 
 - $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
@@ -423,16 +428,6 @@ U _i = \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - 
 - $F_i^S$ : rotation compensation term
 - $\tau_i$ : applied torque rotational control input
 
-
-# Simulation on Proposed Controller <br/>
-
-
-
-# Simulation for Comparison <br/>
-
-
-
-# Experimental Validation <br/>
 
 
 
