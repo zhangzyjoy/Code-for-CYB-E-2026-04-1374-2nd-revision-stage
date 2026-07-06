@@ -43,10 +43,11 @@ $$<br/>
 
 where $t _0$ is the initial time and $x ( t _0 )$ is the state vector, and $f ( x ( t ) )$ is a nonlinear function of system dynamics. <br/>
 
-**Lemma 1 (Fixed-Time Stability)** : For a nonlinear function $V ( t , x ) : \mathbb R \times \mathbb R ^n \to \mathbb R ^+ \cup \lbrace \{ 0 \rbrace \}$ which is positive definite and radially unbounded, 
+**Lemma 1 (Fixed-Time Stability)** : If a nonlinear function $V ( t , x ) : \mathbb R \times \mathbb R ^n \to \mathbb R ^+ \cup \lbrace \{ 0 \rbrace \}$ is defined as positive definite and radially unbounded, and the inequality $\dot V ( t , x ) \le - a _1 ( V ( t, x ) ^ { b ^1 } )$ 
 
 
-## Nonlinear smooth sigmoid function <br/>
+
+## Design of nonlinear smooth sigmoid function <br/>
 
 A newly introduced nonlinear smooth sigmoid vector is defined as <br/>
 
@@ -72,7 +73,9 @@ $$
 \end{aligned}
 $$<br/>
 
-## Fixed-time rotational disturbance observer (FxTDO) <br/>
+
+
+# Fixed-time rotational disturbance observer (FxTDO) <br/>
 
 Update virtual angular velocity tracking vector<br/>
 
