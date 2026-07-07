@@ -167,7 +167,7 @@ $$<br/>
 
 Introduce an observation value of $\overline { \sigma } _i ^{ \varpi }$, the auxiliary angular velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$. From $\tilde d _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi } = h _i ^{ \varpi, 3 } \tilde {\overline { \sigma } } _i ^{ \varpi }$ , it can be derived that the observation error $\tilde d _i ^{ \varpi }$ holds the same convergence behavior with $\tilde {\overline { \sigma } } _i ^{ \varpi }$. <br/>
 
-In order to achieve $\tilde d _i ^{ \varpi } \to 0$ , an equivalent deduction of $\tilde {\overline { \sigma } } _i ^{ \varpi } \to 0$ are required to be attained in fixed time. A Lyapunov candidate is chosen as $V _i ^{ d, \varpi } = \frac {1} {2} ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \tilde {\overline { \sigma } } _i ^{ \varpi }$. According to Lemma 1, the inequality $\dot V _i ^{ d, \varpi } \le - a _i ^{ d, 1 } ( V _i ^{ d, \varpi } ) ^{ b _i ^{ d, 1 } } - a _i ^{ d, 2 } ( V _i ^{ d, \varpi } ) ^{ b _i ^{ d, 2 } }$ should be fulfilled to achieve a fixed-time stable observation. <br/>
+In order to achieve $\tilde d _i ^{ \varpi } \to 0$ , an equivalent deduction of $\tilde {\overline { \sigma } } _i ^{ \varpi } \to 0$ are required to be attained in fixed time. A Lyapunov candidate is chosen as $V _i ^{ d, \varpi } = \frac {1} {2} ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \tilde {\overline { \sigma } } _i ^{ \varpi }$. According to **Lemma 1**, the inequality $\dot V _i ^{ d, \varpi } \le - a _i ^{ d, 1 } ( V _i ^{ d, \varpi } ) ^{ b _i ^{ d, 1 } } - a _i ^{ d, 2 } ( V _i ^{ d, \varpi } ) ^{ b _i ^{ d, 2 } }$ should be fulfilled to achieve a fixed-time stable observation. <br/>
 
 According to **Lemma 4**, choose parameters as $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$, $\mu _d ^{ \varpi }$, and then yield <br/>
 
@@ -192,7 +192,7 @@ $$
 \quad\quad(2.2)
 $$<br/>
 
-The **coefficients** in the lemma for fixed-time stability analysis can be chosen as <br/>
+The **coefficients** in **Lemma 1** for fixed-time stability analysis can be chosen as <br/>
 
 $$
 \begin{aligned}
