@@ -71,7 +71,7 @@ $$<br/>
 
 ## 1.2 Design of nonlinear smooth sigmoid function <br/>
 
-A newly introduced nonlinear smooth sigmoid vector is defined as <br/>
+A newly introduced **nonlinear smooth sigmoid vector** is defined as <br/>
 
 $$
 \begin{aligned}
@@ -141,7 +141,7 @@ In this section, a disturbance observer is developed to estimate the unknown dis
 
 ## 2.1 Design principle <br/>
 
-Define a virtual angular velocity tracking variable as <br/>
+Define a **virtual angular velocity tracking variable** as <br/>
 
 $$
 \begin{aligned}
@@ -150,7 +150,7 @@ $$
 \quad\quad(8)
 $$<br/>
 
-Define the auxiliary angular velocity tracking error as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract Eq.(8) from the second differential equations of Eq.(6) and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
+Define the **auxiliary angular velocity tracking error** as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract **Eq.(8)** from the second differential equations of **Eq.(6)** and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
 
 $$
 \begin{aligned}
@@ -173,7 +173,7 @@ $$
 \end{aligned}
 $$<br/>
 
-Substitute the definition of the Lyapunov function $V _i ^{ d, \varpi } = \frac {1} {2} ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \tilde {\overline { \sigma } } _i ^{ \varpi }$, and the inequalities above can be thereafter yielded as
+Substitute the definition of the **Lyapunov function** $V _i ^{ d, \varpi } = \frac {1} {2} ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \tilde {\overline { \sigma } } _i ^{ \varpi }$, and the inequalities above can be thereafter yielded as
 
 $$
 \begin{aligned}
@@ -185,7 +185,7 @@ $$
 \quad\quad(9)
 $$<br/>
 
-set the coefficients as <br/>
+The **coefficients** in the lemma for fixed-time stability analysis can be chosen as <br/>
 
 $$
 \begin{aligned}
@@ -199,7 +199,7 @@ $$
 \quad\quad(10)
 $$<br/>
 
-then the adaptive updating law of the auxiliary angular velocity observation error is designed as <br/>
+then the **adaptive updating law** of the **auxiliary angular velocity observation error** is designed as <br/>
 
 $$
 \begin{aligned}
@@ -208,7 +208,7 @@ $$
 \quad\quad(11)
 $$<br/>
 
-Since the auxiliary angular velocity observation vector is defined as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$, the adaptive law is derived as <br/>
+Since the **auxiliary angular velocity observation vector** is defined as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$, the adaptive law is derived as <br/>
 
 $$
 \begin{aligned}
@@ -216,9 +216,9 @@ $$
 \end{aligned}
 $$<br/>
 
-where the explicit expression of $\dot {\overline { \sigma } } _i ^{ \varpi }$ is hard to obtain as the unknown disturbance exists in $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } )$ . Therefore, $\dot {\overline { \sigma } } _i ^{ \varpi }$ is derived by applying a differentiator on $\overline { \sigma } _i ^{ \varpi }$ . <br/>
+where the explicit expression of $\dot {\overline { \sigma } } _i ^{ \varpi }$ is hard to obtain because the unknown disturbance exists in $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } )$ . Therefore, $\dot {\overline { \sigma } } _i ^{ \varpi }$ is derived by applying a differentiator on $\overline { \sigma } _i ^{ \varpi }$ . <br/>
 
-Since the disturbance observation error is depicted as
+Since the **disturbance observation error** is depicted as
 
 $$
 \begin{aligned}
@@ -244,7 +244,7 @@ d _i ^{ \varpi } = \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _
 \quad\quad(13)
 $$<br/>
 
-Substitute Eq.(13) into Eq.(12) and yield <br/>
+Substitute **Eq.(13)** into **Eq.(12)** and yield <br/>
 
 $$
 \begin{aligned}
@@ -252,7 +252,7 @@ $$
 \end{aligned}
 $$<br/>
 
-Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and substitute Eq.(11) into $\dot V _i ^{ d, \varpi }$. Utilize the inequalities in Eq.(9) and further yield <br/>
+Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and substitute **Eq.(11)** into $\dot V _i ^{ d, \varpi }$. Utilize the inequalities in **Eq.(9)** and further yield <br/>
 
 $$
 \begin{aligned}
@@ -263,7 +263,7 @@ $$
 \end{aligned}
 $$<br/>
 
-According to Lemma 1 and Eq.(10), $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if the parameter settings in Eq.(10) satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
+According to **Lemma 1** and **Eq.(10)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if the parameter settings in **Eq.(10)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
 ## 2.2 Observer implementation framework <br/>
 
