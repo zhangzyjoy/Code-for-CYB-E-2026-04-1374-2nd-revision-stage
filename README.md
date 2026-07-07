@@ -351,7 +351,7 @@ $$
 
 ## 3.1 Theories and design principles <br/>
 
-To avoid the ambiguity of the logarithmic mapping on boundary of singular spherical neighborhood $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$, a specific mechanism is developed to maintain $\lVert \psi _i ^e \rVert < \pi$ under the initial condition of $\lVert \psi _i ^e ( 0 ) \rVert < \pi$. To guarantee notational simplicity, an auxiliary rotational error variable is depicted as $\overline { \psi } _{ i } ^e = { \psi _ { i } ^e } / { \pi } $ with each entries to be $\overline { \psi } _{ i,k } ^e = { \psi _ { i,k } ^e } / { \pi }$ . <br/>
+To avoid the ambiguity of the logarithmic mapping on boundary of singular spherical neighborhood $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$, a specific mechanism is developed to maintain $\lVert \psi _i ^e \rVert < \pi$ under the initial condition of $\lVert \psi _i ^e ( 0 ) \rVert < \pi$. To guarantee notational simplicity, an auxiliary rotational error variable is depicted as $\overline { \psi } _{ i } ^e = { \psi _ { i } ^e } / { \pi }$ with each entries to be $\overline { \psi } _{ i,k } ^e = { \psi _ { i,k } ^e } / { \pi }$ . <br/>
 
 A nonsingular piecewise continuous sliding mode surface is defined in the form as <br/>
 
@@ -362,6 +362,7 @@ S _i = \varpi _i ^e + c _i ^S \Phi ( \psi _i ^e )
 \quad\quad(3.2)
 $$<br/>
 
+where $c _i ^S > 0$ is a constant, $\Phi ( \psi _i ^e ) = [ \Phi ( \psi _{i,x} ^e ), \Phi ( \psi _{i,y} ^e ), \Phi ( \psi _{i,z} ^e ) ] ^T$ is a piecewise differentiable auxiliary rotational error and its derivative is written as $\overline { \Phi } ( \psi _i ^e )$. <br/>
 
 
 
