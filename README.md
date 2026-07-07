@@ -220,7 +220,34 @@ Since the disturbance observation error is depicted as
 $$
 \begin{aligned}
 \tilde d _i ^{ \varpi } &= h _i ^{ \varpi, 3 } \tilde {\overline { \sigma } } _i ^{ \varpi } \\
-$= d _i ^{ \varpi } - \hat d _i ^{ \varpi }
+&= d _i ^{ \varpi } - \hat d _i ^{ \varpi }
+\end{aligned}
+$$<br/>
+
+and thus yield <br/>
+
+$$
+\begin{aligned}
+\hat d _i ^{ \varpi } = d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi }
+\end{aligned}
+\quad\quad(9)
+$$<br/>
+
+Further, from $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } )$ we can deduce that <br/>
+
+$$
+\begin{aligned}
+d _i ^{ \varpi } &= \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi } \\
+&= \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \hat { \overline { \sigma } } _i ^{ \varpi }
+\end{aligned}
+\quad\quad(10)
+$$<br/>
+
+Substitute Eq.(10) into Eq.(9) and yield <br/>
+
+$$
+\begin{aligned}
+\hat d _i ^{ \varpi } = \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi }
 \end{aligned}
 $$<br/>
 
