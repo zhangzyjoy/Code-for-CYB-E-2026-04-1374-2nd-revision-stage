@@ -182,6 +182,7 @@ $$
 &( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
 \end{cases}
 \end{aligned}
+\quad\quad(9)
 $$<br/>
 
 set the coefficients as <br/>
@@ -195,6 +196,7 @@ $$
 &b _i ^{ d, 2 } = \frac { \alpha _2 ^{ \varpi } + 1 } { 2 }
 \end{cases}
 \end{aligned}
+\quad\quad(10)
 $$<br/>
 
 then the adaptive updating law of the auxiliary angular velocity observation error is designed as <br/>
@@ -203,6 +205,7 @@ $$
 \begin{aligned}
 \dot { \tilde {\overline { \sigma } } } _i = - h _i ^{ \varpi, 1 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) - h _i ^{ \varpi, 2 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } )
 \end{aligned}
+\quad\quad(11)
 $$<br/>
 
 Since the auxiliary angular velocity observation vector is defined as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$, the adaptive law is derived as <br/>
@@ -230,7 +233,7 @@ $$
 \begin{aligned}
 \hat d _i ^{ \varpi } = d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi }
 \end{aligned}
-\quad\quad(9)
+\quad\quad(12)
 $$<br/>
 
 Further, from $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } )$ we can deduce that <br/>
@@ -240,10 +243,10 @@ $$
 d _i ^{ \varpi } &= \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi } \\
 &= \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \hat { \overline { \sigma } } _i ^{ \varpi }
 \end{aligned}
-\quad\quad(10)
+\quad\quad(13)
 $$<br/>
 
-Substitute Eq.(10) into Eq.(9) and yield <br/>
+Substitute Eq.(13) into Eq.(12) and yield <br/>
 
 $$
 \begin{aligned}
@@ -251,14 +254,19 @@ $$
 \end{aligned}
 $$<br/>
 
-
-Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and yield <br/>
+Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and substitute Eq.(11) into $\dot V _i ^{ d, \varpi }$. Utilize the inequalities in Eq.(9) and further yield <br/>
 
 $$
 \begin{aligned}
-\dot V _i ^{ d, \varpi } &= ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \dot { \tilde {\overline { \sigma } } } _i ^{ \varpi } \\
+\dot V _i ^{ d, \varpi } & = ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \dot { \tilde {\overline { \sigma } } } _i ^{ \varpi } \\
+& = - h _i ^{ \varpi, 1 } ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) - h _i ^{ \varpi, 2 } ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } )
+& \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 1 } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } ) \\
+& - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 2 } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
 \end{aligned}
 $$<br/>
+
+According to <br/>
+
 
 
 ## 2.2 Observer implementation framework <br/>
