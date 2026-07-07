@@ -351,7 +351,18 @@ $$
 
 ## 3.1 Theories and design principles <br/>
 
-In order to avoid the ambiguity of the logarithmic mapping on boundary of singular spherical neighborhood $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$
+To avoid the ambiguity of the logarithmic mapping on boundary of singular spherical neighborhood $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$, a specific mechanism is developed to maintain $\lVert \psi _i ^e \rVert < \pi$ under the initial condition of $\lVert \psi _i ^e ( 0 ) \rVert < \pi$. <br/>
+
+A nonsingular piecewise continuous sliding mode surface is defined in the form as <br/>
+
+$$
+\begin{aligned}
+S _i = \varpi _i ^e + c _i ^S \Phi ( \psi _i ^e )
+\end{aligned}
+\quad\quad(3.2)
+$$<br/>
+
+
 
 
 
