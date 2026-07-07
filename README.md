@@ -21,13 +21,12 @@ Each of the latter five ones indicates a specific module of the proposed control
 5. Fixed-time translational disturbance observer (FxTDO). <br/>
 6. Practical fixed-time decentralized formation controller (PFxTDFC). <br/> <br/>
 
-Each quadcopter UAV node is decoupled into rotational and translational subsystems. <br/> <br/> 
+Each section contains four chapters, including : <br/>
+1. Theories and design principles. <br/>
+2. Implementation procedure. <br/>
+3. Parameter settings and simulation. <br/>
+4. Simulation for Comparison. <br/> <br/>
 
-Details are illustrated as follows. <br/>
-<1> For the translational subsystem, a distributed practical fixed-time formation controller (PFxTDFC) is proposed to achieve formation consensus. <br/> 
-<2> Practical fixed-time distributed state observers (PFxTDSO) are developed to estimate the desired velocity and position for each follower UAV and to maintain fully decentralized realization. <br/> 
-<3> Leveraging the logarithmic mapping of rotational errors in Lie algebra space, a nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) is developed to attain practical fixed-time singularity-free anti-disturbance attitude tracking in rotational subsystem. <br/> 
-<4> Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/> <br/> 
 
 # 1. Significant Lemmas and Deductions <br/>
 
@@ -135,11 +134,19 @@ $$
 \end{aligned}
 \quad\quad(7)$$<br/>
 
+Each quadcopter UAV node is decoupled into rotational and translational subsystems. <br/> <br/> 
+
+Details are illustrated as follows. <br/>
+<1> For the translational subsystem, a distributed practical fixed-time formation controller (PFxTDFC) is proposed to achieve formation consensus. <br/> 
+<2> Practical fixed-time distributed state observers (PFxTDSO) are developed to estimate the desired velocity and position for each follower UAV and to maintain fully decentralized realization. <br/> 
+<3> Leveraging the logarithmic mapping of rotational errors in Lie algebra space, a nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) is developed to attain practical fixed-time singularity-free anti-disturbance attitude tracking in rotational subsystem. <br/> 
+<4> Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/> <br/> 
+
 # 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 
 In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics Eq.(6) and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
 
-## 2.1 Design principle <br/>
+## 2.1 Theories and design principles <br/>
 
 Define a **virtual angular velocity tracking variable** as <br/>
 
@@ -259,13 +266,14 @@ $$
 \dot V _i ^{ d, \varpi } & = ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \dot { \tilde {\overline { \sigma } } } _i ^{ \varpi } \\
 & = - h _i ^{ \varpi, 1 } ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) - h _i ^{ \varpi, 2 } ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \\
 & \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 1 } { ( V _i ^{ d, \varpi } ) } ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 2 } { ( V _i ^{ d, \varpi } ) } ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } \\
-& \le - a _1 { V _i ^{ d, \varpi } } ^{ b _1 } - a _2 { V _i ^{ d, \varpi } } ^{ b _2 }
+& \le - a _1 { ( V _i ^{ d, \varpi } ) } ^{ b _1 } - a _2 { ( V _i ^{ d, \varpi } ) } ^{ b _2 }
 \end{aligned}
+\quad\quad(14)
 $$<br/>
 
-According to **Lemma 1** and **Eq.(10)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if the parameter settings in **Eq.(10)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
+According to **Lemma 1**, **Eq.(14)** and **Eq.(10)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if Eq.(14) holds and the parameter settings in **Eq.(10)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
-## 2.2 Observer implementation framework <br/>
+## 2.2 Observer implementation procedure <br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -315,6 +323,17 @@ $$
 \hat d _i ^\varpi = \Lambda _i \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,3} \hat {\overline \sigma} _i ^\varpi
 \end{aligned}
 \quad\quad(12)$$<br/>
+
+## 2.3 Parameter settings and simulation <br/>
+
+According to **Lemma 1**, **Eq.(14)** and **Eq.(10)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
+
+
+
+## 2.4 Simulation for Comparison <br/>
+
+
+
 
 # 3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
