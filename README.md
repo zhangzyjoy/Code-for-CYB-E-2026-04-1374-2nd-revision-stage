@@ -364,7 +364,35 @@ $$<br/>
 
 where $c _i ^S > 0$ is a constant, $\Phi ( \psi _i ^e ) = [ \Phi ( \psi _{i,x} ^e ), \Phi ( \psi _{i,y} ^e ), \Phi ( \psi _{i,z} ^e ) ] ^T$ is a piecewise differentiable auxiliary rotational error and its derivative is written as $\overline { \Phi } ( \psi _i ^e )$. <br/>
 
+Substitute the angular velocity dynamics in Eq.(3.1) into the derivative of the nonsingular sliding mode surface Eq.(3.2) and yield <br/>
 
+$$
+\begin{aligned}
+\dot { S } _i & = \dot { \varpi } _i ^e + c _i ^S \overline { \Phi } ( \psi _i ^e ) \\
+& = \Lambda _i ^{-1} ( -( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i ) + ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^e - ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c + c _i ^S \overline { \Phi } ( \psi _i ^e )
+\end{aligned}
+\quad\quad(3.3)
+$$<br/>
+
+First we consider the reaching phase of the sliding surface, the objective is to drive the convergence ${ S } _i$ towards its origin, and thus the system state errors ${ \varpi } _i ^e$ and ${ \Phi } ( \psi _i ^e )$ can be restrained on the sliding mode surface ${ S } _i = 0$. Define a Lyapunov candidate for the reaching phase ${ S } _i$ as $V _i ^S = \frac {1} {2} ( S _i )^T \Lambda _i S _i$ and substitute Eq.(3.3) into its derivative as <br/>
+
+$$
+\begin{aligned}
+\dot { V } _i ^S & = ( S _i )^T \Lambda _i \dot { S } _i = ( S _i )^T \Lambda _i \Lambda _i ^{-1} ( \tau _i + F _i ^S )
+\end{aligned}
+\quad\quad(3.4)
+$$<br/>
+ 
+where $F _i ^S = F _i ^{ S,1 } + F _i ^{ S,2 }$ with $F _i ^{ S,1 }$ and $F _i ^{ S,2 }$ are the redundant nonlinear terms in angular velocity error dynamics Eq.(3.1) and linear term of auxiliary rotational error, respectively.
+
+$$
+\begin{aligned}
+\begin{cases}
+& F _i ^{ S,1 } = -( \varpi _i ) _\times \Lambda _i \varpi _i + \Lambda _i ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^e - \Lambda _i ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c \\
+& F _i ^{ S,2 } = c _i ^S \Lambda _i \overline { \Phi } ( \psi _i ^e )
+\end{cases}
+\end{aligned}
+$$<br/>
 
 
 ## 3.2 Controller implementation procedure <br/>
