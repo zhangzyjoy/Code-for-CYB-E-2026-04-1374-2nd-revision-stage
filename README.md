@@ -197,15 +197,22 @@ $$
 \end{aligned}
 $$<br/>
 
-Take the derivative of Lyapunov $V _i ^{ d, \varpi }$ and yield <br/>
+then update law of the auxiliary angular velocity observation error is designed as <br/>
 
 $$
 \begin{aligned}
-\dot V _i ^{ d, \varpi } &= ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \dot { \tilde {\overline { \sigma } } } _i ^{ \varpi }
+\dot { \tilde {\overline { \sigma } } } _i = - h _i ^{ \varpi, 1 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) - h _i ^{ \varpi, 2 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } )
 \end{aligned}
 $$<br/>
 
 
+Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and yield <br/>
+
+$$
+\begin{aligned}
+\dot V _i ^{ d, \varpi } &= ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \dot { \tilde {\overline { \sigma } } } _i ^{ \varpi } \\
+\end{aligned}
+$$<br/>
 
 
 ## 2.2 Observer implementation framework <br/>
