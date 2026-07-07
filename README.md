@@ -222,8 +222,7 @@ Since the disturbance observation error is depicted as
 
 $$
 \begin{aligned}
-\tilde d _i ^{ \varpi } &= h _i ^{ \varpi, 3 } \tilde {\overline { \sigma } } _i ^{ \varpi } \\
-&= d _i ^{ \varpi } - \hat d _i ^{ \varpi }
+\tilde d _i ^{ \varpi } &= h _i ^{ \varpi, 3 } \tilde {\overline { \sigma } } _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi }
 \end{aligned}
 $$<br/>
 
@@ -240,8 +239,7 @@ Further, from $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ {
 
 $$
 \begin{aligned}
-d _i ^{ \varpi } &= \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi } \\
-&= \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \hat { \overline { \sigma } } _i ^{ \varpi }
+d _i ^{ \varpi } &= \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi } = \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \hat { \overline { \sigma } } _i ^{ \varpi }
 \end{aligned}
 \quad\quad(13)
 $$<br/>
