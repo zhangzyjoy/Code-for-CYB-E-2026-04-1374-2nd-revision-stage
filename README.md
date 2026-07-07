@@ -419,7 +419,28 @@ $$
 \end{aligned}
 $$<br/>
 
+Since Lyapunov function is defined as $V _i ^S = \frac {1} {2} ( S _i )^T \Lambda _i S _i$, and thus yield
 
+$$
+\begin{aligned}
+\begin{cases}
+-( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } ) & \le - l _i ^{ S,1 } { V _i ^S } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } \\
+-( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )
+& \le - l _i ^{ S,2 } { V _i ^S } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } }
+\end{cases}
+\end{aligned}
+$$<br/>
+
+where the coefficients are depicted as
+
+$$
+\begin{aligned}
+\begin{cases}
+& l _i ^{ S,1 } = 2 ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ \varpi } ^1 } { 2 } } K _i ^{ \varpi } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } \\
+& l _i ^{ S,2 } = 2 ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } K _i ^{ \varpi } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^2 + 1 } { 2 } }
+\end{cases}
+\end{aligned}
+$$<br/>
 
 
 ## 3.2 Controller implementation procedure <br/>
