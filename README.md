@@ -258,14 +258,12 @@ $$
 \begin{aligned}
 \dot V _i ^{ d, \varpi } & = ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \dot { \tilde {\overline { \sigma } } } _i ^{ \varpi } \\
 & = - h _i ^{ \varpi, 1 } ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) - h _i ^{ \varpi, 2 } ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \\
-& \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 1 } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } ) \\
-& \quad \quad - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 2 } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
+& \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 1 } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } ) - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 2 } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
+& \le - a _1 ( V ( t, x ) ^ { b _1 } ) - a _2 * ( V ( t, x ) ^ { b _2 } )
 \end{aligned}
 $$<br/>
 
-According to <br/>
-
-
+According to Lemma 1 and Eq.(10), $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if the parameter settings in Eq.(10) satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
 ## 2.2 Observer implementation framework <br/>
 
