@@ -38,7 +38,7 @@ $$
 \begin{aligned}
 \dot x ( t ) = f ( x ( t ) ) , x ( t _0 ) = x _0
 \end{aligned}
-\quad\quad(1)
+\quad\quad(1.1)
 $$<br/>
 
 where $t _0$ is the initial time and $x ( t _0 )$ is the state vector, and $f ( x ( t ) )$ is a nonlinear function of system dynamics. <br/>
@@ -76,7 +76,7 @@ $$
 \begin{aligned}
 \vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _k ( \overline x _1, \alpha, \gamma ), ..., \vartheta _k ( \overline x _n, \alpha, \gamma ) ] ^T
 \end{aligned}
-\quad\quad(2)
+\quad\quad(1.2)
 $$<br/>
 
 with each entry denoted as <br/>
@@ -85,7 +85,7 @@ $$
 \begin{aligned}
 \vartheta _k ( \overline x _k, \alpha, \gamma ) = | x _k | ^ \alpha \lambda _k ( x _k, \gamma )
 \end{aligned}
-\quad\quad(3)
+\quad\quad(1.3)
 $$<br/>
 
 $\lambda _k ( x _k, \gamma )$ is a sigmoid-like bounded function defined as <br/>
@@ -94,7 +94,7 @@ $$
 \begin{aligned}
 \lambda _k ( x _k, \gamma ) = -1 + \frac 1 {1 + \exp ( - \gamma x _k )}
 \end{aligned}
-\quad\quad(4)
+\quad\quad(1.4)
 $$<br/>
 
 where $\gamma > 0$ controls the growth rate around the zero crossing. <br/>
@@ -108,7 +108,7 @@ $$
 &- ( \overline x ) ^T \vartheta ( \overline x, \alpha, \gamma ) \le - 2 ^{ \frac { \alpha + 1 } { 2 } } n ^{ \frac { 1 - \alpha } { 2 } } K _{ \alpha } ( \frac { ( \overline x ) ^T \overline x } { 2 } ) ^{ \frac { \alpha + 1 } { 2 } } ), \quad\quad ( \alpha > 1 )
 \end{cases}
 \end{aligned}
-\quad\quad(5)$$<br/>
+\quad\quad(1.5)$$<br/>
 
 where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants. <br/>
 
@@ -123,7 +123,7 @@ $$
 &\dot \varpi _i = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + d _i ^{\varpi} )
 \end{cases}
 \end{aligned}
-\quad\quad(6)$$<br/>
+\quad\quad(1.6)$$<br/>
 
 $$
 \begin{aligned}
@@ -132,7 +132,7 @@ $$
 &\dot v _i = - g \overline e _3 + \frac { T _i } { m _i } R ( Q _i ) \overline e _3 + d _i ^v
 \end{cases}
 \end{aligned}
-\quad\quad(7)$$<br/>
+\quad\quad(1.7)$$<br/>
 
 Each quadcopter UAV node is decoupled into rotational and translational subsystems. <br/> <br/> 
 
@@ -144,7 +144,7 @@ Details are illustrated as follows. <br/>
 
 # 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 
-In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics Eq.(6) and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
+In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics Eq.(1.6) and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
 
 ## 2.1 Theories and design principles <br/>
 
@@ -154,10 +154,10 @@ $$
 \begin{aligned}
 \dot \sigma _i ^{ \varpi } = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi } )
 \end{aligned}
-\quad\quad(8)
+\quad\quad(2.1)
 $$<br/>
 
-Define the **auxiliary angular velocity tracking error** as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract **Eq.(8)** from the second differential equations of **Eq.(6)** and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
+Define the **auxiliary angular velocity tracking error** as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract **Eq.(2.1)** from the second differential equations of **Eq.(1.6)** and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
 
 $$
 \begin{aligned}
@@ -189,7 +189,7 @@ $$
 &( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
 \end{cases}
 \end{aligned}
-\quad\quad(9)
+\quad\quad(2.2)
 $$<br/>
 
 The **coefficients** in the lemma for fixed-time stability analysis can be chosen as <br/>
@@ -203,7 +203,7 @@ $$
 &b _i ^{ d, 2 } = \frac { \alpha _2 ^{ \varpi } + 1 } { 2 }
 \end{cases}
 \end{aligned}
-\quad\quad(10)
+\quad\quad(2.3)
 $$<br/>
 
 then the **adaptive updating law** of the **auxiliary angular velocity observation error** is designed as <br/>
@@ -212,7 +212,7 @@ $$
 \begin{aligned}
 \dot { \tilde {\overline { \sigma } } } _i = - h _i ^{ \varpi, 1 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) - h _i ^{ \varpi, 2 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } )
 \end{aligned}
-\quad\quad(11)
+\quad\quad(2.4)
 $$<br/>
 
 Since the **auxiliary angular velocity observation vector** is defined as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$, the adaptive law is derived as <br/>
@@ -239,7 +239,7 @@ $$
 \begin{aligned}
 \hat d _i ^{ \varpi } = d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi }
 \end{aligned}
-\quad\quad(12)
+\quad\quad(2.5)
 $$<br/>
 
 Further, from $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } )$ we can deduce that <br/>
@@ -248,10 +248,10 @@ $$
 \begin{aligned}
 d _i ^{ \varpi } = \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi } = \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \hat { \overline { \sigma } } _i ^{ \varpi }
 \end{aligned}
-\quad\quad(13)
+\quad\quad(2.6)
 $$<br/>
 
-Substitute **Eq.(13)** into **Eq.(12)** and yield <br/>
+Substitute **Eq.(2.6)** into **Eq.(2.5)** and yield <br/>
 
 $$
 \begin{aligned}
@@ -259,7 +259,7 @@ $$
 \end{aligned}
 $$<br/>
 
-Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and substitute **Eq.(11)** into $\dot V _i ^{ d, \varpi }$. Utilize the inequalities in **Eq.(9)** and further yield <br/>
+Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and substitute **Eq.(2.4)** into $\dot V _i ^{ d, \varpi }$. Utilize the inequalities in **Eq.(2.2)** and further yield <br/>
 
 $$
 \begin{aligned}
@@ -268,10 +268,10 @@ $$
 & \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 1 } { ( V _i ^{ d, \varpi } ) } ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 2 } { ( V _i ^{ d, \varpi } ) } ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } \\
 & \le - a _1 { ( V _i ^{ d, \varpi } ) } ^{ b _1 } - a _2 { ( V _i ^{ d, \varpi } ) } ^{ b _2 }
 \end{aligned}
-\quad\quad(14)
+\quad\quad(2.7)
 $$<br/>
 
-According to **Lemma 1**, **Eq.(14)** and **Eq.(10)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if Eq.(14) holds and the parameter settings in **Eq.(10)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
+According to **Lemma 1**, **Eq.(2.7)** and **Eq.(2.3)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if Eq.(2.7) holds and the parameter settings in **Eq.(2.3)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
 ## 2.2 Observer implementation procedure <br/>
 
@@ -326,7 +326,7 @@ $$
 
 ## 2.3 Parameter settings and simulation <br/>
 
-According to **Lemma 1**, **Eq.(14)** and **Eq.(10)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
+According to **Lemma 1**, **Eq.(2.7)** and **Eq.(2.3)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
 
 
@@ -337,7 +337,7 @@ According to **Lemma 1**, **Eq.(14)** and **Eq.(10)**, parameter settings should
 
 # 3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
-According to the rotational dynamics in Eq.(6), define an exponential coordination $\psi _i ^e = [ \Psi ( R ( Q _i ^e) ) ] _{\vee}$ which is derived through inverse logarithm mapping. We establish the rotational system error dynamics as
+According to the rotational dynamics in Eq.(1.6), define an exponential coordination $\psi _i ^e = [ \Psi ( R ( Q _i ^e) ) ] _{\vee}$ which is derived through inverse logarithm mapping. We establish the rotational system error dynamics as
 
 $$
 \begin{aligned}
@@ -346,7 +346,9 @@ $$
 &\dot \varpi _i ^e = \Lambda _i ^{-1} ( -( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i ) + ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^e - ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c
 \end{cases}
 \end{aligned}
-\quad\quad(13)$$<br/>
+\quad\quad(3.1)$$<br/>
+
+
 
 
 For any $i \in {x,y,z}$, define auxiliary sliding mode surface
@@ -479,7 +481,7 @@ $$
 
 # 5. Fixed-time translational disturbance observer (FxTDO) <br/>
 
-## 5.1 Design principle
+## 5.1 Theories and design principles
 
 The virtual tracking 
 
@@ -490,7 +492,7 @@ $$
 \quad\quad(8)
 $$<br/>
 
-## 5.2 Observer Implementation framework
+## 5.2 Observer implementation framework
 
 Update virtual linear velocity tracking vector<br/>
 
