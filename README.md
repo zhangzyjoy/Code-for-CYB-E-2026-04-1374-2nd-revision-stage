@@ -197,13 +197,24 @@ $$
 \end{aligned}
 $$<br/>
 
-then update law of the auxiliary angular velocity observation error is designed as <br/>
+then the adaptive updating law of the auxiliary angular velocity observation error is designed as <br/>
 
 $$
 \begin{aligned}
 \dot { \tilde {\overline { \sigma } } } _i = - h _i ^{ \varpi, 1 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) - h _i ^{ \varpi, 2 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } )
 \end{aligned}
 $$<br/>
+
+Since the auxiliary angular velocity observation vector is defined as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$, the adaptive law is derived as <br/>
+
+$$
+\begin{aligned}
+\dot { \hat {\overline { \sigma } } } _i ^{ \varpi } = \dot {\overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 1 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) + h _i ^{ \varpi, 2 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } )
+\end{aligned}
+$$<br/>
+
+where the explicit expression of $\dot {\overline { \sigma } } _i ^{ \varpi }$ is hard to obtain as the unknown disturbance exists in $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma _i ^{ \varpi } } ) $ . Therefore, $\dot {\overline { \sigma } } _i ^{ \varpi }$ is derived by applying a differentiator on $\overline { \sigma } _i ^{ \varpi }$ . <br/>
+
 
 
 Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and yield <br/>
