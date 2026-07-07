@@ -215,6 +215,14 @@ $$<br/>
 
 where the explicit expression of $\dot {\overline { \sigma } } _i ^{ \varpi }$ is hard to obtain as the unknown disturbance exists in $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } )$ . Therefore, $\dot {\overline { \sigma } } _i ^{ \varpi }$ is derived by applying a differentiator on $\overline { \sigma } _i ^{ \varpi }$ . <br/>
 
+Since the disturbance observation error is depicted as
+
+$$
+\begin{aligned}
+\tilde d _i ^{ \varpi } &= h _i ^{ \varpi, 3 } \tilde {\overline { \sigma } } _i ^{ \varpi } \\
+$= d _i ^{ \varpi } - \hat d _i ^{ \varpi }
+\end{aligned}
+$$<br/>
 
 
 Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and yield <br/>
