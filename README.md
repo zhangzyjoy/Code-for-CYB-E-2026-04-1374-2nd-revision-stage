@@ -27,6 +27,7 @@ Each section contains four chapters, including : <br/>
 3. Parameter settings and validation. <br/>
 4. Validation for Comparison. <br/> <br/>
 
+**Note : the validation part can be divided into numerical simulation validation and experimental validation.** <br/> **Specifically, the attitude control and attitude disturbance observation are validated only through numerical simulations, whereas the translational control, distributed translational observer, and translational disturbance observer are validated through both numerical simulations and experiments.** <br/> <br/>
 
 # 1. Significant Lemmas and Deductions <br/>
 
