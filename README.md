@@ -213,7 +213,7 @@ $$
 \end{aligned}
 $$<br/>
 
-where the explicit expression of $\dot {\overline { \sigma } } _i ^{ \varpi }$ is hard to obtain as the unknown disturbance exists in $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma _i ^{ \varpi } } ) $ . Therefore, $\dot {\overline { \sigma } } _i ^{ \varpi }$ is derived by applying a differentiator on $\overline { \sigma } _i ^{ \varpi }$ . <br/>
+where the explicit expression of $\dot {\overline { \sigma } } _i ^{ \varpi }$ is hard to obtain as the unknown disturbance exists in $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } ) $ . Therefore, $\dot {\overline { \sigma } } _i ^{ \varpi }$ is derived by applying a differentiator on $\overline { \sigma } _i ^{ \varpi }$ . <br/>
 
 
 
