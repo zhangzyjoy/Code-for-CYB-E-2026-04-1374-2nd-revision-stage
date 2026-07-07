@@ -173,15 +173,13 @@ $$
 \end{aligned}
 $$<br/>
 
-the inequalities above can be thereafter yielded as
+Substitute the definition of the Lyapunov function $V _i ^{ d, \varpi } = \frac {1} {2} ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \tilde {\overline { \sigma } } _i ^{ \varpi }$, and the inequalities above can be thereafter yielded as
 
 $$
 \begin{aligned}
 \begin{cases}
-&a _i ^{ d, 1 } = 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 1 } \\
-&b _i ^{ d, 1 } = \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } \\
-&a _i ^{ d, 2 } = 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 2 } \\
-&b _i ^{ d, 2 } = \frac { \alpha _2 ^{ \varpi } + 1 } { 2 }
+&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } ) \\
+&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
 \end{cases}
 \end{aligned}
 $$<br/>
@@ -191,10 +189,10 @@ set the coefficients as <br/>
 $$
 \begin{aligned}
 \begin{cases}
-&\tilde \sigma ^i _0 = \overline \sigma _i ^\varpi - \hat \sigma ^i _0 \\
-&\dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
-&\dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
-&\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
+&a _i ^{ d, 1 } = 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 1 } \\
+&b _i ^{ d, 1 } = \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } \\
+&a _i ^{ d, 2 } = 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 2 } \\
+&b _i ^{ d, 2 } = \frac { \alpha _2 ^{ \varpi } + 1 } { 2 }
 \end{cases}
 \end{aligned}
 $$<br/>
