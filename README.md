@@ -144,7 +144,7 @@ Details are illustrated as follows. <br/>
 
 # 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
 
-In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics Eq.(1.6) and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
+In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics **Eq.(1.6)** and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
 
 ## 2.1 Theories and design principles <br/>
 
