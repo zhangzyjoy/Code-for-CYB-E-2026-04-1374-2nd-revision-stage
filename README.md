@@ -281,7 +281,7 @@ $$
 \begin{aligned}
 \dot \sigma _i ^\varpi = ( \Lambda _i ) ^{-1} ( - ( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i + h _i ^{\varpi,3} \overline \sigma _i ^\varpi )
 \end{aligned}
-\quad\quad(8)$$<br/>
+\quad\quad(15)$$<br/>
 
 Virtual angular velocity tracking error
 
@@ -289,7 +289,7 @@ $$
 \begin{aligned}
 \overline \sigma _i ^\varpi = \varpi _i - \sigma _i ^\varpi
 \end{aligned}
-\quad\quad(9)$$<br/>
+\quad\quad(16)$$<br/>
 
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^\varpi$, a high-order nonlinear differentiator is given as
 
@@ -302,10 +302,10 @@ $$
 &\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
 \end{cases}
 \end{aligned}
-\quad\quad(10)$$<br/>
+\quad\quad(17)$$<br/>
 
 
-and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
+and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(15) approximately equals to the output value $\hat \sigma ^i _1$<br/>
 
 
 an adaptive updating law<br/>
@@ -314,7 +314,7 @@ $$
 \begin{aligned}
 \dot {\hat {\overline \sigma}} _i ^\varpi = \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,1} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _1 ^\varpi, \mu _d ^\varpi ) + h _i ^{\varpi,2} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _2 ^\varpi, \mu _d ^\varpi )
 \end{aligned}
-\quad\quad(11)$$<br/>
+\quad\quad(18)$$<br/>
 
 rotational disturbance observer<br/>
 
@@ -322,7 +322,7 @@ $$
 \begin{aligned}
 \hat d _i ^\varpi = \Lambda _i \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,3} \hat {\overline \sigma} _i ^\varpi
 \end{aligned}
-\quad\quad(12)$$<br/>
+\quad\quad(19)$$<br/>
 
 ## 2.3 Parameter settings and simulation <br/>
 
