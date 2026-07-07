@@ -24,8 +24,8 @@ Each of the latter five ones indicates a specific module of the proposed control
 Each section contains four chapters, including : <br/>
 1. Theories and design principles. <br/>
 2. Implementation procedure. <br/>
-3. Parameter settings and simulation. <br/>
-4. Simulation for Comparison. <br/> <br/>
+3. Parameter settings and validation. <br/>
+4. Validation for Comparison. <br/> <br/>
 
 
 # 1. Significant Lemmas and Deductions <br/>
@@ -281,7 +281,7 @@ $$
 \begin{aligned}
 \dot \sigma _i ^\varpi = ( \Lambda _i ) ^{-1} ( - ( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i + h _i ^{\varpi,3} \overline \sigma _i ^\varpi )
 \end{aligned}
-\quad\quad(15)$$<br/>
+\quad\quad(2.8)$$<br/>
 
 Virtual angular velocity tracking error
 
@@ -289,7 +289,7 @@ $$
 \begin{aligned}
 \overline \sigma _i ^\varpi = \varpi _i - \sigma _i ^\varpi
 \end{aligned}
-\quad\quad(16)$$<br/>
+\quad\quad(2.9)$$<br/>
 
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^\varpi$, a high-order nonlinear differentiator is given as
 
@@ -302,10 +302,10 @@ $$
 &\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
 \end{cases}
 \end{aligned}
-\quad\quad(17)$$<br/>
+\quad\quad(2.10)$$<br/>
 
 
-and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(15) approximately equals to the output value $\hat \sigma ^i _1$<br/>
+and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(2.8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
 
 
 an adaptive updating law<br/>
@@ -314,7 +314,7 @@ $$
 \begin{aligned}
 \dot {\hat {\overline \sigma}} _i ^\varpi = \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,1} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _1 ^\varpi, \mu _d ^\varpi ) + h _i ^{\varpi,2} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _2 ^\varpi, \mu _d ^\varpi )
 \end{aligned}
-\quad\quad(18)$$<br/>
+\quad\quad(2.11)$$<br/>
 
 rotational disturbance observer<br/>
 
@@ -322,15 +322,15 @@ $$
 \begin{aligned}
 \hat d _i ^\varpi = \Lambda _i \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,3} \hat {\overline \sigma} _i ^\varpi
 \end{aligned}
-\quad\quad(19)$$<br/>
+\quad\quad(2.12)$$<br/>
 
-## 2.3 Parameter settings and simulation <br/>
+## 2.3 Parameter settings and validation <br/>
 
 According to **Lemma 1**, **Eq.(2.7)** and **Eq.(2.3)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
 
 
-## 2.4 Simulation for Comparison <br/>
+## 2.4 Validation for Comparison <br/>
 
 
 
@@ -348,8 +348,12 @@ $$
 \end{aligned}
 \quad\quad(3.1)$$<br/>
 
+## 3.1 Theories and design principles <br/>
 
 
+
+
+## 3.2 Controller implementation procedure <br/>
 
 For any $i \in {x,y,z}$, define auxiliary sliding mode surface
 
@@ -431,8 +435,25 @@ $$
 \end{aligned}
 \quad\quad(18)$$<br/>
 
+## 3.3 Parameter settings and validation <br/>
+
+
+
+
+## 3.4 Validation for comparison <br/>
+
+
+
+
 
 # 4. Practical fixed-time distributed state observer (PFxTDSO) <br/>
+
+
+## 4.1 Theories and design principles <br/>
+
+
+
+## 4.2 Observer implementation procedure <br/>
 
 Observation error for follower UAV node $i$<br/>
 
@@ -477,6 +498,16 @@ $$
 \dot {\hat p} _i ^d = \hat v _i ^d - \ell _1 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _1, \mu _o ^p ) - \ell _2 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _2, \mu _o ^p ) )
 \end{aligned}
 \quad\quad(6)$$<br/>
+
+
+## 4.3 Parameter settings and validation <br/>
+
+
+
+
+## 4.4 Validation for comparison <br/>
+
+
 
 
 # 5. Fixed-time translational disturbance observer (FxTDO) <br/>
