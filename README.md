@@ -84,7 +84,7 @@ with each entry denoted as <br/>
 
 $$
 \begin{aligned}
-\vartheta _k ( \overline x _k, \alpha, \gamma ) = | x _k | ^ \alpha \lambda _k ( x _k, \gamma )
+\vartheta _k ( \overline x _k, \alpha, \gamma ) = \lvert x _k \rvert ^ \alpha \lambda _k ( x _k, \gamma )
 \end{aligned}
 \quad\quad(1.3)
 $$<br/>
