@@ -60,7 +60,7 @@ T _s \le \overline T _s = \frac { 1 } { a _1 \eta _0 ( b _1 - 1 )} + \frac { 1 }
 \end{aligned}
 $$<br/>
 
-**Lemma 3** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ 1 / 2 } ) }$ such that $k > 0$, $\gamma > 0$, $0 < p < 1$, then the origin of $x ( t )$ converges in fixed time upper bounded by
+**Lemma 3 (Proposed Fixed-Time Stability Criteria)** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ 1 / 2 } ) }$ such that $k > 0$, $\gamma > 0$, $0 < p < 1$, then the origin of $x ( t )$ converges in fixed time upper bounded by
 
 $$
 \begin{aligned}
@@ -141,7 +141,7 @@ In this section, a disturbance observer is developed to estimate the unknown dis
 
 ## 2.1 Design principle <br/>
 
-Define a virtual velocity tracking variable as <br/>
+Define a virtual angular velocity tracking variable as <br/>
 
 $$
 \begin{aligned}
@@ -150,7 +150,7 @@ $$
 \quad\quad(8)
 $$<br/>
 
-Define the auxiliary velocity tracking error as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract Eq.(8) from the second differential equations of Eq.(6) and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
+Define the auxiliary angular velocity tracking error as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract Eq.(8) from the second differential equations of Eq.(6) and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
 
 $$
 \begin{aligned}
@@ -158,9 +158,36 @@ $$
 \end{aligned}
 $$<br/>
 
-Introduce an observation value of $\overline { \sigma } _i ^{ \varpi }$, the auxiliary velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$. From $\tilde d _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi } = h _i ^{ \varpi, 3 } \tilde {\overline { \sigma } } _i ^{ \varpi }$ , it can be derived that the observation error $\tilde d _i ^{ \varpi }$ holds the same convergence behavior with $\tilde {\overline { \sigma } } _i ^{ \varpi }$. <br/>
+Introduce an observation value of $\overline { \sigma } _i ^{ \varpi }$, the auxiliary angular velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$. From $\tilde d _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi } = h _i ^{ \varpi, 3 } \tilde {\overline { \sigma } } _i ^{ \varpi }$ , it can be derived that the observation error $\tilde d _i ^{ \varpi }$ holds the same convergence behavior with $\tilde {\overline { \sigma } } _i ^{ \varpi }$. <br/>
 
-In order to achieve $\tilde d _i ^{ \varpi } \to 0$ , a equivalent deduction of $\tilde {\overline { \sigma } } _i ^{ \varpi } \to 0$ are required to be attained in fixed time.
+In order to achieve $\tilde d _i ^{ \varpi } \to 0$ , an equivalent deduction of $\tilde {\overline { \sigma } } _i ^{ \varpi } \to 0$ are required to be attained in fixed time. A Lyapunov candidate is chosen as $V _i ^{ d, \varpi } = \frac {1} {2} ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \tilde {\overline { \sigma } } _i ^{ \varpi }$. According to Lemma 1, the inequality $\dot V _i ^{ d, \varpi } \le - a _i ^{ d, 1 } ( V _i ^{ d, \varpi } ) ^{ b _i ^{ d, 1 } } - a _i ^{ d, 2 } ( V _i ^{ d, \varpi } ) ^{ b _i ^{ d, 2 } }$ should be fulfilled to achieve a fixed-time stable observation. <br/>
+
+According to **Lemma 4**, choose parameters as $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$, $\mu _d ^{ \varpi }$, and then yield <br/>
+
+$$
+\begin{aligned}
+( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) \le 
+\end{aligned}
+$$<br/>
+
+$$
+\begin{aligned}
+\begin{cases}
+&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } ( \frac { 1 } { 2 } ( ( \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^T \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } ) \\
+&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } ( \frac { 1 } { 2 } ( ( \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^T \tilde { \overline { \sigma } } _i ^{ \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
+\end{cases}
+\end{aligned}
+$$<br/>
+
+Take the derivative of Lyapunov $V _i ^{ d, \varpi }$ and yield <br/>
+
+$$
+\begin{aligned}
+\dot V _i ^{ d, \varpi } &= ( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \dot { \tilde {\overline { \sigma } } } _i ^{ \varpi }
+\end{aligned}
+$$<br/>
+
+
 
 
 ## 2.2 Observer implementation framework <br/>
@@ -360,6 +387,7 @@ $$
 
 ## 5.1 Design principle
 
+The virtual tracking 
 
 $$
 \begin{aligned}
