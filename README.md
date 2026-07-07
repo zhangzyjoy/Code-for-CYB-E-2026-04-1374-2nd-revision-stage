@@ -351,6 +351,7 @@ $$
 
 ## 3.1 Theories and design principles <br/>
 
+In order to avoid the ambiguity of the logarithmic mapping on boundary of singular spherical neighborhood $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$
 
 
 
@@ -360,7 +361,7 @@ For any $i \in {x,y,z}$, define auxiliary sliding mode surface
 
 $$
 \begin{aligned}
-\overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S {\frac {3 ^{p+1} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} }
+\overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S {\frac {3 ^{p+1} \pi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} }
 \end{aligned}
 \quad\quad(14)$$<br/>
 
@@ -370,10 +371,10 @@ $$
 \begin{aligned}
 \Phi _k ( \psi ^e _{i,k}) = 
 \begin{cases}
-&\frac {3 ^{p+1} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} \\
-& \quad\quad \text{  if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| > \overline \varepsilon ^{S} _{i,k} \\
-&\psi ^e _{i,k} ( \beta ^1 _\Phi |\frac {\psi ^e _{i,k}} \pi|^2 + \beta ^2 _\Phi |\frac {\psi ^e _{i,k}} \pi| ^{2p} ) \\
-& \quad\quad \text{  if } \overline S _{i,k} \ne 0,\text{ }|\psi ^e _{i,k}| \le \overline \varepsilon ^{S} _{i,k}
+&\frac {3 ^{p+1} \pi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} \\
+& \quad\quad \text{  if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  } \lvert \psi ^e _{i,k} \rvert > \overline \varepsilon ^{S} _{i,k} \\
+&\psi ^e _{i,k} ( \beta ^1 _\Phi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^2 + \beta ^2 _\Phi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{2p} ) \\
+& \quad\quad \text{  if } \overline S _{i,k} \ne 0,\text{ } \lvert \psi ^e _{i,k} \rvert \le \overline \varepsilon ^{S} _{i,k}
 \end{cases}
 \end{aligned}
 \quad\quad(15)$$<br/>
@@ -392,11 +393,11 @@ $$
 \begin{aligned}
 \overline \Phi _k ( \psi ^e _{i,k}) = 
 \begin{cases}
-&\frac { 3 ^{p+1} (p+1) \frac {\psi ^e _{i,k}} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p-1} \varpi ^e _{i,k} } {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} \\
-&+ \frac {3 ^{p+1}} 4 \gamma |\frac {\psi ^e _{i,k}} \pi| ^{p+1} (\frac { \mathrm{sech} ( \gamma \psi ^e _{i,k} / 2 \pi )} {\tanh ( \gamma \psi ^e _{i,k} / 2 \pi )} ) ^2 \varpi ^e _{i,k}, \\
-& \quad\quad \text{             if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| > \overline \varepsilon ^{S} _{i,k} \\
-&( 2 \beta ^1 _\Phi | \frac {\psi ^e _{i,k}} \pi | ^2 + ( 2p + 1 ) \beta ^2 _\Phi | \frac {\psi ^e _{i,k}} \pi | ^{2p} ) \varpi ^e _{i,k}, \\
-& \quad\quad \text{             if } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| \le \overline \varepsilon ^{S} _{i,k} \\
+&\frac { 3 ^{p+1} (p+1) \frac {\psi ^e _{i,k}} \pi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{p-1} \varpi ^e _{i,k} } {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} \\
+&+ \frac {3 ^{p+1}} 4 \gamma \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{p+1} (\frac { \mathrm{sech} ( \gamma \psi ^e _{i,k} / 2 \pi )} {\tanh ( \gamma \psi ^e _{i,k} / 2 \pi )} ) ^2 \varpi ^e _{i,k}, \\
+& \quad\quad \text{             if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  } \lvert \psi ^e _{i,k} \rvert > \overline \varepsilon ^{S} _{i,k} \\
+&( 2 \beta ^1 _\Phi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^2 + ( 2p + 1 ) \beta ^2 _\Phi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{2p} ) \varpi ^e _{i,k}, \\
+& \quad\quad \text{             if } \overline S _{i,k} \ne 0,\text{  } \lvert \psi ^e _{i,k} \rvert \le \overline \varepsilon ^{S} _{i,k} \\
 \end{cases}
 \end{aligned}
 \quad\quad(17)$$<br/>
@@ -416,7 +417,7 @@ The applied torque control input
 $$
 \begin{aligned}
 \tau _i = &- c _i ^{\varpi,1} \vartheta ( S_i, \beta ^1 _\varpi, \mu _c ^\Theta ) - c _i ^{\varpi,2} \vartheta ( S_i, \beta ^2 _\varpi, \mu _c ^\Theta ) \\
-&- c _i ^{\varpi,3} S_i - \hat d _i ^\varpi - \frac 1 2 ( \overline \eta _i ^S ) ^2 \|\| F _i ^S \|\| ^2 S_i
+&- c _i ^{\varpi,3} S_i - \hat d _i ^\varpi - \frac 1 2 ( \overline \eta _i ^S ) ^2 \lVert F _i ^S \rVert ^2 S_i
 \end{aligned}
 \quad\quad(17)$$<br/>
 
