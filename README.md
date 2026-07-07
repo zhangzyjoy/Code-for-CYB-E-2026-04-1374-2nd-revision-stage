@@ -166,15 +166,20 @@ According to **Lemma 4**, choose parameters as $\alpha _1 ^{ \varpi } > 1$, $0 <
 
 $$
 \begin{aligned}
-( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) \le 
+\begin{cases}
+&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } ( \frac { 1 } { 2 } ( ( \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^T \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } ) \\
+&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } ( \frac { 1 } { 2 } ( ( \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^T \tilde { \overline { \sigma } } _i ^{ \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
+\end{cases}
 \end{aligned}
 $$<br/>
+
+the inequalities above can be thereafter yielded as
 
 $$
 \begin{aligned}
 \begin{cases}
-&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } ( \frac { 1 } { 2 } ( ( \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^T \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } ) \\
-&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } ( \frac { 1 } { 2 } ( ( \tilde {\overline { \sigma } } _i ^{ \varpi } ) ^T \tilde { \overline { \sigma } } _i ^{ \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
+&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } ) \\
+&( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
 \end{cases}
 \end{aligned}
 $$<br/>
