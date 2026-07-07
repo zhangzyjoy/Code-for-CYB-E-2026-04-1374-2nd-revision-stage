@@ -158,9 +158,9 @@ $$
 \end{aligned}
 $$<br/>
 
-Introduce an observation value of $\overline { \sigma } _i ^{ \varpi }$, the auxiliary velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$. From $\tilde d _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi } = h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi }$ , it can be derived that the observation error $\tilde d _i ^{ \varpi }$ holds the same convergence behavior with $\overline \sigma _i ^{ \varpi }$. <br/>
+Introduce an observation value of $\overline { \sigma } _i ^{ \varpi }$, the auxiliary velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$. From $\tilde d _i ^{ \varpi } = d _i ^{ \varpi } - \hat d _i ^{ \varpi } = h _i ^{ \varpi, 3 } \tilde {\overline { \sigma } } _i ^{ \varpi }$ , it can be derived that the observation error $\tilde d _i ^{ \varpi }$ holds the same convergence behavior with $\tilde {\overline { \sigma } } _i ^{ \varpi }$. <br/>
 
-
+In order to achieve $\tilde d _i ^{ \varpi } \to 0$ , a equivalent deduction of $\tilde {\overline { \sigma } } _i ^{ \varpi } \to 0$ are required to be attained in fixed time.
 
 
 ## 2.2 Observer implementation framework <br/>
