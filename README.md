@@ -584,9 +584,15 @@ $$
 
 ## 3.3 Parameter settings and validation <br/>
 
-Choose the parameters of the rotational torque control input $\tau _i$ as $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
+According to **Lemma 2** and **Eq.(3.9)**, the parameters of the rotational torque control input are chosen as $\tau _i$ as $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
 
+According to **Lemma 2**, the settling time for the practical fixed-time convergence of **PCNSMS** $S _i$ is indicated as
 
+$$
+\begin{aligned}
+T_
+\end{aligned}
+$$<br/>
 
 
 ## 3.4 Validation for comparison <br/>
