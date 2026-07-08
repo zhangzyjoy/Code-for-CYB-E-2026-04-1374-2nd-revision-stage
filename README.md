@@ -329,7 +329,7 @@ $$
 
 According to **Lemma 1**, **Eq.(2.7)** and **Eq.(2.3)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
-The observation error of rotational disturbance $d _i ^{ \varpi }$ shares the same convergence performance metrices with the auxiliary angular velocity observation error $\tilde {\overline { \sigma } } _i ^{ \varpi }$. Since **Eq.(2.7)** holds and the parameter settings in **Eq.(2.3)** is satisfied, the upper bound for the settling time of $$ under fixed-time convergence is depicted from **Lemma 1** by <br/>
+The observation error of rotational disturbance $d _i ^{ \varpi }$ shares the same convergence performance metrices with the auxiliary angular velocity observation error $\tilde {\overline { \sigma } } _i ^{ \varpi }$. Since **Eq.(2.7)** holds and the parameter settings in **Eq.(2.3)** is satisfied, the upper bound for the settling time of $d _i ^{ \varpi }$, equivalent to that of $\tilde {\overline { \sigma } } _i ^{ \varpi }$ under fixed-time convergence is depicted from **Lemma 1** by <br/>
 
 $$
 \begin{aligned}
