@@ -567,6 +567,7 @@ $$
 
 ## 3.3 Parameter settings and validation <br/>
 
+Choose the parameters according to $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
 
 
 
