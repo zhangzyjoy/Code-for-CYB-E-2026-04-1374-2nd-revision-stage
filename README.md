@@ -380,7 +380,7 @@ $$
 \quad\quad(3.3)
 $$<br/>
 
-### 3.1.1 Rotational control torque design for the reaching phase
+### 3.1.1 Rotational control torque design for the reaching phase <br/>
 
 First we consider the **reaching phase** of the sliding surface, the objective is to drive the **piecewise continuous nonsingular sliding mode surface (PCNSMS)** ${ S } _i$ towards its origin, and thus the system state errors ${ \varpi } _i ^e$ and ${ \Phi } ( \psi _i ^e )$ can be restrained on the sliding mode surface ${ S } _i = 0$. Define a Lyapunov candidate for the reaching phase ${ S } _i$ as $V _i ^S = \frac {1} {2} ( S _i )^T \Lambda _i S _i$ and substitute Eq.(3.3) into its derivative as <br/>
 
@@ -494,9 +494,10 @@ $$
 $$<br/>
 
 
-### 3.1.2 Nonsingular sliding mode design for the sliding phase
+### 3.1.2 Nonsingular sliding mode design for the sliding phase <br/>
 
-On the reaching phase, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error ${ \Phi } ( \psi _i ^e )$ are constrained on the sliding surface $S _i$ within a practical fixed time.
+During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error ${ \Phi } ( \psi _i ^e )$ are constrained on the sliding surface $S _i = 0$ within a practical fixed time. <br/>
+
 
 
 
@@ -594,7 +595,8 @@ T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi } = \frac { { ( \lambda _{max}
 \end{aligned}
 $$<br/>
 
-where $K _i ^{ \varpi } > 0$ and $$
+where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. <br/>
+
 
 
 ## 3.4 Validation for comparison <br/>
