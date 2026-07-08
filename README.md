@@ -445,8 +445,8 @@ where the coefficients are depicted as
 $$
 \begin{aligned}
 \begin{cases}
-& l _i ^{ S,1 } = 2 ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ \varpi } ^1 } { 2 } } K _i ^{ \varpi } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } \\
-& l _i ^{ S,2 } = 2 ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } K _i ^{ \varpi } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^2 + 1 } { 2 } }
+& l _i ^{ S, 1 } = 2 ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ \varpi } ^1 } { 2 } } K _i ^{ \varpi } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } \\
+& l _i ^{ S, 2 } = 2 ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } K _i ^{ \varpi } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^2 + 1 } { 2 } }
 \end{cases}
 \end{aligned}
 \quad\quad(3.6)
@@ -456,7 +456,7 @@ Therefore, an appropriate design for auxiliary torque input $\overset {\frown} {
 
 $$
 \begin{aligned}
-( S _i ) ^T \overset {\frown} { \tau } _i = - c _i ^{ \varpi, 1 } l _i ^{ S,1 } ( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } ) - c _i ^{ \varpi, 2 } l _i ^{ S,2 } ( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )
+( S _i ) ^T \overset {\frown} { \tau } _i = - c _i ^{ \varpi, 1 } l _i ^{ S, 1 } ( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } ) - c _i ^{ \varpi, 2 } l _i ^{ S, 2 } ( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )
 \end{aligned}
 \quad\quad(3.7)
 $$<br/>
@@ -470,17 +470,20 @@ $$
 \quad\quad(3.8)
 $$<br/>
 
-Leveraging **Eq.(3.6)** and **Eq.(3.7)**, we obtain **Eq.(3.5)** and then yield
+We obtain the **auxiliary torque** $\overset {\frown} { \tau } _i$ with an additive term $- c _i ^{ \varpi, 3 } S _i$ on the basis of Eq.(3.8). Therefore, a semi-definite negative term $- c _i ^{ \varpi, 3 } \lVert S _i \rVert ^2$ is introduced. Leveraging **Eq.(3.6)** and **Eq.(3.7)**, with the inequalities given in **Eq.(3.5)**, the **Lyapunov derivative** $\dot { V } _i ^S$ is further derived as
 
 $$
 \begin{aligned}
-\dot { V } _i ^S & \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { ( 2 \overline { \eta } _i ^S ) } \\
+\dot { V } _i ^S & \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { ( 2 \overline { \eta } _i ^S ) } - c _i ^{ \varpi, 3 } \lVert S _i \rVert ^2 \\
+& \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { ( 2 \overline { \eta } _i ^S ) } \\
 & \le - c _i ^{ \varpi, 1 } l _i ^{ S,1 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } - c _i ^{ \varpi, 2 } l _i ^{ S,2 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } + 1 / { ( 2 \overline { \eta } _i ^S ) }
 \end{aligned}
 \quad\quad(3.9)
 $$<br/>
 
-Introduce an auxiliary term $- c _i ^{ \varpi, 3 } \lVert S _i \rVert ^2$ into $\dot { V } _i ^S$, the rotational torque input is developed as
+According to **Eq.(3.9)** and **Lemma 2**, **PCNSMS** $S _i$ can achieve **practical fixed-time stability** during the **reaching phase** only if the coefficients are bounded by $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
+
+Therefore, the rotational torque input is developed as
 
 $$
 \begin{aligned}
@@ -490,10 +493,6 @@ $$
 \quad\quad(3.10)
 $$<br/>
 
-
-
-
-According to **Eq.(3.9)** and **Lemma 2**, **PCNSMS** $S _i$ can achieve **practical fixed-time stability** during the **reaching phase** only if the coefficients are bounded by $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
 
 ### 3.1.2 Nonsingular sliding mode design for the sliding phase
 
