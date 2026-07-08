@@ -380,7 +380,9 @@ $$
 \quad\quad(3.3)
 $$<br/>
 
-First we consider the **reaching phase** of the sliding surface, the objective is to drive the convergence ${ S } _i$ towards its origin, and thus the system state errors ${ \varpi } _i ^e$ and ${ \Phi } ( \psi _i ^e )$ can be restrained on the sliding mode surface ${ S } _i = 0$. Define a Lyapunov candidate for the reaching phase ${ S } _i$ as $V _i ^S = \frac {1} {2} ( S _i )^T \Lambda _i S _i$ and substitute Eq.(3.3) into its derivative as <br/>
+### 3.1.1 Rotational control torque design for the reaching phase
+
+First we consider the **reaching phase** of the sliding surface, the objective is to drive the **piecewise continuous nonsingular sliding mode surface (PCNSMS)** ${ S } _i$ towards its origin, and thus the system state errors ${ \varpi } _i ^e$ and ${ \Phi } ( \psi _i ^e )$ can be restrained on the sliding mode surface ${ S } _i = 0$. Define a Lyapunov candidate for the reaching phase ${ S } _i$ as $V _i ^S = \frac {1} {2} ( S _i )^T \Lambda _i S _i$ and substitute Eq.(3.3) into its derivative as <br/>
 
 $$
 \begin{aligned}
@@ -410,7 +412,7 @@ $$<br/>
 
 where ${ \eta } _i ^S$ is a positive constant. <br/>
 
-Design the applied torque control input as $\tau _i = \overset {\frown} { \tau } _i - \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2$. The Lyapunov function for **reaching phase** is bounded by $\dot { V } _i ^S \le ( S _i ) ^T \overset { \frown } { \tau } _i + 1 / { ( 2 \overline { \eta } _i ^S ) }$. <br/>
+Design the applied torque control input as $\tau _i = \overset {\frown} { \tau } _i - \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2$. The Lyapunov function for **reaching phase** of **PCNSMS** is bounded by $\dot { V } _i ^S \le ( S _i ) ^T \overset { \frown } { \tau } _i + 1 / { ( 2 \overline { \eta } _i ^S ) }$. <br/>
 
 According to **Lemma 2**, if we set $c_0 = 1 / { ( 2 \overline { \eta } _i ^S ) }$, then $( S _i )^T \overset {\frown} { \tau } _i$ should be upper bounded by $- a _1 { ( { V } _i ^S ) } ^ { b _1 } - a _2 { ( { V } _i ^S ) } ^ { b _2 }$. Set constant parameters as $l _i ^{ S,1 } > 0$, $l _i ^{ S,2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. It is easy to obtain $( \beta _{ \varpi } ^1 + 1 ) / 2 > 1$ and $( 0 < \beta _{ \varpi } ^2 + 1 ) / 2 < 1$. Leverage **Lemma 4** and yield the upper bound of $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } )$ and $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )$ as <br/>
 
@@ -478,8 +480,11 @@ $$
 \quad\quad(3.9)
 $$<br/>
 
-According to **Eq.(3.9)** and **Lemma 2**, the **nonsingular sliding mode surface** $S _i$ can achieve fixed-time stability during the **reaching phase** only if the coefficients are bounded by $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
+According to **Eq.(3.9)** and **Lemma 2**, **PCNSMS** $S _i$ can achieve **practical fixed-time stability** during the **reaching phase** only if the coefficients are bounded by $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
 
+### 3.1.2 Nonsingular sliding mode design for the sliding phase
+
+After reaching **practical fixed-time stability**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error ${ \Phi } ( \psi _i ^e )$ are constrained on the sliding surface $S _i$ after a practical fixed time.
 
 
 
