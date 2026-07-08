@@ -496,7 +496,7 @@ $$<br/>
 
 ### 3.1.2 Nonsingular sliding mode design for the sliding phase <br/>
 
-During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error ${ \Phi } ( \psi _i ^e )$ are constrained on the sliding surface $S _i = 0$ within a practical fixed time. <br/>
+During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error ${ \Phi } ( \psi _i ^e )$ are constrained on the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
 
 
 
