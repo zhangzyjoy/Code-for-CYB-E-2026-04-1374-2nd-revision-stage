@@ -535,7 +535,16 @@ $$
 \quad\quad(3.13)
 $$<br/>
 
+Given that for any $x \in { \mathbb { R } }$, the nonlinear function $f (x) = \frac { x ^ { p + 2 } } { \tanh ( { \gamma } x / 2 ) }$ is monotonically increasing. Therefore, according to Eq.(3.13) that ${ { ( V _i ^{ \psi } ) } ^{ 1 / 2 } } \le { \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert }$, some scaling for the Lyapunov function is depicted as
 
+$$
+\begin{aligned}
+- c _i ^{ S } { \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { \tanh ( { \gamma } _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) } } \ge - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } { \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) } }
+\end{aligned}
+\quad\quad(3.14)
+$$<br/>
+
+During the **sliding phase**, ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded.
 
 
 ## 3.2 Controller implementation procedure <br/>
