@@ -526,7 +526,7 @@ $$<br/>
 
 is required to fulfill the **fixed-time** stability property of $\overline { \psi } _{ i,k } ^e$, that is, ${ \psi } _{ i,k } ^e = 0$ is reached in fixed time. <br/>
 
-Since ${ \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2 } \le { { ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^2 }$ always holds for each $i$-th UAV and $k$-th dimention, then we can yield the following inequality <br/>
+Since ${ \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2 } \le { { ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^2 }$ always holds for each $i$-th UAV and $k$-th dimention, then we can yield the following inequality
 
 $$
 \begin{aligned}
@@ -535,16 +535,17 @@ $$
 \quad\quad(3.13)
 $$<br/>
 
-Given that for any $x \in { \mathbb { R } }$, the nonlinear function $f (x) = \frac { x ^ { p + 2 } } { \tanh ( { \gamma } x / 2 ) }$ is monotonically increasing. Therefore, according to Eq.(3.13) that ${ { ( V _i ^{ \psi } ) } ^{ 1 / 2 } } \le { \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert }$, some scaling for the Lyapunov function is depicted as
+Given that for any $x \in { \mathbb { R } }$, the nonlinear function $f (x) = \frac { x ^ { p + 2 } } { \tanh ( { \gamma } x / 2 ) }$ is monotonically increasing. Therefore, according to Eq.(3.13) that ${ { ( V _i ^{ \psi } ) } ^{ 1 / 2 } } \le { \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert }$, the Lyapunov function is further formulated as
 
 $$
 \begin{aligned}
-- c _i ^{ S } { \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { \tanh ( { \gamma } _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) } } \ge - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } { \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) } }
+{ - c _i ^{ S } { \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { \tanh ( { \gamma } _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) } } } \ge { - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } } }
 \end{aligned}
 \quad\quad(3.14)
 $$<br/>
 
-During the **sliding phase**, ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded.
+
+During the **sliding phase**, ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded. <br/>
 
 
 ## 3.2 Controller implementation procedure <br/>
