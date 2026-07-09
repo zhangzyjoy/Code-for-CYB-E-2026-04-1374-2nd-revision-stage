@@ -406,15 +406,15 @@ For **Eq.(3.4)**, leverage **Young's inequality** and yield <br/>
 
 $$
 \begin{aligned}
-( S _i )^T F _i ^S \le \frac {1} { 2 \overline { \eta } _i ^S } + \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2
+( S _i )^T F _i ^S \le \frac {1} { 2 { ( \overline { \eta } _i ^S ) } ^2 } + \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2
 \end{aligned}
 $$<br/>
 
 where ${ \eta } _i ^S$ is a positive constant. <br/>
 
-Design the applied torque as $\tau _i = \overset {\frown} { \tau } _i - \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2$. The Lyapunov function for **reaching phase** of **PCNSMS** is bounded by $\dot { V } _i ^S \le ( S _i ) ^T \overset { \frown } { \tau } _i + 1 / { ( 2 \overline { \eta } _i ^S ) }$. <br/>
+Design the applied torque as $\tau _i = \overset {\frown} { \tau } _i - \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2$. The Lyapunov function for **reaching phase** of **PCNSMS** is bounded by $\dot { V } _i ^S \le ( S _i ) ^T \overset { \frown } { \tau } _i + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }$. <br/>
 
-According to **Lemma 2**, if we set $c_0 = 1 / { ( 2 \overline { \eta } _i ^S ) }$, then $( S _i )^T \overset {\frown} { \tau } _i$ should be upper bounded by $- a _1 { ( { V } _i ^S ) } ^ { b _1 } - a _2 { ( { V } _i ^S ) } ^ { b _2 }$. Set constant parameters as $l _i ^{ S,1 } > 0$, $l _i ^{ S,2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. It is easy to obtain $( \beta _{ \varpi } ^1 + 1 ) / 2 > 1$ and $( 0 < \beta _{ \varpi } ^2 + 1 ) / 2 < 1$. Leverage **Lemma 4** and yield the upper bound of $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } )$ and $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )$ as <br/>
+According to **Lemma 2**, if we set $c_0 = 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }$, then $( S _i )^T \overset {\frown} { \tau } _i$ should be upper bounded by $- a _1 { ( { V } _i ^S ) } ^ { b _1 } - a _2 { ( { V } _i ^S ) } ^ { b _2 }$. Set constant parameters as $l _i ^{ S,1 } > 0$, $l _i ^{ S,2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. It is easy to obtain $( \beta _{ \varpi } ^1 + 1 ) / 2 > 1$ and $0 < ( \beta _{ \varpi } ^2 + 1 ) / 2 < 1$. Leveraging **Lemma 4**, the upper bound of $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } )$ and $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )$ is yielded as <br/>
 
 $$
 \begin{aligned}
@@ -474,9 +474,9 @@ We obtain the **auxiliary torque** $\overset {\frown} { \tau } _i$ with an addit
 
 $$
 \begin{aligned}
-\dot { V } _i ^S & \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { ( 2 \overline { \eta } _i ^S ) } - c _i ^{ \varpi, 3 } \lVert S _i \rVert ^2 \\
-& \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { ( 2 \overline { \eta } _i ^S ) } \\
-& \le - c _i ^{ \varpi, 1 } l _i ^{ S,1 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } - c _i ^{ \varpi, 2 } l _i ^{ S,2 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } + 1 / { ( 2 \overline { \eta } _i ^S ) }
+\dot { V } _i ^S & \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 } - c _i ^{ \varpi, 3 } \lVert S _i \rVert ^2 \\
+& \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 } \\
+& \le - c _i ^{ \varpi, 1 } l _i ^{ S,1 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } - c _i ^{ \varpi, 2 } l _i ^{ S,2 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }
 \end{aligned}
 \quad\quad(3.9)
 $$<br/>
