@@ -27,7 +27,7 @@ Each section contains four chapters, including : <br/>
 <3>. Parameter settings and validation. <br/>
 <4>. Validation for comparison. <br/> <br/>
 
-**Some instructions on the chapters in each section :**
+**Some instructions on the chapters in each section :** <br/>
 **<1> It is worth mentioning that the first chapter entitled "theory and design principles" presents the design methodology of the proposed controller and observer, which is developed through Lyapunov-based stability analysis inverse design procedure.** <br/>
 **<2> The second chapter entitled "implementation procedure" elaborates the overall framework of specific methods, including including detailed mathematical formulations and overall implementation logic of the control framework.** <br/>
 **<3> The third chapter entitled "parameter settings and validation" discusses the parameter settings for simulation or experimental validation. Moreover, its tuning principles are given according to the theories proposed in the first chapter.** <br/>
