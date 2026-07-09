@@ -28,7 +28,7 @@ Each section contains four chapters, including : <br/>
 <4>. Validation for comparison. <br/> <br/>
 
 **Some instructions on the chapters in each section :** <br/>
-<1> It is worth mentioning that the first chapter entitled "theory and design principles" presents the **design principles** of the proposed controller and observer, which is developed by inverse design procedure under **Lyapunov-based stability analysis** . <br/>
+<1> It is worth mentioning that the first chapter entitled "theory and design principles" presents the **design principles** of the proposed controller and observer, which is developed by inverse design procedure under **Lyapunov-based stability analysis**. <br/>
 <2> The second chapter entitled "implementation procedure" elaborates the overall framework of specific methods, including including detailed **mathematical formulations** and **overall implementation logic** of the control framework. <br/>
 <3> The third chapter entitled "parameter settings and validation" discusses the **parameter settings** for simulation or experimental validation. Moreover, its **tuning principles** are given according to the **theories** proposed in the first chapter. <br/>
 <4> The fourth chapter entitled "validation for comparison" illustrates the **comparative studies** on other **state-of-art methods published recently in IEEE Transactions** under the similar simulation or experiment settings, and thus the **performance metrices** of the proposed method are proved to be superior according to the comparison. <br/> <br/>
@@ -526,7 +526,8 @@ $$<br/>
 
 is required to fulfill the **fixed-time** stability property of $\overline { \psi } _{ i,k } ^e$, that is, ${ \psi } _{ i,k } ^e = 0$ is reached in fixed time. <br/>
 
-Since $$
+Since for each $i$-th UAV and $k$-th dimention, it always holds $\sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2 \le { ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^2$. <br/>
+
 
 
 ## 3.2 Controller implementation procedure <br/>
