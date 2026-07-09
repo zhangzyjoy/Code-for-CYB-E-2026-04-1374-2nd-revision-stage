@@ -509,7 +509,16 @@ V _i ^{ \psi } = \lVert \overline { \psi } _i ^e \rVert ^2 = \sum \nolimits _{ k
 \quad\quad(3.11)
 $$<br/>
 
-Take the derivative of Eq.(3.11), $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = 1} ^3 { 2 \overline { \psi } _{ i,k } ^e \overline { \varpi } _{ i,k } ^e }$. According to **Lemma 3**, the inequality $\dot { V } _i ^{ \psi } \le -c _i ^S \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { tanh( \gamma _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) }$ is required to fulfill the **fixed-time** stability property of $\overline { \psi } _{ i,k } ^e$, that is, ${ \psi } _{ i,k } ^e = 0$ is reached in fixed time. <br/>
+Take the derivative of Eq.(3.11) and obtain $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { 2 \overline { \psi } _{ i,k } ^{ e } \overline { \varpi } _{ i,k } ^{ e } }$. According to **Lemma 3**, the inequality
+
+$$
+\begin{aligned}
+\dot { V } _i ^{ \psi } \le -c _i ^S \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) }
+\end{aligned}
+\quad\quad(3.12)
+$$<br/>
+
+is required to fulfill the **fixed-time** stability property of $\overline { \psi } _{ i,k } ^e$, that is, ${ \psi } _{ i,k } ^e = 0$ is reached in fixed time. <br/>
 
 
 
