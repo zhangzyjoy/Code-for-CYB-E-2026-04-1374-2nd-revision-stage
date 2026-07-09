@@ -357,7 +357,7 @@ $$
 
 ## 3.1 Theories and design principles <br/>
 
-To avoid the **ambiguity** of the **logarithmic mapping** on the **boundary of singular spherical neighborhood** $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$, a specific mechanism is developed to maintain $\lVert \psi _i ^e \rVert < \pi$ under the **initial condition** of $\lVert \psi _i ^e ( 0 ) \rVert < \pi$. To guarantee notational simplicity, an **auxiliary rotational error variable** is depicted as $\overline { \psi } _{ i } ^e = { \psi _ { i } ^e } / { \pi }$ with each entries to be $\overline { \psi } _{ i,k } ^e = { \psi _ { i,k } ^e } / { \pi }$ . <br/>
+To avoid the **ambiguity** of the **logarithmic mapping** on the **boundary of singular spherical neighborhood** $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$, a specific mechanism is developed to maintain $\lVert \psi _i ^e \rVert < \pi$ under the **initial condition** of $\lVert \psi _i ^e ( 0 ) \rVert < \pi$. <br/>
 
 A **nonsingular piecewise continuous sliding mode surface** is defined in the form as <br/>
 
@@ -497,6 +497,9 @@ $$<br/>
 ### 3.1.2 Nonsingular sliding mode design for the sliding phase <br/>
 
 During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error ${ \Phi } ( \psi _i ^e )$ are constrained on the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
+
+To guarantee notational simplicity, an **auxiliary rotational error variable** is depicted as $\overline { \psi } _{ i } ^e = { \psi _ { i } ^e } / { \pi }$ with each entries to be $\overline { \psi } _{ i,k } ^e = { \psi _ { i,k } ^e } / { \pi }$ . Similarly, an **auxiliary angular velocity error** is denoted as $\overline \varpi _{ i, k } ^e = { \varpi } _{ i, k } ^e / \pi$. The **PCNSMS** $S _i$ is defined as a piecewise continuous function, and an auxiliary sliding mode surface $\overline S _i$ is considered. When the rotational errors are restricted on the sliding surface, namely, ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ holds
+
 
 
 
