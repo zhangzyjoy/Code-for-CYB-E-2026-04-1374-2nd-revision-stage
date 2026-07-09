@@ -526,7 +526,14 @@ $$<br/>
 
 is required to fulfill the **fixed-time** stability property of $\overline { \psi } _{ i,k } ^e$, that is, ${ \psi } _{ i,k } ^e = 0$ is reached in fixed time. <br/>
 
-Since for each $i$-th UAV and $k$-th dimention, it always holds ${ { ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^2 } \ge { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2 }$. Then  <br/>
+Since ${ \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2 } \le { { ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^2 }$ always holds for each $i$-th UAV and $k$-th dimention, then we can yield the following inequality <br/>
+
+$$
+\begin{aligned}
+{ { ( V _i ^{ \psi } ) } ^{ 1 / 2 } } = { { ( { \sum \nolimits _{ k = x,y,z } { { ( \overline { \psi } _{ i,k } ^e ) } ^2 } } ) } ^{ 1 / 2 } } \le { { ( { ( { \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ) ^2 } ) } ^{ 1 / 2 } }
+\end{aligned}
+\quad\quad(3.13)
+$$<br/>
 
 
 
