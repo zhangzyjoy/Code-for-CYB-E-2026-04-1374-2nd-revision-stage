@@ -28,12 +28,12 @@ Each section contains four chapters, including : <br/>
 <4>. Validation for comparison. <br/> <br/>
 
 **Some instructions on the chapters in each section :** <br/>
-**<1> It is worth mentioning that the first chapter entitled "theory and design principles" presents the design methodology of the proposed controller and observer, which is developed through Lyapunov-based stability analysis inverse design procedure.** <br/>
-**<2> The second chapter entitled "implementation procedure" elaborates the overall framework of specific methods, including including detailed mathematical formulations and overall implementation logic of the control framework.** <br/>
-**<3> The third chapter entitled "parameter settings and validation" discusses the parameter settings for simulation or experimental validation. Moreover, its tuning principles are given according to the theories proposed in the first chapter.** <br/>
-**<4> The fourth chapter entitled "validation for comparison" illustrates the comparative studies on other state-of-art methods published recently in IEEE Transactions under the similar simulation or experiment settings, and thus the performance metrices of the proposed method are proved to be superior according to the comparison.** <br/> <br/>
+<1> It is worth mentioning that the first chapter entitled "theory and design principles" presents the **design principles** of the proposed controller and observer, which is developed by inverse design procedure under **Lyapunov-based stability analysis** . <br/>
+<2> The second chapter entitled "implementation procedure" elaborates the overall framework of specific methods, including including detailed **mathematical formulations** and **overall implementation logic** of the control framework. <br/>
+<3> The third chapter entitled "parameter settings and validation" discusses the **parameter settings** for simulation or experimental validation. Moreover, its **tuning principles** are given according to the **theories** proposed in the first chapter. <br/>
+<4> The fourth chapter entitled "validation for comparison" illustrates the **comparative studies** on other **state-of-art methods published recently in IEEE Transactions** under the similar simulation or experiment settings, and thus the **performance metrices** of the proposed method are proved to be superior according to the comparison. <br/> <br/>
 
-**Note : the validation part can be divided into numerical simulation validation and experimental validation.** <br/> **Specifically, the rotational control (NLSMAC) and rotational disturbance observation (Rotational FxTDO) are validated only through numerical simulations, whereas the translational control (PFxTDFC), translational distributed observer (PFxTDSO), and translational disturbance observer (Translational FxTDO) are validated through both numerical simulations and experiments.** <br/> <br/>
+**Note : the validation part can be divided into numerical simulation validation and experimental validation.** <br/> Specifically, the rotational control (NLSMAC) and rotational disturbance observation (Rotational FxTDO) are validated only through **numerical simulation**, whereas the translational control (PFxTDFC), translational distributed observer (PFxTDSO), and translational disturbance observer (Translational FxTDO) are validated through **both numerical simulation and real-world experiment**. <br/> <br/>
 
 # 1. Significant Lemmas and Deductions <br/>
 
