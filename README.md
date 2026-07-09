@@ -496,10 +496,18 @@ $$<br/>
 
 ### 3.1.2 Nonsingular sliding mode design for the sliding phase <br/>
 
-During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error ${ \Phi } ( \psi _i ^e )$ are constrained on the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
+During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error $\psi _i ^e$ are constrained on the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
 
-To guarantee notational simplicity, an **auxiliary rotational error variable** is depicted as $\overline { \psi } _{ i } ^e = { \psi _ { i } ^e } / { \pi }$ with each entries to be $\overline { \psi } _{ i,k } ^e = { \psi _ { i,k } ^e } / { \pi }$ . Similarly, an **auxiliary angular velocity error** is denoted as $\overline \varpi _{ i, k } ^e = { \varpi } _{ i, k } ^e / \pi$. The **PCNSMS** $S _i$ is defined as a piecewise continuous function, and an auxiliary sliding mode surface $\overline S _i$ is considered. When the rotational errors are restricted on the sliding surface, namely, ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ holds
+To guarantee notational simplicity, an **auxiliary rotational error variable** is depicted as $\overline { \psi } _{ i } ^e = { \psi _ { i } ^e } / { \pi }$ with each entries to be $\overline { \psi } _{ i,k } ^e = { \psi _ { i,k } ^e } / { \pi }$ . Similarly, an **auxiliary angular velocity error** is denoted as $\overline \varpi _{ i, k } ^e = { \varpi } _{ i, k } ^e / \pi$. The **PCNSMS** $S _i$ is defined as a piecewise continuous function, and an auxiliary sliding mode surface $\overline S _i$ is considered to determine the threshold of the piecewise conditions for the function ${ \Phi } ( \psi _i ^e )$. <br/>
 
+Considering the **sliding phase**, the rotational errors are restricted on the sliding surface $S _i = 0$. Meanwhile, $\overline S _i = 0$ always holds when the sliding mode surface $S _i = 0$ is reached, and ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ is maintained during the **sliding phase**. To investigate the fixed-time stability of the **exponential rotational coordination** ${ \varpi } _{i,k} ^e$, a Lyapunov candidate is defined as 
+
+$$
+\begin{aligned}
+V _i ^{ \psi } = \lVert \overline { \psi } _i ^e \rVert ^2 = \sum \nolimits _{ k = 1} ^3 { { ( \psi _{ i,k } ^e ) } ^2 }
+\end{aligned}
+\quad\quad(3.11)
+$$<br/>
 
 
 
