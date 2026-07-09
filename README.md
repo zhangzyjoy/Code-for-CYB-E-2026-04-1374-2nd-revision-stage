@@ -509,7 +509,7 @@ V _i ^{ \psi } = \lVert \overline { \psi } _i ^e \rVert ^2 = \sum \nolimits _{ k
 \quad\quad(3.11)
 $$<br/>
 
-Take the derivative of Eq.(3.11) and obtain $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { 2 \overline { \psi } _{ i,k } ^{ e } \overline { \varpi } _{ i,k } ^{ e } }$. According to **Lemma 3**, the inequality
+Take the derivative of Eq.(3.11) and obtain $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { 2 { \overline { \psi } _{ i,k } ^{ e } } { \overline { \varpi } _{ i,k } ^{ e } } }$. According to **Lemma 3**, the inequality
 
 $$
 \begin{aligned}
