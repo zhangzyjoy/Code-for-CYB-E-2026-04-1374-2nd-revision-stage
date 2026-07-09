@@ -526,7 +526,7 @@ $$<br/>
 
 is required to fulfill the **fixed-time** stability property of $\overline { \psi } _{ i,k } ^e$, that is, ${ \psi } _{ i,k } ^e = 0$ is reached in fixed time. <br/>
 
-Since for each $i$-th UAV and $k$-th dimention, it always holds $\{ ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^2 \re sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2$. Then  <br/>
+Since for each $i$-th UAV and $k$-th dimention, it always holds ${ ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^2 \re \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2$. Then  <br/>
 
 
 
