@@ -588,7 +588,7 @@ holds, then Eq.(3.15) is established. According to Eq.(3.14), Eq.(3.15) is suffi
 
 Considering **Lemma 3**, we can derive that **Eq.(3.12)** holds can prove that ${ \psi } _{ i,k } ^e$ is fixed-time stable during the **sliding phase** when the nonsingular sliding mode surface already converges to $S _i = 0$ after the **reaching phase**. **Therefore, it can be obtained that Eq.(3.17) is sufficient for the proof that ${ \psi } _{ i,k } ^e$ can reach fixed-time stability on sliding phase.** <br/>
 
-During the **sliding phase**, ${ \varpi } _{ i,k } ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded, and the Lyapunov derivative $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } = - \sum \nolimits _{ k = x,y,z } { { c _i ^S } { \overline { \psi } _{ i,k } ^e } { \overline { \Phi } ( \psi _{i,k} ^e ) } }$ is developed to satisfy the form of Eq.(3.17). The auxiliary rotational error is deduced from $\overline { \Phi } ( \psi _{i,k} ^e ) = { \Phi } ( \psi _{i,k} ^e ) / { \pi }$ as
+During the **sliding phase**, ${ \varpi } _{ i,k } ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded, and the Lyapunov derivative $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } = - \sum \nolimits _{ k = x,y,z } { { c _i ^S } { \overline { \psi } _{ i,k } ^e } { \overline { \Phi } ( \psi _{i,k} ^e ) } }$ is developed to satisfy the form of Eq.(3.17). The **auxiliary rotational error** is deduced from $\overline { \Phi } ( \psi _{i,k} ^e ) = { \Phi } ( \psi _{i,k} ^e ) / { \pi }$ as
 
 $$
 \begin{aligned}
@@ -596,19 +596,19 @@ $$
 & = { 3 ^{ p + 1 } { \frac { { \pi } c ^i _S } { c ^i _S { \overline { \psi } _{ i,k } ^e } } \frac { { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } } } \\
 & = { 3 ^{ p + 1 } { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } / { ( 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) ) } }
 \end{aligned}
+\quad\quad(3.19)
 $$<br/>
 
-If the **sliding phase** is reached with $S _i = 0$ and the rotational errors are driven along the nonsingular sliding mode surface, the auxiliary nonlinear sliding mode surface is designed as
+If the **sliding phase** is reached with $S _i = 0$ and the rotational errors are driven along the nonsingular sliding mode surface, the **auxiliary nonlinear sliding mode surface** is designed as
 
 $$
 \begin{aligned}
 { \overline { S } _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } }
 \end{aligned}
-\quad\quad(3.19)
+\quad\quad(3.20)
 $$<br/>
 
-For the Lyapunov candidate $V _i ^S = { \lVert  \rVert }$
-
+The Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. We already developed a **practical fixed-time stable PCNSMS** $S _i$ derived by deduction from **Eq.(3.4) to Eq.(3.10)** inspired by **Lemma 2**. Furthermore, **a fixed-time stable exponential rotational error** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ can be achieved by deduction from **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**.
 
 
 
