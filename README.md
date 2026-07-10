@@ -598,14 +598,15 @@ $$
 \end{aligned}
 $$<br/>
 
-If the **sliding phase** is reached and the rotational errors are driven along the nonsingular sliding mode surface, the PCNSMS is designed as
+If the **sliding phase** is reached with $S _i = 0$ and the rotational errors are driven along the nonsingular sliding mode surface, the auxiliary nonlinear sliding mode surface is designed as
 
 $$
 \begin{aligned}
-{ S _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { ( 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) ) } }
+{ \overline { S } _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } }
 \end{aligned}
 \quad\quad(3.19)
 $$<br/>
+
 
 
 
