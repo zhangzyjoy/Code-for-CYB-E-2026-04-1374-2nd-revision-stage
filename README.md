@@ -607,6 +607,8 @@ $$
 \quad\quad(3.19)
 $$<br/>
 
+For the Lyapunov candidate $V _i ^S = { \lVert  \rVert }$
+
 
 
 
