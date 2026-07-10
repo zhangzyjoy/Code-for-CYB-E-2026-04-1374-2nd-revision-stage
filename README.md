@@ -544,7 +544,7 @@ $$
 \quad\quad(3.14)
 $$<br/>
 
-In order to guarantee fixed-time convergence of ${ \psi } _{ i,k } ^e$, Eq.(3.12) is required to be guaranteed. It can be deduced that if
+In order to guarantee fixed-time convergence of ${ \psi } _{ i,k } ^e$, Eq.(3.12) is required to be guaranteed. It can be deduced that Eq.(3.12) can be established by proving 
 
 $$
 \begin{aligned}
@@ -553,22 +553,52 @@ $$
 \quad\quad(3.15)
 $$<br/>
 
-holds and Eq.(3.14) is already maintained, then Eq.(3.12) can be yielded. Since we already have
+If Eq.(3.15) and Eq.(3.14) already hold, then Eq.(3.12) can be yielded. <br/>
+
+Given that ${ \tanh ( { \gamma } _{ \psi } \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) } \ge { \tanh ( { \gamma } _{ \psi } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) }$, and subsequently yield
+
+$$
+\begin{aligned}
+{ \sum \nolimits _{ k = x,y,z } { \frac { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } } } = \frac { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } \ge { \frac { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } }
+\end{aligned}
+\quad\quad(3.16)
+$$<br/>
+
+Then Eq.(3.16) can be further transformed to <br/>
+
+$$
+\begin{aligned}
+{ \sum \nolimits _{ k = x,y,z } { \frac { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } } } \ge { \frac { \sum \nolimits _{ k = x,y,z } { { \overline { \psi } _{ i,k } ^e } } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } }
+\end{aligned}
+\quad\quad(3.16)
+$$<br/>
+
+Since $\overline { \psi } _{ i,k } ^e$ and $\tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 )$ have the same sign, it is easy to derive that $\frac { \overline { \psi } _{ i,k } ^e } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } = \frac { \overline { \psi } _{ i,k } ^e } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) }$. Further, it can be derived from Eq.(3.16) that
+
+$$
+\begin{aligned}
+{ - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } & = { - c _i ^{ S } { \frac { { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } } }
+\end{aligned}
+\quad\quad(3.17)
+$$<br/>
+
+
+Since we already have <br/>
 
 $$
 \begin{aligned}
 { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } \ge { 3 ^{ -p } { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^ { p + 1 } }
 \end{aligned}
-\quad\quad(3.16)
+\quad\quad(3.17)
 $$<br/>
 
 and thereafter yield
 
 $$
 \begin{aligned}
-{ ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^ { p + 1 } \le { { 3 ^p } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } } \le { { 3 ^{ p + 1 } } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } }
+{ ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^{ p + 1 } \le { { 3 ^p } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } } \le { { 3 ^{ p + 1 } } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } }
 \end{aligned}
-\quad\quad(3.17)
+\quad\quad(3.18)
 $$<br/>
 
 
