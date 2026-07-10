@@ -526,7 +526,7 @@ $$<br/>
 
 is required to fulfill the **fixed-time** stability property of $\overline { \psi } _{ i,k } ^e$, that is, ${ \psi } _{ i,k } ^e = 0$ is reached in fixed time. <br/>
 
-Since ${ \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2 } \le { { ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^2 }$ always holds for each $i$-th UAV and $k$-th dimention, then we can yield the following inequality
+Since ${ \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2 } \le { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^2 }$ always holds for each $i$-th UAV and $k$-th dimention, then we can yield the following inequality
 
 $$
 \begin{aligned}
@@ -539,10 +539,14 @@ Given that for any $x \in { \mathbb { R } }$, the nonlinear function $f (x) = \f
 
 $$
 \begin{aligned}
-{ - c _i ^{ S } { \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { \tanh ( { \gamma } _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) } } } \ge { - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } } }
+{ - c _i ^{ S } { \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { \tanh ( { \gamma } _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) } } } \ge { - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } }
 \end{aligned}
 \quad\quad(3.14)
 $$<br/>
+
+In order to guarantee fixed-time convergence of ${ \psi } _{ i,k } ^e$, Eq.(3.12) is required to be guaranteed. It can be deduced from Eq.(3.14) that if ${ { ( V _i ^{ \psi } ) } ^{ 1 / 2 } } \le { - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } }$ holds, then Eq.(3.12) can be yielded. <br/>
+
+
 
 
 During the **sliding phase**, ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded. <br/>
