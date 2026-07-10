@@ -559,7 +559,9 @@ Given the inequalities as ${ \sum \nolimits _{ k = x,y,z } { { \lvert { \overlin
 
 $$
 \begin{aligned}
-{ \sum \nolimits _{ k = x,y,z } { \frac { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } = { \frac { \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } \ge { \frac { \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } }
+{ \frac { { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } & \le { 3 ^{ p + 1 } { \frac { \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } \\
+& \le { 3 ^{ p + 1 } { \frac { \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } \\
+& = { 3 ^{ p + 1 } { \sum \nolimits _{ k = x,y,z } { \frac { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } }
 \end{aligned}
 \quad\quad(3.16)
 $$<br/>
