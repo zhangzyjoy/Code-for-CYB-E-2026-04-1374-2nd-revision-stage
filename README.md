@@ -581,20 +581,33 @@ $$
 \begin{aligned}
 { \dot { V } _i ^{ \psi } } \le { - c ^i _S { 3 ^{ p + 1 } } { \sum \nolimits _{ k = x,y,z } { \frac { { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } } } }
 \end{aligned}
-\quad\quad(3.17)
+\quad\quad(3.18)
 $$<br/>
 
 holds, then Eq.(3.15) is established. According to Eq.(3.14), Eq.(3.15) is sufficient for that Eq.(3.12) holds. <br/>
 
 Considering **Lemma 3**, we can derive that **Eq.(3.12)** holds can prove that ${ \psi } _{ i,k } ^e$ is fixed-time stable during the **sliding phase** when the nonsingular sliding mode surface already converges to $S _i = 0$ after the **reaching phase**. **Therefore, it can be obtained that Eq.(3.17) is sufficient for the proof that ${ \psi } _{ i,k } ^e$ can reach fixed-time stability on sliding phase.** <br/>
 
-During the **sliding phase**, ${ \varpi } _{ i,k } ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded, and the Lyapunov derivative $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) }$ $= - \sum \nolimits _{ k = x,y,z } { { c _i ^S } { \overline { \psi } _{ i,k } ^e } { \overline { \Phi } ( \psi _{i,k} ^e ) } }$ is developed to satisfy the form of Eq.(3.17). The auxiliary rotational error $\overline { \Phi } ( \psi _{i,k} ^e ) = { \Phi } ( \psi _{i,k} ^e ) / { \pi }$ is designed as <br/>
+During the **sliding phase**, ${ \varpi } _{ i,k } ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded, and the Lyapunov derivative $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } = - \sum \nolimits _{ k = x,y,z } { { c _i ^S } { \overline { \psi } _{ i,k } ^e } { \overline { \Phi } ( \psi _{i,k} ^e ) } }$ is developed to satisfy the form of Eq.(3.17). The auxiliary rotational error is deduced from $\overline { \Phi } ( \psi _{i,k} ^e ) = { \Phi } ( \psi _{i,k} ^e ) / { \pi }$ as
 
 $$
 \begin{aligned}
-{ \Phi ( \psi _{i,k} ^e ) } = 
+{ \Phi ( \psi _{i,k} ^e ) } & = { { \pi } { \overline { \Phi } ( \psi _{i,k} ^e ) } } \\ 
+& = { 3 ^{ p + 1 } { \frac { { \pi } c ^i _S } { c ^i _S { \overline { \psi } _{ i,k } ^e } } \frac { { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } } } \\
+& = { 3 ^{ p + 1 } { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } / { ( 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) ) } }
 \end{aligned}
 $$<br/>
+
+If the **sliding phase** is reached and the rotational errors are driven along the nonsingular sliding mode surface, the PCNSMS is designed as
+
+$$
+\begin{aligned}
+{ S _{ i,k } } & = { { \varpi } _{ i,k } ^e + c _i ^S { 3 ^{ p + 1 } { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } / { ( 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) ) } } }
+\end{aligned}
+\quad\quad(3.19)
+$$<br/>
+
+
 
 
 ## 3.2 Controller implementation procedure <br/>
