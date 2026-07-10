@@ -515,7 +515,7 @@ V _i ^{ \psi } = \lVert \overline { \psi } _i ^e \rVert ^2 = \sum \nolimits _{ k
 \quad\quad(3.11)
 $$<br/>
 
-Take the derivative of Eq.(3.11) and obtain $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { 2 { \overline { \psi } _{ i,k } ^{ e } } { \overline { \varpi } _{ i,k } ^{ e } } }$. According to **Lemma 3**, the inequality
+Take the derivative of Eq.(3.11) and obtain $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { 2 { \overline { \psi } _{ i,k } ^{ e } } { \overline { \varpi } _{ i,k } ^{ e } } }$. According to **Lemma 3**, with parameters bounded by $0 < p < 1$ and ${ \gamma } _{ \psi }$, the following inequality
 
 $$
 \begin{aligned}
@@ -544,8 +544,46 @@ $$
 \quad\quad(3.14)
 $$<br/>
 
-In order to guarantee fixed-time convergence of ${ \psi } _{ i,k } ^e$, Eq.(3.12) is required to be guaranteed. It can be deduced from Eq.(3.14) that if ${ { ( V _i ^{ \psi } ) } ^{ 1 / 2 } } \le { - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } }$ holds, then Eq.(3.12) can be yielded. <br/>
+In order to guarantee fixed-time convergence of ${ \psi } _{ i,k } ^e$, Eq.(3.12) is required to be guaranteed. It can be deduced that if
 
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } \le { - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } }
+\end{aligned}
+\quad\quad(3.15)
+$$<br/>
+
+holds, then Eq.(3.14) and Eq.(3.12) can be yielded through successive derivations. Since
+
+$$
+\begin{aligned}
+{ \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } & = { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 1 } \lvert { \overline { \psi } _{ i,k } ^e } \rvert } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } \\
+& = { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 1 } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } }
+\end{aligned}
+\quad\quad(3.16)
+$$<br/>
+
+and $$ holds, and thereafter yield
+
+$$
+\begin{aligned}
+{ \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } \ge { 3 ^{ -p } { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^ { p + 1 } }
+\end{aligned}
+\quad\quad(3.17)
+$$<br/>
+
+Namely, ${ ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^ { p + 1 } \le { { 3 ^p } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } }$ is derived according to Eq.(3.17). <br/>
+
+As long as. It is sufficient to prove
+
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } \le { - 3 ^{ p + 1 } c _i ^S \frac { \sum \nolimits _{ k = x,y,z } { \lvert  \rvert } } {  } }
+\end{aligned}
+\quad\quad(3.16)
+$$<br/>
+
+in order to establish Eq.(3.15). <br/>
 
 
 
