@@ -564,22 +564,13 @@ $$
 \quad\quad(3.16)
 $$<br/>
 
-Then Eq.(3.16) can be further transformed into <br/>
+Since $\overline { \psi } _{ i,k } ^e$ and $\tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 )$ have the same sign, it is easy to derive that $\frac { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } = \frac { \overline { \psi } _{ i,k } ^e } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) }$. Then Eq.(3.16) can be further transformed into <br/>
 
 $$
 \begin{aligned}
-{ \sum \nolimits _{ k = x,y,z } { \frac { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } } } \ge { \frac { \sum \nolimits _{ k = x,y,z } { { \overline { \psi } _{ i,k } ^e } } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } }
+{ \sum \nolimits _{ k = x,y,z } { \frac { { { \lvert  { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e }  } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } } } \ge { \frac { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) } }
 \end{aligned}
 \quad\quad(3.17)
-$$<br/>
-
-Since $\overline { \psi } _{ i,k } ^e$ and $\tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 )$ have the same sign, it is easy to derive that $\frac { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } = \frac { \overline { \psi } _{ i,k } ^e } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) }$. Further, it can be derived from Eq.(3.17) that
-
-$$
-\begin{aligned}
-{ - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } & = { - c _i ^{ S } { \frac { { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } } }
-\end{aligned}
-\quad\quad(3.18)
 $$<br/>
 
 
