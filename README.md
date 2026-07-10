@@ -553,7 +553,7 @@ $$
 \quad\quad(3.15)
 $$<br/>
 
-holds, then Eq.(3.12) can be yielded given Eq.(3.15) and Eq.(3.14) successively. Since we already have
+holds and Eq.(3.14) is already maintained, then Eq.(3.12) can be yielded. Since we already have
 
 $$
 \begin{aligned}
