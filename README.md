@@ -555,7 +555,7 @@ $$<br/>
 
 If Eq.(3.15) and Eq.(3.14) already hold, then Eq.(3.12) can be yielded. <br/>
 
-Given that ${ \tanh ( { \gamma } _{ \psi } \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) } \ge { \tanh ( { \gamma } _{ \psi } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) }$, and ${ \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } \ge { { { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ) } ^{ p + 2 } } / { 3 ^{ p + 1 } } }$, and we can subsequently derive
+Given the inequalities as ${ \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } \ge { { { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ) } ^{ p + 2 } } / { 3 ^{ p + 1 } } }$ and ${ \tanh ( { \gamma } _{ \psi } \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) } \ge { \tanh ( { \gamma } _{ \psi } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) }$, we can subsequently derive
 
 $$
 \begin{aligned}
