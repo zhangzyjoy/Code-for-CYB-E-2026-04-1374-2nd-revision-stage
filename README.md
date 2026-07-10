@@ -575,28 +575,22 @@ $$
 \quad\quad(3.17)
 $$<br/>
 
-
-Since we already have <br/>
+Hence, it suffices to show that if
 
 $$
 \begin{aligned}
-{ \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } \ge { 3 ^{ -p } { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^ { p + 1 } }
+{ \dot { V } _i ^{ \psi } } \le { - c ^i _S { 3 ^{ p + 1 } } { \sum \nolimits _{ k = x,y,z } { \frac { { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } } } }
 \end{aligned}
 \quad\quad(3.17)
 $$<br/>
 
-and thereafter yield
+holds, then Eq.(3.15) is established. According to Eq.(3.14), Eq.(3.15) is sufficient for that Eq.(3.12) holds. <br/>
 
-$$
-\begin{aligned}
-{ ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^{ p + 1 } \le { { 3 ^p } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } } \le { { 3 ^{ p + 1 } } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } }
-\end{aligned}
-\quad\quad(3.18)
-$$<br/>
-
-
+Considering **Lemma 3**, we can derive that **Eq.(3.12)** holds can prove that ${ \psi } _{ i,k } ^e$ is fixed-time stable during the **sliding phase** when the nonsingular sliding mode surface already converges to $S _i = 0$ after the **reaching phase**. **Therefore, it can be obtained that Eq.(3.17) is sufficient for the proof that ${ \psi } _{ i,k } ^e$ can reach fixed-time stability on sliding phase.** <br/>
 
 During the **sliding phase**, ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded. <br/>
+
+
 
 
 ## 3.2 Controller implementation procedure <br/>
