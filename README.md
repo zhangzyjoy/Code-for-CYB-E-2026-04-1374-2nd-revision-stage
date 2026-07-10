@@ -608,7 +608,13 @@ $$
 \quad\quad(3.20)
 $$<br/>
 
-The Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. We already developed a **practical fixed-time stable PCNSMS** $S _i$ derived by deduction from **Eq.(3.4) to Eq.(3.10)** inspired by **Lemma 2**. Furthermore, **a fixed-time stable exponential rotational error** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ can be achieved by deduction from **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**.
+The Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. <br/>
+
+On the reaching phase, we already developed an applied torque $\tau _i$ rotational control input to maintain a **practical fixed-time stable** $S _i$ **PCNSMS** derived from **Eq.(3.4) to Eq.(3.10)** inspired by **Lemma 2**. <br/>
+
+On the sliding phase, **a fixed-time stable** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ **exponential rotational error** can be achieved by developing a sliding mode surface according to **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**. <br/>
+
+
 
 
 
