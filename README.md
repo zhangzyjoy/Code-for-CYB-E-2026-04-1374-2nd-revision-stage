@@ -553,37 +553,23 @@ $$
 \quad\quad(3.15)
 $$<br/>
 
-holds, then Eq.(3.14) and Eq.(3.12) can be yielded through successive derivations. Since
-
-$$
-\begin{aligned}
-{ \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } & = { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 1 } \lvert { \overline { \psi } _{ i,k } ^e } \rvert } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } \\
-& = { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 1 } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 ) } }
-\end{aligned}
-\quad\quad(3.16)
-$$<br/>
-
-and $$ holds, and thereafter yield
+holds, then Eq.(3.12) can be yielded given Eq.(3.15) and Eq.(3.14) successively. Since we already have
 
 $$
 \begin{aligned}
 { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } \ge { 3 ^{ -p } { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^ { p + 1 } }
 \end{aligned}
-\quad\quad(3.17)
-$$<br/>
-
-Namely, ${ ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^ { p + 1 } \le { { 3 ^p } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } }$ is derived according to Eq.(3.17). <br/>
-
-As long as. It is sufficient to prove
-
-$$
-\begin{aligned}
-{ \dot { V } _i ^{ \psi } } \le { - 3 ^{ p + 1 } c _i ^S \frac { \sum \nolimits _{ k = x,y,z } { \lvert  \rvert } } {  } }
-\end{aligned}
 \quad\quad(3.16)
 $$<br/>
 
-in order to establish Eq.(3.15). <br/>
+and thereafter yield
+
+$$
+\begin{aligned}
+{ ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ) } ^ { p + 1 } \le { { 3 ^p } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } } \le { { 3 ^{ p + 1 } } { \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i, k } ^e } \rvert } ^{ p + 1 } } }
+\end{aligned}
+\quad\quad(3.17)
+$$<br/>
 
 
 
