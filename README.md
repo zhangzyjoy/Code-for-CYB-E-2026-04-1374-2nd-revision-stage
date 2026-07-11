@@ -502,7 +502,7 @@ $$<br/>
 
 ### 3.1.2 Nonsingular sliding mode surface design for sliding phase <br/>
 
-During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error $\psi _i ^e$ are constrained on the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
+During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error $\psi _i ^e$ are constrained along the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
 
 To guarantee notational simplicity, an **auxiliary rotational error variable** is depicted as $\overline { \psi } _{ i } ^e = { \psi _ { i } ^e } / { \pi }$ with each entries to be $\overline { \psi } _{ i,k } ^e = { \psi _ { i,k } ^e } / { \pi }$ . Similarly, an **auxiliary angular velocity error** is denoted as $\overline \varpi _{ i, k } ^e = { \varpi } _{ i, k } ^e / \pi$. The **PCNSMS** $S _i$ is defined as a piecewise continuous function, and an auxiliary sliding mode surface $\overline S _i$ is considered to determine the threshold of the piecewise conditions for the function ${ \Phi } ( \psi _i ^e )$. <br/>
 
@@ -515,7 +515,7 @@ V _i ^{ \psi } = \lVert \overline { \psi } _i ^e \rVert ^2 = \sum \nolimits _{ k
 \quad\quad(3.11)
 $$<br/>
 
-Take the derivative of Eq.(3.11) and obtain $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { 2 { \overline { \psi } _{ i,k } ^{ e } } { \overline { \varpi } _{ i,k } ^{ e } } }$. According to **Lemma 3**, with parameters bounded by $0 < p < 1$ and ${ \gamma } _{ \psi }$, the following inequality
+Take the derivative of Eq.(3.11) and obtain $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( 2 { \overline { \psi } _{ i,k } ^{ e } } { \overline { \varpi } _{ i,k } ^{ e } } ) }$. According to **Lemma 3**, with parameters bounded by $0 < p < 1$ and ${ \gamma } _{ \psi }$, the following inequality
 
 $$
 \begin{aligned}
@@ -588,7 +588,7 @@ holds, then Eq.(3.15) is established. According to Eq.(3.14), Eq.(3.15) is suffi
 
 Considering **Lemma 3**, we can derive that **Eq.(3.12)** holds can prove that ${ \psi } _{ i,k } ^e$ is fixed-time stable during the **sliding phase** when the nonsingular sliding mode surface already converges to $S _i = 0$ after the **reaching phase**. **Therefore, it can be obtained that Eq.(3.17) is sufficient for the proof that ${ \psi } _{ i,k } ^e$ can reach fixed-time stability on sliding phase.** <br/>
 
-During the **sliding phase**, ${ \varpi } _{ i,k } ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded, and the Lyapunov derivative $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } = - \sum \nolimits _{ k = x,y,z } { { c _i ^S } { \overline { \psi } _{ i,k } ^e } { \overline { \Phi } ( \psi _{i,k} ^e ) } }$ is developed to satisfy the form of Eq.(3.17). The **auxiliary rotational error** is deduced from $\overline { \Phi } ( \psi _{i,k} ^e ) = { \Phi } ( \psi _{i,k} ^e ) / { \pi }$ as
+During the **sliding phase**, ${ \varpi } _{ i,k } ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded, and the Lyapunov derivative $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( 2 { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } = - \sum \nolimits _{ k = x,y,z } { { c _i ^S } { \overline { \psi } _{ i,k } ^e } { \overline { \Phi } ( \psi _{i,k} ^e ) } }$ is developed to satisfy the form of Eq.(3.17). The **auxiliary rotational error** is deduced from $\overline { \Phi } ( \psi _{i,k} ^e ) = { \Phi } ( \psi _{i,k} ^e ) / { \pi }$ as
 
 $$
 \begin{aligned}
@@ -631,12 +631,23 @@ During the **sliding phase**, $S _i$ and $\overline { S } _i$ are determined acc
 
 $$
 \begin{aligned}
-{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } { ( { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } } \\
-& = { \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } { ( S _{ i,k } - c _i ^S { \Phi ( { \psi } _{ i,k } ^e ) } ) } / { \pi } }
+{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } { ( 2 { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } } \\
+& = { \sum \nolimits _{ k = x,y,z } ( 2 { \overline { \psi } _{ i,k } ^e } { ( S _{ i,k } - c _i ^S { \Phi ( { \psi } _{ i,k } ^e ) } ) } / { \pi } ) }
+\end{aligned}
+\quad\quad(3.22)
+$$<br/>
+
+Given the assumption that the initial rotational error satisfies $\lVert { {\psi} _i ^e ( 0 ) } \rVert < \pi$, namely, for any $k \in \lbrace x,y,z \rbrace$ that $\lvert \frac { \psi _{ i,k } ^e ( 0 ) } { \pi } \rvert < 1$ holds. The PCNSMS satisfies $\lVert S _i ( t ) \rVert < + \infty$ and is upper bounded by $\underset { i \in { \mathsf { \mathcal { V } } }, k \in { \lbrace x,y,z \rbrace } } { \mathop { \max } } \lbrace { \lvert { S _{ i,k } } \rvert } \rbrace \le \overline { S } _M$. <br/>
+
+Consider the first term $2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } }$ of the Lyapunov derivative $\dot { V } _i ^{ \psi }$ in Eq.(3.22), we can derive that
+
+$$
+\begin{aligned}
+{ 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } \le { 2 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } { \lvert \frac { S _{ i,k } } { \pi } \rvert } } < \frac { 2 } { \pi } \lvert { S _{ i,k } } \rvert \le \frac { 2 } { \pi } \overline { S } _M
 \end{aligned}
 $$<br/>
 
-Given the assumption that the initial rotational error satisfies $\lVert { {\psi} _i ^e ( 0 ) } \rVert < \pi$, namely, for any $k \in \lbrace x,y,z \rbrace$ that $\lvert \frac { \psi _{ i,k } ^e ( 0 ) } { \pi } \rvert < \pi$ holds. The PCNSMS satisfies $\lVert S _i ( t ) \rVert < + \infty$ and is upper bounded by $\underset { i \in { \mathsf { \mathcal { V } } }, k \in { \lbrace x,y,z \rbrace } } { \mathop { \max } } \lbrace { \lvert { S _{ i,k } } \rvert } \rbrace \le \overline { S } _M$.
+and thereafter obtain $\sum \nolimits _{ k = x,y,z } { 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } \le \frac { 6 } { \pi } { \overline { S } _M }$. 
 
 
 
