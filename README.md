@@ -647,7 +647,9 @@ $$
 \end{aligned}
 $$<br/>
 
-and thereafter obtain $\sum \nolimits _{ k = x,y,z } { 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } \le \frac { 6 } { \pi } { \overline { S } _M }$. 
+and thereafter obtain $\sum \nolimits _{ k = x,y,z } { 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } \le \frac { 6 } { \pi } { \overline { S } _M }$. <br/>
+
+The specific design for PCNSMS on sliding phase has been illustrated in chapter 3.1.2. On reaching phase, 
 
 
 
