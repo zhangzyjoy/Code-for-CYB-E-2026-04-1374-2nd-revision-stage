@@ -2,8 +2,6 @@ We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** 
 
 **Note : Source code and instructions for the first revision under Revised & Resubmit decision can be accessed at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
 
-**Note : ** <br/>
-
 This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. <br/>
 
 To address the reviewer's comments, the logical connection between theory and validation has been strengthened. The narrative follows a systematic progression. <br/> 
@@ -33,9 +31,13 @@ Each section contains four chapters, including : <br/>
 <1> It is worth mentioning that the first chapter entitled "theory and design principles" presents the **design principles** of the proposed controller and observer, which is developed by inverse design procedure under **Lyapunov-based stability analysis**. <br/>
 <2> The second chapter entitled "implementation procedure" elaborates the overall framework of specific methods, including including detailed **mathematical formulations** and **overall implementation logic** of the control framework. <br/>
 <3> The third chapter entitled "parameter settings and validation" discusses the **parameter settings** for simulation or experimental validation. Moreover, its **tuning principles** are given according to the **theories** proposed in the first chapter. <br/>
-<4> The fourth chapter entitled "validation for comparison" illustrates the **comparative studies** on other **state-of-art methods published recently in IEEE Transactions** under the similar simulation or experiment settings, and thus the **performance metrices** of the proposed method are proved to be superior according to the comparison. <br/> <br/>
+<4> The fourth chapter entitled "validation for comparison" illustrates the **comparative studies** on the **state-of-art methods published recently in IEEE Transactions** under the similar simulation or experiment settings, and thus the **performance metrices** of the proposed method are proved to be superior according to the comparison. <br/> <br/>
 
-**Note : the validation part can be divided into numerical simulation validation and experimental validation.** <br/> Specifically, the rotational control (NLSMAC) and rotational disturbance observation (Rotational FxTDO) are validated only through **numerical simulation**, whereas the translational control (PFxTDFC), translational distributed observer (PFxTDSO), and translational disturbance observer (Translational FxTDO) are validated through **both numerical simulation and real-world experiment**. <br/> <br/>
+**Note : the validation part can be divided into numerical simulation validation and experimental validation.** <br/>
+
+Specifically, the rotational control (NLSMAC) and rotational disturbance observation (Rotational FxTDO) are validated only through **numerical simulation**, whereas the translational control (PFxTDFC), translational distributed observer (PFxTDSO), and translational disturbance observer (Translational FxTDO) are validated through **both numerical simulation and real-world experiment**. <br/> <br/>
+
+**Note : this link contains five different markdown files.** <br/>
 
 
 # 3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
