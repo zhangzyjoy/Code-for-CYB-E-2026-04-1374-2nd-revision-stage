@@ -1,11 +1,11 @@
-# 4. Practical fixed-time distributed state observer (PFxTDSO) <br/>
+# 4. $\text{  }$ Practical fixed-time distributed state observer (PFxTDSO) <br/>
 
 
-## 4.1 Theories and design principles <br/>
+## 4.1 $\text{  }$ Theories and design principles <br/>
 
 
 
-## 4.2 Observer implementation procedure <br/>
+## 4.2 $\text{  }$ Observer implementation procedure <br/>
 
 Observation error for follower UAV node $i$<br/>
 
@@ -58,17 +58,17 @@ $$
 $$<br/>
 
 
-## 4.3 Parameter settings and validation <br/>
+## 4.3 $\text{  }$ Parameter settings and validation <br/>
 
 
 
 
-## 4.4 Validation for comparison <br/>
+## 4.4 $\text{  }$ Validation for comparison <br/>
 
 
 
 
-# Appendix 1 : Significant Lemmas and Deductions <br/>
+# Appendix 1 : $\text{  }$ Significant Lemmas and Deductions <br/>
 
 ## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
 
@@ -178,7 +178,7 @@ $$
 Each quadcopter UAV node is decoupled into rotational and translational subsystems. <br/> <br/> 
 
 
-# Appendix 2 : Symbol definition list <br/>
+# Appendix 2 : $\text{  }$ Symbol definition list <br/>
 
 - $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
