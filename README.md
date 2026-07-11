@@ -614,7 +614,7 @@ On the reaching phase, we already developed an applied torque $\tau _i$ rotation
 
 On the sliding phase, **a fixed-time stable** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ **exponential rotational error** can be achieved by developing a sliding mode surface according to **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**. <br/>
 
-
+We investigate the PCNSMS $S _i$ to follow **Eq.(3.20)**, the same form with the auxiliary sliding surface, to guarantee Eq.(3.12) and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the auxiliary nonsingular sliding mode surface $\overline { S } _i$ is established as the switching threshold to determine the piecewise function $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/>
 
 
 
