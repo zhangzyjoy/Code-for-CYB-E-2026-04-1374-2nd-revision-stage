@@ -632,12 +632,11 @@ During the **sliding phase**, $S _i$ and $\overline { S } _i$ are determined acc
 $$
 \begin{aligned}
 { \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } { ( { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } } \\
-& = { \sum \nolimits _{ k = x,y,z } { { \psi } _{ i,k } ^e } { (  ) } }
+& = { \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } { ( S _{ i,k } - c _i ^S { \Phi ( { \psi } _{ i,k } ^e ) } ) } / { \pi } }
 \end{aligned}
-\quad\quad(3.22)
 $$<br/>
 
-
+Since 
 
 
 
