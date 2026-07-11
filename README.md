@@ -627,7 +627,7 @@ On the **reaching phase**, we already developed an applied torque $\tau _i$ rota
 
 On the **sliding phase**, a **fixed-time stable** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ **exponential rotational error** can be achieved by developing nonsingular sliding mode surface according to **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**. <br/>
 
-During the **sliding phase**, $S _i$ and $\overline { S } _i$ are determined according to **Eq.(3.20) and Eq.(3.21)**, respectively. Then the Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. Since the angular velocity, the derivative of $V _i ^S$ is given as <br/>
+During the **sliding phase**, $S _i$ and $\overline { S } _i$ are determined according to **Eq.(3.20) and Eq.(3.21)**, respectively. Then the Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. Since the angular velocity is depicted by ${ \varpi } _{ i,k } ^e = S _i - c _i ^S { \Phi ( { \psi } _{ i,k } ^e ) }$, the derivative of $V _i ^S$ is given as <br/>
 
 $$
 \begin{aligned}
