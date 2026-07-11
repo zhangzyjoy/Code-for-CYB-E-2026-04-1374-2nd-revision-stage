@@ -619,17 +619,23 @@ $$<br/>
 
 when the rotational errors are remained on the **sliding phase**. <br/>
 
+We investigate **PCNSMS** $S _i$ to follow **Eq.(3.21)**, the same form with the auxiliary sliding surface, to guarantee **Eq.(3.12)** and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the **auxiliary nonsingular sliding mode surface** $\overline { S } _i$ is established as the switching threshold to determine the **piecewise function** $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/>
 
 ### 3.1.2 Nonsingular sliding mode surface design for reaching phase <br/>
 
-The Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. <br/>
+On the **reaching phase**, we already developed an applied torque $\tau _i$ rotational control input to maintain a **practical fixed-time stable** $S _i$ **PCNSMS** derived from **Eq.(3.4) to Eq.(3.10)** inspired by **Lemma 2**. <br/>
 
-On the reaching phase, we already developed an applied torque $\tau _i$ rotational control input to maintain a **practical fixed-time stable** $S _i$ **PCNSMS** derived from **Eq.(3.4) to Eq.(3.10)** inspired by **Lemma 2**. <br/>
+On the **sliding phase**, a **fixed-time stable** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ **exponential rotational error** can be achieved by developing nonsingular sliding mode surface according to **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**. <br/>
 
-On the sliding phase, **a fixed-time stable** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ **exponential rotational error** can be achieved by developing a sliding mode surface according to **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**. <br/>
+During the **sliding phase**, $S _i$ and $\overline { S } _i$ are determined according to **Eq.(3.20) and Eq.(3.21)**, respectively. Then the Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. Since the angular velocity, the derivative of $V _i ^S$ is given as <br/>
 
-We investigate the PCNSMS $S _i$ to follow **Eq.(3.20)**, the same form with the auxiliary sliding surface, to guarantee Eq.(3.12) and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the auxiliary nonsingular sliding mode surface $\overline { S } _i$ is established as the switching threshold to determine the piecewise function $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/>
-
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } { ( { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } } \\
+& = { \sum \nolimits _{ k = x,y,z } { { \psi } _{ i,k } ^e } { (  ) } }
+\end{aligned}
+\quad\quad(3.22)
+$$<br/>
 
 
 
