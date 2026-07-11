@@ -70,7 +70,7 @@ $$<br/>
 
 # Appendix 1 : Significant Lemmas and Deductions <br/>
 
-## A.1   Fixed-time / Practical fixed-time stability lemmas <br/>
+## A.1 \text{   } Fixed-time / Practical fixed-time stability lemmas <br/>
 
 Consider a nonlinear system as <br/>
 
@@ -108,7 +108,7 @@ T _s \le \overline T _s = \frac { 2 ^{ p + 2 } } { \gamma ^{ p + 2 } k p ( 1 - p
 $$<br/>
 
 
-## A.2   Design of nonlinear smooth sigmoid function <br/>
+## A.2 \text{   } Design of nonlinear smooth sigmoid function <br/>
 
 A newly introduced **nonlinear smooth sigmoid vector** is defined as <br/>
 
@@ -153,7 +153,7 @@ $$<br/>
 
 where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants. <br/>
 
-## A.3   System dynamics of a quadrotor UAV <br/>
+## A.3 \text{   } System dynamics of a quadrotor UAV <br/>
 
 Each agent in the UAV team is considered as a quadrotor, which can be decoupled into rotational and translational subsystems as
 
