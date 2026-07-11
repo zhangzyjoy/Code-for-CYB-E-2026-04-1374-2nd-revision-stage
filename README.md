@@ -641,15 +641,14 @@ $$<br/>
 
 Given the assumption that the initial rotational error satisfies $\lVert { {\psi} _i ^e ( 0 ) } \rVert < \pi$, namely, for any $k \in \lbrace x,y,z \rbrace$ that $\lvert \frac { \psi _{ i,k } ^e ( 0 ) } { \pi } \rvert < 1$ holds. The PCNSMS satisfies $\lVert S _i ( t ) \rVert < + \infty$ and is upper bounded by $\underset { i \in { \mathsf { \mathcal { V } } }, k \in { \lbrace x,y,z \rbrace } } { \mathop { \max } } \lbrace { \lvert { S _{ i,k } } \rvert } \rbrace \le \overline { S } _M$. <br/>
 
-Consider the first term $2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } }$ of the Lyapunov derivative $\dot { V } _i ^{ \psi }$ in Eq.(3.22), we can derive that
+Consider the first term $2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } }$ of the Lyapunov derivative $\dot { V } _i ^{ \psi }$ in Eq.(3.22), we can derive that ${ 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } \le { 2 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } { \lvert \frac { S _{ i,k } } { \pi } \rvert } } < { \frac { 2 } { \pi } \lvert { S _{ i,k } } \rvert } \le { \frac { 2 } { \pi } \overline { S } _M }$, and thereafter obtain
 
 $$
 \begin{aligned}
-{ 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } \le { 2 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } { \lvert \frac { S _{ i,k } } { \pi } \rvert } } < \frac { 2 } { \pi } \lvert { S _{ i,k } } \rvert \le \frac { 2 } { \pi } \overline { S } _M
+{ \sum \nolimits _{ k = x,y,z } { 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } } \le { \frac { 6 } { \pi } { \overline { S } _M } }
 \end{aligned}
+\quad\quad(3.23)
 $$<br/>
-
-and thereafter obtain $\sum \nolimits _{ k = x,y,z } { 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } \le \frac { 6 } { \pi } { \overline { S } _M }$. <br/>
 
 The specific design for PCNSMS on sliding phase has been illustrated in chapter 3.1.2. On reaching phase, 
 
