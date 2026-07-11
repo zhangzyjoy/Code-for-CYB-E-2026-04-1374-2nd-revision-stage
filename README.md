@@ -2,6 +2,8 @@ We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** 
 
 **Note : Source code and instructions for the first revision under Revised & Resubmit decision can be accessed at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
 
+**Note : ** <br/>
+
 This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. <br/>
 
 To address the reviewer's comments, the logical connection between theory and validation has been strengthened. The narrative follows a systematic progression. <br/> 
