@@ -68,7 +68,7 @@ $$<br/>
 
 
 
-# Appendix 1 : $\text{  }$ Significant Theories <br/>
+# Appendix 1 : $\text{  }$ Significant theories <br/>
 
 ## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
 
