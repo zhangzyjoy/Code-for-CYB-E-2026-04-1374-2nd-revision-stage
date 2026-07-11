@@ -612,7 +612,7 @@ Moreover, if the auxiliary sliding surface $\overline S _{i,k} = 0$ holds, then 
 
 $$
 \begin{aligned}
-{ S _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } }  \text{  if } \overline S _{i,k} = 0
+{ S _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } }  \quad\quad  \text{  if } \overline S _{i,k} = 0
 \end{aligned}
 \quad\quad(3.21)
 $$<br/>
