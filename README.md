@@ -912,12 +912,12 @@ $$<br/>
 
 $$
 \begin{aligned}
-e _i ^p = p _i - \hat p _i ^d
+{ e _i ^p } = { p _i - \hat p _i ^d }
 \end{aligned}
 \quad\quad(25)
 $$<br/>
 
-virtual velocity error tracking vector
+The virtual velocity error tracking vector
 
 $$
 \begin{aligned}
