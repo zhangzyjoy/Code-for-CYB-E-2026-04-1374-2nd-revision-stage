@@ -68,7 +68,7 @@ $$<br/>
 
 
 
-# Appendix 1 : $\text{  }$ Significant Lemmas and Deductions <br/>
+# Appendix 1 : $\text{  }$ Significant Theories <br/>
 
 ## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
 
