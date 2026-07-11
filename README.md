@@ -500,7 +500,7 @@ $$
 $$<br/>
 
 
-### 3.1.2 Nonsingular sliding mode design for the sliding phase <br/>
+### 3.1.2 Nonsingular sliding mode surface design for sliding phase <br/>
 
 During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error $\psi _i ^e$ are constrained on the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
 
@@ -608,6 +608,20 @@ $$
 \quad\quad(3.20)
 $$<br/>
 
+Moreover, if the auxiliary sliding surface $\overline S _{i,k} = 0$ holds, then the PCNSMS are consistent with the form of $\overline S _{i,k}$ as
+
+$$
+\begin{aligned}
+{ S _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } }  \text{  if } \overline S _{i,k} = 0
+\end{aligned}
+\quad\quad(3.21)
+$$<br/>
+
+when the rotational errors are remained on the **sliding phase**. <br/>
+
+
+### 3.1.2 Nonsingular sliding mode surface design for reaching phase <br/>
+
 The Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. <br/>
 
 On the reaching phase, we already developed an applied torque $\tau _i$ rotational control input to maintain a **practical fixed-time stable** $S _i$ **PCNSMS** derived from **Eq.(3.4) to Eq.(3.10)** inspired by **Lemma 2**. <br/>
@@ -615,6 +629,8 @@ On the reaching phase, we already developed an applied torque $\tau _i$ rotation
 On the sliding phase, **a fixed-time stable** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ **exponential rotational error** can be achieved by developing a sliding mode surface according to **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**. <br/>
 
 We investigate the PCNSMS $S _i$ to follow **Eq.(3.20)**, the same form with the auxiliary sliding surface, to guarantee Eq.(3.12) and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the auxiliary nonsingular sliding mode surface $\overline { S } _i$ is established as the switching threshold to determine the piecewise function $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/>
+
+
 
 
 
