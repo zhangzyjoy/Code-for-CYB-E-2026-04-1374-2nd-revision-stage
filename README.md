@@ -651,7 +651,7 @@ $$
 \quad\quad(3.23)
 $$<br/>
 
-The specific design for PCNSMS on sliding phase has been illustrated in chapter 3.1.2. On reaching phase, 
+The specific design for PCNSMS on sliding phase has been illustrated in chapter 3.1.2. On reaching phase, <br/>
 
 
 
@@ -807,14 +807,14 @@ Update desired state observation for follower UAV node $i$<br/>
 
 $$
 \begin{aligned}
-\dot {\hat v} _i ^d = - \ell _1 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _1, \mu _o ^p ) - \ell _2 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _2, \mu _o ^p ) )
+\dot {\hat v} _i ^d = - \ell _1 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _1, \mu _o ^p ) - \ell _2 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _2, \mu _o ^p )
 \end{aligned}
 \quad\quad(5)
 $$<br/>
 
 $$
 \begin{aligned}
-\dot {\hat p} _i ^d = \hat v _i ^d - \ell _1 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _1, \mu _o ^p ) - \ell _2 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _2, \mu _o ^p ) )
+\dot {\hat p} _i ^d = \hat v _i ^d - \ell _1 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _1, \mu _o ^p ) - \ell _2 ^p \vartheta ( \tilde e ^d _{i,p}, \gamma _2, \mu _o ^p )
 \end{aligned}
 \quad\quad(6)
 $$<br/>
@@ -834,14 +834,8 @@ $$<br/>
 
 ## 5.1 Theories and design principles
 
-The virtual tracking 
 
-$$
-\begin{aligned}
-\dot \sigma _i ^v = - g \overline e _3 + \frac { T _i } { m _i } R ( Q _i ) \overline e _3 + c _i ^{ v, 3 } \overline sigma _i ^v
-\end{aligned}
-\quad\quad(8)
-$$<br/>
+
 
 ## 5.2 Observer implementation framework
 
@@ -884,7 +878,8 @@ $$
 \begin{aligned}
 \dot {\hat {\overline \sigma}} _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,1} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _1 ^v, \mu _d ^v ) + c _i ^{v,2} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _2 ^v, \mu _d ^v )
 \end{aligned}
-\quad\quad(22)$$<br/>
+\quad\quad(22)
+$$<br/>
 
 translational disturbance observer<br/>
 
@@ -892,12 +887,13 @@ $$
 \begin{aligned}
 \hat d _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,3} \hat {\overline \sigma} _i ^v
 \end{aligned}
-\quad\quad(23)$$<br/>
+\quad\quad(23)
+$$<br/>
 
 
 # 6. Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
 
-According to the translational dynamics in Eq.(7), <br/>
+According to the translational dynamics in Eq.(7) <br/>
 
 
 ## 6.1 PFxTDFC for translational control simulation <br/>
@@ -917,16 +913,16 @@ $$
 \quad\quad(25)
 $$<br/>
 
-The virtual velocity error tracking vector
+The auxiliary velocity control variable
 
 $$
 \begin{aligned}
-{ \chi _i } = { - \kappa _1 ^\chi \vartheta ( e _i ^p, \beta _1, \mu _c ^p ) - \kappa _2 ^\chi \vartheta ( e _i ^p, \beta _2, \mu _c ^p ) }
+{ \chi _i } = { - \kappa _1 ^{ \chi } \vartheta ( e _i ^p, \beta _1, \mu _c ^p ) - \kappa _2 ^{ \chi } \vartheta ( e _i ^p, \beta _2, \mu _c ^p ) }
 \end{aligned}
 \quad\quad(26)
 $$<br/>
 
-virtual velocity error tracking error
+The virtual velocity tracking error
 
 $$
 \begin{aligned}
