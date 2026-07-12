@@ -302,7 +302,17 @@ $$<br/>
 
 The specific design for PCNSMS on sliding phase has been illustrated in chapter 3.1.2. On reaching phase, $S _{ i,k } \neq 0$ and $\overline S _{ i,k } \neq 0$ holds. The switching threshold for piecewise auxiliary nonsingular sliding mode surface $\overline { S } _{ i,k } \neq 0$ on reaching phase is denoted as $\lvert { \psi _{ i,k } ^e } \rvert = { \varepsilon } _{ i,k } ^S$. <br/>
 
+First we assume that the PCNSMS $S _i$ is defined as Eq.(1.21) even in partial piecewise intervals on reaching phase. Substitute the auxiliary rotational error Eq.(1.19) on sliding phase into Eq.(1.22) and yield
 
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } ( 2 { \overline { \psi } _{ i,k } ^e } { ( S _{ i,k } - 3 ^{ p + 1 } c _i ^S \frac {  } {  } ) } / { \pi } ) }
+\end{aligned}
+\quad\quad(1.22)
+$$<br/>
+
+
+{  { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } / { ( 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) ) } }
 
 
 ## 3.2 $\text{  }$ Controller implementation procedure <br/>
