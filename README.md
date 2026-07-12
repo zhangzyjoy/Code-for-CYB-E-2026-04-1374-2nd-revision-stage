@@ -1,6 +1,8 @@
 We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised manuscript for **IEEE Transactions on Cybernetics** with a submission ID **CYB-E-2026-04-1374**. <br/> 
 
-**Note : Source code and instructions for the first revision under Revised & Resubmit decision can be accessed at https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git.** <br/>
+**Note** : this link contains five different markdown files. The five main sections listed below are divided into each markdown file, respectively. Since the No.6 section, the appendix of significant theories, is utilized as a guidance in establishing the overall control framework, it is attached at the back of each markdown file for the reviewers' convenience to check the definitions and lemmas. <br/>
+
+**Note** : Source code and instructions for the proposed control scheme during the first revision with Revised & Resubmit decision can be accessed at **https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git**. <br/>
 
 This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. <br/>
 
@@ -14,12 +16,12 @@ Finally, the simulation or experimental validation results are presented and dis
 
 **This link includes six main sections.** <br/>
 Each of the latter five ones indicates a specific module of the proposed control scheme. <br/>
-1. Significant lemmas and deductions. <br/>
-2. Fixed-time rotational disturbance observer (FxTDO). <br/>
-3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC). <br/>
-4. Practical fixed-time distributed state observer (PFxTDSO). <br/>
-5. Fixed-time translational disturbance observer (FxTDO). <br/>
-6. Practical fixed-time decentralized formation controller (PFxTDFC). <br/> <br/>
+1. Fixed-time rotational disturbance observer (FxTDO). <br/>
+2. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC). <br/>
+3. Practical fixed-time distributed state observer (PFxTDSO). <br/>
+4. Fixed-time translational disturbance observer (FxTDO). <br/>
+5. Practical fixed-time decentralized formation controller (PFxTDFC). <br/>
+Appendix. Significant lemmas and deductions. <br/><br/>
 
 Each section contains four chapters, including : <br/>
 <1>. Theories and design principles. <br/>
@@ -36,7 +38,3 @@ Each section contains four chapters, including : <br/>
 **Note : the validation part can be divided into numerical simulation validation and experimental validation.** <br/>
 
 Specifically, the rotational control (NLSMAC) and rotational disturbance observation (Rotational FxTDO) are validated only through **numerical simulation**, whereas the translational control (PFxTDFC), translational distributed observer (PFxTDSO), and translational disturbance observer (Translational FxTDO) are validated through **both numerical simulation and real-world experiment**. <br/> <br/>
-
-**Note : this link contains five different markdown files.** <br/>
-
-
