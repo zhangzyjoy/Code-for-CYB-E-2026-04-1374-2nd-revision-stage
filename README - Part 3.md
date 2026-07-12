@@ -78,7 +78,7 @@ $$
 \begin{aligned}
 \dot x ( t ) = f ( x ( t ) ) , x ( t _0 ) = x _0
 \end{aligned}
-\quad\quad(1.1)
+\quad\quad(A.1)
 $$<br/>
 
 where $t _0$ is the initial time and $x ( t _0 )$ is the state vector, and $f ( x ( t ) )$ is a nonlinear function of system dynamics. <br/>
@@ -116,7 +116,7 @@ $$
 \begin{aligned}
 \vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _k ( \overline x _1, \alpha, \gamma ), ..., \vartheta _k ( \overline x _n, \alpha, \gamma ) ] ^T
 \end{aligned}
-\quad\quad(1.2)
+\quad\quad(A.2)
 $$<br/>
 
 with each entry denoted as <br/>
@@ -125,7 +125,7 @@ $$
 \begin{aligned}
 \vartheta _k ( \overline x _k, \alpha, \gamma ) = \lvert x _k \rvert ^ \alpha \lambda _k ( x _k, \gamma )
 \end{aligned}
-\quad\quad(1.3)
+\quad\quad(A.3)
 $$<br/>
 
 $\lambda _k ( x _k, \gamma )$ is a sigmoid-like bounded function defined as <br/>
@@ -134,7 +134,7 @@ $$
 \begin{aligned}
 \lambda _k ( x _k, \gamma ) = -1 + \frac 1 {1 + \exp ( - \gamma x _k )}
 \end{aligned}
-\quad\quad(1.4)
+\quad\quad(A.4)
 $$<br/>
 
 where $\gamma > 0$ controls the growth rate around the zero crossing. <br/>
@@ -148,7 +148,7 @@ $$
 &- ( \overline x ) ^T \vartheta ( \overline x, \alpha, \gamma ) \le - 2 ^{ \frac { \alpha + 1 } { 2 } } n ^{ \frac { 1 - \alpha } { 2 } } K _{ \alpha } ( \frac { ( \overline x ) ^T \overline x } { 2 } ) ^{ \frac { \alpha + 1 } { 2 } } ), \quad\quad ( \alpha > 1 )
 \end{cases}
 \end{aligned}
-\quad\quad(1.5)
+\quad\quad(A.5)
 $$<br/>
 
 where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants. <br/>
@@ -164,7 +164,7 @@ $$
 &\dot \varpi _i = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + d _i ^{\varpi} )
 \end{cases}
 \end{aligned}
-\quad\quad(1.6)$$<br/>
+\quad\quad(A.6)$$<br/>
 
 $$
 \begin{aligned}
@@ -173,7 +173,7 @@ $$
 &\dot v _i = - g \overline e _3 + \frac { T _i } { m _i } R ( Q _i ) \overline e _3 + d _i ^v
 \end{cases}
 \end{aligned}
-\quad\quad(1.7)$$<br/>
+\quad\quad(A.7)$$<br/>
 
 Each quadcopter UAV node is decoupled into rotational and translational subsystems. <br/> <br/> 
 
