@@ -306,10 +306,22 @@ First we assume that the PCNSMS $S _i$ is defined as Eq.(1.21) even in partial p
 
 $$
 \begin{aligned}
-{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } ( 2 { \overline { \psi } _{ i,k } ^e } { ( \frac { S _{ i,k } } { \pi } - 3 ^{ p + 1 } c _i ^S \frac { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } ) } ) }
+{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } ( 2 { \overline { \psi } _{ i,k } ^e } { ( \frac { S _{ i,k } } { \pi } - 3 ^{ p + 1 } c _i ^S \frac { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } ) } ) } \\
+& = { \sum \nolimits _{ k = x,y,z } ( 2 \frac { { \psi } _{ i,k } ^e } { \pi } \frac { S _{ i,k } } { \pi } - 3 ^{ p + 1 } c _i ^S \frac { { \lvert { \frac { { \psi } _{ i,k } ^e } { \pi } } \rvert } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } / 2 ) } ) }
 \end{aligned}
-\quad\quad(1.22)
+\quad\quad(1.24)
 $$<br/>
+
+Since $\tanh ( \gamma _{ \psi } { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } / 2 ) \in ( 0,1 )$ holds, then we can derive
+
+$$
+\begin{aligned}
+{ - 3 ^{ p + 1 } c _i ^S \sum \nolimits _{ k = x,y,z } { \frac { { \lvert { \frac { { \psi } _{ i,k } ^e } { \pi } } \rvert } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } / 2 ) } } } \le { - 3 ^{ p + 1 } c _i ^S \sum \nolimits _{ k = x,y,z } { { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^{ p + 2 } } }
+\end{aligned}
+\quad\quad(1.25)
+$$<br/>
+
+
 
 
 
