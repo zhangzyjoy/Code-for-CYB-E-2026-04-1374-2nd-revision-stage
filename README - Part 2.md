@@ -300,7 +300,7 @@ $$
 \quad\quad(1.23)
 $$<br/>
 
-The specific design for PCNSMS on sliding phase has been illustrated in chapter 3.1.2. On reaching phase, <br/>
+The specific design for PCNSMS on sliding phase has been illustrated in chapter 3.1.2. On reaching phase, $S _{ i,k } \neq 0$ and $\overline S _{ i,k } \neq 0$ holds. The switching threshold for piecewise auxiliary nonsingular sliding mode surface $\overline { S } _{ i,k } \neq 0$ on reaching phase is denoted as $\lvert { \psi _{ i,k } ^e } \rvert = { \varepsilon } _{ i,k } ^S$. <br/>
 
 
 
@@ -371,7 +371,7 @@ $$
 \end{aligned}
 \quad\quad(2.6)$$<br/>
 
-where $\hat d _i ^\varpi$ is obtained by FxTDO in rotational system<br/>
+where $\hat d _i ^\varpi$ is obtained by FxTDO in rotational system. <br/>
 
 Update rotational dynamics, including angular velocity, rotational matrix and their tracking errors
 
