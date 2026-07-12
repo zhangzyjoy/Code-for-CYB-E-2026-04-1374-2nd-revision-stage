@@ -321,6 +321,21 @@ $$
 \quad\quad(1.25)
 $$<br/>
 
+For $p \in (0,1)$, $1 < p + 1 < 2$ holds. The initial condition guarantees $\lvert { \psi _{ i,k } ^e (0) } \rvert < \pi$ and then we can obtain
+
+$$
+\begin{aligned}
+{ { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ p + 2 } } \ge { { \frac { \psi _{ i,k } ^e } { \pi } } ^{ 3 } } \ge { \frac { 1 } { 3 } { ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 ) } ^2 }
+\end{aligned}
+$$<br/>
+
+By summing over $k \in \lbrace x,y,z \rbrace$, it can be yielded that
+
+$$
+\begin{aligned}
+
+\end{aligned}
+$$<br/>
 
 
 
@@ -335,7 +350,7 @@ $$
 \end{aligned}
 \quad\quad(2.1)$$<br/>
 
-For any $k \in {x,y,z}$, define piecewise auxiliary rotational error
+For any $k \in \lbrace x,y,z \rbrace$, define piecewise auxiliary rotational error
 
 $$
 \begin{aligned}
@@ -355,7 +370,8 @@ $$
 \begin{aligned}
 S _{i,k} = \varpi ^e _{i,k} + c _i ^S \Phi _k ( \psi ^e _{i,k})
 \end{aligned}
-\quad\quad(2.3)$$<br/>
+\quad\quad(2.3)
+$$<br/>
 
 The derivative of piecewise auxiliary rotational error
 
@@ -370,7 +386,8 @@ $$
 & \quad\quad \text{             if } \overline S _{i,k} \ne 0,\text{  } \lvert \psi ^e _{i,k} \rvert \le \overline \varepsilon ^{S} _{i,k} \\
 \end{cases}
 \end{aligned}
-\quad\quad(2.4)$$<br/>
+\quad\quad(2.4)
+$$<br/>
 
 
 The rotation compensation term
@@ -423,7 +440,9 @@ where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. <br/>
 
 
 
+
 ## 3.4 $\text{  }$ Validation for comparison <br/>
+
 
 
 # Appendix 1 : $\text{  }$ Significant theories <br/>
@@ -562,3 +581,4 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 - $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of piecewise auxiliary rotational error
 - $F_i^S$ : rotation compensation term
 - $\tau_i$ : applied torque rotational control input
+
