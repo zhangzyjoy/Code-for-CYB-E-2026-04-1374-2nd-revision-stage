@@ -341,11 +341,28 @@ By summing over $k \in \lbrace x,y,z \rbrace$, it can be yielded that
 
 $$
 \begin{aligned}
-{ - 3 ^{ p + 1 } c _i ^S \sum \nolimits _{ k = x,y,z } { { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^{ p + 2 } } } \le { - 3 ^{ p + 1 } c _i ^S \sum \nolimits _{ k = x,y,z } { { ( { { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^2 } ) } ^2 } } \le { - 3 ^p c _i ^S { \lVert \frac { { \psi } _{ i,k } ^e } { \pi } \rVert } ^4 }
+{ - 3 ^{ p + 1 } c _i ^S \sum \nolimits _{ k = x,y,z } { { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^{ p + 2 } } } \le { - 3 ^{ p + 1 } c _i ^S \sum \nolimits _{ k = x,y,z } { { ( { { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^2 } ) } ^2 } } = { - 3 ^p c _i ^S { \lVert \frac { { \psi } _{ i } ^e } { \pi } \rVert } ^4 }
 \end{aligned}
+\quad\quad(1.26)
 $$<br/>
 
+Substitute Eq.(1.25) and Eq.(1.26) into Eq.(1.24) and yield
 
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } \le { \frac { 6 } { \pi } { \overline { S } _M } - 3 ^{ p + 1 } c _i ^S { { \lVert \frac { { \psi } _{ i } ^e } { \pi } \rVert } ^4 } }
+\end{aligned}
+\quad\quad(1.27)
+$$<br/>
+
+It is required that $\dot { V } _i ^{ \psi } < 0$ holds when . Therefore, we obtain the **convergence region** for $\psi _i ^e$ during the first stage of the reaching phase as
+
+$$
+\begin{aligned}
+{ \Omega _{ \psi } = { \psi _i ^e \mid 0 \le { \lVert \frac { { \psi } _{ i } ^e } { \pi } \rVert }  } }
+\end{aligned}
+\quad\quad(1.27)
+$$<br/>
 
 
 
