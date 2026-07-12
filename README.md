@@ -6,6 +6,9 @@ We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** 
 
 **Note** : Source code and instructions for the proposed control scheme during the first revision with Revised & Resubmit decision can be accessed at **https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git**. <br/>
 
+**The video for real-world experimental validation can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/** <br/> <br/>
+**If there exist any question about this webpage or having interest on the source code of this paper, please do not hesitate to contact us and to discuss potential academic collaboration at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com** <br/> <br/>
+
 This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. <br/>
 
 To address the reviewer's comments, the logical connection between theory and validation has been strengthened. The narrative follows a systematic progression. <br/> 
