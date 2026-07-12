@@ -364,7 +364,9 @@ $$
 \quad\quad(1.28)
 $$<br/>
 
-The above deduction implies that $\lVert { \psi } _{ i } ^e \rVert > { ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } }$, and thus $\dot { V } _i ^{ \psi } < 0$ is obtained given that the the exponential rotational error $\psi _i ^e$ falls outside the residual set denoted by Eq.(1.28). **Once $\psi _i ^e$ falls outside Eq.(1.28), it will evolve along the direction of the negative gradient of the Lyapunov function, which finally drives it to enter the convergence region denoted by Eq.(1.28).** <br/>
+The above deduction implies that $\lVert { \psi } _{ i } ^e \rVert > { ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } }$, and thus $\dot { V } _i ^{ \psi } < 0$ is obtained given that the the exponential rotational error $\psi _i ^e$ falls outside the residual set denoted by Eq.(1.28). <br/>
+
+**Once $\psi _i ^e$ falls outside Eq.(1.28), it will evolve along the direction of the negative gradient of the Lyapunov function, which finally drives it to enter the convergence region denoted by Eq.(1.28).** <br/>
 
 Simultaneously, **the PCNSMS $S _i$** is driven by **the torque input depicted by Eq.(1.10)** to converge into its origin in a practical fixed time during the **reaching phase**. We can deduce that the width of the convergence region denoted by Eq.(1.28) will decrease as the upper bound of the PCNSMS $\overline { S } _M \ge \underset { i \in { \mathsf { \mathcal { V } } }, k \in { \lbrace x,y,z \rbrace } } { \mathop { \max } } \lbrace { \lvert { S _{ i,k } } \rvert } \rbrace$ declines during the reaching phase. Subsequently, when $\overline { S } _M$ evolves <br/>
 
