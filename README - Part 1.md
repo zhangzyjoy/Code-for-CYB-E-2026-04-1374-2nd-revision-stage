@@ -1,6 +1,6 @@
-# 1. Significant Lemmas and Deductions <br/>
+# 1. $\text{  }$ Significant Lemmas and Deductions <br/>
 
-## 1.1 Fixed-time / Practical fixed-time stability lemmas <br/>
+## 1.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
 
 Consider a nonlinear system as <br/>
 
@@ -38,7 +38,7 @@ T _s \le \overline T _s = \frac { 2 ^{ p + 2 } } { \gamma ^{ p + 2 } k p ( 1 - p
 $$<br/>
 
 
-## 1.2 Design of nonlinear smooth sigmoid function <br/>
+## 1.2 $\text{  }$ Design of nonlinear smooth sigmoid function <br/>
 
 A newly introduced **nonlinear smooth sigmoid vector** is defined as <br/>
 
@@ -83,7 +83,7 @@ $$<br/>
 
 where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants. <br/>
 
-## 1.3 System dynamics of a quadrotor UAV <br/>
+## 1.3 $\text{  }$ System dynamics of a quadrotor UAV <br/>
 
 Each agent in the UAV team is considered as a quadrotor, which can be decoupled into rotational and translational subsystems as
 
@@ -113,11 +113,11 @@ Details are illustrated as follows. <br/>
 <3> Leveraging the logarithmic mapping of rotational errors in Lie algebra space, a nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) is developed to attain practical fixed-time singularity-free anti-disturbance attitude tracking in rotational subsystem. <br/> 
 <4> Fixed-time disturbance observers (FxTDO) is promoted to compensate external disturbances in both rotational and translational subsystems. <br/> <br/> 
 
-# 2. Fixed-time rotational disturbance observer (FxTDO) <br/>
+# 2. $\text{  }$ Fixed-time rotational disturbance observer (FxTDO) <br/>
 
 In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics **Eq.(1.6)** and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
 
-## 2.1 Theories and design principles <br/>
+## 2.1 $\text{  }$ Theories and design principles <br/>
 
 Define a **virtual angular velocity tracking variable** as <br/>
 
@@ -244,7 +244,7 @@ $$<br/>
 
 According to **Lemma 1**, **Eq.(2.7)** and **Eq.(2.3)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if **Eq.(2.7)** holds and the parameter settings in **Eq.(2.3)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
-## 2.2 Observer implementation procedure <br/>
+## 2.2 $\text{  }$ Observer implementation procedure <br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -295,7 +295,7 @@ $$
 \end{aligned}
 \quad\quad(2.12)$$<br/>
 
-## 2.3 Parameter settings and validation <br/>
+## 2.3 $\text{  }$ Parameter settings and validation <br/>
 
 According to **Lemma 1**, **Eq.(2.7)** and **Eq.(2.3)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
@@ -308,12 +308,12 @@ T _d ^{ \varpi } \le \overline { T } _d ^{ \varpi } = \frac { 3 ^ { \frac { \alp
 \quad\quad(2.13)$$<br/>
 
 
-## 2.4 Validation for Comparison <br/>
+## 2.4 $\text{  }$ Validation for Comparison <br/>
 
 
 
 
-# Appendix : Symbol definition list <br/>
+# Appendix : $\text{  }$ Symbol definition list <br/>
 
 - $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
