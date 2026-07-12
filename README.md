@@ -21,7 +21,7 @@ Each of the latter five ones indicates a specific module of the proposed control
 3. Practical fixed-time distributed state observer (PFxTDSO). <br/>
 4. Fixed-time translational disturbance observer (FxTDO). <br/>
 5. Practical fixed-time decentralized formation controller (PFxTDFC). <br/>
-Appendix. Significant lemmas and deductions. <br/><br/>
+6. Appendix : Significant lemmas and deductions. <br/><br/>
 
 Each section contains four chapters, including : <br/>
 <1>. Theories and design principles. <br/>
