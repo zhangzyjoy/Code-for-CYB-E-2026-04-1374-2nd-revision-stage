@@ -306,13 +306,11 @@ First we assume that the PCNSMS $S _i$ is defined as Eq.(1.21) even in partial p
 
 $$
 \begin{aligned}
-{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } ( 2 { \overline { \psi } _{ i,k } ^e } { ( S _{ i,k } - 3 ^{ p + 1 } c _i ^S \frac {  } {  } ) } / { \pi } ) }
+{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } ( 2 { \overline { \psi } _{ i,k } ^e } { ( \frac { S _{ i,k } } { \pi } - 3 ^{ p + 1 } c _i ^S \frac { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } ) } ) }
 \end{aligned}
 \quad\quad(1.22)
 $$<br/>
 
-
-{  { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } / { ( 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) ) } }
 
 
 ## 3.2 $\text{  }$ Controller implementation procedure <br/>
