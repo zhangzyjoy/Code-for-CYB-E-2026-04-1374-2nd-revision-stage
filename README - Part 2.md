@@ -1,0 +1,436 @@
+# 3. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
+
+According to the rotational dynamics in Eq.(1.6), define an exponential coordination $\psi _i ^e = [ \Psi ( R ( Q _i ^e) ) ] _{\vee}$ which is derived through inverse logarithm mapping. We establish the rotational system error dynamics as
+
+$$
+\begin{aligned}
+\begin{cases}
+&\dot \psi _i ^e = \varpi _i ^e \\
+&\dot \varpi _i ^e = \Lambda _i ^{-1} ( -( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i ) + ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^e - ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c
+\end{cases}
+\end{aligned}
+\quad\quad(3.1)$$<br/>
+
+## 3.1 Theories and design principles <br/>
+
+To avoid the **ambiguity** of the **logarithmic mapping** on the **boundary of singular spherical neighborhood** $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$, a specific mechanism is developed to maintain $\lVert \psi _i ^e \rVert < \pi$ under the **initial condition** of $\lVert \psi _i ^e ( 0 ) \rVert < \pi$. <br/>
+
+A **nonsingular piecewise continuous sliding mode surface** is defined in the form as <br/>
+
+$$
+\begin{aligned}
+S _i = \varpi _i ^e + c _i ^S \Phi ( \psi _i ^e )
+\end{aligned}
+\quad\quad(3.2)
+$$<br/>
+
+where $c _i ^S > 0$ is a constant, $\Phi ( \psi _i ^e ) = [ \Phi ( \psi _{i,x} ^e ), \Phi ( \psi _{i,y} ^e ), \Phi ( \psi _{i,z} ^e ) ] ^T$ is a piecewise differentiable auxiliary rotational error and its derivative is written as $\overline { \Phi } ( \psi _i ^e )$. <br/>
+
+Substitute the angular velocity dynamics in Eq.(3.1) into the derivative of the nonsingular sliding mode surface Eq.(3.2) and yield <br/>
+
+$$
+\begin{aligned}
+\dot { S } _i & = \dot { \varpi } _i ^e + c _i ^S \overline { \Phi } ( \psi _i ^e ) \\
+& = \Lambda _i ^{-1} ( -( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i ) + ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^e - ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c + c _i ^S \overline { \Phi } ( \psi _i ^e )
+\end{aligned}
+\quad\quad(3.3)
+$$<br/>
+
+### 3.1.1 Rotational control torque design for the reaching phase <br/>
+
+First we consider the **reaching phase** of the sliding surface, the objective is to drive the **piecewise continuous nonsingular sliding mode surface (PCNSMS)** ${ S } _i$ towards its origin, and thus the system state errors ${ \varpi } _i ^e$ and ${ \Phi } ( \psi _i ^e )$ can be restrained on the sliding mode surface ${ S } _i = 0$. Define a Lyapunov candidate for the reaching phase ${ S } _i$ as $V _i ^S = \frac {1} {2} ( S _i )^T \Lambda _i S _i$ and substitute Eq.(3.3) into its derivative as <br/>
+
+$$
+\begin{aligned}
+\dot { V } _i ^S & = ( S _i )^T \Lambda _i \dot { S } _i = ( S _i )^T \tau _i + ( S _i )^T F _i ^S
+\end{aligned}
+\quad\quad(3.4)
+$$<br/>
+
+where $F _i ^S = F _i ^{ S,1 } + F _i ^{ S,2 }$ with $F _i ^{ S,1 }$ and $F _i ^{ S,2 }$ are the redundant nonlinear terms from the angular velocity error dynamics **Eq.(3.1)** and a linear term of auxiliary rotational error, respectively.
+
+$$
+\begin{aligned}
+\begin{cases}
+& F _i ^{ S,1 } = -( \varpi _i ) _\times \Lambda _i \varpi _i + \Lambda _i ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^e - \Lambda _i ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c \\
+& F _i ^{ S,2 } = c _i ^S \Lambda _i \overline { \Phi } ( \psi _i ^e )
+\end{cases}
+\end{aligned}
+$$<br/>
+
+For **Eq.(3.4)**, leverage **Young's inequality** and yield <br/>
+
+$$
+\begin{aligned}
+( S _i )^T F _i ^S \le \frac {1} { 2 { ( \overline { \eta } _i ^S ) } ^2 } + \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2
+\end{aligned}
+$$<br/>
+
+where ${ \eta } _i ^S$ is a positive constant. <br/>
+
+Design the applied torque as $\tau _i = \overset {\frown} { \tau } _i - \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2$. The Lyapunov function for **reaching phase** of **PCNSMS** is bounded by $\dot { V } _i ^S \le ( S _i ) ^T \overset { \frown } { \tau } _i + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }$. <br/>
+
+According to **Lemma 2**, if we set $c_0 = 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }$, then $( S _i )^T \overset {\frown} { \tau } _i$ should be upper bounded by $- a _1 { ( { V } _i ^S ) } ^ { b _1 } - a _2 { ( { V } _i ^S ) } ^ { b _2 }$. Set constant parameters as $l _i ^{ S,1 } > 0$, $l _i ^{ S,2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. It is easy to obtain $( \beta _{ \varpi } ^1 + 1 ) / 2 > 1$ and $0 < ( \beta _{ \varpi } ^2 + 1 ) / 2 < 1$. Leveraging **Lemma 4**, the upper bound of $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } )$ and $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )$ is yielded as <br/>
+
+$$
+\begin{aligned}
+\begin{cases}
+-( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } ) & \le - 2 ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ \varpi } ^1 } { 2 } } K _i ^{ \varpi } { ( ( ( S _i )^T S _i ) / 2 ) } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } \\
+& \le - 2 ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ \varpi } ^1 } { 2 } } K _i ^{ \varpi } { ( ( ( S _i )^T \Lambda _i S _i ) / 2 ) } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } \\
+-( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } ) & \le - 2 ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } K _i ^{ \varpi } { ( ( ( S _i )^T S _i ) / 2 ) } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } \\
+& \le - 2 ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } K _i ^{ \varpi } { ( ( ( S _i )^T \Lambda _i S _i ) / 2 ) } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^2 + 1 } { 2 } }
+\end{cases}
+\end{aligned}
+$$<br/>
+
+Since Lyapunov function is defined as $V _i ^S = \frac {1} {2} ( S _i )^T \Lambda _i S _i$, and thus yield
+
+$$
+\begin{aligned}
+\begin{cases}
+-( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } ) & \le - l _i ^{ S,1 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } \\
+-( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )
+& \le - l _i ^{ S,2 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } }
+\end{cases}
+\end{aligned}
+\quad\quad(3.5)
+$$<br/>
+
+where the coefficients are depicted as
+
+$$
+\begin{aligned}
+\begin{cases}
+& l _i ^{ S, 1 } = 2 ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ \varpi } ^1 } { 2 } } K _i ^{ \varpi } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } \\
+& l _i ^{ S, 2 } = 2 ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } K _i ^{ \varpi } / { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^2 + 1 } { 2 } }
+\end{cases}
+\end{aligned}
+\quad\quad(3.6)
+$$<br/>
+
+Therefore, an appropriate design for auxiliary torque input $\overset {\frown} { \tau } _i$ is to satisfy
+
+$$
+\begin{aligned}
+( S _i ) ^T \overset {\frown} { \tau } _i = - c _i ^{ \varpi, 1 } l _i ^{ S, 1 } ( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } ) - c _i ^{ \varpi, 2 } l _i ^{ S, 2 } ( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )
+\end{aligned}
+\quad\quad(3.7)
+$$<br/>
+
+Given constant parameters that satisfy $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, the auxiliary torque control input is developed as
+
+$$
+\begin{aligned}
+\overset {\frown} { \tau } _i = - c _i ^{ \varpi, 1 } l _i ^{ S,1 } \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } ) - c _i ^{ \varpi, 2 } l _i ^{ S,2 } \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )
+\end{aligned}
+\quad\quad(3.8)
+$$<br/>
+
+We obtain the **auxiliary torque** $\overset {\frown} { \tau } _i$ with an additive term $- c _i ^{ \varpi, 3 } S _i$ on the basis of Eq.(3.8). Therefore, a semi-definite negative term $- c _i ^{ \varpi, 3 } \lVert S _i \rVert ^2$ is introduced. Leveraging **Eq.(3.6)** and **Eq.(3.7)**, with the inequalities given in **Eq.(3.5)**, the **Lyapunov derivative** $\dot { V } _i ^S$ is further derived as
+
+$$
+\begin{aligned}
+\dot { V } _i ^S & \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 } - c _i ^{ \varpi, 3 } \lVert S _i \rVert ^2 \\
+& \le ( S _i )^T \overset {\frown} { \tau } _i + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 } \\
+& \le - c _i ^{ \varpi, 1 } l _i ^{ S,1 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } - c _i ^{ \varpi, 2 } l _i ^{ S,2 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }
+\end{aligned}
+\quad\quad(3.9)
+$$<br/>
+
+According to **Eq.(3.9)** and **Lemma 2**, **PCNSMS** $S _i$ can achieve **practical fixed-time stability** during the **reaching phase** only if the coefficients are bounded by $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
+
+Therefore, the rotational torque input is developed as
+
+$$
+\begin{aligned}
+{ \tau } _i = & - c _i ^{ \varpi, 1 } l _i ^{ S,1 } \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } ) - c _i ^{ \varpi, 2 } l _i ^{ S,2 } \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } ) \\
+& - c _i ^{ \varpi, 3 } S _i - \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2
+\end{aligned}
+\quad\quad(3.10)
+$$<br/>
+
+
+### 3.1.2 Nonsingular sliding mode surface design for sliding phase <br/>
+
+During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error $\psi _i ^e$ are constrained along the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
+
+To guarantee notational simplicity, an **auxiliary rotational error variable** is depicted as $\overline { \psi } _{ i } ^e = { \psi _ { i } ^e } / { \pi }$ with each entries to be $\overline { \psi } _{ i,k } ^e = { \psi _ { i,k } ^e } / { \pi }$ . Similarly, an **auxiliary angular velocity error** is denoted as $\overline \varpi _{ i, k } ^e = { \varpi } _{ i, k } ^e / \pi$. The **PCNSMS** $S _i$ is defined as a piecewise continuous function, and an auxiliary sliding mode surface $\overline S _i$ is considered to determine the threshold of the piecewise conditions for the function ${ \Phi } ( \psi _i ^e )$. <br/>
+
+Considering the **sliding phase**, the rotational errors are restricted on the sliding surface $S _i = 0$. Meanwhile, $\overline S _i = 0$ always holds when the sliding mode surface $S _i = 0$ is reached, and ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ is maintained during the **sliding phase**. To investigate the fixed-time stability of the **exponential rotational coordination** ${ \varpi } _{i,k} ^e$, a Lyapunov candidate is defined as 
+
+$$
+\begin{aligned}
+V _i ^{ \psi } = \lVert \overline { \psi } _i ^e \rVert ^2 = \sum \nolimits _{ k = x,y,z} { { ( \overline { \psi } _{ i,k } ^e ) } ^2 }
+\end{aligned}
+\quad\quad(3.11)
+$$<br/>
+
+Take the derivative of Eq.(3.11) and obtain $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( 2 { \overline { \psi } _{ i,k } ^{ e } } { \overline { \varpi } _{ i,k } ^{ e } } ) }$. According to **Lemma 3**, with parameters bounded by $0 < p < 1$ and ${ \gamma } _{ \psi }$, the following inequality
+
+$$
+\begin{aligned}
+\dot { V } _i ^{ \psi } \le -c _i ^S \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) }
+\end{aligned}
+\quad\quad(3.12)
+$$<br/>
+
+is required to fulfill the **fixed-time** stability property of $\overline { \psi } _{ i,k } ^e$, that is, ${ \psi } _{ i,k } ^e = 0$ is reached in fixed time. <br/>
+
+Since ${ \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _{ i,k } ^e ) } ^2 } \le { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^2 }$ always holds for each $i$-th UAV and $k$-th dimention, then we can yield the following inequality
+
+$$
+\begin{aligned}
+{ { ( V _i ^{ \psi } ) } ^{ 1 / 2 } } = { { ( { \sum \nolimits _{ k = x,y,z } { { ( \overline { \psi } _{ i,k } ^e ) } ^2 } } ) } ^{ 1 / 2 } } \le { { ( { ( { \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ) ^2 } ) } ^{ 1 / 2 } }
+\end{aligned}
+\quad\quad(3.13)
+$$<br/>
+
+Given that for any $x \in { \mathbb { R } }$, the nonlinear function $f (x) = \frac { x ^ { p + 2 } } { \tanh ( { \gamma } x / 2 ) }$ is monotonically increasing. Therefore, according to Eq.(3.13) that ${ { ( V _i ^{ \psi } ) } ^{ 1 / 2 } } \le { \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert }$, the Lyapunov function is further formulated as
+
+$$
+\begin{aligned}
+{ - c _i ^{ S } { \frac { { ( V _i ^{ \psi } ) } ^{ ( p + 2 ) / 2 } } { \tanh ( { \gamma } _{ \psi } { ( V _i ^{ \psi } ) } ^{ 1 / 2 } / 2 ) } } } \ge { - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } }
+\end{aligned}
+\quad\quad(3.14)
+$$<br/>
+
+In order to guarantee fixed-time convergence of ${ \psi } _{ i,k } ^e$, Eq.(3.12) is required to be guaranteed. It can be deduced that Eq.(3.12) can be established by proving 
+
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } \le { - c _i ^{ S } { \frac { { ( \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } }
+\end{aligned}
+\quad\quad(3.15)
+$$<br/>
+
+If Eq.(3.15) and Eq.(3.14) already hold, then Eq.(3.12) can be yielded. <br/>
+
+Given the inequalities as ${ \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } \ge { { { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ) } ^{ p + 2 } } / { 3 ^{ p + 1 } } }$ and ${ \tanh ( { \gamma } _{ \psi } \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) } \ge { \tanh ( { \gamma } _{ \psi } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } / 2 ) }$, we can subsequently derive
+
+$$
+\begin{aligned}
+{ \frac { { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } & \le { 3 ^{ p + 1 } { \frac { \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } \\
+& \le { 3 ^{ p + 1 } { \frac { \sum \nolimits _{ k = x,y,z } { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } \\
+& = { 3 ^{ p + 1 } { \sum \nolimits _{ k = x,y,z } { \frac { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } } } }
+\end{aligned}
+\quad\quad(3.16)
+$$<br/>
+
+Since $\overline { \psi } _{ i,k } ^e$ and $\tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } { \overline { \psi } _{ i,k } ^e } / 2 )$ have the same sign, it is easy to derive that $\frac { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } { \tanh ( \gamma _{ \psi } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } = \frac { \overline { \psi } _{ i,k } ^e } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) }$. Then Eq.(3.16) can be further transformed into <br/>
+
+$$
+\begin{aligned}
+{ 3 ^{ p + 1 } { \sum \nolimits _{ k = x,y,z } { \frac { { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } } } } \ge { \frac { { ( \sum \nolimits _{ k = x,y,z } { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ) } ^{ p + 2 } } { \tanh ( \gamma _{ \psi } \sum \nolimits _{ k = x,y,z } \lvert { \overline { \psi } _{ i,k } ^e } \rvert / 2 ) } }
+\end{aligned}
+\quad\quad(3.17)
+$$<br/>
+
+Hence, it suffices to show that if
+
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } \le { - c ^i _S { 3 ^{ p + 1 } } { \sum \nolimits _{ k = x,y,z } { \frac { { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } } } }
+\end{aligned}
+\quad\quad(3.18)
+$$<br/>
+
+holds, then Eq.(3.15) is established. According to Eq.(3.14), Eq.(3.15) is sufficient for that Eq.(3.12) holds. <br/>
+
+Considering **Lemma 3**, we can derive that **Eq.(3.12)** holds can prove that ${ \psi } _{ i,k } ^e$ is fixed-time stable during the **sliding phase** when the nonsingular sliding mode surface already converges to $S _i = 0$ after the **reaching phase**. <br/>
+
+**Therefore, it can be obtained that Eq.(3.17) is sufficient for the proof that ${ \psi } _{ i,k } ^e$ can reach fixed-time stability on sliding phase.** <br/>
+
+During the **sliding phase**, ${ \varpi } _{ i,k } ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ can be yielded, and the Lyapunov derivative $\dot { V } _i ^{ \psi } = \sum \nolimits _{ k = x,y,z } { ( 2 { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } = - \sum \nolimits _{ k = x,y,z } { { c _i ^S } { \overline { \psi } _{ i,k } ^e } { \overline { \Phi } ( \psi _{i,k} ^e ) } }$ is developed to satisfy the form of Eq.(3.17). The **auxiliary rotational error** is deduced from $\overline { \Phi } ( \psi _{i,k} ^e ) = { \Phi } ( \psi _{i,k} ^e ) / { \pi }$ as
+
+$$
+\begin{aligned}
+{ \Phi ( \psi _{i,k} ^e ) } & = { { \pi } { \overline { \Phi } ( \psi _{i,k} ^e ) } } \\ 
+& = { 3 ^{ p + 1 } { \frac { { \pi } c ^i _S } { c ^i _S { \overline { \psi } _{ i,k } ^e } } \frac { { { \lvert { \overline { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { \overline { \psi } _{ i,k } ^e } } { \tanh ( \gamma _{ \psi } { \overline { \psi } _{ i,k } ^e } / 2 ) } } } \\
+& = { 3 ^{ p + 1 } { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } / { ( 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) ) } }
+\end{aligned}
+\quad\quad(3.19)
+$$<br/>
+
+If the **sliding phase** is reached with $S _i = 0$ and the rotational errors are driven along the nonsingular sliding mode surface, the **auxiliary nonlinear sliding mode surface** is designed as
+
+$$
+\begin{aligned}
+{ \overline { S } _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } }
+\end{aligned}
+\quad\quad(3.20)
+$$<br/>
+
+Moreover, if the auxiliary sliding surface $\overline S _{i,k} = 0$ holds, then the PCNSMS are consistent with the form of $\overline S _{i,k}$ as
+
+$$
+\begin{aligned}
+{ S _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } }  \quad\quad  \text{  if } \overline S _{i,k} = 0
+\end{aligned}
+\quad\quad(3.21)
+$$<br/>
+
+when the rotational errors are remained on the **sliding phase**. <br/>
+
+We investigate **PCNSMS** $S _i$ to follow **Eq.(3.21)**, the same form with the auxiliary sliding surface, to guarantee **Eq.(3.12)** and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the **auxiliary nonsingular sliding mode surface** $\overline { S } _i$ is established as the switching threshold to determine the **piecewise function** $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/>
+
+### 3.1.2 Nonsingular sliding mode surface design for reaching phase <br/>
+
+On the **reaching phase**, we already developed an applied torque $\tau _i$ rotational control input to maintain a **practical fixed-time stable** $S _i$ **PCNSMS** derived from **Eq.(3.4) to Eq.(3.10)** inspired by **Lemma 2**. <br/>
+
+On the **sliding phase**, a **fixed-time stable** $\psi _i ^e = { [ \Psi ( R ( Q _i ^e ) ) ] _{ \vee } }$ **exponential rotational error** can be achieved by developing nonsingular sliding mode surface according to **Eq.(3.11) to Eq.(3.20)** inspired by **Lemma 3**. <br/>
+
+During the **sliding phase**, $S _i$ and $\overline { S } _i$ are determined according to **Eq.(3.20) and Eq.(3.21)**, respectively. Then the Lyapunov candidate of exponential rotational error is defined as $V _i ^S = { { \lVert \overline { \psi } _i ^e \rVert } ^2 } = { \sum \nolimits _{ k = x,y,z } { ( \overline { \psi } _i ^e ) ^2 } }$. Since the angular velocity is depicted by ${ \varpi } _{ i,k } ^e = S _i - c _i ^S { \Phi ( { \psi } _{ i,k } ^e ) }$, the derivative of $V _i ^S$ is given as <br/>
+
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } & = { \sum \nolimits _{ k = x,y,z } { ( 2 { \overline { \psi } _{ i,k } ^e } { \overline { \varpi } _{ i,k } ^e } ) } } \\
+& = { \sum \nolimits _{ k = x,y,z } ( 2 { \overline { \psi } _{ i,k } ^e } { ( S _{ i,k } - c _i ^S { \Phi ( { \psi } _{ i,k } ^e ) } ) } / { \pi } ) }
+\end{aligned}
+\quad\quad(3.22)
+$$<br/>
+
+Given the assumption that the initial rotational error satisfies $\lVert { {\psi} _i ^e ( 0 ) } \rVert < \pi$, namely, for any $k \in \lbrace x,y,z \rbrace$ that $\lvert \frac { \psi _{ i,k } ^e ( 0 ) } { \pi } \rvert < 1$ holds. The PCNSMS satisfies $\lVert S _i ( t ) \rVert < + \infty$ and is upper bounded by $\underset { i \in { \mathsf { \mathcal { V } } }, k \in { \lbrace x,y,z \rbrace } } { \mathop { \max } } \lbrace { \lvert { S _{ i,k } } \rvert } \rbrace \le \overline { S } _M$. <br/>
+
+Consider the first term $2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } }$ of the Lyapunov derivative $\dot { V } _i ^{ \psi }$ in Eq.(3.22), we can derive that ${ 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } } \le { 2 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } { \lvert \frac { S _{ i,k } } { \pi } \rvert } } < { \frac { 2 } { \pi } \lvert { S _{ i,k } } \rvert } \le { \frac { 2 } { \pi } \overline { S } _M }$, and thereafter obtain
+
+$$
+\begin{aligned}
+{ \sum \nolimits _{ k = x,y,z } { ( 2 { \frac { { \psi } _{ i,k } ^e } { \pi } } { \frac { S _i } { \pi } } ) } } \le { \frac { 6 } { \pi } { \overline { S } _M } }
+\end{aligned}
+\quad\quad(3.23)
+$$<br/>
+
+The specific design for PCNSMS on sliding phase has been illustrated in chapter 3.1.2. On reaching phase, <br/>
+
+
+
+
+## 3.2 Controller implementation procedure <br/>
+
+For any $k \in \lbrace { x,y,z } \rbrace$, define an auxiliary sliding mode surface
+
+$$
+\begin{aligned}
+\overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S {\frac {3 ^{p+1} \pi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} }
+\end{aligned}
+\quad\quad(14)$$<br/>
+
+For any $k \in {x,y,z}$, define piecewise auxiliary rotational error
+
+$$
+\begin{aligned}
+\Phi _k ( \psi ^e _{i,k}) = 
+\begin{cases}
+&\frac {3 ^{p+1} \pi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} \\
+& \quad\quad \text{  if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  } \lvert \psi ^e _{i,k} \rvert > \overline \varepsilon ^{S} _{i,k} \\
+&\psi ^e _{i,k} ( \beta ^1 _\Phi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^2 + \beta ^2 _\Phi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{2p} ) \\
+& \quad\quad \text{  if } \overline S _{i,k} \ne 0,\text{ } \lvert \psi ^e _{i,k} \rvert \le \overline \varepsilon ^{S} _{i,k}
+\end{cases}
+\end{aligned}
+\quad\quad(15)$$<br/>
+
+Sliding mode surface
+
+$$
+\begin{aligned}
+S _{i,k} = \varpi ^e _{i,k} + c _i ^S \Phi _k ( \psi ^e _{i,k})
+\end{aligned}
+\quad\quad(16)$$<br/>
+
+The derivative of piecewise auxiliary rotational error
+
+$$
+\begin{aligned}
+\overline \Phi _k ( \psi ^e _{i,k}) = 
+\begin{cases}
+&\frac { 3 ^{p+1} (p+1) \frac {\psi ^e _{i,k}} \pi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{p-1} \varpi ^e _{i,k} } {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} \\
+&+ \frac {3 ^{p+1}} 4 \gamma \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{p+1} (\frac { \mathrm{sech} ( \gamma \psi ^e _{i,k} / 2 \pi )} {\tanh ( \gamma \psi ^e _{i,k} / 2 \pi )} ) ^2 \varpi ^e _{i,k}, \\
+& \quad\quad \text{             if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  } \lvert \psi ^e _{i,k} \rvert > \overline \varepsilon ^{S} _{i,k} \\
+&( 2 \beta ^1 _\Phi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^2 + ( 2p + 1 ) \beta ^2 _\Phi \lvert \frac {\psi ^e _{i,k}} \pi \rvert ^{2p} ) \varpi ^e _{i,k}, \\
+& \quad\quad \text{             if } \overline S _{i,k} \ne 0,\text{  } \lvert \psi ^e _{i,k} \rvert \le \overline \varepsilon ^{S} _{i,k} \\
+\end{cases}
+\end{aligned}
+\quad\quad(17)$$<br/>
+
+
+The rotation compensation term
+
+$$
+\begin{aligned}
+F _i ^S = &- ( \varpi _i ) _\times \Lambda _i \varpi _i + \Lambda _i ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^c \\
+&- \Lambda _i ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c + c _i ^S \Lambda _i \overline \Phi _k ( \psi ^e _{i,k})
+\end{aligned}
+\quad\quad(18)$$<br/>
+
+The applied torque control input
+
+$$
+\begin{aligned}
+\tau _i = &- c _i ^{\varpi,1} \vartheta ( S_i, \beta ^1 _\varpi, \mu _c ^\Theta ) - c _i ^{\varpi,2} \vartheta ( S_i, \beta ^2 _\varpi, \mu _c ^\Theta ) \\
+&- c _i ^{\varpi,3} S_i - \hat d _i ^\varpi - \frac 1 2 ( \overline \eta _i ^S ) ^2 \lVert F _i ^S \rVert ^2 S_i
+\end{aligned}
+\quad\quad(17)$$<br/>
+
+where $\hat d _i ^\varpi$ is obtained by FxTDO in rotational system<br/>
+
+Update rotational dynamics, including angular velocity, rotational matrix and their tracking errors
+
+$$
+\begin{aligned}
+\begin{cases}
+&\dot \varpi _i = ( \Lambda _i ) ^{-1} ( - ( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i + d _i ^\varpi ) \\
+&\dot R ( Q _i ) = R ( Q _i ) ( \varpi _i ) _\times \\
+&\varpi _i ^e = \varpi _i - ( R ( Q _i ^e ) ) ^T \varpi _i ^c \\
+&\dot R ( Q _i ^e ) = R ( Q _i ^e ) ( \varpi _i ^e ) _\times \\
+&\dot \psi ^e _i = \varpi _i ^e
+\end{cases}
+\end{aligned}
+\quad\quad(18)$$<br/>
+
+## 3.3 Parameter settings and validation <br/>
+
+According to **Lemma 2** and **Eq.(3.9)**, the parameters of the rotational torque control input are chosen as $\tau _i$ as $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
+
+According to **Lemma 2**, the settling time for the practical fixed-time convergence of **PCNSMS** $S _i$ is indicated as
+
+$$
+\begin{aligned}
+T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi } = \frac { { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } } { 2 ^{ \frac { \beta _{ \varpi } ^1 - 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ \varpi } ^1 } { 2 } } c _i ^{ \varpi, 1 } K _i ^{ \varpi } \eta _c ^{ \varpi } ( \beta _{ \varpi } ^1 - 1 ) } + \frac { { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } } { 2 ^{ \frac { \beta _{ \varpi } ^2 - 1 } { 2 } } c _i ^{ \varpi, 2 } K _i ^{ \varpi } \eta _c ^{ \varpi } ( 1 - \beta _{ \varpi } ^2 ) }
+\end{aligned}
+$$<br/>
+
+where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. <br/>
+
+
+
+## 3.4 Validation for comparison <br/>
+
+
+
+
+# Appendix : Symbol definition list <br/>
+
+- $g$ : gravitational acceleration
+- $\overline e _3$ : unit vector $[0,0,1]^{T}$
+- $m_{i}$ : mass
+- $\Lambda_{i}$ : inertia matrix 
+- $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
+- $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
+- $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
+- $\hat p_i ^d, \hat v_i ^d$ : desired position, linear velocity observation for follower UAV node $i$
+- $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, linear velocity for follower UAV node $i$
+- $\tilde e _{i,p} ^d$, $\tilde e _{i,v} ^d$ : lumped formation observation error of desired position, linear velocity for follower UAV node $i$
+- $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
+- $\chi_i$, $\phi_i$ : virtual linear velocity tracking vector, tracking error
+- $d _i ^v$, $\hat d _i ^v$ : translational disturbance, disturbance observation
+- $\sigma _i ^v$, $\overline \sigma _i ^v$, $\hat {\overline \sigma} _i ^v$ : virtual linear velocity tracking vector, tracking error, tracking error observation
+- $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^T$ : quaternion
+- $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
+- $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
+- $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
+- $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
+- $\overline S_i$ = $[ \overline S_{i,x}, \overline S_{i,y}, \overline S_{i,z} ]^T$ : auxiliary sliding mode surface
+- $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : piecewise auxiliary rotational error
+- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of piecewise auxiliary rotational error
+- $F_i^S$ : rotation compensation term
+- $\tau_i$ : applied torque rotational control input
