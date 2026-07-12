@@ -196,7 +196,7 @@ T _d ^{ \varpi } \le \overline { T } _d ^{ \varpi } = \frac { 3 ^ { \frac { \alp
 ## 2.4 $\text{  }$ Validation for Comparison <br/>
 
 
-# Appendix 1 : $\text{  }$ Significant Lemmas and Deductions <br/>
+# Appendix 1 : $\text{  }$ Significant theories <br/>
 
 ## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
 
