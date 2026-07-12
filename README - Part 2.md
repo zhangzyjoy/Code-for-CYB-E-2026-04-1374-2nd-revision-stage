@@ -350,7 +350,7 @@ Substitute Eq.(1.25) and Eq.(1.26) into Eq.(1.24) and yield
 
 $$
 \begin{aligned}
-{ \dot { V } _i ^{ \psi } } \le { \frac { 6 } { \pi } { \overline { S } _M } - 3 ^{ p + 1 } c _i ^S { { \lVert \frac { { \psi } _{ i } ^e } { \pi } \rVert } ^4 } }
+{ \dot { V } _i ^{ \psi } } \le { \frac { 6 } { \pi } { \overline { S } _M } - 3 ^p c _i ^S { { \lVert \frac { { \psi } _{ i } ^e } { \pi } \rVert } ^4 } }
 \end{aligned}
 \quad\quad(1.27)
 $$<br/>
@@ -370,9 +370,10 @@ The above deduction implies that $\lVert { \psi } _{ i } ^e \rVert > { ( { \frac
 
 Simultaneously, **the PCNSMS $S _i$** is driven by **the torque input depicted by Eq.(1.10)** to converge into its origin in a practical fixed time during the **reaching phase**. We can deduce that the width of the convergence region denoted by Eq.(1.28) will decrease as the upper bound of the PCNSMS $\overline { S } _M \ge \underset { i \in { \mathsf { \mathcal { V } } }, k \in { \lbrace x,y,z \rbrace } } { \mathop { \max } } \lbrace { \lvert { S _{ i,k } } \rvert } \rbrace$ declines during the reaching phase. Subsequently, the upper bound $\overline { S } _M$ of the sliding surface declines towards zero simultaneously with the PCNSMS before achieving ${ ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } } < { \varepsilon } _{ i,k } ^S$. if , Eq.(1.21) can always be considered for $S _i$ under the condition that ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilon } _{ i,k } ^S \le \lVert \psi _i ^e \rVert < \pi$ holds. <br/>
 
-If the condition ${ ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } } < { \varepsilon } _{ i,k } ^S$ is fulfilled in reaching phase, the piecewise PCNSMS is required to be designed under the condition that ${ \overline { S } _{ i,k } } \neq 0, \text{  } \lVert \psi _i ^e \rVert < { \varepsilon } _{ i,k } ^S$ because $\psi _i ^e$ is driven into the Eq.(1.28) convergence region. <br/>
+If the condition ${ ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } } < { \varepsilon } _{ i,k } ^S$ is fulfilled in reaching phase, the PCNSMS is still required developing that Eq.(1.27) holds under the condition that ${ \overline { S } _{ i,k } } \neq 0, \text{  } \lVert \psi _i ^e \rVert < { \varepsilon } _{ i,k } ^S$ because Eq.(1.27) guarantees that $\psi _i ^e$ can be driven into the Eq.(1.28) convergence region. <br/>
 
-For the 
+
+
 
 
 
