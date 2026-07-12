@@ -12,10 +12,9 @@ We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** 
 This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. **To address the reviewer's comments, the logical connection between theory and validation has been strengthened.** <br/> <br/>
 
 The narrative follows a systematic progression. <br/> 
-**<1>** the **theoretical basis** for controller design is introduced and fundamental lemmas are included. <br/> 
-**<2>** the parameter range and tuning principle for system stability are deduced. <br/> 
-**<3>** the parameter configurations for simulation or experimental validation are specified. <br/> 
-**<4>** the simulation or experimental validation results are presented and discussed. <br/> <br/> 
+**<1>** The **theoretical basis** for controller design is introduced and fundamental lemmas are included. <br/> 
+**<2>** The **admissible range and tuning principle** for parameters to maintain control stability are deduced. <br/> 
+**<3>** The **comparative simulation or experimental validation** results are presented and discussed. <br/> <br/> 
 
 **Each section in this link follows the logic above, where the link theory-validation is enhanced.** <br/> 
 
