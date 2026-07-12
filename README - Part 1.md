@@ -1,6 +1,6 @@
 # 2. $\text{  }$ Fixed-time rotational disturbance observer (FxTDO) <br/>
 
-In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics **Eq.(1.6)** and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
+In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics **Eq.(A.6)** and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
 
 ## 2.1 $\text{  }$ Theories and design principles <br/>
 
@@ -10,10 +10,10 @@ $$
 \begin{aligned}
 \dot \sigma _i ^{ \varpi } = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + h _i ^{ \varpi, 3 } \overline \sigma _i ^{ \varpi } )
 \end{aligned}
-\quad\quad(2.1)
+\quad\quad(1.1)
 $$<br/>
 
-Define the **auxiliary angular velocity tracking error** as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract **Eq.(2.1)** from the second differential equations of **Eq.(1.6)** and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
+Define the **auxiliary angular velocity tracking error** as $\overline \sigma _i ^{ \varpi } = \varpi _i - \sigma _i ^{ \varpi }$. Subtract **Eq.(1.1)** from the second differential equations of **Eq.(A.6)** and yield the first derivative of $\overline \sigma _i ^{ \varpi }$ as <br/>
 
 $$
 \begin{aligned}
@@ -45,7 +45,7 @@ $$
 &( \tilde {\overline { \sigma } } _i ^{ \varpi } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } ( ( V _i ^{ d, \varpi } ) ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } )
 \end{cases}
 \end{aligned}
-\quad\quad(2.2)
+\quad\quad(1.2)
 $$<br/>
 
 The **coefficients** in **Lemma 1** for fixed-time stability analysis can be chosen as <br/>
@@ -59,7 +59,7 @@ $$
 &b _i ^{ d, 2 } = \frac { \alpha _2 ^{ \varpi } + 1 } { 2 }
 \end{cases}
 \end{aligned}
-\quad\quad(2.3)
+\quad\quad(1.3)
 $$<br/>
 
 then the **adaptive updating law** of the **auxiliary angular velocity observation error** is designed as <br/>
@@ -68,7 +68,7 @@ $$
 \begin{aligned}
 \dot { \tilde {\overline { \sigma } } } _i = - h _i ^{ \varpi, 1 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _1 ^{ \varpi }, \mu _d ^{ \varpi } ) - h _i ^{ \varpi, 2 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ \varpi }, \alpha _2 ^{ \varpi }, \mu _d ^{ \varpi } )
 \end{aligned}
-\quad\quad(2.4)
+\quad\quad(1.4)
 $$<br/>
 
 Since the **auxiliary angular velocity observation vector** is defined as $\tilde {\overline { \sigma } } _i ^{ \varpi } = \overline { \sigma } _i ^{ \varpi } - \hat {\overline { \sigma } } _i ^{ \varpi }$, the adaptive law is derived as <br/>
@@ -95,7 +95,7 @@ $$
 \begin{aligned}
 \hat d _i ^{ \varpi } = d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi }
 \end{aligned}
-\quad\quad(2.5)
+\quad\quad(1.5)
 $$<br/>
 
 Further, from $\dot { \overline { \sigma } } _i ^{ \varpi } = ( \Lambda _i ) ^ { -1 } ( d _i ^{ \varpi } - h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } )$ we can deduce that <br/>
@@ -104,10 +104,10 @@ $$
 \begin{aligned}
 d _i ^{ \varpi } = \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \overline { \sigma } _i ^{ \varpi } - h _i ^{ \varpi, 3 } \tilde { \overline { \sigma } } _i ^{ \varpi } = \Lambda _i \dot { \overline { \sigma } } _i ^{ \varpi } + h _i ^{ \varpi, 3 } \hat { \overline { \sigma } } _i ^{ \varpi }
 \end{aligned}
-\quad\quad(2.6)
+\quad\quad(1.6)
 $$<br/>
 
-Substitute **Eq.(2.6)** into **Eq.(2.5)** and yield <br/>
+Substitute **Eq.(1.6)** into **Eq.(1.5)** and yield <br/>
 
 $$
 \begin{aligned}
@@ -115,7 +115,7 @@ $$
 \end{aligned}
 $$<br/>
 
-Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and substitute **Eq.(2.4)** into $\dot V _i ^{ d, \varpi }$. Utilize the inequalities in **Eq.(2.2)** and further yield <br/>
+Take the derivative of Lyapunov function $V _i ^{ d, \varpi }$ and substitute **Eq.(1.4)** into $\dot V _i ^{ d, \varpi }$. Utilize the inequalities in **Eq.(1.2)** and further yield <br/>
 
 $$
 \begin{aligned}
@@ -124,10 +124,10 @@ $$
 & \le - 2 ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ \varpi } } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 1 } { ( V _i ^{ d, \varpi } ) } ^{ \frac { \alpha _1 ^{ \varpi } + 1 } { 2 } } - 2 ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } K _{ \alpha } ^{ d, \varpi } h _i ^{ \varpi, 2 } { ( V _i ^{ d, \varpi } ) } ^{ \frac { \alpha _2 ^{ \varpi } + 1 } { 2 } } \\
 & \le - a _1 { ( V _i ^{ d, \varpi } ) } ^{ b _1 } - a _2 { ( V _i ^{ d, \varpi } ) } ^{ b _2 }
 \end{aligned}
-\quad\quad(2.7)
+\quad\quad(1.7)
 $$<br/>
 
-According to **Lemma 1**, **Eq.(2.7)** and **Eq.(2.3)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if **Eq.(2.7)** holds and the parameter settings in **Eq.(2.3)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
+According to **Lemma 1**, **Eq.(1.7)** and **Eq.(1.3)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if **Eq.(1.7)** holds and the parameter settings in **Eq.(1.3)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
 ## 2.2 $\text{  }$ Observer implementation procedure <br/>
 
@@ -137,7 +137,7 @@ $$
 \begin{aligned}
 \dot \sigma _i ^\varpi = ( \Lambda _i ) ^{-1} ( - ( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i + h _i ^{\varpi,3} \overline \sigma _i ^\varpi )
 \end{aligned}
-\quad\quad(2.8)$$<br/>
+\quad\quad(2.1)$$<br/>
 
 Virtual angular velocity tracking error
 
@@ -145,7 +145,7 @@ $$
 \begin{aligned}
 \overline \sigma _i ^\varpi = \varpi _i - \sigma _i ^\varpi
 \end{aligned}
-\quad\quad(2.9)$$<br/>
+\quad\quad(2.2)$$<br/>
 
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^\varpi$, a high-order nonlinear differentiator is given as
 
@@ -158,10 +158,10 @@ $$
 &\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
 \end{cases}
 \end{aligned}
-\quad\quad(2.10)$$<br/>
+\quad\quad(2.3)$$<br/>
 
 
-and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(2.8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
+and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(2.1) approximately equals to the output value $\hat \sigma ^i _1$<br/>
 
 
 an adaptive updating law<br/>
@@ -170,7 +170,7 @@ $$
 \begin{aligned}
 \dot {\hat {\overline \sigma}} _i ^\varpi = \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,1} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _1 ^\varpi, \mu _d ^\varpi ) + h _i ^{\varpi,2} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _2 ^\varpi, \mu _d ^\varpi )
 \end{aligned}
-\quad\quad(2.11)$$<br/>
+\quad\quad(2.4)$$<br/>
 
 rotational disturbance observer<br/>
 
@@ -178,19 +178,19 @@ $$
 \begin{aligned}
 \hat d _i ^\varpi = \Lambda _i \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,3} \hat {\overline \sigma} _i ^\varpi
 \end{aligned}
-\quad\quad(2.12)$$<br/>
+\quad\quad(2.5)$$<br/>
 
 ## 2.3 $\text{  }$ Parameter settings and validation <br/>
 
-According to **Lemma 1**, **Eq.(2.7)** and **Eq.(2.3)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
+According to **Lemma 1**, **Eq.(1.7)** and **Eq.(1.3)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
-The observation error of rotational disturbance $d _i ^{ \varpi }$ shares the same convergence performance metrices with the auxiliary angular velocity observation error $\tilde {\overline { \sigma } } _i ^{ \varpi }$. Since **Eq.(2.7)** holds and the parameter settings in **Eq.(2.3)** is satisfied, the upper bound for the settling time of $d _i ^{ \varpi }$, equivalent to that of $\tilde {\overline { \sigma } } _i ^{ \varpi }$ under fixed-time convergence is depicted from **Lemma 1** by <br/>
+The observation error of rotational disturbance $d _i ^{ \varpi }$ shares the same convergence performance metrices with the auxiliary angular velocity observation error $\tilde {\overline { \sigma } } _i ^{ \varpi }$. Since **Eq.(1.7)** holds and the parameter settings in **Eq.(1.3)** is satisfied, the upper bound for the settling time of $d _i ^{ \varpi }$, equivalent to that of $\tilde {\overline { \sigma } } _i ^{ \varpi }$ under fixed-time convergence is depicted from **Lemma 1** by <br/>
 
 $$
 \begin{aligned}
 T _d ^{ \varpi } \le \overline { T } _d ^{ \varpi } = \frac { 3 ^ { \frac { \alpha _1 ^{ \varpi } - 1 } { 2 } } } { 2 ^ { \frac { \alpha _1 ^{ \varpi } - 1 } { 2 }  } c _i ^{ \varpi, 1 } K _{ \alpha } ^{ d, \varpi } ( \alpha _1 ^{ \varpi } - 1 ) } + \frac { 1 } { 2 ^ { \frac { \alpha _2 ^{ \varpi } - 1 } { 2 }  } c _i ^{ \varpi, 2 } K _{ \alpha } ^{ d, \varpi } ( 1 - \alpha _2 ^{ \varpi } ) }
 \end{aligned}
-\quad\quad(2.13)$$<br/>
+\quad\quad(3.1)$$<br/>
 
 
 ## 2.4 $\text{  }$ Validation for Comparison <br/>
