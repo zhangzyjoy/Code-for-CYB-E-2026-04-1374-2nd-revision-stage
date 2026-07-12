@@ -264,7 +264,7 @@ Moreover, if the auxiliary sliding surface $\overline S _{i,k} = 0$ holds, then 
 
 $$
 \begin{aligned}
-{ S _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } }  \quad\quad  \text{  if } \overline S _{i,k} = 0
+{ S _{ i,k } } & = { { \varpi } _{ i,k } ^e + 3 ^{ p + 1 } c _i ^S \frac { { { \pi } ^{ -p } } { \lvert { { \psi } _{ i,k } ^e } \rvert } ^{ p + 1 } } { 2 \tanh ( \gamma _{ \psi } \overline { \psi } _{ i,k } ^e / 2 ) } } \quad\quad \text{  if } \overline S _{i,k} = 0
 \end{aligned}
 \quad\quad(1.21)
 $$<br/>
@@ -366,9 +366,10 @@ $$<br/>
 
 The above deduction implies that $\lVert { \psi } _{ i } ^e \rVert > { ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } }$, and thus $\dot { V } _i ^{ \psi } < 0$ is obtained given that the the exponential rotational error $\psi _i ^e$ falls outside the residual set denoted by Eq.(1.28). <br/>
 
-**Once $\psi _i ^e$ falls outside Eq.(1.28), it will evolve along the direction of the negative gradient of the Lyapunov function, which finally drives it to enter the convergence region denoted by Eq.(1.28).** <br/>
+**Once $\psi _i ^e$ falls outside Eq.(1.28), it will evolve along the direction of the negative gradient of the Lyapunov function, which finally drives it to enter the convergence region denoted by Eq.(1.28).** Under this consideration, the PCNSMS is developed as Eq.(1.21) to guarantee the exponential rotational error term to converge into the neighbor set Eq.(1.28). <br/>
 
-Simultaneously, **the PCNSMS $S _i$** is driven by **the torque input depicted by Eq.(1.10)** to converge into its origin in a practical fixed time during the **reaching phase**. We can deduce that the width of the convergence region denoted by Eq.(1.28) will decrease as the upper bound of the PCNSMS $\overline { S } _M \ge \underset { i \in { \mathsf { \mathcal { V } } }, k \in { \lbrace x,y,z \rbrace } } { \mathop { \max } } \lbrace { \lvert { S _{ i,k } } \rvert } \rbrace$ declines during the reaching phase. Subsequently, when $\overline { S } _M$ evolves <br/>
+Simultaneously, **the PCNSMS $S _i$** is driven by **the torque input depicted by Eq.(1.10)** to converge into its origin in a practical fixed time during the **reaching phase**. We can deduce that the width of the convergence region denoted by Eq.(1.28) will decrease as the upper bound of the PCNSMS $\overline { S } _M \ge \underset { i \in { \mathsf { \mathcal { V } } }, k \in { \lbrace x,y,z \rbrace } } { \mathop { \max } } \lbrace { \lvert { S _{ i,k } } \rvert } \rbrace$ declines during the reaching phase. Subsequently, if $\overline { S } _M$ converges with the PCNSMS simultaneously until there exists ${ ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } } < { \varepsilon } _{ i,k } ^S$, then an appropriate PCNSMS designed as Eq.(1.21) is considered for the circumstance of ${ \varepsilon } _{ i,k } ^S$ \le \lVert { S _{ i,k } } \rVert \le \pi$. <br/>
+
 
 
 
