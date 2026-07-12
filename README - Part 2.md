@@ -355,7 +355,7 @@ $$
 \quad\quad(1.27)
 $$<br/>
 
-It is required that $\dot { V } _i ^{ \psi } < 0$ holds when . Therefore, we obtain the **convergence region** for $\psi _i ^e$ during the first stage of the reaching phase as
+Therefore, we obtain the **convergence region** for $\psi _i ^e$ during the first stage of the reaching phase as
 
 $$
 \begin{aligned}
@@ -363,6 +363,8 @@ $$
 \end{aligned}
 \quad\quad(1.28)
 $$<br/>
+
+If the the exponential rotational error $\psi _i ^e$ falls outside the residual set denoted by Eq.(1.28), it can be deduced that $\lVert { \psi } _{ i } ^e \rVert > { ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } }$, and thus $\dot { V } _i ^{ \psi } < 0$ is obtained. Once $\psi _i ^e$ falls outside Eq.(1.28), it will evolve along the direction of the negative gradient of the Lyapunov function, which finally drives it into the convergence region denoted by Eq.(1.28). <br/>
 
 
 
