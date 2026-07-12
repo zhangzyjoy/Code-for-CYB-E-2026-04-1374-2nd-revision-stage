@@ -359,9 +359,9 @@ It is required that $\dot { V } _i ^{ \psi } < 0$ holds when . Therefore, we obt
 
 $$
 \begin{aligned}
-{ \Omega _{ \psi } = { \psi _i ^e \mid 0 \le { \lVert \frac { { \psi } _{ i } ^e } { \pi } \rVert }  } }
+{ \Omega _{ \psi } } = { \lbrace \psi _i ^e \mid 0 \le { \lVert { \psi } _{ i } ^e \rVert } \le { { ( { { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M } ) } ^{ \frac { 1 } { 4 } } } \rbrace }
 \end{aligned}
-\quad\quad(1.27)
+\quad\quad(1.28)
 $$<br/>
 
 
