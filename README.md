@@ -9,13 +9,13 @@ We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** 
 **The video for real-world experimental validation can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/** <br/> <br/>
 **If there exist any question about this webpage or having interest on the source code of this paper, please do not hesitate to contact us and to discuss potential academic collaboration at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com** <br/> <br/>
 
-This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. <br/>
+This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. **To address the reviewer's comments, the logical connection between theory and validation has been strengthened.** <br/> <br/>
 
-To address the reviewer's comments, the logical connection between theory and validation has been strengthened. The narrative follows a systematic progression. <br/> 
-First, the theoretical basis for controller design is introduced using fundamental lemmas. <br/> 
-Next, the derived parameter bounds for system stability are presented. <br/> 
-Then, the parameter configurations for simulation or experimental validation are specified. <br/> 
-Finally, the simulation or experimental validation results are presented and discussed. <br/> <br/> 
+The narrative follows a systematic progression. <br/> 
+**<1>** the **theoretical basis** for controller design is introduced and fundamental lemmas are included. <br/> 
+**<2>** the parameter range and tuning principle for system stability are deduced. <br/> 
+**<3>** the parameter configurations for simulation or experimental validation are specified. <br/> 
+**<4>** the simulation or experimental validation results are presented and discussed. <br/> <br/> 
 
 **Each section in this link follows the logic above, where the link theory-validation is enhanced.** <br/> 
 
