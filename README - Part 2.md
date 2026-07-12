@@ -325,17 +325,27 @@ For $p \in (0,1)$, $1 < p + 1 < 2$ holds. The initial condition guarantees $\lve
 
 $$
 \begin{aligned}
-{ { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ p + 2 } } \ge { { \frac { \psi _{ i,k } ^e } { \pi } } ^{ 3 } } \ge { \frac { 1 } { 3 } { ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 ) } ^2 }
+{ { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ p + 2 } } \ge { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 3 } } \ge { { ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 ) } ^2 }
 \end{aligned}
 $$<br/>
 
-By summing over $k \in \lbrace x,y,z \rbrace$, it can be yielded that
+It can be further deduced that 
 
 $$
 \begin{aligned}
-
+{ \sum \nolimits _{ k = x,y,z } { { ( { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^2 ) } ^2 } } \ge { \frac { 1 } { 3 } { { ( \sum \nolimits _{ k = x,y,z } { { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^2 } ) } ^2 } }
 \end{aligned}
 $$<br/>
+
+By summing over $k \in \lbrace x,y,z \rbrace$, it can be yielded that 
+
+$$
+\begin{aligned}
+{ - 3 ^{ p + 1 } c _i ^S \sum \nolimits _{ k = x,y,z } { { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^{ p + 2 } } } \le { - 3 ^{ p + 1 } c _i ^S \sum \nolimits _{ k = x,y,z } { { ( { { \lvert \frac { { \psi } _{ i,k } ^e } { \pi } \rvert } ^2 } ) } ^2 } } \le { - 3 ^p c _i ^S { \lVert \frac { { \psi } _{ i,k } ^e } { \pi } \rVert } ^4 }
+\end{aligned}
+$$<br/>
+
+
 
 
 
