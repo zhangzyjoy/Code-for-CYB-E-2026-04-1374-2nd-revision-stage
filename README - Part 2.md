@@ -404,7 +404,7 @@ According to **Lemma 4**, given that $p \in (0,1)$ and $1 < p+1 < 2$, then we ca
 
 $$
 \begin{aligned}
-{ - { \lVert \frac { \psi _{ i,k } ^e } \rVert } ^4 } = - { { ( \sum \nolimits _{ k = x,y,z } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 } ) } ^2 } \ge { - { ( \sum \nolimits _{ k = x,y,z } { \lvert \psi _{ i,k } ^e \rvert } ^{ p + 1 } ) } ^2 }, \quad \quad { \frac { 1 } { 3 } { { ( \sum \nolimits _{ k = x,y,z } { { \lvert \psi _{ i,k } ^e \rvert } ^{ p + 1 } } ) } ^2 } } \le { \sum \nolimits _{ k = x,y,z } { \lvert \psi _{ i,k } ^e \rvert } ^{ 2 ( p + 1 ) } }
+{ - { \lVert \frac { \psi _{ i,k } ^e } { \pi } \rVert } ^4 } = - { { ( \sum \nolimits _{ k = x,y,z } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 } ) } ^2 } \ge { - { ( \sum \nolimits _{ k = x,y,z } { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ p + 1 } ) } ^2 }, \quad \quad { \frac { 1 } { 3 } { { ( \sum \nolimits _{ k = x,y,z } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ p + 1 } } ) } ^2 } } \le { \sum \nolimits _{ k = x,y,z } { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 ( p + 1 ) } }
 \end{aligned}
 $$<br/>
 
