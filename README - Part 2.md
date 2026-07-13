@@ -380,7 +380,7 @@ $$
 \end{aligned}
 $$<br/>
 
-and the latter term $- 3 ^p c _i ^S { { \lVert \frac { { \psi } _{ i } ^e } { \pi } \rVert } ^4 }$ in Eq.(1.28) is partially formulated as
+and the latter term in Eq.(1.28) $- 3 ^p c _i ^S { { \lVert \frac { { \psi } _{ i } ^e } { \pi } \rVert } ^4 }$ is partially formulated as
 
 $$
 \begin{aligned}
