@@ -1,9 +1,9 @@
-# 3. $\text{  }$ Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
+# 2. $\text{  }$ Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
 **Note : Please refer to <README - Part 2 - 1.md> for the former part of Section 3.** <br/>
 
 
-## 3.2 $\text{  }$ Controller implementation procedure <br/>
+## 2.2 $\text{  }$ Controller implementation procedure <br/>
 
 For any $k \in \lbrace { x,y,z } \rbrace$, define an auxiliary sliding mode surface
 
@@ -87,7 +87,7 @@ $$
 \end{aligned}
 \quad\quad(2.7)$$<br/>
 
-## 3.3 $\text{  }$ Parameter settings and validation <br/>
+## 2.3 $\text{  }$ Parameter settings and validation <br/>
 
 According to **Lemma 2** and **Eq.(1.9)**, the parameters of the rotational torque control input are chosen as $\tau _i$ as $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
 
@@ -104,7 +104,7 @@ where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. <br/>
 
 
 
-## 3.4 $\text{  }$ Validation for comparison <br/>
+## 2.4 $\text{  }$ Validation for comparison <br/>
 
 
 # Appendix 1 : $\text{  }$ Significant theories <br/>
