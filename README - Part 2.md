@@ -398,7 +398,16 @@ $$
 \quad\quad(1.30)
 $$<br/>
 
-According to Eq.(1.30), in order to obtain $- \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4$ in the Lyapunov derivative, it can be deduced from Eq.(1.30) that ${ - \frac { 2 } { 3 } c _i ^S \beta _{ \Phi } ^{ 1 } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } } \ge -2 \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \frac { c _i ^S } { \pi } } \beta _{ \Phi } ^{ 1 } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^{ e } ) ) }$. Therefore, the first auxiliary rotational error term in Eq.(1.29) is defined as $\Phi _k ^1 ( \psi _{ i,k } ^e ) = \beta _{ \Phi } ^1 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e$. <br/>
+According to Eq.(1.30), in order to obtain $- \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4$ in the Lyapunov derivative, it can be deduced from Eq.(1.30) that ${ - \frac { 2 } { 3 } c _i ^S \beta _{ \Phi } ^{ 1 } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } } \ge -2 \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \frac { c _i ^S } { \pi } } \beta _{ \Phi } ^{ 1 } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^{ e } ) ) }$. Therefore, the first term of auxiliary rotational error in Eq.(1.29) is defined as $\Phi _k ^1 ( \psi _{ i,k } ^e ) = \beta _{ \Phi } ^1 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e$. <br/>
+
+According to **Lemma 4**, given that $p \in (0,1)$ and $1 < p+1 < 2$, then we can derive that
+
+$$
+\begin{aligned}
+{ - { \lVert \frac { \psi _{ i,k } ^e } \rVert } ^4 } = - { { ( \sum \nolimits _{ k = x,y,z } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 } ) } ^2 } \ge { - { ( \sum \nolimits _{ k = x,y,z } { \lvert \psi _{ i,k } ^e \rvert } ^{ p + 1 } ) } ^2 }, \quad \quad { \frac { 1 } { 3 } { { ( \sum \nolimits _{ k = x,y,z } { { \lvert \psi _{ i,k } ^e \rvert } ^{ p + 1 } } ) } ^2 } } \le { \sum \nolimits _{ k = x,y,z } { \lvert \psi _{ i,k } ^e \rvert } ^{ 2 ( p + 1 ) } }
+\end{aligned}
+$$<br/>
+
 
 
 
