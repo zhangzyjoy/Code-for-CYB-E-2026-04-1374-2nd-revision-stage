@@ -464,12 +464,12 @@ We can then obtain the convergence region under condition ${ \overline { S } _{ 
 
 $$
 \begin{aligned}
-{ \Omega _{ \psi } } = { \lbrace \psi _i ^e \mid 0 \le { \lVert { \psi } _{ i } ^e \rVert } \le { { \frac { 9 { \pi } ^{ 3 } \overline { S } _M } { c _i ^S ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) } } ^{ \frac { 1 } { 4 } } } \rbrace }
+{ \Omega _{ \psi } } = { \lbrace \psi _i ^e \mid 0 \le { \lVert { \psi } _{ i } ^e \rVert } \le { { ( \frac { 9 { \pi } ^{ 3 } \overline { S } _M } { c _i ^S ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) } ) } ^{ \frac { 1 } { 4 } } } \rbrace }
 \end{aligned}
 \quad\quad(1.35)
 $$<br/>
 
-When the error state satisfies that ${ \lVert { \psi } _{ i } ^e \rVert } > { { \frac { 9 { \pi } ^{ 3 } \overline { S } _M } { c _i ^S ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) } } ^{ \frac { 1 } { 4 } } }$, namely, outside the convergence region, then $\dot { V } _i ^{ \psi } < 0$ can be ensured which indicates that the exponential rotational error ${ \psi } _{ i } ^e$ will decline and finally enter the region denoted by Eq.(1.35). <br/>
+When the error state satisfies that ${ \lVert { \psi } _{ i } ^e \rVert } > { { ( \frac { 9 { \pi } ^{ 3 } \overline { S } _M } { c _i ^S ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) } ) } ^{ \frac { 1 } { 4 } } }$, namely, outside the convergence region, then $\dot { V } _i ^{ \psi } < 0$ can be ensured which indicates that the exponential rotational error ${ \psi } _{ i } ^e$ will decline and finally enter the region denoted by Eq.(1.35). <br/>
 
 **It can be concluded from the aforementioned deduction that if given the intial condition $\lVert { \psi } _{ i } ^e (0) \rVert < \pi$ and $\lVert S _i (t) \rVert < +\infty$, and thus $\lVert { \psi } _{ i } ^e (t) \rVert < \pi$ is maintained and ${ \psi } _{ i } ^e$ can be suppressed into the small neighborhood near the origin as the PCNSMS holds the convergence.**
 
