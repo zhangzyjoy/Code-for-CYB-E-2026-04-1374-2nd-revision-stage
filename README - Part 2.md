@@ -271,7 +271,8 @@ $$<br/>
 
 when the rotational errors are remained on the **sliding phase**. <br/>
 
-We investigate **PCNSMS** $S _i$ to follow **Eq.(1.21)**, the same form with the auxiliary sliding surface, to guarantee **Eq.(1.12)** and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the **auxiliary nonsingular sliding mode surface** $\overline { S } _i$ is established as the switching threshold to determine the **piecewise function** $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/>
+We investigate **PCNSMS** $S _i$ to follow **Eq.(1.21)**, the same form with the auxiliary sliding surface, to guarantee **Eq.(1.12)** and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the **auxiliary nonsingular sliding mode surface** $\overline { S } _i$ is established as the switching threshold to determine the **piecewise function** $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/> <br/>
+
 
 ### 3.1.2 $\text{  }$ Nonsingular sliding mode surface design for reaching phase <br/>
 
@@ -393,12 +394,28 @@ Therefore, the latter term in Eq.(1.28), $- 3 ^p c _i ^S { { \lVert \frac { { \p
 
 $$
 \begin{aligned}
-{ - \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4 } \ge - 2 c _i ^S \sum \nolimits _{ k = x,y,z } { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert ^4 } = -2 \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \frac { c _i ^S } { \pi } } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e ) ) }
+{ - \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4 } \ge - 2 { c _i ^S } \sum \nolimits _{ k = x,y,z } { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert ^4 } = -2 \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \frac { c _i ^S } { \pi } } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e ) ) }
 \end{aligned}
 \quad\quad(1.30)
 $$<br/>
 
-According to Eq.(1.30), in order to obtain $- \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4$ in the Lyapunov derivative, it can be deduced from Eq.(1.30) that $-2 \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \frac { c _i ^S } { \pi } } \beta _{ \Phi } ^{ 1 } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^{ e } ) ) } \le { - { \frac { 2 } { 3 } } c _i ^S { \beta _{ \Phi } ^{ 1 } } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } }$. Therefore, the first term of auxiliary rotational error in Eq.(1.29) is defined as $\Phi _k ^1 ( \psi _{ i,k } ^e ) = { \beta _{ \Phi } ^{ 1 } } { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e$. <br/> <br/>
+According to Eq.(1.30), in order to obtain $- \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4$ in the Lyapunov derivative, it can be deduced from Eq.(1.30) that
+
+$$
+\begin{aligned}
+{ -2 { \frac { c _i ^S } { \pi } } \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \beta _{ \Phi } ^{ 1 } } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^{ e } ) ) } } \le { - { \frac { 2 } { 3 } } { c _i ^S } { \beta _{ \Phi } ^{ 1 } } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } }
+\end{aligned}
+\quad\quad(1.31)
+$$<br/>
+
+Therefore, the first term of auxiliary rotational error in Eq.(1.29) is defined as 
+
+$$
+\begin{aligned}
+{ \Phi _k ^{ 1 } ( \psi _{ i,k } ^e ) } = { { \beta _{ \Phi } ^{ 1 } } { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e }
+\end{aligned}
+\quad\quad(1.32)
+$$<br/>
 
 
 According to **Lemma 4**, given that $p \in (0,1)$ and $1 < p + 1 < 2$, then we can derive that
@@ -409,7 +426,16 @@ $$
 \end{aligned}
 $$<br/>
 
-Since 
+and we further obtain that $\frac { 1 } { 3 } { { ( \sum \nolimits _{ k = x,y,z } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ p + 1 } } ) } ^2 } \le \sum \nolimits _{ k = x,y,z } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 ( p + 1) } }$. Similar as Eq.(1.31), the second term of auxiliary rotational error in Eq.(1.29) is bounded by
+
+$$
+\begin{aligned}
+{ - { \frac { 2 } { 3 } } c _i ^S { \beta _{ \Phi } ^{ 2 } } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } } \ge { - 2 { c _i ^S } { \beta _{ \Phi } ^{ 2 } } \sum \nolimits _{ k = x,y,z } { { \lvert { \frac { \psi _{ i,k } ^e } { \pi } } \rvert } ^{ 2 ( p + 1) } } } \ge { - 2 { \frac { c _i ^S } { \pi } } \sum \nolimits _{ k = x,y,z } { \frac { \psi _{ i,k } ^e } { \pi } } }
+\end{aligned}
+$$<br/>
+
+
+
 
 
 
