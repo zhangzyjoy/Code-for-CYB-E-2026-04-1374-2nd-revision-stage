@@ -372,6 +372,15 @@ Simultaneously, **the PCNSMS $S _i$** is driven by **the torque input depicted b
 
 If the condition ${ ( { \frac { 2 { \pi } ^3 } { c _i ^S } } 3 ^{ 1 - p } \overline { S } _M ) } ^{ \frac { 1 } { 4 } } < { \varepsilon } _{ i,k } ^S$ is fulfilled in reaching phase, the designed PCNSMS should guarantee that Eq.(1.27) holds under the condition that ${ \overline { S } _{ i,k } } \neq 0, \text{  } \lVert \psi _i ^e \rVert < { \varepsilon } _{ i,k } ^S$ because Eq.(1.27) guarantees that $\psi _i ^e$ can be driven into the Eq.(1.28) convergence region. <br/>
 
+Under the condition ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilon } _{ i,k } ^S \le \lVert \psi _i ^e \rVert < \pi$, the auxiliary rotational error to be designed is denoted as $\Phi _k ( \psi _{ i,k } ^e ) = \Phi _k ^1 ( \psi _{ i,k } ^e ) + \Phi _k ^2 ( \psi _{ i,k } ^e )$. The Lyapunov derivative is further denoted as 
+
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } = { 2 \sum \nolimits _{ k = x,y,z } { ( \frac { \psi _{ i,k } ^e } { \pi } ) } } \le \frac { 6 } { \pi } \overline { S } _M - 2 \sum \nolimits _{ k = x,y,z } { ( \frac { \psi _{ i,k } ^e } { \pi } \frac { c _i ^S } { \pi } { ( \Phi _k ( \psi _{ i,k } ^e ) ) } ) }
+\end{aligned}
+\quad\quad(1.29)
+$$<br/>
+
 According to **Lemma 4**, it can be derived that
 
 $$
@@ -386,6 +395,7 @@ $$
 \begin{aligned}
 { - \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4 } \ge - 2 c _i ^S \sum \nolimits _{ k = x,y,z } { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert ^4 } = -2 \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \frac { c _i ^S } { \pi } } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e ) ) }
 \end{aligned}
+\quad\quad(1.30)
 $$<br/>
 
 
