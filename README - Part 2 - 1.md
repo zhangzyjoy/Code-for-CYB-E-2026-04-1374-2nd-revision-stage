@@ -150,7 +150,7 @@ $$
 $$<br/>
 
 
-### 3.1.2 Nonsingular sliding mode surface design for sliding phase <br/>
+### 3.1.2 $\text{  }$ Nonsingular sliding mode surface design for sliding phase <br/>
 
 During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error $\psi _i ^e$ are constrained along the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
 
@@ -274,7 +274,7 @@ when the rotational errors are remained on the **sliding phase**. <br/>
 We investigate **PCNSMS** $S _i$ to follow **Eq.(1.21)**, the same form with the auxiliary sliding surface, to guarantee **Eq.(1.12)** and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the **auxiliary nonsingular sliding mode surface** $\overline { S } _i$ is established as the switching threshold to determine the **piecewise function** $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/> <br/>
 
 
-### 3.1.2 $\text{  }$ Nonsingular sliding mode surface design for reaching phase <br/>
+### 3.1.3 $\text{  }$ Nonsingular sliding mode surface design for reaching phase <br/>
 
 On the **reaching phase**, we already developed an applied torque $\tau _i$ rotational control input to maintain a **practical fixed-time stable** $S _i$ **PCNSMS** derived from **Eq.(1.4) to Eq.(1.10)** inspired by **Lemma 2**. <br/>
 
@@ -469,12 +469,27 @@ $$
 \quad\quad(1.35)
 $$<br/>
 
+When the error state satisfies that ${ \lVert { \psi } _{ i } ^e \rVert } > { { \frac { 9 { \pi } ^{ 3 } \overline { S } _M } { c _i ^S ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) } } ^{ \frac { 1 } { 4 } } }$, namely, outside the convergence region, then $\dot { V } _i ^{ \psi } < 0$ can be ensured which indicates that the exponential rotational error ${ \psi } _{ i } ^e$ will decline and finally enter the region denoted by Eq.(1.35). <br/>
+
+**It can be concluded from the aforementioned deduction that if given the intial condition $\lVert { \psi } _{ i } ^e (0) \rVert < \pi$ and $\lVert S _i (t) \rVert < +\infty$, and thus $\lVert { \psi } _{ i } ^e (t) \rVert < \pi$ is maintained and ${ \psi } _{ i } ^e$ can be suppressed into the small neighborhood near the origin as the PCNSMS holds the convergence.**
+
+It is worth mentioned that the coefficients to be designed in the PCNSMS, that is, $\beta _{ \Phi } ^{ 1 }$ and $\beta _{ \Phi } ^{ 2 }$, can be solved by given the equtions
+
+$$
+\begin{aligned}
+\begin{cases}
+{ \Phi _k ( \psi _{ i,k } ^e ) \mid _{ \psi _{ i,k } ^e = { ( \varepsilon _{ i,k } ^S ) } _{ - } } } & = { \Phi _k ( \psi _{ i,k } ^e ) \mid _{ \psi _{ i,k } ^e = { ( \varepsilon _{ i,k } ^S ) } _{ + } } } \\
+{ \overline { \Phi } _k ( \psi _{ i,k } ^e ) \mid _{ \psi _{ i,k } ^e = { ( \varepsilon _{ i,k } ^S ) } _{ - } } } & = { \overline { \Phi } _k ( \psi _{ i,k } ^e ) \mid _{ \psi _{ i,k } ^e = { ( \varepsilon _{ i,k } ^S ) } _{ + } } }
+\end{cases}
+\end{aligned}
+$$<br/>
+
+where $\overline { \Phi } _k ( \psi _{ i,k } ^e )$ is the first-order derivative of the piecewise auxiliary rotational error ${ \Phi } _k ( \psi _{ i,k } ^e )$.
+
 
 **Note : Please refer to <README - Part 2 - 2.md> for the rest part of Section 3.** <br/>
 
 # Appendix 1 : $\text{  }$ Significant theories <br/>
-
-## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
 
 Consider a nonlinear system as <br/>
 
@@ -518,76 +533,6 @@ $$
 \sum _{ k = 1 } ^{ N } { ( q _k ) ^{ \alpha _1 } } \ge { ( \sum _{ k = 1 } ^{ N } { q _k } ) } ^{ \alpha _1 }, \quad \quad \sum _{ k = 1 } ^{ N } { ( q _k ) ^{ \alpha _2 } } \ge N ^{ 1 - \alpha _2 } { ( \sum _{ k = 1 } ^{ N } { q _k } ) } ^{ \alpha _2 }
 \end{aligned}
 $$<br/>
-
-
-## A.2 $\text{  }$ Design of nonlinear smooth sigmoid function <br/>
-
-A newly introduced **nonlinear smooth sigmoid vector** is defined as <br/>
-
-$$
-\begin{aligned}
-\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _k ( \overline x _1, \alpha, \gamma ), ..., \vartheta _k ( \overline x _n, \alpha, \gamma ) ] ^T
-\end{aligned}
-\quad\quad(A.2)
-$$<br/>
-
-with each entry denoted as <br/>
-
-$$
-\begin{aligned}
-\vartheta _k ( \overline x _k, \alpha, \gamma ) = \lvert x _k \rvert ^ \alpha \lambda _k ( x _k, \gamma )
-\end{aligned}
-\quad\quad(A.3)
-$$<br/>
-
-$\lambda _k ( x _k, \gamma )$ is a sigmoid-like bounded function defined as <br/>
-
-$$
-\begin{aligned}
-\lambda _k ( x _k, \gamma ) = -1 + \frac 1 {1 + \exp ( - \gamma x _k )}
-\end{aligned}
-\quad\quad(A.4)
-$$<br/>
-
-where $\gamma > 0$ controls the growth rate around the zero crossing. <br/>
-
-**Lemma 5** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
-
-$$
-\begin{aligned}
-\begin{cases}
-&- ( \overline x ) ^T \vartheta ( \overline x, \alpha, \gamma ) \le - 2 ^{ \frac { \alpha + 1 } { 2 } } K _{ \alpha } ( \frac { ( \overline x ) ^T \overline x } { 2 } ) ^{ \frac { \alpha + 1 } { 2 } } ), \quad\quad ( 0 < \alpha \le 1 ) \\
-&- ( \overline x ) ^T \vartheta ( \overline x, \alpha, \gamma ) \le - 2 ^{ \frac { \alpha + 1 } { 2 } } n ^{ \frac { 1 - \alpha } { 2 } } K _{ \alpha } ( \frac { ( \overline x ) ^T \overline x } { 2 } ) ^{ \frac { \alpha + 1 } { 2 } } ), \quad\quad ( \alpha > 1 )
-\end{cases}
-\end{aligned}
-\quad\quad(A.5)
-$$<br/>
-
-where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants. <br/>
-
-## A.3 $\text{  }$ System dynamics of a quadrotor UAV <br/>
-
-Each agent in the UAV team is considered as a quadrotor, which can be decoupled into rotational and translational subsystems as
-
-$$
-\begin{aligned}
-\begin{cases}
-&\dot R ( Q _i ) = R ( Q _i ) ( \varpi _i ) _{\times}  \\
-&\dot \varpi _i = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + d _i ^{\varpi} )
-\end{cases}
-\end{aligned}
-\quad\quad(A.6)$$<br/>
-
-$$
-\begin{aligned}
-\begin{cases}
-&\dot p _i = v _i  \\
-&\dot v _i = - g \overline e _3 + \frac { T _i } { m _i } R ( Q _i ) \overline e _3 + d _i ^v
-\end{cases}
-\end{aligned}
-\quad\quad(A.7)$$<br/>
-
-Each quadcopter UAV node is decoupled into rotational and translational subsystems. <br/> <br/> 
 
 
 # Appendix 2 : $\text{  }$ Symbol definition list <br/>
