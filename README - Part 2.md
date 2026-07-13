@@ -398,7 +398,8 @@ $$
 \quad\quad(1.30)
 $$<br/>
 
-According to Eq.(1.30), in order to obtain $- \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4$ in the Lyapunov derivative, it can be deduced from Eq.(1.30) that ${ - \frac { 2 } { 3 } c _i ^S \beta _{ \Phi } ^{ 1 } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } } \ge -2 \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \frac { c _i ^S } { \pi } } \beta _{ \Phi } ^{ 1 } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^{ e } ) ) }$. Therefore, the first term of auxiliary rotational error in Eq.(1.29) is defined as $\Phi _k ^1 ( \psi _{ i,k } ^e ) = \beta _{ \Phi } ^1 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e$. <br/>
+According to Eq.(1.30), in order to obtain $- \frac { 2 } { 3 } c _i ^S { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^4$ in the Lyapunov derivative, it can be deduced from Eq.(1.30) that $-2 \sum \nolimits _{ k = x,y,z } { ( { \frac { \psi _{ i,k } ^e } { \pi } } { \frac { c _i ^S } { \pi } } \beta _{ \Phi } ^{ 1 } ( { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^{ e } ) ) } \le { - \frac { 2 } { 3 } c _i ^S \beta _{ \Phi } ^{ 1 } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } }$. Therefore, the first term of auxiliary rotational error in Eq.(1.29) is defined as $\Phi _k ^1 ( \psi _{ i,k } ^e ) = \beta _{ \Phi } ^1 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2 } \psi _{ i,k } ^e$. <br/> <br/>
+
 
 According to **Lemma 4**, given that $p \in (0,1)$ and $1 < p+1 < 2$, then we can derive that
 
@@ -408,7 +409,7 @@ $$
 \end{aligned}
 $$<br/>
 
-
+Since 
 
 
 
