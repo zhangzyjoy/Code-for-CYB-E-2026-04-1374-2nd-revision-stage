@@ -447,12 +447,20 @@ Subsequently, when the variable scope exists as ${ \overline { S } _{ i,k } } \n
 
 $$
 \begin{aligned}
-{ S _{ i,k } } = { \varpi } _{ i,k } ^e + c _i ^S { \psi _{ i,k } ^e } ( \beta _{ \Phi } ^{ 1 } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 } + \beta _{ \Phi } ^{ 2 } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2p } } )
+{ S _{ i,k } } = { { \varpi } _{ i,k } ^e + c _i ^S { \psi _{ i,k } ^e } ( \beta _{ \Phi } ^{ 1 } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 } + \beta _{ \Phi } ^{ 2 } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2p } } ) }
 \end{aligned}
 \quad\quad(1.34)
 $$<br/>
 
-The Lyapunov function satisfies $\dot { V } _i ^{ \psi } \le \frac { 6 } { \pi } { \overline } { S } _M - \frac { 2 } { 3 } c _i ^S ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) { { \lVert \frac { \psi _{ i } ^e } { \pi } \rVert } ^{ 4 } } < 0$. We can then obtain the convergence region under condition ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilon } _{ i,k } ^S \le \lVert \psi _i ^e \rVert < \pi$ as
+The Lyapunov derivative is required to satisfy
+
+$$
+\begin{aligned}
+{ \dot { V } _i ^{ \psi } } \le { { \frac { 6 } { \pi } } { \overline { S } _M } - { \frac { 2 } { 3 } } { c _i ^S } { ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) } { { \lVert \frac { \psi _{ i } ^e } { \pi } \rVert } ^{ 4 } } } < { 0 }
+\end{aligned}
+$$<br/>
+
+We can then obtain the convergence region under condition ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilon } _{ i,k } ^S \le \lVert \psi _i ^e \rVert < \pi$ as
 
 $$
 \begin{aligned}
@@ -462,10 +470,8 @@ $$
 $$<br/>
 
 
-
 **Note : Please refer to <README - Part 2 - 2.md> for the rest part of Section 3.** <br/>
 
-进一步可得，当 时，即 
 # Appendix 1 : $\text{  }$ Significant theories <br/>
 
 ## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
