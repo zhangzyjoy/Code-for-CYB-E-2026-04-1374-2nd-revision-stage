@@ -1,8 +1,8 @@
-# 2. $\text{  }$ Fixed-time rotational disturbance observer (FxTDO) <br/>
+# 1. $\text{  }$ Fixed-time rotational disturbance observer (FxTDO) <br/>
 
 In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics **Eq.(A.6)** and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
 
-## 2.1 $\text{  }$ Theories and design principles <br/>
+## 1.1 $\text{  }$ Theories and design principles <br/>
 
 Define a **virtual angular velocity tracking variable** as <br/>
 
@@ -129,7 +129,7 @@ $$<br/>
 
 According to **Lemma 1**, **Eq.(1.7)** and **Eq.(1.3)**, $\tilde {\overline { \sigma } } _i ^{ \varpi } = 0$ can be achieved within fixed time only if **Eq.(1.7)** holds and the parameter settings in **Eq.(1.3)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
-## 2.2 $\text{  }$ Observer implementation procedure <br/>
+## 1.2 $\text{  }$ Observer implementation procedure <br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -180,7 +180,7 @@ $$
 \end{aligned}
 \quad\quad(2.5)$$<br/>
 
-## 2.3 $\text{  }$ Parameter settings and validation <br/>
+## 1.3 $\text{  }$ Parameter settings and validation <br/>
 
 According to **Lemma 1**, **Eq.(1.7)** and **Eq.(1.3)**, parameter settings should guarantee $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
@@ -193,7 +193,7 @@ T _d ^{ \varpi } \le \overline { T } _d ^{ \varpi } = \frac { 3 ^ { \frac { \alp
 \quad\quad(3.1)$$<br/>
 
 
-## 2.4 $\text{  }$ Validation for Comparison <br/>
+## 1.4 $\text{  }$ Validation for Comparison <br/>
 
 
 # Appendix 1 : $\text{  }$ Significant theories <br/>
