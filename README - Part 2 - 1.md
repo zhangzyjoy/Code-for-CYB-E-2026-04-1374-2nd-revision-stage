@@ -1,4 +1,4 @@
-# 3. $\text{  }$ Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
+# 2. $\text{  }$ Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
 According to the rotational dynamics in Eq.(A.6), define an exponential coordination $\psi _i ^e = [ \Psi ( R ( Q _i ^e) ) ] _{\vee}$ which is derived through inverse logarithm mapping. We establish the rotational system error dynamics as
 
@@ -11,7 +11,7 @@ $$
 \end{aligned}
 \quad\quad(1.1)$$<br/>
 
-## 3.1 $\text{  }$ Theories and design principles <br/>
+## 2.1 $\text{  }$ Theories and design principles <br/>
 
 To avoid the **ambiguity** of the **logarithmic mapping** on the **boundary of singular spherical neighborhood** $\partial \Omega _{\pi} = \lbrace \psi _i ^e \in \mathbb{R} ^{3} \mid \lVert \psi _i ^e \rVert = \pi \rbrace$, a specific mechanism is developed to maintain $\lVert \psi _i ^e \rVert < \pi$ under the **initial condition** of $\lVert \psi _i ^e ( 0 ) \rVert < \pi$. <br/>
 
@@ -36,7 +36,7 @@ $$
 \quad\quad(1.3)
 $$<br/>
 
-### 3.1.1 $\text{  }$ Rotational control torque design for the reaching phase <br/>
+### 2.1.1 $\text{  }$ Rotational control torque design for the reaching phase <br/>
 
 First we consider the **reaching phase** of the sliding surface, the objective is to drive the **piecewise continuous nonsingular sliding mode surface (PCNSMS)** ${ S } _i$ towards its origin, and thus the system state errors ${ \varpi } _i ^e$ and ${ \Phi } ( \psi _i ^e )$ can be restrained on the sliding mode surface ${ S } _i = 0$. Define a Lyapunov candidate for the reaching phase ${ S } _i$ as $V _i ^S = \frac {1} {2} ( S _i )^T \Lambda _i S _i$ and substitute Eq.(1.3) into its derivative as <br/>
 
@@ -150,7 +150,7 @@ $$
 $$<br/>
 
 
-### 3.1.2 $\text{  }$ Nonsingular sliding mode surface design for sliding phase <br/>
+### 2.1.2 $\text{  }$ Nonsingular sliding mode surface design for sliding phase <br/>
 
 During the **reaching phase**, the **PCNSMS** converges to zero, and thus the angular velocity error ${ \varpi } _i ^e$ and the exponential rotational error $\psi _i ^e$ are constrained along the sliding surface $S _i = 0$ within a practical fixed time, namely ${ \varpi } _{i,k} ^e = - c _i ^S \Phi ( \psi _{i,k} ^e )$ for any $k \in \lbrace x, y, z \rbrace$. <br/>
 
@@ -274,7 +274,7 @@ when the rotational errors are remained on the **sliding phase**. <br/>
 We investigate **PCNSMS** $S _i$ to follow **Eq.(1.21)**, the same form with the auxiliary sliding surface, to guarantee **Eq.(1.12)** and to thereafter achieve the fixed-time stable property of $\psi _i ^e$. Moreover, the **auxiliary nonsingular sliding mode surface** $\overline { S } _i$ is established as the switching threshold to determine the **piecewise function** $\Phi ( \psi _{i,k} ^e )$ in PCNSMS $S _i$. <br/> <br/>
 
 
-### 3.1.3 $\text{  }$ Nonsingular sliding mode surface design for reaching phase <br/>
+### 2.1.3 $\text{  }$ Nonsingular sliding mode surface design for reaching phase <br/>
 
 On the **reaching phase**, we already developed an applied torque $\tau _i$ rotational control input to maintain a **practical fixed-time stable** $S _i$ **PCNSMS** derived from **Eq.(1.4) to Eq.(1.10)** inspired by **Lemma 2**. <br/>
 
