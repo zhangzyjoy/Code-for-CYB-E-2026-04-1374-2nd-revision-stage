@@ -376,7 +376,7 @@ Under the condition ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilo
 
 $$
 \begin{aligned}
-{ \dot { V } _i ^{ \psi } } = { 2 \sum \nolimits _{ k = x,y,z } { ( \frac { \psi _{ i,k } ^e } { \pi } ) } } \le \frac { 6 } { \pi } \overline { S } _M - 2 \sum \nolimits _{ k = x,y,z } { ( \frac { \psi _{ i,k } ^e } { \pi } \frac { c _i ^S } { \pi } { ( \Phi _k ( \psi _{ i,k } ^e ) ) } ) }
+{ \dot { V } _i ^{ \psi } } = { 2 \sum \nolimits _{ k = x,y,z } { ( \frac { \psi _{ i,k } ^e } { \pi } ) } } \le \frac { 6 } { \pi } \overline { S } _M - 2 \sum \nolimits _{ k = x,y,z } { ( \frac { \psi _{ i,k } ^e } { \pi } \frac { c _i ^S } { \pi } { ( \Phi _k ^1 ( \psi _{ i,k } ^e ) + \Phi _k ^2 ( \psi _{ i,k } ^e ) ) } ) }
 \end{aligned}
 \quad\quad(1.29)
 $$<br/>
