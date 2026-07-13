@@ -70,7 +70,7 @@ where ${ \eta } _i ^S$ is a positive constant. <br/>
 
 Design the applied torque as $\tau _i = \overset {\frown} { \tau } _i - \frac {1} {2} ( \overline { \eta } _i ^S ) ^2 \lVert F _i ^S \rVert ^ 2 \lVert S _i \rVert ^ 2$. The Lyapunov function for **reaching phase** of **PCNSMS** is bounded by $\dot { V } _i ^S \le ( S _i ) ^T \overset { \frown } { \tau } _i + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }$. <br/>
 
-According to **Lemma 2**, if we set $c_0 = 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }$, then $( S _i )^T \overset {\frown} { \tau } _i$ should be upper bounded by $- a _1 { ( { V } _i ^S ) } ^ { b _1 } - a _2 { ( { V } _i ^S ) } ^ { b _2 }$. Set constant parameters as $l _i ^{ S,1 } > 0$, $l _i ^{ S,2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. It is easy to obtain $( \beta _{ \varpi } ^1 + 1 ) / 2 > 1$ and $0 < ( \beta _{ \varpi } ^2 + 1 ) / 2 < 1$. Leveraging **Lemma 4**, the upper bound of $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } )$ and $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )$ is yielded as <br/>
+According to **Lemma 2**, if we set $c_0 = 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 }$, then $( S _i )^T \overset {\frown} { \tau } _i$ should be upper bounded by $- a _1 { ( { V } _i ^S ) } ^ { b _1 } - a _2 { ( { V } _i ^S ) } ^ { b _2 }$. Set constant parameters as $l _i ^{ S,1 } > 0$, $l _i ^{ S,2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. It is easy to obtain $( \beta _{ \varpi } ^1 + 1 ) / 2 > 1$ and $0 < ( \beta _{ \varpi } ^2 + 1 ) / 2 < 1$. Leveraging **Lemma 5**, the upper bound of $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^1, \mu _c ^{ \Theta } )$ and $( S _i )^T \vartheta ( S _i, \beta _{ \varpi } ^2, \mu _c ^{ \Theta } )$ is yielded as <br/>
 
 $$
 \begin{aligned}
@@ -526,7 +526,7 @@ $$<br/>
 
 $$
 \begin{aligned}
-\sum _{ k = 1 } ^{ N } { ( q _k ) ^{ \alpha _1 } } \ge { ( \sum _{ k = 1 } ^{ N } { q _k } ) } ^{ \alpha _1 }, \test{     } \sum _{ k = 1 } ^{ N } { ( q _k ) ^{ \alpha _2 } } \ge N ^{ 1 - \alpha _2 } { ( \sum _{ k = 1 } ^{ N } { q _k } ) } ^{ \alpha _2 }
+\sum _{ k = 1 } ^{ N } { ( q _k ) ^{ \alpha _1 } } \ge { ( \sum _{ k = 1 } ^{ N } { q _k } ) } ^{ \alpha _1 }, \quad \quad \sum _{ k = 1 } ^{ N } { ( q _k ) ^{ \alpha _2 } } \ge N ^{ 1 - \alpha _2 } { ( \sum _{ k = 1 } ^{ N } { q _k } ) } ^{ \alpha _2 }
 \end{aligned}
 $$<br/>
 
@@ -562,7 +562,7 @@ $$<br/>
 
 where $\gamma > 0$ controls the growth rate around the zero crossing. <br/>
 
-**Lemma 4** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
+**Lemma 5** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
 
 $$
 \begin{aligned}
