@@ -434,14 +434,25 @@ $$
 \end{aligned}
 $$<br/>
 
-Treat the last inequality in the above expression as an equality, and then we derive
+Consider the last inequality in the above expression as an equality, and then we derive the second term of auxiliary rotational error as
 
 $$
 \begin{aligned}
 { \Phi _k ^2 ( \psi _{ i,k } ^e ) } = { \beta _{ \Phi } ^2 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2p } \psi _{ i,k } ^e }
-\quad\quad(1.33)
 \end{aligned}
+\quad\quad(1.33)
 $$<br/>
+
+Subsequently, when the parameter scope exists as ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilon } _{ i,k } ^S \le \lVert \psi _i ^e \rVert < \pi$, the PCNSMS is developed as
+
+$$
+\begin{aligned}
+{ S _{ i,k } } = { \varpi } _{ i,k } ^e + c _i ^S { \psi _{ i,k } ^e } ( \beta _{ \Phi } ^{ 1 } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^2 } + \beta _{ \Phi } ^{ 2 } { { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2p } } )
+\end{aligned}
+\quad\quad(1.34)
+$$<br/>
+
+
 
 
 
