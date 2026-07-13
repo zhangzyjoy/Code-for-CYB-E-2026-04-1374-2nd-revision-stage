@@ -443,7 +443,7 @@ $$
 \quad\quad(1.33)
 $$<br/>
 
-Subsequently, when the parameter scope exists as ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilon } _{ i,k } ^S \le \lVert \psi _i ^e \rVert < \pi$, the PCNSMS is developed as
+Subsequently, when the variable scope exists as ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilon } _{ i,k } ^S \le \lVert \psi _i ^e \rVert < \pi$, the PCNSMS is developed as
 
 $$
 \begin{aligned}
@@ -452,12 +452,20 @@ $$
 \quad\quad(1.34)
 $$<br/>
 
+The Lyapunov function satisfies $\dot { V } _i ^{ \psi } \le \frac { 6 } { \pi } { \overline } { S } _M - \frac { 2 } { 3 } c _i ^S ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) { { \lVert \frac { \psi _{ i } ^e } { \pi } \rVert } ^{ 4 } } < 0$. We can then obtain the convergence region under condition ${ \overline { S } _{ i,k } } \neq 0, \text{  } { \varepsilon } _{ i,k } ^S \le \lVert \psi _i ^e \rVert < \pi$ as
+
+$$
+\begin{aligned}
+{ \Omega _{ \psi } } = { \lbrace \psi _i ^e \mid 0 \le { \lVert { \psi } _{ i } ^e \rVert } \le { { \frac { 9 { \pi } ^{ 3 } \overline { S } _M } { c _i ^S ( \beta _{ \Phi } ^{ 1 } + \beta _{ \Phi } ^{ 2 } ) } } ^{ \frac { 1 } { 4 } } } \rbrace }
+\end{aligned}
+\quad\quad(1.35)
+$$<br/>
 
 
 
 **Note : Please refer to <README - Part 2 - 2.md> for the rest part of Section 3.** <br/>
 
-
+进一步可得，当 时，即 
 # Appendix 1 : $\text{  }$ Significant theories <br/>
 
 ## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
