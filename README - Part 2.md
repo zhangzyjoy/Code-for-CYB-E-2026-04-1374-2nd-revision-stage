@@ -430,10 +430,18 @@ and we further obtain that $\frac { 1 } { 3 } { { ( \sum \nolimits _{ k = x,y,z 
 
 $$
 \begin{aligned}
-{ - { \frac { 2 } { 3 } } c _i ^S { \beta _{ \Phi } ^{ 2 } } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } } \ge { - 2 { c _i ^S } { \beta _{ \Phi } ^{ 2 } } \sum \nolimits _{ k = x,y,z } { { \lvert { \frac { \psi _{ i,k } ^e } { \pi } } \rvert } ^{ 2 ( p + 1) } } } \ge { - 2 { \frac { c _i ^S } { \pi } } \sum \nolimits _{ k = x,y,z } { \frac { \psi _{ i,k } ^e } { \pi } } }
+{ - { \frac { 2 } { 3 } } c _i ^S { \beta _{ \Phi } ^{ 2 } } { \lVert \frac { \psi _i ^e } { \pi } \rVert } ^{ 4 } } \ge { - 2 { c _i ^S } { \beta _{ \Phi } ^{ 2 } } \sum \nolimits _{ k = x,y,z } { { \lvert { \frac { \psi _{ i,k } ^e } { \pi } } \rvert } ^{ 2 ( p + 1) } } } \ge { - 2 { \frac { c _i ^S } { \pi } } \sum \nolimits _{ k = x,y,z } { \frac { \psi _{ i,k } ^e } { \pi } { \Phi _k ^2 ( \psi _{ i,k } ^e ) } } }
 \end{aligned}
 $$<br/>
 
+Treat the last inequality in the above expression as an equality, and then we derive
+
+$$
+\begin{aligned}
+{ \Phi _k ^2 ( \psi _{ i,k } ^e ) } = { \beta _{ \Phi } ^2 { \lvert \frac { \psi _{ i,k } ^e } { \pi } \rvert } ^{ 2p } \psi _{ i,k } ^e }
+\quad\quad(1.33)
+\end{aligned}
+$$<br/>
 
 
 
