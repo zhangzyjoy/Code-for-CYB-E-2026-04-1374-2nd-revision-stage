@@ -1,6 +1,6 @@
 # 2. $\text{  }$ Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
-**Note : Please refer to <README - Part 2 - 1.md> for the former part of Section 3.** <br/>
+**Note : Please refer to <README - Part 2 - 1.md> for the previous part of Section 3.** <br/>
 
 
 ## 2.2 $\text{  }$ Controller implementation procedure <br/>
@@ -89,6 +89,9 @@ $$
 $$<br/>
 
 ## 2.3 $\text{  }$ Parameter settings and validation <br/>
+
+Utilizing the theoretical deduction in the previous README markdown file **<README - Part 2 - 1.md>**, we can infer that **the rotational error states $\varpi _i ^e$ and $\psi _i ^e$** can be driven to converge into its origin in fixed time, and further obtain the time upper bound through **Lemmas provided in Appendix 1**.
+
 
 According to **Lemma 2** and **Eq.(1.9)**, the parameters of the rotational torque control input are chosen as $\tau _i$ as $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
 
