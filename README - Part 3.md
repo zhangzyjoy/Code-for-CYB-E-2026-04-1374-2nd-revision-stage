@@ -38,7 +38,7 @@ $$
 \quad\quad(1.3)
 $$<br/>
 
-For the theoretical proof for the fixed-time stability of the distributed velocity observation, the Lyapunov candidate is chosen as $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$. Substitute Eq.(1.2) into <br/>
+For the theoretical proof for the fixed-time stability of the distributed velocity observation, the Lyapunov candidate is chosen as $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$. Substitute Eq.(1.2) into  <br/>
 
 
 
