@@ -85,23 +85,36 @@ $$
 &\dot \psi ^e _i = \varpi _i ^e
 \end{cases}
 \end{aligned}
-\quad\quad(2.7)$$<br/>
+\quad\quad(2.7)
+$$<br/>
 
 ## 2.3 $\text{  }$ Parameter settings and validation <br/>
 
 According to **Lemma 2** and **Eq.(1.9)**, the parameters of the rotational torque control input are chosen as $\tau _i$ as $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
 
-According to **Lemma 2**, the settling time for the practical fixed-time convergence of **PCNSMS** $S _i$ is indicated as
+According to **Lemma 2**, the settling time for the practical fixed-time convergence of **PCNSMS** $S _i$ in **reaching phase** is indicated as
 
 $$
 \begin{aligned}
 T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi } = \frac { { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } } { 2 ^{ \frac { \beta _{ \varpi } ^1 - 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ \varpi } ^1 } { 2 } } c _i ^{ \varpi, 1 } K _i ^{ \varpi } \eta _c ^{ \varpi } ( \beta _{ \varpi } ^1 - 1 ) } + \frac { { ( \lambda _{max} ( \Lambda _i ) ) } ^ { \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } } { 2 ^{ \frac { \beta _{ \varpi } ^2 - 1 } { 2 } } c _i ^{ \varpi, 2 } K _i ^{ \varpi } \eta _c ^{ \varpi } ( 1 - \beta _{ \varpi } ^2 ) }
 \end{aligned}
+\quad\quad(3.1)
 $$<br/>
 
-where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. <br/>
+where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. **The rotational error states $\varpi _i ^e$ and $\psi _i ^e$ can converge into and remain along the sliding mode surface $S _i = 0$ during the reaching phase within fixed time upper bounded by Eq.(3.1) $T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi }$**. <br/>
 
 
+
+
+
+
+Given that
+
+$$
+\begin{aligned}
+{ \overline { T } _d ^{ \varpi } } = { \frac { 3 ^ { \frac { \alpha _1 ^{ \varpi } - 1 } { 2 } } } { 2 ^ { \frac { \alpha _1 ^{ \varpi } - 1 } { 2 }  } c _i ^{ \varpi, 1 } K _{ \alpha } ^{ d, \varpi } ( \alpha _1 ^{ \varpi } - 1 ) } + \frac { 1 } { 2 ^ { \frac { \alpha _2 ^{ \varpi } - 1 } { 2 }  } c _i ^{ \varpi, 2 } K _{ \alpha } ^{ d, \varpi } ( 1 - \alpha _2 ^{ \varpi } ) } }
+\end{aligned}
+$$<br/>
 
 
 ## 2.4 $\text{  }$ Validation for comparison <br/>
