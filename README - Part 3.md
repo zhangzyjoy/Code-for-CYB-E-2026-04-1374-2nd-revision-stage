@@ -7,19 +7,21 @@ We use $\hat { p } _i ^d$ and $\hat { v } _i ^d$ to denote the distributed obser
 
 The observation errors of desired velocity and position for the $i$-th follower vertex are individually defined as
 
+$$
 \begin{aligned}
 \begin{cases}
-{ e _{i,v} ^d } &= { \hat v _i ^d - v_0 - \dot \delta _i } \\
-{ e _{i,p} ^d } &= { \hat p _i ^d - p_0 - \delta _i }
+{ e _{i,v} ^d } &= { \hat { v } _i ^{ d } - v _0 - \dot { \delta } _i } \\
+{ e _{i,p} ^d } &= { \hat { p } _i ^{ d } - p _0 - \delta _i }
 \end{cases}
 \end{aligned}
 \quad\quad(1.1)
 $$<br/>
 
-Then the stacked observation vector is defined as $E _v ^d = [ { ( e _{ 1,v } ^d ) } ^T, ..., { ( e _{ n,v } ^d ) } ^T ] ^T$ and $E _p ^d = [ { ( e _{ 1,p } ^d ) } ^T, ..., { ( e _{ n,p } ^d ) } ^T ] ^T$. Introduce the Laplacian matrix $L = [ l _{ ij } ] _{ N × N }$ with each entry as $l _{ ij } = \sum _{ j = 1, j \neq i } ^{ N } { w _{ ij } }$ if $i = j$ and $l _{ ij } = - w _{ ij }$ and a diagonal matrix $B = \diag { [ b _{ 10 }, ..., b _{ n0 } ] }$. An auxiliary Laplician matrix is further defined as $\overline { L } = L + B$. Invoking the auxiliary Laplician $\overline { L }$ and considering the overall observation result, the stacked lumped observation error is indicated as <br/>
+Then the stacked observation vector is defined as $E _v ^d = [ { ( e _{ 1,v } ^d ) } ^T, ..., { ( e _{ n,v } ^d ) } ^T ] ^T$ and $E _p ^d = [ { ( e _{ 1,p } ^d ) } ^T, ..., { ( e _{ n,p } ^d ) } ^T ] ^T$. Introduce the Laplacian matrix $L = [ l _{ ij } ] _{ N × N }$ with each entry as $l _{ ij } = \sum _{ j = 1, j \neq i } ^{ N } { w _{ ij } }$ for $i = j$ and $l _{ ij } = - w _{ ij }$ for $i \neq j$ and a diagonal matrix $B = \text{diag} { [ b _{ 10 }, ..., b _{ n0 } ] }$. An auxiliary Laplician matrix is further defined as $\overline { L } = L + B$. Invoking the auxiliary Laplician $\overline { L }$ and considering the overall observation result, the stacked lumped observation error is indicated as <br/>
 
+$$
 \begin{aligned}
-{ \tilde { E } _{ i,v } ^d } &= { ( \overline { L } \otimes I _{ 3 } ) } E _{ i,v } ^d }, \quad \quad { \tilde { E } _{ i,p } ^d } &= { ( \overline { L } \otimes I _{ 3 } ) } E _{ i,p } ^d }
+{ \tilde { E } _{ i,v } ^d } &= { { ( \overline { L } \otimes I _{ 3 } ) } E _{ i,v } ^d }, \quad \quad { \tilde { E } _{ i,p } ^d } &= { ( \overline { L } \otimes I _{ 3 } ) E _{ i,p } ^d }
 \end{aligned}
 \quad\quad(1.2)
 $$<br/>
