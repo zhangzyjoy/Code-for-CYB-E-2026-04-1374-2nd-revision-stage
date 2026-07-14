@@ -53,13 +53,41 @@ $$
 \begin{aligned}
 \begin{cases}
 { - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
-{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } }
+{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
-\quad\quad(1.3)
+\quad\quad(1.5)
 $$<br/>
 
+Invoking $E _v ^d = \hat { v } ^d - 1 _{ N } \otimes v _0$, we obtain the derivative to be $\dot { E } _v ^d = \dot { \hat { v } } ^d - 1 _{ N } \otimes u _0$. Subsequently, it can be derived that
 
+$$
+\begin{aligned}
+{ \dot { V } _o ^{ v } } = { { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { E } _v ^d } = { { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { \hat { v } } ^d - { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( 1 _{ N } \otimes u _0 ) }
+\end{aligned}
+\quad\quad(1.6)
+$$<br/>
+
+Leveraging Young's inequality and yield
+
+$$
+\begin{aligned}
+{ - { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( 1 _{ N } \otimes u _0 ) } & \le { \frac { 1 } { 2 } \cdot \frac { 1 } { 2 } ( { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ) { ( { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ) } ^{ T } + \frac { 1 } { 2 } 2 \cdot N \cdot { \overline { u } } ^{ 2 } } \\
+& \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) ( { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) E _v ^d ) + N { \overline u _{ 0 } } ^{ 2 } } \\
+& \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { \overline u _{ 0 } } ^{ 2 } }
+\end{aligned}
+\quad\quad(1.7)
+$$<br/>
+
+where the control input $u _0$ for the leader vertex has an upper bound $\lVert u _{ 0 } \rVert \le \overline { u } _{ 0 }$. Substitute Eq.(1.7) into Eq.(1.6) and further yield
+
+$$
+\begin{aligned}
+{ \dot { V } _o ^{ v } } \le { { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { \hat { v } } ^{ d } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { \overline u _{ 0 } } ^{ 2 } } \\
+
+\end{aligned}
+\quad\quad(1.8)
+$$<br/>
 
 
 
