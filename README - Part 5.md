@@ -83,6 +83,14 @@ $$
 \quad\quad(31)
 $$<br/>
 
+## 5.3 $\text{  }$ Parameter settings and validation
+
+
+
+## 5.4 $\text{  }$ Validation for comparison
+
+
+
 # Appendix 1 : $\text{  }$ Significant theories <br/>
 
 ## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
