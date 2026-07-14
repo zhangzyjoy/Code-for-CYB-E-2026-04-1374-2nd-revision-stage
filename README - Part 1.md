@@ -242,7 +242,7 @@ A newly introduced **nonlinear smooth sigmoid vector** is defined as <br/>
 
 $$
 \begin{aligned}
-\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _k ( \overline x _1, \alpha, \gamma ), ..., \vartheta _k ( \overline x _n, \alpha, \gamma ) ] ^T
+\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ] ^T
 \end{aligned}
 \quad\quad(A.2)
 $$<br/>
@@ -251,7 +251,7 @@ with each entry denoted as <br/>
 
 $$
 \begin{aligned}
-\vartheta _k ( \overline x _k, \alpha, \gamma ) = \lvert x _k \rvert ^ \alpha \lambda _k ( x _k, \gamma )
+\vartheta _k ( x _k, \alpha, \gamma ) = \lvert x _k \rvert ^ \alpha \lambda _k ( x _k, \gamma )
 \end{aligned}
 \quad\quad(A.3)
 $$<br/>
@@ -260,7 +260,7 @@ $\lambda _k ( x _k, \gamma )$ is a sigmoid-like bounded function defined as <br/
 
 $$
 \begin{aligned}
-\lambda _k ( x _k, \gamma ) = -1 + \frac 1 {1 + \exp ( - \gamma x _k )}
+\lambda _k ( x _k, \gamma ) = -1 + \frac 1 { 1 + \exp ( - \gamma x _k ) }
 \end{aligned}
 \quad\quad(A.4)
 $$<br/>
