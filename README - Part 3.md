@@ -3,6 +3,7 @@
 
 ## 3.1 $\text{  }$ Theories and design principles <br/>
 
+We use $\hat { p } _i ^d$ and $\hat { v } _i ^d$ to denote the distributed observation of the desired follower position and velocity based on the preset formation configuration and the state feedback of the leader vertex transmitted to only partial followers. 
 
 
 
