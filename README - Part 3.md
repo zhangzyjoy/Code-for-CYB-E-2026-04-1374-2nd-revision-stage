@@ -38,7 +38,27 @@ $$
 \quad\quad(1.3)
 $$<br/>
 
-For the theoretical proof for the fixed-time stability of the distributed velocity observation, the Lyapunov candidate is chosen as $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$. Substitute Eq.(1.2) into  <br/>
+For the theoretical proof for the fixed-time stability of the distributed velocity observation, the Lyapunov candidate is chosen as $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$. Substitute Eq.(1.2) into ${ ( \tilde { E } _v ^{ d } ) } ^{ T } \tilde { E } _v ^{ d } / 2$ and then obtain <br/>
+
+$$
+\begin{aligned}
+{ \frac { 1 } { 2 } { ( \tilde { E } _v ^{ d } ) } ^{ T } \tilde { E } _v ^{ d } } = { \frac { 1 } { 2 } { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( \overline { L } \otimes I _{ 3 } ) E _v ^{ d } } \ge { \lambda _{ \min } ( \overline { L } ) ( \frac { 1 } { 2 } { ( E _v ^{ d } ) } ^{ T } ( \overline { L } \otimes I _{ 3 } ) E _v ^{ d } ) } = \lambda _{ \min } ( \overline { L } ) { V _o ^v }
+\end{aligned}
+\quad\quad(1.4)
+$$<br/>
+
+Substitute Eq.(1.4) into Eq.(1.3) and yield
+
+$$
+\begin{aligned}
+\begin{cases}
+{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } }
+\end{cases}
+\end{aligned}
+\quad\quad(1.3)
+$$<br/>
+
 
 
 
