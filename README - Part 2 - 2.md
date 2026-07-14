@@ -90,12 +90,23 @@ $$<br/>
 
 ## 2.3 $\text{  }$ Parameter settings and validation <br/>
 
-Utilizing the theoretical deduction in the previous README markdown file **<README - Part 2 - 1.md>**, we can infer that **the rotational error states $\varpi _i ^e$ and $\psi _i ^e$** can be driven to converge into its origin in fixed time, and further obtain the time upper bound through **Lemmas provided in Appendix 1**.
+Utilizing the theoretical deduction in the previous README markdown file **<README - Part 2 - 1.md>**, we can infer that **the rotational error states $\varpi _i ^e$ and $\psi _i ^e$** can be driven to converge into its origin in fixed time, and further obtain the time upper bound through **Lemmas provided in Appendix 1**. <br/>
 
+**<1> Parameter settings for torque input in reaching phase**
+
+In reaching phase, the Lyapunov candidate for the sliding surface $S _i$ to enter the sliding phase is chosen as $V _i ^S = { ( S _{ i } ) } ^T \Lambda _{ i } S _{ i } / 2$.
+
+$$
+\begin{aligned}
+{ \dot { V } _i ^S } \le { - c _i ^{ \varpi, 1 } l _i ^{ S,1 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^1 + 1 } { 2 } } - c _i ^{ \varpi, 2 } l _i ^{ S,2 } { ( V _i ^S ) } ^{ \frac { \beta _{ \varpi } ^2 + 1 } { 2 } } + 1 / { 2 { ( \overline { \eta } _i ^S ) } ^2 } }
+\end{aligned}
+$$<br/>
+
+As the aforementioned inequality holds, $\varpi _i ^e$ and $\psi _i ^e$ will be driven into the sliding surface $S _i = 0$ by the applied torque input $\tau _i$ in a fixed-time. <br/>
 
 According to **Lemma 2** and **Eq.(1.9)**, the parameters of the rotational torque control input are chosen as $\tau _i$ as $c _i ^{ \varpi, 1 } > 0$, $c _i ^{ \varpi, 2 } > 0$, $\beta _{ \varpi } ^1 > 1$, $0 < \beta _{ \varpi } ^2 < 1$. <br/>
 
-According to **Lemma 2**, the settling time for the practical fixed-time convergence of **PCNSMS** $S _i$ in **reaching phase** is indicated as
+According to **Lemma 2**, the upper bound of the settling time for the practical fixed-time stable **PCNSMS** $S _i$ in **reaching phase** is indicated as
 
 $$
 \begin{aligned}
@@ -105,8 +116,6 @@ T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi } = \frac { { ( \lambda _{max}
 $$<br/>
 
 where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. **The rotational error states $\varpi _i ^e$ and $\psi _i ^e$ can converge into and remain along the sliding mode surface $S _i = 0$ during the reaching phase within fixed time upper bounded by Eq.(3.1) $T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi }$**. <br/>
-
-
 
 
 
@@ -171,52 +180,7 @@ $$
 $$<br/>
 
 
-## A.2 $\text{  }$ Design of nonlinear smooth sigmoid function <br/>
-
-A newly introduced **nonlinear smooth sigmoid vector** is defined as <br/>
-
-$$
-\begin{aligned}
-\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _k ( \overline x _1, \alpha, \gamma ), ..., \vartheta _k ( \overline x _n, \alpha, \gamma ) ] ^T
-\end{aligned}
-\quad\quad(A.2)
-$$<br/>
-
-with each entry denoted as <br/>
-
-$$
-\begin{aligned}
-\vartheta _k ( \overline x _k, \alpha, \gamma ) = \lvert x _k \rvert ^ \alpha \lambda _k ( x _k, \gamma )
-\end{aligned}
-\quad\quad(A.3)
-$$<br/>
-
-$\lambda _k ( x _k, \gamma )$ is a sigmoid-like bounded function defined as <br/>
-
-$$
-\begin{aligned}
-\lambda _k ( x _k, \gamma ) = -1 + \frac 1 {1 + \exp ( - \gamma x _k )}
-\end{aligned}
-\quad\quad(A.4)
-$$<br/>
-
-where $\gamma > 0$ controls the growth rate around the zero crossing. <br/>
-
-**Lemma 5** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
-
-$$
-\begin{aligned}
-\begin{cases}
-&- ( \overline x ) ^T \vartheta ( \overline x, \alpha, \gamma ) \le - 2 ^{ \frac { \alpha + 1 } { 2 } } K _{ \alpha } ( \frac { ( \overline x ) ^T \overline x } { 2 } ) ^{ \frac { \alpha + 1 } { 2 } } ), \quad\quad ( 0 < \alpha \le 1 ) \\
-&- ( \overline x ) ^T \vartheta ( \overline x, \alpha, \gamma ) \le - 2 ^{ \frac { \alpha + 1 } { 2 } } n ^{ \frac { 1 - \alpha } { 2 } } K _{ \alpha } ( \frac { ( \overline x ) ^T \overline x } { 2 } ) ^{ \frac { \alpha + 1 } { 2 } } ), \quad\quad ( \alpha > 1 )
-\end{cases}
-\end{aligned}
-\quad\quad(A.5)
-$$<br/>
-
-where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants. <br/>
-
-## A.3 $\text{  }$ System dynamics of a quadrotor UAV <br/>
+## A.2 $\text{  }$ System dynamics of a quadrotor UAV <br/>
 
 Each agent in the UAV team is considered as a quadrotor, which can be decoupled into rotational and translational subsystems as
 
