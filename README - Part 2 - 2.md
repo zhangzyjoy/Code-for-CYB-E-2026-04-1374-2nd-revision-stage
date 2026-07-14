@@ -137,6 +137,7 @@ $$
 { T _S ^{ \varpi } } \le { \overline { T } _S ^{ \varpi } } = { { ( \frac { 2 } { \gamma _{ \psi } } ) } ^{ p + 2 } \frac { 1 } { c _i ^{ S } p ( 1 - p ) } }
 \end{cases}
 \end{aligned}
+\quad\quad(3.2)
 $$<br/>
 
 where the settling time upper bound for disturbance observation is denoted as
@@ -145,6 +146,7 @@ $$
 \begin{aligned}
 { \overline { T } _d ^{ \varpi } } = { \frac { 3 ^ { \frac { \alpha _1 ^{ \varpi } - 1 } { 2 } } } { 2 ^ { \frac { \alpha _1 ^{ \varpi } - 1 } { 2 }  } c _i ^{ \varpi, 1 } K _{ \alpha } ^{ d, \varpi } ( \alpha _1 ^{ \varpi } - 1 ) } + \frac { 1 } { 2 ^ { \frac { \alpha _2 ^{ \varpi } - 1 } { 2 }  } c _i ^{ \varpi, 2 } K _{ \alpha } ^{ d, \varpi } ( 1 - \alpha _2 ^{ \varpi } ) } }
 \end{aligned}
+\quad\quad(3.3)
 $$<br/>
 
 
