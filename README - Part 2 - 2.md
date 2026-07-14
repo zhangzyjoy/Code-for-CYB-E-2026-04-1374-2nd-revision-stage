@@ -133,8 +133,8 @@ which indicates the fixed-time stability of the exponential rotational error $\p
 $$
 \begin{aligned}
 \begin{cases}
-{ T _c ^{ \varpi } } \le { \overline { T } _c ^{ \varpi } } = { \overline { T _d ^{ \varpi } } + \overline { T _r ^{ \varpi } } + \overline { T _S ^{ \varpi } } } \\
-{ T _S ^{ \varpi } } \le { \overline { T _S ^{ \varpi } } } = { { ( \frac { 2 } { \gamma _{ \psi } } ) } ^{ p + 2 } \frac { 1 } { c _i ^{ S } p ( 1 - p ) } }
+{ T _c ^{ \varpi } } \le { \overline { T } _c ^{ \varpi } } = { \overline { T } _d ^{ \varpi } + \overline { T } _r ^{ \varpi } + \overline { T } _S ^{ \varpi } } \\
+{ T _S ^{ \varpi } } \le { \overline { T } _S ^{ \varpi } } = { { ( \frac { 2 } { \gamma _{ \psi } } ) } ^{ p + 2 } \frac { 1 } { c _i ^{ S } p ( 1 - p ) } }
 \end{cases}
 \end{aligned}
 $$<br/>
