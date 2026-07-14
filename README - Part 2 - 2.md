@@ -115,7 +115,7 @@ T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi } = \frac { { ( \lambda _{max}
 \quad\quad(3.1)
 $$<br/>
 
-where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. **The rotational error states $\varpi _i ^e$ and $\psi _i ^e$ can converge into and remain along the sliding mode surface $S _i = 0$ during the reaching phase within fixed time upper bounded by Eq.(3.1) $T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi }$**. <br/>
+where $K _i ^{ \varpi } > 0$ and $\eta _c ^{ \varpi } > 0$ hold. **The rotational error states $\varpi _i ^e$ and $\psi _i ^e$ can converge into and remain along the sliding mode surface $S _i = 0$ after the reaching phase within fixed time upper bounded by $T _r ^{ \varpi } \le \overline { T } _r ^{ \varpi }$**. <br/>
 
 
 
