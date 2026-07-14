@@ -1,8 +1,8 @@
-# 6. $\text{  }$ Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
+# 5. $\text{  }$ Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
 
 
 
-## 6.1 $\text{  }$ PFxTDFC for translational control simulation <br/>
+## 5.1 $\text{  }$ PFxTDFC for translational control simulation <br/>
 
 Position and linear velocity tracking error
 
@@ -60,7 +60,7 @@ $$
 $$<br/>
 
 
-## 6.2 $\text{  }$ PFxTDFC for experimental validation <br/>
+## 5.2 $\text{  }$ PFxTDFC for experimental validation <br/>
 
 The translational dynamics Eq.(29) is simplified as a second-order agent with external disturbacne <br/>
 
