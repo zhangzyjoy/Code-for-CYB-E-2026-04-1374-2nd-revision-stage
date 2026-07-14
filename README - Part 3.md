@@ -1,11 +1,11 @@
-# 4. $\text{  }$ Practical fixed-time distributed state observer (PFxTDSO) <br/>
+# 3. $\text{  }$ Practical fixed-time distributed state observer (PFxTDSO) <br/>
 
 
-## 4.1 $\text{  }$ Theories and design principles <br/>
+## 3.1 $\text{  }$ Theories and design principles <br/>
 
 
 
-## 4.2 $\text{  }$ Observer implementation procedure <br/>
+## 3.2 $\text{  }$ Observer implementation procedure <br/>
 
 Observation error for follower UAV node $i$<br/>
 
@@ -58,12 +58,12 @@ $$
 $$<br/>
 
 
-## 4.3 $\text{  }$ Parameter settings and validation <br/>
+## 3.3 $\text{  }$ Parameter settings and validation <br/>
 
 
 
 
-## 4.4 $\text{  }$ Validation for comparison <br/>
+## 3.4 $\text{  }$ Validation for comparison <br/>
 
 
 
