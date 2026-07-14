@@ -37,8 +37,6 @@ $$
 \quad\quad(2.3)$$<br/>
 
 
-and then $\dot {\overline \sigma} _i ^v$ in Eq.(2.1) approximately equals to the output value $\hat \sigma ^i _1$. <br/>
-
 an adaptive updating law<br/>
 
 $$
@@ -47,6 +45,8 @@ $$
 \end{aligned}
 \quad\quad(2.4)
 $$<br/>
+
+where the derivative term $\dot {\overline \sigma} _i ^v$ approximately equals to the output value $\hat \sigma ^i _1$. <br/>
 
 translational disturbance observer<br/>
 
