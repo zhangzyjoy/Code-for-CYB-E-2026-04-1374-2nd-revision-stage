@@ -137,7 +137,7 @@ A newly introduced **nonlinear smooth sigmoid vector** is defined as <br/>
 
 $$
 \begin{aligned}
-\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _k ( \overline x _1, \alpha, \gamma ), ..., \vartheta _k ( \overline x _n, \alpha, \gamma ) ] ^T
+\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _1 ( \overline x _1, \alpha, \gamma ), ..., \vartheta _n ( \overline x _n, \alpha, \gamma ) ] ^T
 \end{aligned}
 \quad\quad(A.2)
 $$<br/>
