@@ -1,11 +1,11 @@
-# 5. $\text{  }$ Fixed-time translational disturbance observer (FxTDO) <br/>
+# 4. $\text{  }$ Fixed-time translational disturbance observer (FxTDO) <br/>
 
-## 5.1 $\text{  }$ Theories and design principles
-
-
+## 4.1 $\text{  }$ Theories and design principles
 
 
-## 5.2 $\text{  }$ Observer implementation framework
+
+
+## 4.2 $\text{  }$ Observer implementation framework
 
 Update virtual linear velocity tracking vector<br/>
 
