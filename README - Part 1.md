@@ -161,9 +161,6 @@ $$
 \quad\quad(2.3)$$<br/>
 
 
-and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(2.1) approximately equals to the output value $\hat \sigma ^i _1$<br/>
-
-
 an adaptive updating law<br/>
 
 $$
@@ -171,6 +168,8 @@ $$
 \dot {\hat {\overline \sigma}} _i ^\varpi = \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,1} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _1 ^\varpi, \mu _d ^\varpi ) + h _i ^{\varpi,2} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _2 ^\varpi, \mu _d ^\varpi )
 \end{aligned}
 \quad\quad(2.4)$$<br/>
+
+where the derivative term $\dot {\overline \sigma} _i ^\varpi$ approximately equals to the output value $\hat \sigma ^i _1$. <br/>
 
 rotational disturbance observer<br/>
 
