@@ -52,8 +52,8 @@ Substitute Eq.(1.4) into Eq.(1.3) and yield
 $$
 \begin{aligned}
 \begin{cases}
-{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
-{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
+{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
 \quad\quad(1.5)
@@ -105,8 +105,8 @@ $$
 \begin{aligned}
 { { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { \hat { v } } ^{ d } } & = - \ell _1 ^{ v } { ( \tilde { E } _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \vartheta ( \tilde { E } _v ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) \\
 & \quad \quad - \ell _2 ^{ v } { ( \tilde { E } _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \vartheta ( \tilde { E } _v ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } ) \\
-& \le - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
-& \quad \quad - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }
+& \le - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& \quad \quad - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }
 \end{aligned}
 \quad\quad(1.10)
 $$<br/>
@@ -115,8 +115,8 @@ Combine Eq.(1.8) with Eq.(1.10) and we can further derive that
 
 $$
 \begin{aligned}
-{ \dot { V } _o ^{ v } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
-& \quad \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { V _o ^{ v } } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { u } _{ 0 } ) } ^{ 2 }
+{ \dot { V } _o ^{ v } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& \quad \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { u } _{ 0 } ) } ^{ 2 }
 \end{aligned}
 \quad\quad(1.11)
 $$<br/>
