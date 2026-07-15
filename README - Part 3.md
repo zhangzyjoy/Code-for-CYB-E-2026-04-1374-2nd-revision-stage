@@ -90,11 +90,36 @@ $$<br/>
 
 To maintain the practical fixed-time stability of the distributed velocity tracking error $\tilde { v } _i ^d$, it is equivalent that $E _v ^d = \hat { v } ^d - 1 _{ N } \otimes v _0$ can converge to zero. According to **Lemma 2**, the terms ${ ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and ${ ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ are required to have negative coefficients to maintain the practical fixed-time stability. <br/>
 
-Considering the existing terms in Eq.(1.8) such that $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$, two corresponding terms with negative coefficients should exist in the terms derived from bounding the term ${ ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { \hat { v } } ^{ d }$. Therefore, ${ ( E _v ^{ d } ) } ^{ T } \dot { \hat { v } } ^{ d } \le - \overline { l } _1 ^ {V} { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \overline { l } _2 ^ {V} { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ can be yielded by invoking the inequalities produced by Eq.(1.5).
+Considering the existing terms in Eq.(1.8) such that $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$, two corresponding terms with negative coefficients should exist in the terms derived from bounding the term ${ ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { \hat { v } } ^{ d }$. Therefore, ${ ( E _v ^{ d } ) } ^{ T } \dot { \hat { v } } ^{ d } \le - \overline { l } _1 ^ {V} { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \overline { l } _2 ^ {V} { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ can fulfill the practical fixed-time stability according to Eq.(1.8). Invoke Eq.(1.5) to design the term above, and suppose the feasible design as
 
+$$
+\begin{aligned}
+{ { ( \tilde { E } _v ^{ d } ) } ^{ T } \dot { \hat { v } } ^{ d } } = { - \ell _1 ^{ v } { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _2 ^{ v } { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) }
+\end{aligned}
+\quad\quad(1.9)
+$$<br/>
 
+Substitute Eq.(1.5) into Eq.(1.9), then the term ${ ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { \hat { v } } ^{ d }$ is then derived as <br/>
 
+$$
+\begin{aligned}
+{ { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { \hat { v } } ^{ d } } & = { - \ell _1 ^{ v } { ( \tilde { E } _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \vartheta ( \tilde { E } _v ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) \\
+& \quad - \ell _2 ^{ v } { ( \tilde { E } _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \vartheta ( \tilde { E } _v ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } ) } \\
+& \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& \quad - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { V _o ^{ v } } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
+\end{aligned}
+\quad\quad(1.10)
+$$<br/>
 
+Combine Eq.(1.8) with Eq.(1.10) and we can further derive that
+
+$$
+\begin{aligned}
+{ \dot { V } _o ^{ v } } & \le { - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { V _o ^{ v } } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { V _o ^{ v } } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } } + N { ( \overline { u } _{ 0 } ) } ^{ 2 }
+\end{aligned}
+\quad\quad(1.11)
+$$<br/>
 
 
 
