@@ -126,9 +126,9 @@ According to Lemma 2, the coefficients of ${ ( V _o ^{ v } ) } ^{ \frac { \gamma
 $$
 \begin{aligned}
 \begin{cases}
-\gamma _{ 1 } > 1, \quad 0 < \gamma _{ 2 } < 1, \quad  \\
+\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 1 } > 0, \quad K _{ \gamma } ^{ 2 } > 0 \\
 { l _1 ^{ v } } & = { 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0 \\
-{ l _2 ^{ v } } = { 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0
+{ l _2 ^{ v } } & = { 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0
 \end{cases}
 \end{aligned}
 \quad\quad(1.12)
