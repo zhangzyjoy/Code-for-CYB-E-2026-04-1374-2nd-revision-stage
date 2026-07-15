@@ -121,6 +121,20 @@ $$
 \quad\quad(1.11)
 $$<br/>
 
+According to Lemma 2, the coefficients of ${ ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and ${ ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ are required to be negative to achieve the practical fixed-time stability. The sufficient condition to maintain the practical fixed-time stability of $E _v ^{ d }$ is denoted as
+
+$$
+\begin{aligned}
+\begin{cases}
+\gamma _{ 1 } > 1, \quad 0 < \gamma _{ 2 } < 1, \quad  \\
+{ l _1 ^{ v } } & = { 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0 \\
+{ l _2 ^{ v } } = { 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0
+\end{cases}
+\end{aligned}
+\quad\quad(1.12)
+$$<br/>
+
+
 
 
 ## 3.2 $\text{  }$ Observer implementation procedure <br/>
