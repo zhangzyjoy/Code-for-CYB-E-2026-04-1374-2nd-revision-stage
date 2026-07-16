@@ -143,7 +143,20 @@ $$
 \quad\quad(1.13)
 $$<br/>
 
-Therefore, if Eq.(1.12) is guaranteed and the Lyapunov candidate $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$ is expected to satisfy the inequality Eq.(1.11) under the designed distributed observer Eq.(1.13), then the practical fixed-time convergence is guaranteed for $E _v ^{ d }$. Since $E _v ^{ d } = [ { ( e _{ 1,v } ^{ d } ) } ^{ T }, ..., { ( e _{ n,v } ^{ d } ) } ^{ T } ] ^{ T }$ is defined, the 
+Therefore, if Eq.(1.12) is guaranteed and the Lyapunov candidate $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$ is expected to satisfy the inequality Eq.(1.11) under the designed distributed observer Eq.(1.13), then the practical fixed-time convergence is guaranteed for $E _v ^{ d }$. Since $E _v ^{ d } = [ { ( e _{ 1,v } ^{ d } ) } ^{ T }, ..., { ( e _{ n,v } ^{ d } ) } ^{ T } ] ^{ T }$ is defined, the practical fixed-time convergence is equivalent to that $e _{ i,v } ^{ d }$ can achieve the same stable property. Therefore, if the parameters are set according to Eq.(1.12), then the distributed velocity observation of the follower vertex $\hat { v } _i ^{ d }$ can converge into $v _{ 0 } + \dot { \delta } _{ i }$ in practical fixed time. <br/>
+
+For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. The stacked observation error for desired position has a derivative as $$, and such that is substituted into the derivative of Lyapunov function as
+
+$$
+\begin{aligned}
+\begin{cases}
+{ \dot { E } _p ^{ d } } = { \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } }
+{ \dot { V } _o ^{ p } } & = { { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) ( \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } ) }
+\end{cases}
+\end{aligned}
+$$<br/>
+
+
 
 
 
