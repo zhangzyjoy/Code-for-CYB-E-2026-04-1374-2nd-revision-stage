@@ -134,6 +134,18 @@ $$
 \quad\quad(1.12)
 $$<br/>
 
+The PFxTDSO for the desired follower velocity is developed as
+
+$$
+\begin{aligned}
+{ \dot { \hat { v } } ^d } = - \ell _{ 1 } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _{ 1 }, \mu _{ o } ^{ p } ) - \ell _{ 2 } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _{ 2 }, \mu _{ o } ^{ p } )
+\end{aligned}
+\quad\quad(1.13)
+$$<br/>
+
+Therefore, if Eq.(1.12) is guaranteed and the Lyapunov candidate $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$ is expected to satisfy the inequality Eq.(1.11) under the designed distributed observer Eq.(1.13), then the practical fixed-time convergence is guaranteed for $E _v ^{ d }$. Since $E _v ^{ d } = [ { ( e _{ 1,v } ^{ d } ) } ^{ T }, ..., { ( e _{ n,v } ^{ d } ) } ^{ T } ] ^{ T }$ is defined, the 
+
+
 
 
 
