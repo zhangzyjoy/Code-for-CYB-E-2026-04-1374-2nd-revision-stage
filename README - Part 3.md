@@ -151,20 +151,36 @@ $$
 \begin{aligned}
 \begin{cases}
 { \dot { E } _p ^{ d } } & = { \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } } \\
-{ \dot { V } _o ^{ p } } & = { { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) ( \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } ) }
+{ \dot { V } _o ^{ p } } & = { { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( \dot { \hat { P } } ^{ d } - 1 _{ N } \otimes v _{ 0 } ) }
 \end{cases}
 \end{aligned}
 $$<br/>
 
-For the latter term of the second eqution, we employ Young's inequality on it and thus yield that
+To compensate the term $- { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) ( 1 _{ N } \otimes v _{ 0 } )$, we introduce the stacked velocity observation into the stacked position observer with an update rule as $\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } )$. $g ( \tilde { E } _p ^{ d } )$ is a nonlinear term to maintain the fixed-time stability, because there exists $( \tilde { E } _p ^{ d } ) ^ { T } = { ( \overline { L } \otimes I _{ 3 } ) E _p ^{ d } } ^{ T } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } )$. For each vertex, we can obtain that $\dot { \hat { p } } _i ^{ d } = \hat { v } _i ^{ d } + g ( \tilde { e } _{ i,p } ^{ d } )$. Subsequently, it is yielded that 
 
 $$
 \begin{aligned}
-{ - { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) 1 _{ N } \otimes v _{ 0 } } & \le 
+{ \dot { \hat { P } } ^{ d } - 1 _{ N } \otimes v _{ 0 } } = { \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } ) - 1 _{ N } \otimes v _{ 0 } } = { E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) }
 \end{aligned}
 $$<br/>
 
+and thereafter we can derive that
 
+$$
+\begin{aligned}
+{ \dot { V } _p ^{ d } } = { \tilde { E } _p ^{ d } } ^{ T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) )
+\end{aligned}
+\quad\quad(1.14)
+$$<br/>
+
+
+We employ Young's inequality on Eq.(1.14) and thus yield that
+
+$$
+\begin{aligned}
+
+\end{aligned}
+$$<br/>
 
 
 
