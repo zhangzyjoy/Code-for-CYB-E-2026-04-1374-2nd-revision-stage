@@ -150,7 +150,7 @@ For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy 
 $$
 \begin{aligned}
 \begin{cases}
-{ \dot { E } _p ^{ d } } = { \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } } \\
+{ \dot { E } _p ^{ d } } & = { \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } } \\
 { \dot { V } _o ^{ p } } & = { { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) ( \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } ) }
 \end{cases}
 \end{aligned}
