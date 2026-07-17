@@ -164,23 +164,25 @@ $$
 \end{aligned}
 $$<br/>
 
-and thereafter we can derive that
+Invoking ${ ( \tilde { E } _p ^{ d } )} ^ { T } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } )$, the Lyapunov derivative is formulated as
 
 $$
 \begin{aligned}
-{ \dot { V } _p ^{ d } } = { \tilde { E } _p ^{ d } } ^{ T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) )
+{ \dot { V } _o ^{ p } } = { { ( \tilde { E } _p ^{ d } ) } ^ { T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) ) }
 \end{aligned}
-\quad\quad(1.14)
 $$<br/>
 
-
-We employ Young's inequality on Eq.(1.14) and thus yield that
+We employ Young's inequality and the bounded property $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$ on the first term of Eq.(1.14) and thus yield that
 
 $$
 \begin{aligned}
-
+{ { ( \tilde { E } _p ^{ d } ) } ^ { T } E _v ^{ d } } & \le \frac { 1 } { 2 } \cdot \frac { 1 } { 2 } ( { E _p ^{ d } } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ) { ( { E _p ^{ d } } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ) } ^{ T } + \frac { 1 } { 2 } \cdot 2 N { ( \overline { e } _{ v } ) } ^{ 2 } \\
+& \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) ( { E _p ^{ d } } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) E _p ^{ d } ) + N { ( \overline { e } _{ v } ) } ^{ 2 } } \\
+& \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { e } _{ v } ) } ^{ 2 } }
 \end{aligned}
 $$<br/>
+
+
 
 
 
