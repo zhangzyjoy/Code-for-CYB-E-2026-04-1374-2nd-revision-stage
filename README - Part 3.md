@@ -191,7 +191,21 @@ $$
 { \dot { V } _o ^{ p } } & \le \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \\
 & \quad + N { ( \overline { e } _{ v } ) } ^{ 2 } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )
 \end{aligned}
+\quad\quad(1.16)
 $$<br/>
+
+According to Lemma 2, the inequality form
+
+$$
+\begin{aligned}
+\dot { V } _o ^{ p } \le - a _1 ( { ( V _o ^{ p } ) } ^ { b _1 } ) - a _2 ( { ( V _o ^{ p } ) } ^ { b _2 } ) + c _{ 0 }
+\end{aligned}
+$$<br/>
+
+is required to be guaranteed. Since the term $N { ( \overline { e } _{ v } ) } ^{ 2 }$ can be regarded as $c _{ 0 }$ in Lemma 2, the last term in Eq.(1.16) ${ ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ should be designed as an additional term to turn $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ in Eq.(1.16) as a negative definite term. 
+
+
+
 
 
 
