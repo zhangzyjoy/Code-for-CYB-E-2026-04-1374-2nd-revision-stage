@@ -162,6 +162,7 @@ $$
 \begin{aligned}
 { \dot { \hat { P } } ^{ d } - 1 _{ N } \otimes v _{ 0 } } = { \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } ) - 1 _{ N } \otimes v _{ 0 } } = { E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) }
 \end{aligned}
+\quad\quad(1.14)
 $$<br/>
 
 Invoking ${ ( \tilde { E } _p ^{ d } )} ^ { T } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } )$, the Lyapunov derivative is formulated as
@@ -180,9 +181,10 @@ $$
 & \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) ( { E _p ^{ d } } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) E _p ^{ d } ) + N { ( \overline { e } _{ v } ) } ^{ 2 } } \\
 & \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { e } _{ v } ) } ^{ 2 } }
 \end{aligned}
+\quad\quad(1.15)
 $$<br/>
 
-
+Since it is yielded by substituting Eq.(1.15) into Eq.(1.14)
 
 
 
