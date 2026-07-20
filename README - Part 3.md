@@ -188,9 +188,12 @@ Substitute Eq.(1.15) into Eq.(1.14) and we can derive that
 
 $$
 \begin{aligned}
-{ \dot { V } _o ^{ p } } \le 
+{ \dot { V } _o ^{ p } } & \le \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \\
+& \quad \quad + N { ( \overline { e } _{ v } ) } ^{ 2 } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )
 \end{aligned}
 $$<br/>
+
+
 
 
 
