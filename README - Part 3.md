@@ -168,7 +168,7 @@ Invoking ${ ( \tilde { E } _p ^{ d } )} ^ { T } = { ( E _p ^{ d } ) } ^{ T } ( \
 
 $$
 \begin{aligned}
-{ \dot { V } _o ^{ p } } = { { ( \tilde { E } _p ^{ d } ) } ^ { T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) ) }
+{ \dot { V } _o ^{ p } } = { { ( \tilde { E } _p ^{ d } ) } ^ { T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) ) } = { { ( \tilde { E } _p ^{ d } ) } ^ { T } E _v ^{ d } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } ) }
 \end{aligned}
 \quad\quad(1.14)
 $$<br/>
