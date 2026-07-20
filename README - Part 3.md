@@ -162,7 +162,6 @@ $$
 \begin{aligned}
 { \dot { \hat { P } } ^{ d } - 1 _{ N } \otimes v _{ 0 } } = { \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } ) - 1 _{ N } \otimes v _{ 0 } } = { E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) }
 \end{aligned}
-\quad\quad(1.14)
 $$<br/>
 
 Invoking ${ ( \tilde { E } _p ^{ d } )} ^ { T } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } )$, the Lyapunov derivative is formulated as
@@ -171,6 +170,7 @@ $$
 \begin{aligned}
 { \dot { V } _o ^{ p } } = { { ( \tilde { E } _p ^{ d } ) } ^ { T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) ) }
 \end{aligned}
+\quad\quad(1.14)
 $$<br/>
 
 We employ Young's inequality and the bounded property $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$ on the first term of Eq.(1.14) and thus yield that
@@ -184,7 +184,13 @@ $$
 \quad\quad(1.15)
 $$<br/>
 
-Since it is yielded by substituting Eq.(1.15) into Eq.(1.14)
+Substitute Eq.(1.15) into Eq.(1.14) and we can derive that
+
+$$
+\begin{aligned}
+{ \dot { V } _o ^{ p } } \le 
+\end{aligned}
+$$<br/>
 
 
 
