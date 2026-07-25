@@ -108,7 +108,7 @@ $$
 { { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \dot { \hat { v } } ^{ d } } & = - \ell _1 ^{ v } { ( \tilde { E } _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \vartheta ( \tilde { E } _v ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) \\
 & \quad \quad - \ell _2 ^{ v } { ( \tilde { E } _v ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) \vartheta ( \tilde { E } _v ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } ) \\
 & \le - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
-& \quad \quad - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }
+& \quad \quad - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }
 \end{aligned}
 \quad\quad(1.10)
 $$<br/>
@@ -118,7 +118,7 @@ Combine Eq.(1.8) with Eq.(1.10) and we can further derive that
 $$
 \begin{aligned}
 { \dot { V } _o ^{ v } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
-& \quad \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { u } _{ 0 } ) } ^{ 2 }
+& \quad \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { u } _{ 0 } ) } ^{ 2 }
 \end{aligned}
 \quad\quad(1.11)
 $$<br/>
@@ -130,17 +130,30 @@ $$
 \begin{cases}
 \gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 1 } > 0, \quad K _{ \gamma } ^{ 2 } > 0 \\
 { l _1 ^{ v } } & = { 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0 \\
-{ l _2 ^{ v } } & = { 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0
+{ l _2 ^{ v } } & = { 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0
+\end{cases}
+\end{aligned}
+$$<br/>
+
+which can be further obtained as
+
+$$
+\begin{aligned}
+\begin{cases}
+\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 1 } > 0, \quad K _{ \gamma } ^{ 2 } > 0 \\
+\ell _1 ^{ v } & > \frac { 3 ^{ \frac { \gamma _{ 1 } - 1 } { 2 } } \lambda _{ max } ( \overline { L } ) } { 2 ^{ \gamma _{ 1 } + 3 } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+\ell _2 ^{ v } & > \frac { \lambda _{ max } ( \overline { L } ) } { 2 ^{ \gamma _{ 2 } + 3 } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
 \quad\quad(1.12)
 $$<br/>
 
+
 The PFxTDSO for the desired follower velocity is developed as
 
 $$
 \begin{aligned}
-{ \dot { \hat { v } } ^d } = - \ell _{ 1 } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _{ 1 }, \mu _{ o } ^{ p } ) - \ell _{ 2 } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _{ 2 }, \mu _{ o } ^{ p } )
+{ \dot { \hat { v } } ^d } = - \ell _{ 1 } ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _{ 1 }, \mu _{ o } ^{ p } ) - \ell _{ 2 } ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _{ 2 }, \mu _{ o } ^{ p } )
 \end{aligned}
 \quad\quad(1.13)
 $$<br/>
@@ -259,12 +272,13 @@ Invoking the bounding properties in Eq.(1.14), we assume the final scaled result
 $$
 \begin{aligned}
 { \dot { V } _o ^{ p } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
-& - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ max } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { e } _{ v } ) } ^{ 2 }
+& \quad \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ max } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { e } _{ v } ) } ^{ 2 }
 \end{aligned}
 \quad\quad(1.19)
 $$<br/>
 
-According to Lemma 2, the coefficients of ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ in Eq.(1.19) is required to be negative, which yield the 
+According to Lemma 2, the coefficients of ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ in Eq.(1.19) is required to be negative, which yield that 
+
 
 
 
