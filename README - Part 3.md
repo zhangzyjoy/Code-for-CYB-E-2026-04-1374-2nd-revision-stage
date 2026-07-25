@@ -498,7 +498,6 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 
 # Appendix 2 : $\text{  }$ Symbol definition list <br/>
 
-- $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
 - $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
@@ -507,5 +506,4 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 - $\hat p_i ^d, \hat v_i ^d$ : desired position, linear velocity observation for follower UAV node $i$
 - $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, linear velocity for follower UAV node $i$
 - $\tilde e _{i,p} ^d$, $\tilde e _{i,v} ^d$ : lumped formation observation error of desired position, linear velocity for follower UAV node $i$
-- $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
 
