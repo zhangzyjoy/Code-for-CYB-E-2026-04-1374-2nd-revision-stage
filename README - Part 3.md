@@ -212,10 +212,6 @@ Since Eq.(1.17) is required to be fulfilled, $N { ( \overline { e } _{ v } ) } ^
 
 
 
-
-
-
-
 ## 3.2 $\text{  }$ Observer implementation procedure <br/>
 
 Observation error for follower UAV node $i$<br/>
