@@ -54,8 +54,8 @@ Substitute Eq.(1.4) into Eq.(1.3) and yield
 $$
 \begin{aligned}
 \begin{cases}
-{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
-{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
+{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+{ - { ( \tilde { E } _v ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _v ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
 \quad\quad(1.5)
