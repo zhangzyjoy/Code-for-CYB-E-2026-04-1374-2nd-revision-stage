@@ -26,6 +26,8 @@ $$
 \quad\quad(1.2)
 $$<br/>
 
+### 3.1.1 Distributed velocity observer design principles <br/>
+
 Invoking **Lemma 4** on the theoretical design for PFxTDSO, and given parameters that $\gamma _{ 1 } > 1$ and $0 < \gamma _{ 2 } < 1$ holds, it can be deduced that
 
 $$
@@ -145,6 +147,23 @@ $$<br/>
 
 Therefore, if Eq.(1.12) is guaranteed and the Lyapunov candidate $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$ is expected to satisfy the inequality Eq.(1.11) under the designed distributed observer Eq.(1.13), then the practical fixed-time convergence is guaranteed for $E _v ^{ d }$. Since $E _v ^{ d } = [ { ( e _{ 1,v } ^{ d } ) } ^{ T }, ..., { ( e _{ n,v } ^{ d } ) } ^{ T } ] ^{ T }$ is defined, the practical fixed-time convergence is equivalent to that $e _{ i,v } ^{ d }$ can achieve the same stable property. Therefore, if the parameters are set according to Eq.(1.12), then the distributed velocity observation of the follower vertex $\hat { v } _i ^{ d }$ can converge into $v _{ 0 } + \dot { \delta } _{ i }$ in practical fixed time. <br/>
 
+### 3.1.2 Distributed position observer design principles <br/>
+
+Invoking **Lemma 4** and establishing the parameters according to $\gamma _{ 1 } > 1$ and $0 < \gamma _{ 2 } < 1$, it can be deduced that
+
+$$
+\begin{aligned}
+\begin{cases}
+{ - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( { ( \tilde { E } _p ^{ d } ) } ^{ T } \tilde { E } _p ^{ d } / 2 ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+{ - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( { ( \tilde { E } _p ^{ d } ) } ^{ T } \tilde { E } _p ^{ d } / 2 ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
+\end{cases}
+\end{aligned}
+\quad\quad(1.14)
+$$<br/>
+
+
+
+
 For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. The stacked observation error for desired position has a derivative and such that is substituted into the derivative of the Lyapunov function as
 
 $$
@@ -170,10 +189,10 @@ $$
 \begin{aligned}
 { \dot { V } _o ^{ p } } = { { ( \tilde { E } _p ^{ d } ) } ^ { T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) ) } = { { ( \tilde { E } _p ^{ d } ) } ^ { T } E _v ^{ d } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } ) }
 \end{aligned}
-\quad\quad(1.14)
+\quad\quad(1.15)
 $$<br/>
 
-We employ Young's inequality and the bounded property $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$ on the first term of Eq.(1.14) and thus yield that
+We employ Young's inequality and the bounded property $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$ on the first term of Eq.(1.15) and thus yield that
 
 $$
 \begin{aligned}
@@ -181,31 +200,31 @@ $$
 & \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) ( { E _p ^{ d } } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) E _p ^{ d } ) + N { ( \overline { e } _{ v } ) } ^{ 2 } } \\
 & \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { e } _{ v } ) } ^{ 2 } }
 \end{aligned}
-\quad\quad(1.15)
+\quad\quad(1.16)
 $$<br/>
 
-Substitute Eq.(1.15) into Eq.(1.14) and we can derive that
+Substitute Eq.(1.16) into Eq.(1.15) and we can derive that
 
 $$
 \begin{aligned}
 { \dot { V } _o ^{ p } } & \le \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \\
 & \quad + N { ( \overline { e } _{ v } ) } ^{ 2 } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )
 \end{aligned}
-\quad\quad(1.16)
+\quad\quad(1.17)
 $$<br/>
 
-According to Lemma 2, the inequality form
+According to Lemma 2, the following inequality
 
 $$
 \begin{aligned}
 \dot { V } _o ^{ p } \le - a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 } + c _{ 0 }
 \end{aligned}
-\quad\quad(1.17)
+\quad\quad(1.18)
 $$<br/>
 
 is required to be guaranteed. <br/>
 
-Since Eq.(1.17) is required to be fulfilled, $N { ( \overline { e } _{ v } ) } ^{ 2 }$ in Eq.(1.16) can be treated as $c _{ 0 }$ in Lemma 2. Subsequently, $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ should be equivalent to $- a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 }$ in Eq.(1.16). This requires that the last term ${ ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ in Eq.(1.16) should be designed as an additional term to turn $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ into a negative definite term. <br/>
+Since Eq.(1.18) is required to be fulfilled, $N { ( \overline { e } _{ v } ) } ^{ 2 }$ in Eq.(1.17) can be treated as $c _{ 0 }$ in Lemma 2. Subsequently, $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ should be equivalent to $- a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 }$ in Eq.(1.17). This requires that the last term ${ ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ in Eq.(1.16) should be designed as an additional term to turn $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ into a negative definite term. <br/>
 
 
 
