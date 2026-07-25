@@ -517,7 +517,4 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 - $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, linear velocity for follower UAV node $i$
 - $\tilde e _{i,p} ^d$, $\tilde e _{i,v} ^d$ : lumped formation observation error of desired position, linear velocity for follower UAV node $i$
 - $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
-- $\chi_i$, $\phi_i$ : virtual linear velocity tracking vector, tracking error
-- $d _i ^v$, $\hat d _i ^v$ : translational disturbance, disturbance observation
-
 
