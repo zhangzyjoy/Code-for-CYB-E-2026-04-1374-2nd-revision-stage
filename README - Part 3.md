@@ -163,24 +163,32 @@ $$<br/>
 
 For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. <br/>
 
-A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. Take the derivative of the stacked observation error for the observation error for desired follower position $E _p ^{ d }$, and such that is substituted into the derivative of the Lyapunov function for the system dynamics of the distributed position observation as
+A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. <br/>
+
+The stacked observation error of the desired follower position $E _p ^{ d }$ is differentiated by considering each entry as $\dot { e } _{ i,p } ^{ d } = \dot { \hat { p } } _{ i } ^{ d } - v _{ 0 } - \dot { \delta } _{ i }$, and such that is substituted into the derivative of the Lyapunov function for the system dynamics of the distributed position observation to obtain the stacked form as
 
 $$
 \begin{aligned}
 \begin{cases}
-{ \dot { E } _p ^{ d } } & = { \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } } \\
-{ \dot { V } _o ^{ p } } & = { { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( \dot { \hat { P } } ^{ d } - 1 _{ N } \otimes v _{ 0 } ) }
+{ \dot { E } _p ^{ d } } & = { \dot { \hat { P } } ^d - 1 _{ N } \otimes v _{ 0 } - \overline { \dot { \delta } } } \\
+{ \dot { V } _o ^{ p } } & = { { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( \dot { \hat { P } } ^{ d } - 1 _{ N } \otimes v _{ 0 } - \overline { \dot { \delta } } ) }
 \end{cases}
 \end{aligned}
 $$<br/>
 
-To compensate the term $- { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) ( 1 _{ N } \otimes v _{ 0 } )$, we introduce the stacked velocity observation into the stacked position observer with an update rule as $\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } )$. $g ( \tilde { E } _p ^{ d } )$ is a nonlinear term to maintain the fixed-time stability, because there exists $( \tilde { E } _p ^{ d } ) ^ { T } = { ( \overline { L } \otimes I _{ 3 } ) E _p ^{ d } } ^{ T } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } )$. For each vertex, we can obtain that $\dot { \hat { p } } _i ^{ d } = \hat { v } _i ^{ d } + g ( \tilde { e } _{ i,p } ^{ d } )$. Subsequently, it is yielded that 
+where $\overline { \dot { \delta } }$ is defined as a stacked term of the configuration offset for each vertex, denoted by $\overline { \dot { \delta } } = [ \dot { \delta } _{ 1 }, ..., \dot { \delta } _{ N } ] ^{ T }$, and $1 _{ N } \otimes v _{ 0 }$ is a Kronecker product to obtain a vector composed of stacked $v _{ 0 }$.
+
+We introduce the stacked velocity observation into the stacked position observer with an update rule as $\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } )$. In the stacked derivative of position observation $\dot { \hat { P } } ^{ d }$, $g ( \tilde { E } _p ^{ d } )$ is a nonlinear term to maintain the fixed-time stability. <br/>
+
+There exists $( \tilde { E } _p ^{ d } ) ^ { T } = { ( \overline { L } \otimes I _{ 3 } ) E _p ^{ d } } ^{ T } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } )$. For each vertex, we can obtain that $\dot { \hat { p } } _i ^{ d } = \hat { v } _i ^{ d } + g ( \tilde { e } _{ i,p } ^{ d } )$. Due to the result that $E _v ^{ d } = \hat { V } ^{ d } - 1 _{ N } \otimes v _{ 0 } - \overline { \dot { \delta } }$ holds, it is yielded that
 
 $$
 \begin{aligned}
-{ \dot { \hat { P } } ^{ d } - 1 _{ N } \otimes v _{ 0 } } = { \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } ) - 1 _{ N } \otimes v _{ 0 } } = { E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) }
+{ \dot { \hat { P } } ^{ d } - 1 _{ N } \otimes v _{ 0 } - \overline { \dot { \delta } } } = { \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } ) - 1 _{ N } \otimes v _{ 0 } - \overline { \dot { \delta } } } = { E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) }
 \end{aligned}
 $$<br/>
+
+Therefore, $\hat { V } ^{ d }$ is a significant term in the updating rule $\dot { \hat { P } } ^{ d }$ of the PFxTDSO to compensate for the term $- { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) ( 1 _{ N } \otimes v _{ 0 } + \overline { \dot { \delta } } )$, and thus deriving a bounded term $E _v ^{ d }$ that can help in the scaled operation in tackling the Lyapunov derivative $\dot { V } _o ^{ p }$.
 
 The nonlinear term $g ( \tilde { E } _p ^{ d } )$ is required to be designed in the aforementioned equation $\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } )$ by introducing Eq.(1.14) to perform bounding on the Lyapunov derivative $\dot { V } _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) )$. <br/> <br/>
 
