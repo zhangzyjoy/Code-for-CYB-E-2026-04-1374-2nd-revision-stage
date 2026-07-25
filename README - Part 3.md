@@ -149,6 +149,17 @@ Therefore, if Eq.(1.12) is guaranteed and the Lyapunov candidate $V _o ^{ v } = 
 
 ### 3.1.2 Distributed position observer design principles <br/>
 
+For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. <br/>
+
+A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. Then we can yield the inequality that
+
+$$
+\begin{aligned}
+{ { ( \tilde { E } _p ^{ d } ) } ^{ T } \tilde { E } _p ^{ d } / 2 } = { { ( \tilde { E } _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( \overline { L } \otimes I _{ 3 } ) \tilde { E } _p ^{ d } / 2 }
+\ge { \lambda _{ min } ( \overline { L } ) { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2 } = { \lambda _{ min } ( \overline { L } ) V _o ^{ p } }
+\end{aligned}
+$$<br/>
+
 Invoking **Lemma 4** and establishing the parameters according to $\gamma _{ 1 } > 1$ and $0 < \gamma _{ 2 } < 1$, it can be deduced that
 
 $$
@@ -158,19 +169,20 @@ $$
 { - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( { ( \tilde { E } _p ^{ d } ) } ^{ T } \tilde { E } _p ^{ d } / 2 ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
-\quad\quad(1.14)
 $$<br/>
 
-For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. <br/>
-
-A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. Then yield the inequality that
+Since we already deduce ${ ( \tilde { E } _p ^{ d } ) } ^{ T } \tilde { E } _p ^{ d } / 2 \ge \lambda _{ min } ( \overline { L } ) V _o ^{ p }$, then substitute it into the aforementioned inequalities and yield that <br/>
 
 $$
 \begin{aligned}
-{ { ( \tilde { E } _p ^{ d } ) } ^{ T } \tilde { E } _p ^{ d } / 2 } & = { { ( \tilde { E } _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( \overline { L } \otimes I _{ 3 } ) \tilde { E } _p ^{ d } / 2 } \\
-& \ge { \lambda _{ min } ( \overline { L } )  }
+\begin{cases}
+{ - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+{ - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } } \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
+\end{cases}
 \end{aligned}
+\quad\quad(1.14)
 $$<br/>
+
 
 The stacked observation error of the desired follower position $E _p ^{ d }$ is differentiated by considering each entry as $\dot { e } _{ i,p } ^{ d } = \dot { \hat { p } } _{ i } ^{ d } - v _{ 0 } - \dot { \delta } _{ i }$, and such that is substituted into the derivative of the Lyapunov function for the system dynamics of the distributed position observation to obtain the stacked form as
 
