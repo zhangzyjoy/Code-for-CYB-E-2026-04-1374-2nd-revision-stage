@@ -319,10 +319,10 @@ In order to maintain Eq.(1.21), $g ( \tilde { E } _p ^{ d } )$ in the PFxTDSO dy
 $$
 \begin{aligned}
 \begin{cases}
-g ( \tilde { E } _p ^{ d } ) & = - \ell _{ 1 } ^{ p } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { E } _{ p } ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) \\
-\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } - \ell _{ 1 } ^{ p } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { E } _{ p } ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) \\
-g ( \tilde { e } _{ i,p } ^{ d } ) = - \ell _{ 1 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } ) \\
-\dot { \hat { p } } _{ i } ^{ d } = \hat { v } _{ i } ^{ d } - \ell _{ 1 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } )
+& { g ( \tilde { E } _p ^{ d } ) } = { - \ell _{ 1 } ^{ p } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { E } _{ p } ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } \\
+& { \dot { \hat { P } } ^{ d } } = { \hat { V } ^{ d } - \ell _{ 1 } ^{ p } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { E } _{ p } ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } \\
+& { g ( \tilde { e } _{ i,p } ^{ d } ) } = { - \ell _{ 1 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } ) } \\
+& { \dot { \hat { p } } _{ i } ^{ d } } = { \hat { v } _{ i } ^{ d } - \ell _{ 1 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } ) }
 \end{cases}
 \end{aligned}
 \quad\quad(1.22)
