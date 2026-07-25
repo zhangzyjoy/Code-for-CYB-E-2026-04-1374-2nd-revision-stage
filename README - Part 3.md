@@ -163,7 +163,14 @@ $$<br/>
 
 For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. <br/>
 
-A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. <br/>
+A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. Then yield the inequality that
+
+$$
+\begin{aligned}
+{ { ( \tilde { E } _p ^{ d } ) } ^{ T } \tilde { E } _p ^{ d } / 2 } & = { { ( \tilde { E } _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( \overline { L } \otimes I _{ 3 } ) \tilde { E } _p ^{ d } / 2 } \\
+& \ge { \lambda _{ min } ( \overline { L } )  }
+\end{aligned}
+$$<br/>
 
 The stacked observation error of the desired follower position $E _p ^{ d }$ is differentiated by considering each entry as $\dot { e } _{ i,p } ^{ d } = \dot { \hat { p } } _{ i } ^{ d } - v _{ 0 } - \dot { \delta } _{ i }$, and such that is substituted into the derivative of the Lyapunov function for the system dynamics of the distributed position observation to obtain the stacked form as
 
