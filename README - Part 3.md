@@ -176,8 +176,8 @@ Since we already deduce ${ ( \tilde { E } _p ^{ d } ) } ^{ T } \tilde { E } _p ^
 $$
 \begin{aligned}
 \begin{cases}
-{ - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
-{ - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } } \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
+{ - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+{ - { ( \tilde { E } _p ^{ d } ) } ^{ T } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) } & \le { - 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
 \quad\quad(1.14)
