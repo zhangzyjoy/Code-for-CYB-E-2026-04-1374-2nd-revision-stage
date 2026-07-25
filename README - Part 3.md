@@ -258,25 +258,13 @@ Invoking the bounding properties in Eq.(1.14), we assume the final scaled result
 
 $$
 \begin{aligned}
-{ \dot { V } _o ^{ p } } $ \le - (  - \frac { 1 } { 4 } ) \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
-& + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \\
+{ \dot { V } _o ^{ p } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ max } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \frac { 1 } { 4 } lambda _{ max } ( \overline { L } ) ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \\
 & \quad + N { ( \overline { e } _{ v } ) } ^{ 2 } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )
 \end{aligned}
 \quad\quad(1.19)
 $$<br/>
 
-
-
-
-
-By introducing 
-
-$$
-\begin{aligned}
-
-\end{aligned}
-\quad\quad(1.)
-$$<br/>
 
 
 
