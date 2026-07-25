@@ -252,20 +252,19 @@ $$<br/>
 
 is required to be guaranteed. <br/>
 
-Since Eq.(1.18) is required to be fulfilled, $N { ( \overline { e } _{ v } ) } ^{ 2 }$ in Eq.(1.17) can be treated as $c _{ 0 }$ in Lemma 2. Subsequently, $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ should be equivalent to $- a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 }$ in Eq.(1.17). This requires that the last term ${ ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ in Eq.(1.16) should be designed as an additional term to turn $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ into a negative definite term. <br/>
+Since Eq.(1.18) is required to be fulfilled, $N { ( \overline { e } _{ v } ) } ^{ 2 }$ in Eq.(1.17) can be treated as $c _{ 0 }$ in Lemma 2. Subsequently, $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ should be equivalent to $- a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 }$ in Eq.(1.17). This requires that the last term ${ ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ in Eq.(1.16) should be designed as an additional term to turn $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ respectively into negative definite terms. <br/>
 
 Invoking the bounding properties in Eq.(1.14), we assume the final scaled result to be <br/>
 
 $$
 \begin{aligned}
-{ \dot { V } _o ^{ p } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
-& - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ max } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \frac { 1 } { 4 } lambda _{ max } ( \overline { L } ) ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \\
-& \quad + N { ( \overline { e } _{ v } ) } ^{ 2 } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )
+{ \dot { V } _o ^{ p } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ max } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { e } _{ v } ) } ^{ 2 }
 \end{aligned}
 \quad\quad(1.19)
 $$<br/>
 
-
+According to Lemma 2, the coefficients of ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ in Eq.(1.19) is required to be negative, which yield the 
 
 
 
