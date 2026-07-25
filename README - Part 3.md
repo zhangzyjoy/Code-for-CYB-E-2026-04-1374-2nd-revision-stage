@@ -425,11 +425,11 @@ T _s \le \overline T _s = \frac { 1 } { a _1 \eta _0 ( b _1 - 1 )} + \frac { 1 }
 \end{aligned}
 $$<br/>
 
-**Lemma 3 (Proposed Fixed-Time Stability Criteria)** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ 1 / 2 } ) }$ such that $k > 0$, $\gamma > 0$, $0 < p < 1$, then the origin of $x ( t )$ converges in fixed time upper bounded by
+**Lemma 3** : Consider a sequence with positive scalars $q _1, \text{ } q _2, \text{ } ..., \text{ } q_N$ where $q _k \text{ } \ge \text{ } 0$ for any $k \in \lbrace 1,...,N \rbrace$. Given that $0 < \alpha _1 \le 1$, $\alpha _2 > 1$, it can be yielded that
 
 $$
 \begin{aligned}
-T _s \le \overline T _s = \frac { 2 ^{ p + 2 } } { \gamma ^{ p + 2 } k p ( 1 - p ) }
+\sum _{ k = 1 } ^{ N } { ( q _k ) ^{ \alpha _1 } } \ge { ( \sum _{ k = 1 } ^{ N } { q _k } ) } ^{ \alpha _1 }, \quad \quad \sum _{ k = 1 } ^{ N } { ( q _k ) ^{ \alpha _2 } } \ge N ^{ 1 - \alpha _2 } { ( \sum _{ k = 1 } ^{ N } { q _k } ) } ^{ \alpha _2 }
 \end{aligned}
 $$<br/>
 
@@ -509,7 +509,6 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 - $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
-- $\Lambda_{i}$ : inertia matrix 
 - $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
 - $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
 - $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
