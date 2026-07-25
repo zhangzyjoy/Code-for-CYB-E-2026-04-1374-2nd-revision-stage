@@ -128,7 +128,7 @@ According to Lemma 2, the coefficients of ${ ( V _o ^{ v } ) } ^{ \frac { \gamma
 $$
 \begin{aligned}
 \begin{cases}
-\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 1 } > 0, \quad K _{ \gamma } ^{ 2 } > 0 \\
+\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 1 } > 0 \\
 { l _1 ^{ v } } & = { 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0 \\
 { l _2 ^{ v } } & = { 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 1 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0
 \end{cases}
@@ -140,7 +140,7 @@ which can be further obtained as
 $$
 \begin{aligned}
 \begin{cases}
-\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 1 } > 0, \quad K _{ \gamma } ^{ 2 } > 0 \\
+\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 1 } > 0 \\
 \ell _1 ^{ v } & > \frac { 3 ^{ \frac { \gamma _{ 1 } - 1 } { 2 } } \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 1 } + 3 } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
 \ell _2 ^{ v } & > \frac { \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 2 } + 3 } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
 \end{cases}
@@ -271,16 +271,64 @@ Invoking the bounding properties in Eq.(1.14), we assume the final scaled result
 
 $$
 \begin{aligned}
-{ \dot { V } _o ^{ p } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
-& \quad \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ max } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { e } _{ v } ) } ^{ 2 }
+{ \dot { V } _o ^{ p } } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } \ell _{ 1 } ^{ p } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& \quad \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } \ell _{ 2 } ^{ p } { ( \lambda _{ max } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ max } ( \overline { L } ) / 4 ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { ( \overline { e } _{ v } ) } ^{ 2 }
 \end{aligned}
 \quad\quad(1.19)
 $$<br/>
 
-According to Lemma 2, the coefficients of ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ in Eq.(1.19) is required to be negative, which yield that 
+According to Lemma 2, the coefficients of ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } }$ and ${ ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ in Eq.(1.19) is required to be negative. Therefore, the sufficient condition to maintain the practical fixed-time stability of $E _p ^{ d }$ is denoted as
+
+$$
+\begin{aligned}
+\begin{cases}
+\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 2 } > 0 \\
+{ l _1 ^{ p } } & = { 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ p } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0 \\
+{ l _2 ^{ p } } & = { 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ p } K _{ \gamma } ^{ 2 } { \lambda _{ \min } ( \overline { L } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \max } ( \overline { L } ) / 4 } > 0
+\end{cases}
+\end{aligned}
+$$<br/>
+
+which can be further obtained as
+
+$$
+\begin{aligned}
+\begin{cases}
+\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 2 } > 0 \\
+\ell _1 ^{ p } & > \frac { 3 ^{ \frac { \gamma _{ 1 } - 1 } { 2 } } \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 1 } + 3 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+\ell _2 ^{ p } & > \frac { \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 2 } + 3 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
+\end{cases}
+\end{aligned}
+\quad\quad(1.20)
+$$<br/>
 
 
+If Eq.(1.19) already holds and the parameters are set according to Eq.(1.20), it is sufficient for guaranteeing Eq.(1.19) such that the following inequality holds
 
+$$
+\begin{aligned}
+{ { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } ) } & \le - ( 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } K _{ \gamma } ^{ 1 } \ell _{ 1 } ^{ p } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& \quad \quad - ( 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } K _{ \gamma } ^{ 2 } \ell _{ 2 } ^{ p } { ( \lambda _{ max } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }
+\end{aligned}
+\quad\quad(1.21)
+$$<br/>
+
+
+In order to maintain Eq.(1.21), $g ( \tilde { E } _p ^{ d } )$ in the PFxTDSO dynamics $\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } )$ is thereby designed according to Eq.(1.14) as
+
+$$
+\begin{aligned}
+\begin{cases}
+g ( \tilde { E } _p ^{ d } ) & = - \ell _{ 1 } ^{ p } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { E } _{ p } ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) \\
+\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } - \ell _{ 1 } ^{ p } \vartheta ( \tilde { E } _p ^{ d } , \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { E } _{ p } ^{ d } , \gamma _{ 2 }, \mu _o ^{ p } ) \\
+g ( \tilde { e } _{ i,p } ^{ d } ) = - \ell _{ 1 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } ) \\
+\dot { \hat { p } } _{ i } ^{ d } = \hat { v } _{ i } ^{ d } - \ell _{ 1 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 1 }, \mu _o ^{ p } ) - \ell _{ 2 } ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _{ 2 }, \mu _o ^{ p } )
+\end{cases}
+\end{aligned}
+\quad\quad(1.22)
+$$<br/>
+
+where the first two equations illustrate the stacked observation updating rule, and the latter ones depict the observer dynamics for each single vertex. <br/>
 
 
 ## 3.2 $\text{  }$ Observer implementation procedure <br/>
