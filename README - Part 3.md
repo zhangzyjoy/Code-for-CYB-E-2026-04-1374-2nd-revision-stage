@@ -161,7 +161,9 @@ $$
 \quad\quad(1.14)
 $$<br/>
 
-For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. The stacked observation error for desired position has a derivative and such that is substituted into the derivative of the Lyapunov function as
+For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. <br/>
+
+A Lyapunov candidate is defined as $V _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _p ^{ d } / 2$. Take the derivative of the stacked observation error for the observation error for desired follower position $E _p ^{ d }$, and such that is substituted into the derivative of the Lyapunov function for the system dynamics of the distributed position observation as
 
 $$
 \begin{aligned}
@@ -216,7 +218,7 @@ According to Lemma 2, the following inequality
 
 $$
 \begin{aligned}
-\dot { V } _o ^{ p } \le - a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 } + c _{ 0 }
+{ \dot { V } _o ^{ p } } \le { - a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 } + c _{ 0 } }
 \end{aligned}
 \quad\quad(1.18)
 $$<br/>
@@ -225,8 +227,29 @@ is required to be guaranteed. <br/>
 
 Since Eq.(1.18) is required to be fulfilled, $N { ( \overline { e } _{ v } ) } ^{ 2 }$ in Eq.(1.17) can be treated as $c _{ 0 }$ in Lemma 2. Subsequently, $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ should be equivalent to $- a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 }$ in Eq.(1.17). This requires that the last term ${ ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ in Eq.(1.16) should be designed as an additional term to turn $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ into a negative definite term. <br/>
 
-By employing the 
+Invoking the bounding properties in Eq.(1.14), we assume the final scaled result to be <br/>
 
+$$
+\begin{aligned}
+{ \dot { V } _o ^{ p } } $ \le - (  - \frac { 1 } { 4 } ) \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } \\
+& + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \\
+& \quad + N { ( \overline { e } _{ v } ) } ^{ 2 } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )
+\end{aligned}
+\quad\quad(1.19)
+$$<br/>
+
+
+
+
+
+By introducing 
+
+$$
+\begin{aligned}
+
+\end{aligned}
+\quad\quad(1.)
+$$<br/>
 
 
 
