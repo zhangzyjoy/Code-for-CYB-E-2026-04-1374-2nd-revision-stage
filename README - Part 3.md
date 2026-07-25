@@ -180,7 +180,7 @@ $$
 \end{aligned}
 $$<br/>
 
-The nonlinear term $g ( \tilde { E } _p ^{ d } )$ is required to be designed in the aforementioned equation $\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } )$ by introducing Eq.(1.14) to perform bounding on the Lyapunov derivative $\dot { V } _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) )$. <br/>
+The nonlinear term $g ( \tilde { E } _p ^{ d } )$ is required to be designed in the aforementioned equation $\dot { \hat { P } } ^{ d } = \hat { V } ^{ d } + g ( \tilde { E } _p ^{ d } )$ by introducing Eq.(1.14) to perform bounding on the Lyapunov derivative $\dot { V } _o ^{ p } = { ( E _p ^{ d } ) } ^{ T } ( E _v ^{ d } + g ( \tilde { E } _p ^{ d } ) )$. <br/> <br/>
 
 Invoking ${ ( \tilde { E } _p ^{ d } )} ^ { T } = { ( E _p ^{ d } ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } )$, the Lyapunov derivative is formulated as
 
@@ -225,7 +225,7 @@ is required to be guaranteed. <br/>
 
 Since Eq.(1.18) is required to be fulfilled, $N { ( \overline { e } _{ v } ) } ^{ 2 }$ in Eq.(1.17) can be treated as $c _{ 0 }$ in Lemma 2. Subsequently, $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + { ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ should be equivalent to $- a _1 { ( V _o ^{ p } ) } ^ { b _1 } - a _2 { ( V _o ^{ p } ) } ^ { b _2 }$ in Eq.(1.17). This requires that the last term ${ ( \tilde { E } _p ^{ d } ) } ^ { T } g ( \tilde { E } _p ^{ d } )$ in Eq.(1.16) should be designed as an additional term to turn $\frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ p } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } }$ into a negative definite term. <br/>
 
-Invoking the 
+By employing the 
 
 
 
