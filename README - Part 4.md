@@ -2,7 +2,7 @@
 
 ## 4.1 $\text{  }$ Theories and design principles
 
-
+In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{ v }$ in the translational dynamics **Eq.(A.7)** and the observation value $\hat d _i ^{ v }$ can be utilized as compensation term in the design of thrust control input in the translational subsystem. <br/>
 
 
 ## 4.2 $\text{  }$ Observer implementation framework
