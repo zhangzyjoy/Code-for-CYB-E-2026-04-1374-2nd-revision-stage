@@ -26,7 +26,7 @@ $$
 \quad\quad(1.2)
 $$<br/>
 
-### 3.1.1 Distributed velocity observer design principles <br/>
+### 3.1.1 $\text{  }$ Distributed velocity observer design principles <br/>
 
 Invoking **Lemma 4** on the theoretical design for PFxTDSO, and given parameters that $\gamma _{ 1 } > 1$ and $0 < \gamma _{ 2 } < 1$ holds, it can be deduced that
 
@@ -160,7 +160,7 @@ $$<br/>
 
 Therefore, if Eq.(1.12) is guaranteed and the Lyapunov candidate $V _o ^{ v } = { ( E _v ^{ d } ) } ^{ T } ( \overline { L } ^T \otimes I _{ 3 } ) E _v ^{ d } / 2$ is expected to satisfy the inequality Eq.(1.11) under the designed distributed observer Eq.(1.13), then the practical fixed-time convergence is guaranteed for $E _v ^{ d }$. Since $E _v ^{ d } = [ { ( e _{ 1,v } ^{ d } ) } ^{ T }, ..., { ( e _{ n,v } ^{ d } ) } ^{ T } ] ^{ T }$ is defined, the practical fixed-time convergence is equivalent to that $e _{ i,v } ^{ d }$ can achieve the same stable property. Therefore, if the parameters are set according to Eq.(1.12), then the distributed velocity observation of the follower vertex $\hat { v } _i ^{ d }$ can converge into $v _{ 0 } + \dot { \delta } _{ i }$ in practical fixed time. <br/>
 
-### 3.1.2 Distributed position observer design principles <br/>
+### 3.1.2 $\text{  }$ Distributed position observer design principles <br/>
 
 For the finite value is initialized for each $\hat { v } _i ^{ d }$, it is easy to follow that the stacked velocity observation error $E _v ^{ d }$ has an upper bound that satisfies $\lVert E _v ^{ d } \rVert \le \overline { e } _{ v }$. <br/>
 
