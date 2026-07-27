@@ -10,8 +10,8 @@ $$
 \begin{cases}
 & { e _i ^p } = { p _{ i } - p _{ 0 } - \delta _i }
 & { e _i ^v } = { v _{ i } - v _{ 0 } - \dot { \delta } _i }
-\end{aligned}
 \end{cases}
+\end{aligned}
 $$<br/>
 
 As denoted in the markdown file **<README - Part 3.md>**, the desired position and velocity of the $i$-th follower vertex is given by $\hat { p } _i ^d$ and $\hat { v } _i ^d$, respectively. Furthermore, it can be proved that the observation errors for position and velocity, denoted as $\tilde { e } _{ i, p } ^d = \hat { p } _i ^{ d } - p _{ 0 } - \delta _i$ and $\tilde { e } _{ i, v } ^d = \hat { v } _i ^{ d } - v _{ 0 } - \dot { \delta } _i$ can respectively converge into the origin and reach practical fixed-time stability. In other words, $\hat { p } _i ^{ d } \to p _{ 0 } + \delta _i$ and $\hat { v } _i ^{ d } \to v _{ 0 } + \dot { \delta } _i$ can be obtained in fixed time. <br/>
