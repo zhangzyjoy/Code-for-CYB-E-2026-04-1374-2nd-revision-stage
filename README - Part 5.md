@@ -72,7 +72,7 @@ $$
 \end{aligned}
 $$<br/>
 
-In order to achieve the convergence of the formation tracking error $e _i ^{ p }$ in Eq.(1.1), we need to design the proper thrust control input $u _{ i }$. A primary Lyapunov candidate is defined as $L _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } / 2$ and its derivative is deduced as $\dot { L } _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } ( e _i ^{ v } + F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) )$. 
+In order to achieve the convergence of the formation tracking error $e _i ^{ p }$ in Eq.(1.1), we need to design the proper thrust control input $u _{ i }$. A primary Lyapunov candidate is defined as $L _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } / 2$ and its derivative is deduced as $\dot { L } _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v } + { ( e _{ i } ^{ p } ) } ^{ T } F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) )$. 
 
 
 
