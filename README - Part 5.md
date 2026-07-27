@@ -36,20 +36,33 @@ $$
 \end{aligned}
 $$<br/>
 
-Employing Eq.(1.1) and Eq.(A.7), the formation tracking error derivatives of each uncrewed aerial vehicle is derived by <br/>
+Employing Eq.(1.1) and Eq.(A.7), we can derive the following equalities by substituting Eq.(A.7) into the derivative of Eq.(1.1) such that
 
 $$
 \begin{aligned}
 \begin{cases}
-{ \dot { e } _i ^{ p } } & = { \dot { p } _{ i } - \dot { \hat { p } } _i ^{ d } = v _{ i } - \hat { v } _i ^{ d } + F _i ^{ p } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) = e _i ^{ v } + F _i ^{ p } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } \\
-{ \dot { e } _i ^{ v } } & = { \dot { v } _{ i } - \dot { \hat { v } } _i ^{ d } } \\
-& = { - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R( Q _i ^{ c } ) ( R( Q _i ^{ e } ) - I _3 ) \overline e _3 / m _i + d _i ^v + F _i ^{ v } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) } \\
-{ F _i ^{ p } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } & = { - \ell _1 ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ p } \vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
-{ F _i ^{ v } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) } & = { - \ell _1 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
+{ \dot { e } _i ^{ p } } & = { \dot { p } _{ i } - \dot { \hat { p } } _i ^{ d } = v _{ i } - \hat { v } _i ^{ d } - \ell _1 ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ p } \vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
+{ \dot { e } _i ^{ v } } & = { \dot { v } _{ i } - \dot { \hat { v } } _i ^{ d } = - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R( Q _i ^{ c } ) ( R( Q _i ^{ e } ) - I _3 ) \overline e _3 / m _i + d _i ^{ v } - \ell _1 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _2, \mu _o ^{ p } ) }
 \end{cases}
 \end{aligned}
 \quad\quad(1.3)
 $$<br/>
+
+Invoking $e _i ^{ v } = v _{ i } - \hat { v } _i ^{ d }$, the formation tracking error derivatives of each uncrewed aerial vehicle is further derived by <br/>
+
+$$
+\begin{aligned}
+\begin{cases}
+{ F _i ^{ p } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } & = { - \ell _1 ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ p } \vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
+{ F _i ^{ v } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) } & = { - \ell _1 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
+{ \dot { e } _i ^{ p } } & = { e _i ^{ v } + F _i ^{ p } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } \\
+{ \dot { e } _i ^{ v } } & = { - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R( Q _i ^{ c } ) ( R( Q _i ^{ e } ) - I _3 ) \overline e _3 / m _i + d _i ^{ v } + F _i ^{ v } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) }
+\end{cases}
+\end{aligned}
+\quad\quad(1.3)
+$$<br/>
+
+
 
 
 ## 5.2 $\text{  }$ Controller implementation procedure <br/>
