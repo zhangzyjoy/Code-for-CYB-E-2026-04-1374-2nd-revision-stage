@@ -2,7 +2,8 @@
 
 
 
-## 5.1 $\text{  }$ Theories and Design Principles <br/>
+## 5.1 $\text{  }$ Theories and design principles <br/>
+
 
 
 
@@ -69,7 +70,7 @@ $$
 $$<br/>
 
 
-### 5.2.1 $\text{  }$ Implementation procedure for experimental validation <br/>
+### 5.2.2 $\text{  }$ Implementation procedure for experimental validation <br/>
 
 The translational dynamics Eq.(29) is simplified as a second-order agent with external disturbacne <br/>
 
@@ -131,14 +132,6 @@ T _s \le \overline T _s = \frac { 1 } { a _1 \eta _0 ( b _1 - 1 )} + \frac { 1 }
 \end{aligned}
 $$<br/>
 
-**Lemma 3 (Proposed Fixed-Time Stability Criteria)** : If a radially unbounded positive definite function $V ( t , x )$ satisfies $\dot V \le -k \frac { V ^{ ( p + 2 ) / 2 } } { \tanh ( \gamma V ^{ 1 / 2 } ) }$ such that $k > 0$, $\gamma > 0$, $0 < p < 1$, then the origin of $x ( t )$ converges in fixed time upper bounded by
-
-$$
-\begin{aligned}
-T _s \le \overline T _s = \frac { 2 ^{ p + 2 } } { \gamma ^{ p + 2 } k p ( 1 - p ) }
-\end{aligned}
-$$<br/>
-
 
 ## A.2 $\text{  }$ Design of nonlinear smooth sigmoid function <br/>
 
@@ -171,7 +164,7 @@ $$<br/>
 
 where $\gamma > 0$ controls the growth rate around the zero crossing. <br/>
 
-**Lemma 4** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
+**Lemma 3** : For a vector $\overline x = [ x _1, ..., x _n ] ^T \in \mathbb R ^n$ , $\alpha > 0$, and $\gamma > 0$, define $\vartheta ( \overline x , \alpha, \gamma ) = [ \vartheta _1 ( x _1, \alpha, \gamma ), ..., \vartheta _n ( x _n, \alpha, \gamma ) ]^T$ with each entries $\vartheta _k ( x _k, \alpha, \gamma )$ as the form of Eq.(3), the inequalities are yielded as
 
 $$
 \begin{aligned}
@@ -215,7 +208,6 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 - $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
-- $\Lambda_{i}$ : inertia matrix 
 - $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
 - $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
 - $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
@@ -226,14 +218,5 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 - $\chi_i$, $\phi_i$ : virtual linear velocity tracking vector, tracking error
 - $d _i ^v$, $\hat d _i ^v$ : translational disturbance, disturbance observation
 - $\sigma _i ^v$, $\overline \sigma _i ^v$, $\hat {\overline \sigma} _i ^v$ : virtual linear velocity tracking vector, tracking error, tracking error observation
-- $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^T$ : quaternion
-- $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
-- $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
-- $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
-- $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
-- $\overline S_i$ = $[ \overline S_{i,x}, \overline S_{i,y}, \overline S_{i,z} ]^T$ : auxiliary sliding mode surface
-- $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : piecewise auxiliary rotational error
-- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of piecewise auxiliary rotational error
-- $F_i^S$ : rotation compensation term
-- $\tau_i$ : applied torque rotational control input
+
 
