@@ -8,8 +8,8 @@ For each vertex $i \in \lbrace 1, ..., N \rbrace$, the formation tracking error 
 $$
 \begin{aligned}
 \begin{cases}
-& { e _i ^p } = { p _i - p _0 - \delta _i }
-& { e _i ^v } = { v _i - v _0 - \dot { \delta } _i }
+& { e _i ^p } = { p _{ i } - p _{ 0 } - \delta _i }
+& { e _i ^v } = { v _{ i } - v _{ 0 } - \dot { \delta } _i }
 \end{aligned}
 \end{cases}
 $$<br/>
