@@ -2,7 +2,16 @@
 
 
 
-## 5.1 $\text{  }$ PFxTDFC for translational control simulation <br/>
+## 5.1 $\text{  }$ Theories and Design Principles <br/>
+
+
+
+
+## 5.2 $\text{  }$ Controller implementation procedure <br/>
+
+
+### 5.2.1 $\text{  }$ Implementation procedure for numerical simulation <br/>
+
 
 Position and linear velocity tracking error
 
@@ -60,7 +69,7 @@ $$
 $$<br/>
 
 
-## 5.2 $\text{  }$ PFxTDFC for experimental validation <br/>
+### 5.2.1 $\text{  }$ Implementation procedure for experimental validation <br/>
 
 The translational dynamics Eq.(29) is simplified as a second-order agent with external disturbacne <br/>
 
