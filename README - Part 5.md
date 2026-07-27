@@ -20,14 +20,14 @@ $$
 \begin{aligned}
 { e _i ^v } = { v _i - \hat { v } _i ^d }
 \end{aligned}
-\quad\quad(24)
+\quad\quad(2.1)
 $$<br/>
 
 $$
 \begin{aligned}
 { e _i ^p } = { p _i - \hat { p } _i ^d }
 \end{aligned}
-\quad\quad(25)
+\quad\quad(2.2)
 $$<br/>
 
 The auxiliary velocity control variable
@@ -36,7 +36,7 @@ $$
 \begin{aligned}
 { \chi _i } = { - \kappa _1 ^{ \chi } { \vartheta ( e _i ^p, \beta _1, \mu _c ^p ) } - \kappa _2 ^{ \chi } { \vartheta ( e _i ^p, \beta _2, \mu _c ^p ) } }
 \end{aligned}
-\quad\quad(26)
+\quad\quad(2.3)
 $$<br/>
 
 The virtual velocity tracking error
@@ -45,16 +45,16 @@ $$
 \begin{aligned}
 { \phi _i } = { e _i ^v - \chi _i }
 \end{aligned}
-\quad\quad(27)
+\quad\quad(2.4)
 $$<br/>
 
-Employ Eq.(23) to design the translational control input
+Design the translational control input
 
 $$
 \begin{aligned}
 { u _i } = { g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p ) - \hat d _i ^v }
 \end{aligned}
-\quad\quad(28)
+\quad\quad(2.5)
 $$<br/>
 
 Update the translational dynamics
@@ -66,13 +66,13 @@ $$
 &{ \dot p _i } = { v _i }
 \end{cases}
 \end{aligned}
-\quad\quad(29)
+\quad\quad(2.6)
 $$<br/>
 
 
 ### 5.2.2 $\text{  }$ Implementation procedure for experimental validation <br/>
 
-The translational dynamics Eq.(29) is simplified as a second-order agent with external disturbacne <br/>
+The translational dynamics Eq.(A.7) of each uncrewed aerial vehicle is simplified as a second-order agent with external disturbacne <br/>
 
 $$
 \begin{aligned}
@@ -81,16 +81,16 @@ $$
 &{ \dot p _i } = { v _i }
 \end{cases}
 \end{aligned}
-\quad\quad(30)
+\quad\quad(2.7)
 $$<br/>
 
-Employ Eq.(23) and design $U _i$ to reformulate the PFxTDFC Eq.(28) as <br/>
+Design $U _i$ to reformulate the PFxTDFC Eq.(2.5) to fit for employment in a second-order double-integrator system depicted by Eq.(2.7) as <br/>
 
 $$
 \begin{aligned}
 { U _i } = { \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p ) - \hat d _i ^v }
 \end{aligned}
-\quad\quad(31)
+\quad\quad(2.8)
 $$<br/>
 
 ## 5.3 $\text{  }$ Parameter settings and validation
