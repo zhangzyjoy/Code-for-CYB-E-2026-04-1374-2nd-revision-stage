@@ -1,10 +1,11 @@
 # 5. $\text{  }$ Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
 
 
-
 ## 5.1 $\text{  }$ Theories and design principles <br/>
 
-According to 
+For each vertex $i \in \mathsf { \mathcal { V } }$, the 
+
+According to the translational dynamics Eq.(A.7) of each uncrewed aerial vehicle vertex, 
 
 
 
@@ -18,14 +19,14 @@ Position and linear velocity tracking error
 
 $$
 \begin{aligned}
-{ e _i ^v } = { v _i - \hat { v } _i ^d }
+{ e _i ^v } = { v _i - \hat { v } _i ^{ d } }
 \end{aligned}
 \quad\quad(2.1)
 $$<br/>
 
 $$
 \begin{aligned}
-{ e _i ^p } = { p _i - \hat { p } _i ^d }
+{ e _i ^p } = { p _i - \hat { p } _i ^{ d } }
 \end{aligned}
 \quad\quad(2.2)
 $$<br/>
@@ -38,6 +39,7 @@ $$
 \end{aligned}
 \quad\quad(2.3)
 $$<br/>
+
 
 The virtual velocity tracking error
 
@@ -72,7 +74,7 @@ $$<br/>
 
 ### 5.2.2 $\text{  }$ Implementation procedure for experimental validation <br/>
 
-The translational dynamics Eq.(A.7) of each uncrewed aerial vehicle is simplified as a second-order agent with external disturbacne <br/>
+The translational dynamics Eq.(A.7) of each uncrewed aerial vehicle is simplified as a second-order agent with external disturbance <br/>
 
 $$
 \begin{aligned}
