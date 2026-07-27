@@ -130,7 +130,7 @@ $$<br/>
 According to **Lemma 1**, **Eq.(1.7)** and **Eq.(1.3)**, $\tilde {\overline { \sigma } } _i ^{ v } = 0$ can be achieved within fixed time only if **Eq.(1.7)** holds and the parameter settings in **Eq.(1.3)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $c _i ^{ v, 1 } > 0$, $c _i ^{ v, 2 } > 0$, $c _i ^{ v, 3 } > 0$, $\mu _d ^{ v } > 0$, $\alpha _1 ^{ v } > 1$, $0 < \alpha _2 ^{ v } < 1$. <br/>
 
 
-## 4.2 $\text{  }$ Observer implementation framework
+## 4.2 $\text{  }$ Observer implementation procedure
 
 Update virtual linear velocity tracking vector<br/>
 
