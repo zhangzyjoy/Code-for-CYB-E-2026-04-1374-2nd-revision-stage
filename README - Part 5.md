@@ -66,7 +66,7 @@ If $\hat { p } _i ^{ d } \to p _{ 0 } + \delta _i$ and $\hat { v } _i ^{ d } \to
 
 $$
 \begin{aligned}
-\lVert F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) \rVert \le \overline { F } _o ^{ V }, \quad \quad \lVert F _i ^{ \hat { p } } ( p _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) \rVert \le \overline { F } _o ^{ V }
+\lVert F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) \rVert \le \overline { F } _o ^{ V }, \quad \quad \lVert F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) \rVert \le \overline { F } _o ^{ P }
 \end{aligned}
 $$<br/>
 
