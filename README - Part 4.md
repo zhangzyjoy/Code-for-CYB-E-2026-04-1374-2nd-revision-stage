@@ -1,8 +1,133 @@
 # 4. $\text{  }$ Fixed-time translational disturbance observer (FxTDO) <br/>
 
+In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{ v }$ in the translational dynamics **Eq.(A.7)** and the observation value $\hat d _i ^{ v }$ can be utilized as compensation term in the design of thrust control input in the translational subsystem. <br/>
+
 ## 4.1 $\text{  }$ Theories and design principles
 
-In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{ v }$ in the translational dynamics **Eq.(A.7)** and the observation value $\hat d _i ^{ v }$ can be utilized as compensation term in the design of thrust control input in the translational subsystem. <br/>
+Define a **virtual linear velocity tracking variable** as <br/>
+
+$$
+\begin{aligned}
+\dot { \sigma } _i ^{ v } = - g \overline { e } _{ 3 } + T _{ i } R ( Q _{ i } ) \overline { e } _{ 3 } / m _{ i } + c _{ i } ^{ v, 3 } \overline { \sigma } _{ i } ^{ v }
+\end{aligned}
+\quad\quad(1.1)
+$$<br/>
+
+Define the **auxiliary linear velocity tracking error** as $\overline \sigma _i ^{ v } = v _i - \sigma _i ^{ v }$. Subtract **Eq.(1.1)** from the second differential equations of **Eq.(A.7)** and yield the first derivative of $\overline \sigma _i ^{ v }$ as <br/>
+
+$$
+\begin{aligned}
+\dot { \overline { \sigma } } _i ^{ v } = d _i ^{ v } - c _i ^{ v, 3 } \overline { \sigma } _i ^{ v }
+\end{aligned}
+$$<br/>
+
+Introduce an observation value of $\overline { \sigma } _i ^{ v }$, the linear angular velocity tracking error, as $\tilde {\overline { \sigma } } _i ^{ v } = \overline { \sigma } _i ^{ v } - \hat { \overline { \sigma } } _i ^{ v }$. From $\tilde { d } _i ^{ v } = d _i ^{ v } - \hat d _i ^{ v } = c _i ^{ v, 3 } \tilde { \overline { \sigma } } _i ^{ v }$ , it can be derived that the observation error $\tilde d _i ^{ v }$ holds the same convergence behavior with $\tilde { \overline { \sigma } } _i ^{ v }$. <br/>
+
+In order to achieve $\tilde d _i ^{ v } \to 0$ , an equivalent deduction of $\tilde { \overline { \sigma } } _i ^{ v } \to 0$ are required to be attained in fixed time. A Lyapunov candidate is chosen as $V _i ^{ d, v } = \frac {1} {2} ( \tilde { \overline { \sigma } } _i ^{ v } ) ^{ T } \tilde { \overline { \sigma } } _i ^{ v }$. According to **Lemma 1**, the inequality $\dot V _i ^{ d, v } \le - a _i ^{ d, 1 } ( V _i ^{ d, v } ) ^{ b _i ^{ d, 1 } } - a _i ^{ d, 2 } ( V _i ^{ d, v } ) ^{ b _i ^{ d, 2 } }$ should be fulfilled to achieve a fixed-time stable observation. <br/>
+
+According to **Lemma 4**, choose parameters as $\alpha _1 ^{ v } > 1$, $0 < \alpha _2 ^{ v } < 1$, $\mu _d ^{ v } > 0$, and then yield <br/>
+
+$$
+\begin{aligned}
+\begin{cases}
+&( \tilde { \overline { \sigma } } _i ^{ v } )^T \vartheta ( \tilde { \overline { \sigma } } _i ^{ v }, \alpha _1 ^{ v }, \mu _d ^{ \varpi } ) \le - 2 ^{ \frac { \alpha _1 ^{ v } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ v } } { 2 } } K _{ \alpha } ^{ d, v } ( \frac { 1 } { 2 } ( ( \tilde { \overline { \sigma } } _i ^{ v } ) ^{ T } \tilde { \overline { \sigma } } _i ^{ v } ) ^{ \frac { \alpha _1 ^{ v } + 1 } { 2 } } ) \\
+&( \tilde { \overline { \sigma } } _i ^{ v } )^T \vartheta ( \tilde { \overline { \sigma } } _i ^{ v }, \alpha _2 ^{ v }, \mu _d ^{ v } ) \le - 2 ^{ \frac { \alpha _2 ^{ v } + 1 } { 2 } } K _{ \alpha } ^{ d, v } ( \frac { 1 } { 2 } ( ( \tilde { \overline { \sigma } } _i ^{ v } ) ^T \tilde { \overline { \sigma } } _i ^{ v } ) ^{ \frac { \alpha _2 ^{ v } + 1 } { 2 } } )
+\end{cases}
+\end{aligned}
+$$<br/>
+
+Substitute the definition of the **Lyapunov function** $V _i ^{ d, v } = \frac {1} {2} ( \tilde { \overline { \sigma } } _i ^{ v } )^T \tilde { \overline { \sigma } } _i ^{ v }$, and the inequalities above can be thereafter yielded as
+
+$$
+\begin{aligned}
+\begin{cases}
+&( \tilde {\overline { \sigma } } _i ^{ v } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ v }, \alpha _1 ^{ v }, \mu _d ^{ v } ) \le - 2 ^{ \frac { \alpha _1 ^{ v } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ v } } { 2 } } K _{ \alpha } ^{ d, v } ( ( V _i ^{ d, v } ) ^{ \frac { \alpha _1 ^{ v } + 1 } { 2 } } ) \\
+&( \tilde {\overline { \sigma } } _i ^{ v } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ v }, \alpha _2 ^{ v }, \mu _d ^{ v } ) \le - 2 ^{ \frac { \alpha _2 ^{ v } + 1 } { 2 } } K _{ \alpha } ^{ d, v } ( ( V _i ^{ d, v } ) ^{ \frac { \alpha _2 ^{ v } + 1 } { 2 } } )
+\end{cases}
+\end{aligned}
+\quad\quad(1.2)
+$$<br/>
+
+The **coefficients** in **Lemma 1** for fixed-time stability analysis can be chosen as <br/>
+
+$$
+\begin{aligned}
+\begin{cases}
+&a _i ^{ d, 1 } = 2 ^{ \frac { \alpha _1 ^{ v } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ v } } { 2 } } K _{ \alpha } ^{ d, v } c _i ^{ v, 1 } \\
+&b _i ^{ d, 1 } = \frac { \alpha _1 ^{ v } + 1 } { 2 } \\
+&a _i ^{ d, 2 } = 2 ^{ \frac { \alpha _2 ^{ v } + 1 } { 2 } } K _{ \alpha } ^{ d, v } c _i ^{ v, 2 } \\
+&b _i ^{ d, 2 } = \frac { \alpha _2 ^{ v } + 1 } { 2 }
+\end{cases}
+\end{aligned}
+\quad\quad(1.3)
+$$<br/>
+
+then the **adaptive updating law** of the **auxiliary linear velocity observation error** is designed as <br/>
+
+$$
+\begin{aligned}
+\dot { \tilde {\overline { \sigma } } } _i = - c _i ^{ v, 1 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ v }, \alpha _1 ^{ v }, \mu _d ^{ v } ) - c _i ^{ v, 2 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ v }, \alpha _2 ^{ v }, \mu _d ^{ v } )
+\end{aligned}
+\quad\quad(1.4)
+$$<br/>
+
+Since the **auxiliary linear velocity observation vector** is defined as $\tilde {\overline { \sigma } } _i ^{ v } = \overline { \sigma } _i ^{ v } - \hat {\overline { \sigma } } _i ^{ v }$, the adaptive law is derived as <br/>
+
+$$
+\begin{aligned}
+\dot { \hat {\overline { \sigma } } } _i ^{ v } = \dot {\overline { \sigma } } _i ^{ v } + c _i ^{ v, 1 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ v }, \alpha _1 ^{ v }, \mu _d ^{ v } ) + c _i ^{ v, 2 } \vartheta ( \tilde {\overline { \sigma } } _i ^{ v }, \alpha _2 ^{ v }, \mu _d ^{ v } )
+\end{aligned}
+$$<br/>
+
+where the explicit expression of $\dot {\overline { \sigma } } _i ^{ v }$ is hard to obtain because the unknown disturbance exists in $\dot { \overline { \sigma } } _i ^{ v } = d _i ^{ v } - c _i ^{ v, 3 } \overline { \sigma } _i ^{ v }$ . Therefore, $\dot {\overline { \sigma } } _i ^{ v }$ is derived by applying a differentiator on $\overline { \sigma } _i ^{ v }$ . <br/>
+
+Since the **disturbance observation error** is depicted as
+
+$$
+\begin{aligned}
+\tilde d _i ^{ v } = h _i ^{ v, 3 } \tilde {\overline { \sigma } } _i ^{ v } = d _i ^{ v } - \hat d _i ^{ v }
+\end{aligned}
+$$<br/>
+
+and thus yield <br/>
+
+$$
+\begin{aligned}
+\hat d _i ^{ v } = d _i ^{ v } - c _i ^{ v, 3 } \tilde { \overline { \sigma } } _i ^{ v }
+\end{aligned}
+\quad\quad(1.5)
+$$<br/>
+
+Further, from $\dot { \overline { \sigma } } _i ^{ v } = d _i ^{ v } - c _i ^{ v, 3 } \overline { \sigma } _i ^{ v }$ we can deduce that <br/>
+
+$$
+\begin{aligned}
+d _i ^{ v } = \dot { \overline { \sigma } } _i ^{ v } + c _i ^{ v, 3 } \overline { \sigma } _i ^{ v } - c _i ^{ v, 3 } \tilde { \overline { \sigma } } _i ^{ v } = \dot { \overline { \sigma } } _i ^{ v } + c _i ^{ v, 3 } \hat { \overline { \sigma } } _i ^{ v }
+\end{aligned}
+\quad\quad(1.6)
+$$<br/>
+
+Substitute **Eq.(1.6)** into **Eq.(1.5)** and yield <br/>
+
+$$
+\begin{aligned}
+\hat d _i ^{ v } = \dot { \overline { \sigma } } _i ^{ v } + c _i ^{ v, 3 } \overline { \sigma } _i ^{ v }
+\end{aligned}
+$$<br/>
+
+Take the derivative of Lyapunov function $V _i ^{ d, v }$ and substitute **Eq.(1.4)** into $\dot V _i ^{ d, v }$. Utilize the inequalities in **Eq.(1.2)** and further yield <br/>
+
+$$
+\begin{aligned}
+\dot V _i ^{ d, v } & = ( \tilde {\overline { \sigma } } _i ^{ v } ) ^{ T } \dot { \tilde {\overline { \sigma } } } _i ^{ v } \\
+& = - c _i ^{ v, 1 } ( \tilde {\overline { \sigma } } _i ^{ v } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ v }, \alpha _1 ^{ v }, \mu _d ^{ v } ) - c _i ^{ v, 2 } ( \tilde {\overline { \sigma } } _i ^{ v } )^T \vartheta ( \tilde {\overline { \sigma } } _i ^{ v }, \alpha _2 ^{ v }, \mu _d ^{ v } ) \\
+& \le - 2 ^{ \frac { \alpha _1 ^{ v } + 1 } { 2 } } 3 ^{ \frac { 1 - \alpha _1 ^{ v } } { 2 } } K _{ \alpha } ^{ d, v } c _i ^{ v, 1 } { ( V _i ^{ d, v } ) } ^{ \frac { \alpha _1 ^{ v } + 1 } { 2 } } - 2 ^{ \frac { \alpha _2 ^{ v } + 1 } { 2 } } K _{ \alpha } ^{ d, v } c _i ^{ v, 2 } { ( V _i ^{ d, v } ) } ^{ \frac { \alpha _2 ^{ v } + 1 } { 2 } } \\
+& \le - a _1 { ( V _i ^{ d, v } ) } ^{ b _1 } - a _2 { ( V _i ^{ d, v } ) } ^{ b _2 }
+\end{aligned}
+\quad\quad(1.7)
+$$<br/>
+
+According to **Lemma 1**, **Eq.(1.7)** and **Eq.(1.3)**, $\tilde {\overline { \sigma } } _i ^{ v } = 0$ can be achieved within fixed time only if **Eq.(1.7)** holds and the parameter settings in **Eq.(1.3)** satisfy $a _1 > 0$, $a _2 > 0$, $b _1 > 1$, $0 < b _2 < 1$. The parameters should be set as $h _i ^{ \varpi, 1 } > 0$, $h _i ^{ \varpi, 2 } > 0$, $h _i ^{ \varpi, 3 } > 0$, $\mu _d ^{ \varpi } > 0$, $\alpha _1 ^{ \varpi } > 1$, $0 < \alpha _2 ^{ \varpi } < 1$. <br/>
 
 
 ## 4.2 $\text{  }$ Observer implementation framework
