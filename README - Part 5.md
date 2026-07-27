@@ -3,7 +3,7 @@
 
 ## 5.1 $\text{  }$ Theories and design principles <br/>
 
-For each vertex $i \in \mathsf { \mathcal { V } }$, the 
+For each vertex $i \in \mathcal { V }$, the 
 
 According to the translational dynamics Eq.(A.7) of each uncrewed aerial vehicle vertex, 
 
