@@ -14,11 +14,33 @@ $$
 \end{aligned}
 $$<br/>
 
-As denoted in the markdown file **<README - Part 3.md>**, the desired position and velocity of the $i$-th follower vertex is given by $\hat { p } _i ^d$ and $\hat { v } _i ^d$, respectively. Furthermore, it can be proved that the observation errors for position and velocity, denoted as $\tilde { e } _{ i, p } ^d = \hat { p } _i ^{ d } - p _{ 0 } - \delta _i$ and $\tilde { e } _{ i, v } ^d = \hat { v } _i ^{ d } - v _{ 0 } - \dot { \delta } _i$ can respectively converge into the origin and reach practical fixed-time stability. In other words, $\hat { p } _i ^{ d } \to p _{ 0 } + \delta _i$ and $\hat { v } _i ^{ d } \to v _{ 0 } + \dot { \delta } _i$ can be obtained in fixed time. <br/>
+As denoted in the markdown file **<README - Part 3.md>**, the desired position and velocity of the $i$-th follower vertex is given by $\hat { p } _i ^d$ and $\hat { v } _i ^d$, respectively. Furthermore, it can be proved that the observation errors for position and velocity, denoted as $\tilde { e } _{ i, p } ^d = \hat { p } _i ^{ d } - p _{ 0 } - \delta _i$ and $\tilde { e } _{ i, v } ^d = \hat { v } _i ^{ d } - v _{ 0 } - \dot { \delta } _i$ can respectively converge into the origin and reach practical fixed-time stability. In other words, $\hat { p } _i ^{ d } \to p _{ 0 } + \delta _i$ and $\hat { v } _i ^{ d } \to v _{ 0 } + \dot { \delta } _i$ can reach the convergence in practical fixed time. <br/>
 
+Substitute the observation value $\hat { p } _i ^{ d }$ and $\hat { v } _i ^{ d }$ into the desired follower position $p _{ 0 } + \delta _i$ and desired follower velocity $v _{ 0 } + \dot { \delta } _i$, respectively. Then we obtain the novel formation tracking error terms based on the observation, which is suitable to be employed in the distributed control system as <br/>
 
-According to Eq.(A.7), the translational dynamics of each uncrewed aerial vehicle vertex,  <br/>
+$$
+\begin{aligned}
+\begin{cases}
+& { e _i ^p } = { p _{ i } - \hat { p } _i ^{ d } } \\
+& { e _i ^v } = { v _{ i } - \hat { v } _i ^{ d } }
+\end{cases}
+\end{aligned}
+\quad\quad(1.1)
+$$<br/>
 
+Employing Eq.(1.1) and Eq.(A.7), the formation tracking error derivatives of each uncrewed aerial vehicle is derived by <br/>
+
+$$
+\begin{aligned}
+\begin{cases}
+{ \dot { e } _i ^{ p } } & = { \dot { p } _{ i } - \dot { \hat { p } } _i ^{ d } } \\
+& = { v _{ i } -  }
+{ \dot { e } _i ^{ v } } & = { v _{ i } - \hat { v } _i ^{ d } }
+
+\end{cases}
+\end{aligned}
+\quad\quad(1.2)
+$$<br/>
 
 
 ## 5.2 $\text{  }$ Controller implementation procedure <br/>
