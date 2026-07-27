@@ -53,14 +53,24 @@ Invoking $e _i ^{ v } = v _{ i } - \hat { v } _i ^{ d }$, the formation tracking
 $$
 \begin{aligned}
 \begin{cases}
-& { F _i ^{ p } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } = { - \ell _1 ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ p } \vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
-& { F _i ^{ v } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) } = { - \ell _1 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
-& { \dot { e } _i ^{ p } } = { e _i ^{ v } + F _i ^{ p } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } \\
-& { \dot { e } _i ^{ v } } = { - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R( Q _i ^{ c } ) ( R( Q _i ^{ e } ) - I _3 ) \overline e _3 / m _i + d _i ^{ v } + F _i ^{ v } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) }
+& { F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } = { - \ell _1 ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ p } \vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
+& { F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) } = { - \ell _1 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
+& { \dot { e } _i ^{ p } } = { e _i ^{ v } + F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } \\
+& { \dot { e } _i ^{ v } } = { - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R( Q _i ^{ c } ) ( R( Q _i ^{ e } ) - I _3 ) \overline e _3 / m _i + d _i ^{ v } + F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) }
 \end{cases}
 \end{aligned}
 \quad\quad(1.3)
 $$<br/>
+
+If $\hat { p } _i ^{ d } \to p _{ 0 } + \delta _i$ and $\hat { v } _i ^{ d } \to v _{ 0 } + \dot { \delta } _i$ are reached within the practical fixed time, it can be concluded easily that $\tilde { e } _{ i, p } ^{ d } \to 0$ holds after considering $\tilde { E } _{ p } ^{ d } = ( \overline { L } \otimes I _{ 3 } ) E _{ p } ^{ d }$ and the same as $\tilde { e } _{ i, v } ^{ d } \to 0$. Since $\vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _k, \mu _o ^{ p } )$ and $\vartheta ( \tilde e _{ i,v } ^{ d }, \gamma _k, \mu _o ^{ p } )$ shares the same convergence property with $\tilde e _{ i,p } ^{ d }$ and $\tilde e _{ i,v } ^{ d }$, respectively, then the following bounding properties are yielded after reaching the practical fixed time
+
+$$
+\begin{aligned}
+\lVert F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) \rVert \le \overline { F } _o ^{ V }, \quad \quad \lVert F _i ^{ \hat { p } } ( p _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) \rVert \le \overline { F } _o ^{ V }
+\end{aligned}
+$$<br/>
+
+
 
 
 
