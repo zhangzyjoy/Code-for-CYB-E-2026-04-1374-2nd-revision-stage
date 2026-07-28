@@ -93,9 +93,10 @@ $$
 & { - \kappa _2 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } ) } \le { - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
+\quad\quad(1.6)
 $$<br/>
 
-where $K _{ \beta } ^{ 1 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{ \beta } } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. 
+where $K _{ \beta } ^{ 1 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{ \beta } } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. We can introduce $- \kappa _1 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } )$ and $- \kappa _2 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } )$ according to Eq.(1.6) to reformulate $e _{ i } ^{ v }$ to establish an upper bound for ${ ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v }$ to be utilized in $\dot { L } _i ^{ p, 1 }$. This indicates that the formation tracking error  <br/>
 
 
 
