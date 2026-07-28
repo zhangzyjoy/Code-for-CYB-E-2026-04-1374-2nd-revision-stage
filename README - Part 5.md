@@ -96,7 +96,7 @@ $$
 \quad\quad(1.6)
 $$<br/>
 
-where $K _{ \beta } ^{ 1 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{ \beta } } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. We can introduce $- \kappa _1 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } )$ and $- \kappa _2 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } )$ into $e _{ i } ^{ v }$ to establish an upper bound for ${ ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v }$ to be utilized in $\dot { L } _i ^{ p, 1 }$. This indicates that the formation tracking error  <br/>
+where $K _{ \beta } ^{ 1 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{ \beta } } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. We can introduce $- \kappa _1 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } )$ and $- \kappa _2 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } )$ into $e _{ i } ^{ v }$ to provide upper bounds for partial terms in $e _{ i } ^{ v }$ according to Eq.(1.6), and further we transform ${ ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ v }$ into terms including $\dot { L } _i ^{ p, 1 }$. This indicates that the velocity tracking error should be set as $e _{ i } ^{ v } = $ <br/>
 
 
 
