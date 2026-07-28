@@ -53,18 +53,18 @@ Invoking $e _i ^{ v } = v _{ i } - \hat { v } _i ^{ d }$, the formation tracking
 $$
 \begin{aligned}
 \begin{cases}
-& { F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } = { - \ell _1 ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ p } \vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
-& { F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) } = { - \ell _1 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _1, \mu _o ^{ p } ) - \ell _2 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
-& { \dot { e } _i ^{ p } } = { e _i ^{ v } + F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } \\
-& { \dot { e } _i ^{ v } } = { - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R( Q _i ^{ c } ) ( R( Q _i ^{ e } ) - I _3 ) \overline e _3 / m _i + d _i ^{ v } + F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) }
+& { F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } = { \ell _1 ^{ p } \vartheta ( \tilde { e } _{ i,p } ^{ d }, \gamma _1, \mu _o ^{ p } ) + \ell _2 ^{ p } \vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
+& { F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) } = { \ell _1 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _1, \mu _o ^{ p } ) + \ell _2 ^{ v } \vartheta ( \tilde { e } _{ i,v } ^{ d }, \gamma _2, \mu _o ^{ p } ) } \\
+& { \dot { e } _i ^{ p } } = { e _i ^{ v } - F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } \\
+& { \dot { e } _i ^{ v } } = { - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R( Q _i ^{ c } ) ( R( Q _i ^{ e } ) - I _3 ) \overline e _3 / m _i + d _i ^{ v } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) }
 \end{cases}
 \end{aligned}
 \quad\quad(1.3)
 $$<br/>
 
-In Eq.(1.3), $R ( Q _i ^{ e } ) \to I _3$ holds when the rotational error terms in the rotational subsystem converges into the origin. Therefore, the upper bound is determined by $T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } \le \overline { \Gamma } _{ u }$. <br/>
+In Eq.(1.3), $R ( Q _i ^{ e } ) \to I _3$ holds when the rotational error terms in the rotational subsystem converges into the origin. Therefore, the upper bound is determined by $\lVert T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } \rVert \le \overline { \Gamma } _{ u }$. <br/>
 
-If $\hat { p } _i ^{ d } \to p _{ 0 } + \delta _i$ and $\hat { v } _i ^{ d } \to v _{ 0 } + \dot { \delta } _i$ are reached within the practical fixed time, it can be concluded easily that $\tilde { e } _{ i, p } ^{ d } \to 0$ holds after considering $\tilde { E } _{ p } ^{ d } = ( \overline { L } \otimes I _{ 3 } ) E _{ p } ^{ d }$ and the same as $\tilde { e } _{ i, v } ^{ d } \to 0$. Since $\vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _k, \mu _o ^{ p } )$ and $\vartheta ( \tilde e _{ i,v } ^{ d }, \gamma _k, \mu _o ^{ p } )$ shares the same convergence property with $\tilde e _{ i,p } ^{ d }$ and $\tilde e _{ i,v } ^{ d }$, respectively, then after reaching the practical fixed time, the following bounding properties are yielded as
+If $\hat { p } _i ^{ d } \to p _{ 0 } + \delta _i$ and $\hat { v } _i ^{ d } \to v _{ 0 } + \dot { \delta } _i$ are reached within the practical fixed time, it can be concluded easily that $\tilde { e } _{ i, p } ^{ d } \to 0$ holds after considering $\tilde { E } _{ p } ^{ d } = ( \overline { L } \otimes I _{ 3 } ) E _{ p } ^{ d }$, and the same deduction can be obtained as $\tilde { e } _{ i, v } ^{ d } \to 0$. Since $\vartheta ( \tilde e _{ i,p } ^{ d }, \gamma _k, \mu _o ^{ p } )$ and $\vartheta ( \tilde e _{ i,v } ^{ d }, \gamma _k, \mu _o ^{ p } )$ shares the same convergence property with $\tilde e _{ i,p } ^{ d }$ and $\tilde e _{ i,v } ^{ d }$, respectively, then after reaching the practical fixed time, tracking errors $\tilde e _{ i,p } ^{ d }$ and $\tilde e _{ i,v } ^{ d }$ can converge to small neighborhood region near zero and such that the following bounding properties are yielded as
 
 $$
 \begin{aligned}
@@ -72,7 +72,16 @@ $$
 \end{aligned}
 $$<br/>
 
-In order to achieve the convergence of the formation tracking error $e _i ^{ p }$ in Eq.(1.1), we need to design the proper thrust control input $u _{ i }$. A primary Lyapunov candidate is defined as $L _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } / 2$ and its derivative is deduced as $\dot { L } _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v } + { ( e _{ i } ^{ p } ) } ^{ T } F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) )$. 
+In order to achieve the convergence of the formation tracking error $e _i ^{ p }$ in Eq.(1.1), we need to design the proper thrust control input $u _{ i }$. A primary Lyapunov candidate is defined as $L _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } / 2$ and its derivative is deduced as
+
+$$
+\begin{aligned}
+{ \dot { L } _i ^{ p, 1 } } & = { { ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v } - { ( e _{ i } ^{ p } ) } ^{ T } F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) } \\
+& \le { { ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v } + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } \lVert F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) \rVert ^{ 2 } } \\
+& \le { { ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v } + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \overline { F } _O ^{ p } ) } ^{ 2 } }
+\end{aligned}
+$$<br/>
+
 
 
 
