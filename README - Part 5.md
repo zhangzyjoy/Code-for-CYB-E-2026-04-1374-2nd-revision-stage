@@ -70,9 +70,10 @@ $$
 \begin{aligned}
 \lVert F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) \rVert \le \overline { F } _o ^{ V }, \quad \quad \lVert F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) \rVert \le \overline { F } _o ^{ P }
 \end{aligned}
+\quad\quad(1.4)
 $$<br/>
 
-In order to achieve the convergence of the formation tracking error $e _i ^{ p }$ in Eq.(1.1), we need to design the proper thrust control input $u _{ i }$. A primary Lyapunov candidate is defined as $L _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } / 2$ and its derivative is deduced as
+In order to achieve the convergence of the formation tracking error $e _i ^{ p }$ in Eq.(1.1), we need to design the proper thrust control input $u _{ i }$. A primary Lyapunov candidate is defined as $L _i ^{ p, 1 } = { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } / 2$ and its derivative is deduced by invoking Eq.(1.4) as
 
 $$
 \begin{aligned}
@@ -80,8 +81,21 @@ $$
 & \le { { ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v } + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } \lVert F _i ^{ \hat { p } } ( p _{ 0 }, \hat { p } _i ^{ d }, \hat { p } _j ^{ d } ) \rVert ^{ 2 } } \\
 & \le { { ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v } + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \overline { F } _O ^{ p } ) } ^{ 2 } }
 \end{aligned}
+\quad\quad(1.5)
 $$<br/>
 
+According to Eq.(1.5), the term ${ ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v }$ requires auxiliary system to tackle with $e _i ^{ v }$. Select parameters to guarantee that $\beta _{ 1 } > 1$, $0 < \beta _{ 2 } < 1$, $\kai _1 ^{ \chi } > 0$, $\kai _2 ^{ \chi } > 0$, $\mu _c ^{ p } > 0$, we invoke **Lemma 4** and thereafter yield that
+
+$$
+\begin{aligned}
+\begin{cases}
+& { - \kai _1 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) } \le { - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kai _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } } \\
+& { - \kai _2 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } ) } \le { - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kai _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } }
+\end{cases}
+\end{aligned}
+$$<br/>
+
+where $K _{ \beta } ^{ 1 } = min \lbrace 1 / \overline { \epsilon } _{ \beta , \underline { \epsilon } _{ \beta } } \rbrace$ is selected according to **Lemma 4**. 
 
 
 
@@ -246,7 +260,7 @@ $\lambda _k ( x _k, \gamma )$ is a sigmoid-like bounded function defined as <br/
 
 $$
 \begin{aligned}
-\lambda _k ( x _k, \gamma ) = -1 + \frac 1 {1 + \exp ( - \gamma x _k )}
+\lambda _k ( x _k, \gamma ) = -1 + \frac 1 { 1 + \exp ( - \gamma x _k ) }
 \end{aligned}
 \quad\quad(A.4)
 $$<br/>
