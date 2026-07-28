@@ -95,7 +95,7 @@ $$
 \end{aligned}
 $$<br/>
 
-where $K _{ \beta } ^{ 1 } = min \lbrace 1 / \overline { \epsilon } _{ \beta } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. 
+where $K _{ \beta } ^{ 1 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{ \beta } } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. 
 
 
 
