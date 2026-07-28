@@ -84,13 +84,13 @@ $$
 \quad\quad(1.5)
 $$<br/>
 
-According to Eq.(1.5), the term ${ ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v }$ requires auxiliary system to tackle with $e _i ^{ v }$. Select parameters to guarantee that $\beta _{ 1 } > 1$, $0 < \beta _{ 2 } < 1$, $\kai _1 ^{ \chi } > 0$, $\kai _2 ^{ \chi } > 0$, $\mu _c ^{ p } > 0$, we invoke **Lemma 4** and thereafter yield that
+According to Eq.(1.5), the term ${ ( e _{ i } ^{ p } ) } ^{ T } e _i ^{ v }$ requires auxiliary system to tackle with $e _i ^{ v }$. Select parameters to guarantee that $\beta _{ 1 } > 1$, $0 < \beta _{ 2 } < 1$, $\kappa _1 ^{ \chi } > 0$, $\kappa _2 ^{ \chi } > 0$, $\mu _c ^{ p } > 0$, we invoke **Lemma 4** and thereafter yield that
 
 $$
 \begin{aligned}
 \begin{cases}
-& { - \kai _1 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) } \le { - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kai _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } } \\
-& { - \kai _2 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } ) } \le { - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kai _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } }
+& { - \kappa _1 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) } \le { - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } } \\
+& { - \kappa _2 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } ) } \le { - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
 $$<br/>
