@@ -147,18 +147,18 @@ According to Eq.(1.9), there exist redundant terms $\frac { 1 } { 4 } { ( \phi _
 
 $$
 \begin{aligned}
-{ \dot { \phi } _{ i } } & \le { \dot { v } _{ i } - \dot { \hat { v } } _{ i } ^{ d } - \dot { \chi } _{ i } } \\
-& = -g \overline { e } _{ 3 } + u _{ i } + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i }
+{ \dot { \phi } _{ i } } & = { \dot { v } _{ i } - \dot { \hat { v } } _{ i } ^{ d } - \dot { \chi } _{ i } } \\
+& = { -g \overline { e } _{ 3 } + u _{ i } + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i } }
 \end{aligned}
 \quad\quad(1.10)
 $$<br/>
-
 
 If we design the Lyapunov function as $L _{ i } ^{ p } = L _i ^{ p, 1 } + L _i ^{ p, 2 } = { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$, the Lyapunov derivative of $L _{ i } ^{ p }$ is further derived as
 
 $$
 \begin{aligned}
-{ \dot { L } _i ^{ p } } & \le 
+{ \dot { L } _i ^{ p } } & \le - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \\
+& \quad \quad + \frac { 3 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + { ( \phi _{ i } ) } ^{ T } - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i }
 \end{aligned}
 $$<br/>
 
