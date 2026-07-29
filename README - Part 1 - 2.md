@@ -15,5 +15,3 @@ T _d ^{ \varpi } \le \overline { T } _d ^{ \varpi } = \frac { 3 ^ { \frac { \alp
 \quad\quad(3.1)$$<br/>
 
 
-## 1.4 $\text{  }$ Validation for Comparison <br/>
-
