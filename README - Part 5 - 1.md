@@ -205,13 +205,6 @@ $$
 \quad\quad(2.8)
 $$<br/>
 
-## 5.3 $\text{  }$ Parameter settings and validation
-
-
-
-## 5.4 $\text{  }$ Validation for comparison
-
-
 
 # Appendix 1 : $\text{  }$ Significant theories <br/>
 
