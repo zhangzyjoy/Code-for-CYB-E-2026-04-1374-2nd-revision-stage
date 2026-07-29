@@ -143,6 +143,29 @@ $$
 $$<br/>
 
 
+According to Eq.(1.9), there exist redundant terms $\frac { 1 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$ that is irrelevant with ${ ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p }$ in $\dot { L } _i ^{ p, 1 }$. Therefore, $L _i ^{ p, 1 } = \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$ is required to be introduced into the overall Lyapunov function. Since the virtual tracking error is defined as $\phi _{ i } = e _{ i } ^{ v } - \chi _{ i } = v _{ i } - \hat { v } _{ i } ^{ d } - \chi _{ i }$, we can obtain its derivative as
+
+$$
+\begin{aligned}
+{ \dot { \phi } _{ i } } & \le { \dot { v } _{ i } - \dot { \hat { v } } _{ i } ^{ d } - \dot { \chi } _{ i } } \\
+& = -g \overline { e } _{ 3 } + u _{ i } + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i }
+\end{aligned}
+\quad\quad(1.10)
+$$<br/>
+
+
+If we design the Lyapunov function as $L _{ i } ^{ p } = L _i ^{ p, 1 } + L _i ^{ p, 2 } = { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$, the Lyapunov derivative of $L _{ i } ^{ p }$ is further derived as
+
+$$
+\begin{aligned}
+{ \dot { L } _i ^{ p } } & \le 
+\end{aligned}
+$$<br/>
+
+
+
+
+
 
 
 
