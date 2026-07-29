@@ -159,10 +159,32 @@ $$
 \begin{aligned}
 { \dot { L } _i ^{ p } } & \le - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \\
 & \quad \quad + \frac { 3 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } \\
-& + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i } )
+& \quad \quad + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i } )
 \end{aligned}
 $$<br/>
 
+There exist upper bound for the thrust control input as $T _{ i } \le \overline { T }$ and lower bound for the mass among UAVs as $m _i \ge \underline { m }$. Invoking Young's inequality, we can obtain that
+
+$$
+\begin{aligned}
+\begin{cases}
+{ { ( \phi _{ i } ) } ^{ T } ( \frac { T _{ i } } { m _{ i } } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } ) } \le { \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { \overline { T } } { 2 \underline { m } } } \\
+{ { ( \phi _{ i } ) } ^{ T } ( - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) ) } \le { \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } }
+\end{cases}
+\end{aligned}
+\quad\quad(1.11)
+$$<br/>
+
+Invoking Eq.(1.11), the upper bound for $\dot { L } _i ^{ p }$ is further derived as
+
+$$
+\begin{aligned}
+{ \dot { L } _i ^{ p } } & \le - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \\
+& \quad \quad + \frac { 3 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 5 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } + \frac { \overline { T } } { 2 \underline { m } } + { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } \\
+& \quad \quad + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i } )
+\end{aligned}
+\quad\quad(1.11)
+$$<br/>
 
 
 
