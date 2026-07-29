@@ -1,10 +1,10 @@
 # 4. $\text{  }$ Fixed-time translational disturbance observer (FxTDO) <br/>
 
-This markdown file **< README - Part 4 - 1.md >** includes the Lyapunov-based theoretical instruction for the distributed controller design according to the stability proof in **Chapter 4.1**, and also includes the implementation procedure of the proposed distributed control scheme in **Chapter 4.2**. <br/> 
+This markdown file **< README - Part 4 - 1.md >** includes the Lyapunov-based theoretical instruction for the disturbance observer design according to the stability proof in **Chapter 4.1**, and also includes the implementation procedure of the proposed disturbance observers in **Chapter 4.2**. <br/> 
 
-Please refer to **< README - Part 4 - 2.md >** for the parameter settings and validation of the proposed distributed control scheme in **Chapter 4.3**. <br/>
+Please refer to **< README - Part 4 - 2.md >** for the parameter settings and validation of the proposed disturbance observer in **Chapter 4.3**. <br/>
 
-Refer to **< README - Part 4 - 3.md >** for comparative simulation studies in **Chapter 4.4** against some representitive control schemes published recently in IEEE Transactions. <br/> <br/>
+Refer to **< README - Part 4 - 3.md >** for comparative simulation studies in **Chapter 4.4** against some representitive disturbance observers published recently in IEEE Transactions. <br/> <br/>
 
 
 In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{ v }$ in the translational dynamics **Eq.(A.7)** and the observation value $\hat d _i ^{ v }$ can be utilized as compensation term in the design of thrust control input in the translational subsystem. <br/>
