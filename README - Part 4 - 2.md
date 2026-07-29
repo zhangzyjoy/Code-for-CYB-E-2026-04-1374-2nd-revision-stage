@@ -1,6 +1,6 @@
 # 4. $\text{  }$ Fixed-time translational disturbance observer (FxTDO) <br/>
 
-This markdown file **< README - Part 4 - 4.md >** includes the parameter settings and validation of the proposed disturbance observer in **Chapter 4.3**. <br/> 
+This markdown file **< README - Part 4 - 2.md >** includes the parameter settings and validation of the proposed disturbance observer in **Chapter 4.3**. <br/> 
 
 Please refer to **< README - Part 4 - 2.md >** for the Lyapunov-based theoretical instruction for the disturbance observer design according to the stability proof in **Chapter 4.1**, and also for the implementation procedure of the proposed disturbance observers in **Chapter 4.2**. <br/>
 
