@@ -1,6 +1,6 @@
 # 2. $\text{  }$ Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
-**Note : Please refer to <README - Part 2 - 1.md> for the theoretical instruction for rotational controller design in Section 2.** <br/>
+**Note : Please refer to < README - Part 2 - 1.md > for the theoretical instruction for rotational controller design in Section 2. Refer to < README - Part 2 - 3.md > for the** <br/>
 
 
 ## 2.2 $\text{  }$ Controller implementation procedure <br/>
