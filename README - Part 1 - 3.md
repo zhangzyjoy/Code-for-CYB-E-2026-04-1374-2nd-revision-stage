@@ -1,6 +1,6 @@
 # 1. $\text{  }$ Fixed-time rotational disturbance observer (FxTDO) <br/>
 
-**Note :**
+**Note for content organization:**
 
 This markdown file **< README - Part 1 - 3.md >** includes comparative simulation studies against some representitive methods published recently in IEEE Transactions in **Chapter 1.4**. <br/> 
 
