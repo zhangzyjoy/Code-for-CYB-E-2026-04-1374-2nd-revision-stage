@@ -1,6 +1,12 @@
 # 1. $\text{  }$ Fixed-time rotational disturbance observer (FxTDO) <br/>
 
-**Note : This markdown file < README - Part 1 - 2.md > includes the parameter settings and validation of the proposed method in Chapter 1.3. Please refer to < README - Part 1 - 1.md > for the Lyapunov-based theoretical instruction for rotational control scheme design according to the stability proof in Chapter 1.1, and also includes the implementation procedure of the proposed control scheme in Chapter 1.2. Refer to < README - Part 1 - 3.md > for comparative simulation studies in Chapter 1.4 against some representitive methods published recently in IEEE Transactions.** <br/>
+**Note for content organization :** 
+
+This markdown file **< README - Part 1 - 2.md >** includes the parameter settings and validation of the proposed method in **Chapter 1.3**. <br/>
+
+Please refer to **< README - Part 1 - 1.md >** for the Lyapunov-based theoretical instruction for rotational control scheme design according to the stability proof in **Chapter 1.1**, and also includes the implementation procedure of the proposed control scheme in **Chapter 1.2**. <br/>
+
+Refer to **< README - Part 1 - 3.md >** for comparative simulation studies in **Chapter 1.4** against some representitive methods published recently in IEEE Transactions. <br/>
 
 ## 1.3 $\text{  }$ Parameter settings and validation <br/>
 
