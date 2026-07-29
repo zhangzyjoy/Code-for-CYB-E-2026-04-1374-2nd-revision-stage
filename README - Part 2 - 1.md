@@ -1,6 +1,6 @@
 # 2. $\text{  }$ Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
-**Note : Please refer to <README - Part 2 - 2.md> for the rest part of Section 2 for the paragraph limitation for the equations of a single github markdown file.** <br/>
+**Note : This markdown file < README - Part 2 - 1.md > includes three parts of Chapter 2.1 for the detailed rotational control design according to the theoretical stability proof. Please refer to < README - Part 2 - 2.md > for the implementation procedure of the proposed control scheme. Moreover,** <br/>
 
 According to the rotational dynamics in Eq.(A.6), define an exponential coordination $\psi _i ^e = [ \Psi ( R ( Q _i ^e) ) ] _{\vee}$ which is derived through inverse logarithm mapping. We establish the rotational system error dynamics as
 
@@ -487,8 +487,6 @@ $$
 $$<br/>
 
 where $\overline { \Phi } _k ( \psi _{ i,k } ^e )$ is the first-order derivative of the piecewise auxiliary rotational error ${ \Phi } _k ( \psi _{ i,k } ^e )$. <br/>
-
-**Note : Please refer to <README - Part 2 - 2.md> for the rest part of Section 2.** <br/> <br/>
 
 
 # Appendix 1 : $\text{  }$ Significant theories <br/>
