@@ -7,3 +7,10 @@ Please refer to **< README - Part 3 - 2.md >** for the parameter settings and va
 Refer to **< README - Part 3 - 3.md >** for comparative simulation studies in **Chapter 3.4** against some representitive observers published recently in IEEE Transactions. <br/> <br/>
 
 
+## 3.3 $\text{  }$ Parameter settings and validation <br/>
+
+
+
+
+## 3.4 $\text{  }$ Validation for comparison <br/>
+
