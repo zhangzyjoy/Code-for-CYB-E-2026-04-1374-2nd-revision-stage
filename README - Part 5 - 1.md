@@ -130,7 +130,7 @@ $$
 \begin{aligned}
 { \dot { L } _i ^{ p, 1 } } & \le { { ( e _{ i } ^{ p } ) } ^{ T } \phi _{ i } - \kappa _1 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) - \kappa _2 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } ) + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \overline { F } _O ^{ p } ) } ^{ 2 } } \\
 & \le { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } \\
-& \quad \quad - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p }
+& \quad \quad - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + \frac { 1 } { 2 } ( e _{ i } ^{ p } ) ^{ T } e _{ i } ^{ p }
 \end{aligned}
 \quad\quad(1.9)
 $$<br/>
@@ -139,7 +139,7 @@ $$
 \begin{aligned}
 { \dot { L } _i ^{ p, 1 } } & \le { { ( e _{ i } ^{ p } ) } ^{ T } \phi _{ i } - \kappa _1 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) - \kappa _2 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } ) + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \overline { F } _O ^{ p } ) } ^{ 2 } } \\
 & \le { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } \\
-& \quad \quad - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \overline { F } _O ^{ p } ) } ^{ 2 }
+& \quad \quad - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 }
 \end{aligned}
 \quad\quad(1.9)
 $$<br/>
