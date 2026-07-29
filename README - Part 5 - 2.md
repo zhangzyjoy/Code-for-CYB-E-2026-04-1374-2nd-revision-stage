@@ -7,3 +7,6 @@ Please refer to **< README - Part 5 - 1.md >** for the Lyapunov-based theoretica
 Refer to **< README - Part 5 - 3.md >** for comparative simulation studies in **Chapter 5.4** against some representitive distributed controllers published recently in IEEE Transactions. <br/> <br/>
 
 
+## 5.3 $\text{  }$ Parameter settings and validation
+
+
