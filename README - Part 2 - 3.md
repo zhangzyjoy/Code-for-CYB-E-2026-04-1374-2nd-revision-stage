@@ -1,4 +1,6 @@
+# 2. $\text{  }$ Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
+**Note : This markdown file < README - Part 2 - 3.md > includes the parameter settings and validation of the proposed method. Please refer to < README - Part 2 - 1.md > to find the Lyapunov-based theoretical instruction for rotational control scheme design according to the stability proof. Refer to < README - Part 2 - 2.md > for the implementation procedure of the proposed control scheme. Refer to < README - Part 2 - 4.md > for comparative simulation studies of some representitive methods published recently in IEEE Transactions.** <br/>
 
 ## 2.3 $\text{  }$ Parameter settings and validation <br/>
 
@@ -60,6 +62,4 @@ $$
 \quad\quad(3.3)
 $$<br/>
 
-
-## 2.4 $\text{  }$ Validation for comparison <br/>
 
