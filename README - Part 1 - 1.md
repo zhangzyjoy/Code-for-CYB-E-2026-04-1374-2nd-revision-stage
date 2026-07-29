@@ -1,6 +1,6 @@
 # 1. $\text{  }$ Fixed-time rotational disturbance observer (FxTDO) <br/>
 
-**Note : This markdown file < README - Part 2 - 1.md > includes the Lyapunov-based theoretical instruction for rotational control scheme design according to the stability proof, and also includes the implementation procedure of the proposed control scheme. Please refer to < README - Part 2 - 2.md > for the parameter settings and validation of the proposed method. Refer to < README - Part 2 - 3.md > for comparative simulation studies of some representitive methods published recently in IEEE Transactions.** <br/>
+**Note : This markdown file < README - Part 1 - 1.md > includes the Lyapunov-based theoretical instruction for the disturbance observer design according to the stability proof, and also includes the implementation procedure of the proposed disturbance observer scheme. Please refer to < README - Part 1 - 2.md > for the parameter settings and validation of the proposed observer. Refer to < README - Part 1 - 3.md > for comparative simulation studies of some representitive observers published recently in IEEE Transactions.** <br/>
 
 In this section, a disturbance observer is developed to estimate the unknown disturbance $d _i ^{\varpi}$ in the rotational dynamics **Eq.(A.6)** and the observation value $\hat d _i ^{ \varpi }$ can be utilized as compensation term in the design of torque control input in the rotational subsystem. <br/>
 
