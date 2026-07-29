@@ -2,7 +2,7 @@ We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** 
 
 **Note** : this link contains five different markdown files. **Click each markdown file <README - Part X.md> under the main branch of this github repository to check the elaboration of theories and validation for each part of the formation control framework, respectively.** <br/>
 
-**The five main sections listed below are divided into five markdown files <README - Part 1 ~ Part 5 .md>, respectively.** Since **the section no.6**, **the appendix of significant theories**, is utilized as a guidance in establishing the overall control framework, it is attached **at the back of each markdown file** for the reviewers' convenience to check the definitions and lemmas. <br/>
+**The five main sections listed below are divided into five markdown files <README - Part 1 ~ Part 5 .md>, respectively.** Since **the Section no.6**, **the Appendix of significant theories**, is utilized as a guidance in establishing the overall control framework, it is attached **at the back of each markdown file** for the reviewers' convenience to check the definitions and lemmas. <br/>
 
 **Note** : Source code and instructions for the proposed control scheme during the first revision with Revised & Resubmit decision can be accessed at **https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git**. <br/>
 
