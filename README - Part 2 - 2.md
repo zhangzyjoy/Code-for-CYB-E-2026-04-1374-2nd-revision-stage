@@ -8,7 +8,7 @@ Please refer to **< README - Part 2 - 1.md >** to find the Lyapunov-based theore
 
 Refer to **< README - Part 2 - 3.md >** for the parameter settings and validation of the proposed method in **Chapter 2.3**. <br/> 
 
-Refer to **< README - Part 2 - 4.md >** for comparative simulation studies in **Chapter 2.4** against some representitive methods published recently in IEEE Transactions.** <br/>
+Refer to **< README - Part 2 - 4.md >** for comparative simulation studies in **Chapter 2.4** against some representitive methods published recently in IEEE Transactions. <br/>
 
 
 ## 2.2 $\text{  }$ Controller implementation procedure <br/>
