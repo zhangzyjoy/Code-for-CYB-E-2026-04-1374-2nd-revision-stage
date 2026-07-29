@@ -10,7 +10,3 @@ Refer to **< README - Part 3 - 3.md >** for comparative simulation studies in **
 ## 3.3 $\text{  }$ Parameter settings and validation <br/>
 
 
-
-
-## 3.4 $\text{  }$ Validation for comparison <br/>
-
