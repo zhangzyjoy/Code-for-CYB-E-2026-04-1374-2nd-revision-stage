@@ -114,6 +114,28 @@ $$<br/>
 
 where $\chi _{ i } = - \kappa _1 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) - \kappa _2 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } )$ and $\phi _{ i } = e _{ i } ^{ v } - \chi _{ i }$ are provided. <br/>
 
+By employing Young's Inequality, it can be yielded that
+
+$$
+\begin{aligned}
+{ { ( e _{ i } ^{ p } ) } ^{ T } \phi _{ i } \le { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } }
+\end{aligned}
+\quad\quad(1.8)
+$$<br/>
+
+
+Invoking Eq.(1.6) and Eq.(1.8), substitute Eq.(1.7) into ${ ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ v }$ and then reformulate Eq.(1.5) as
+
+$$
+\begin{aligned}
+{ \dot { L } _i ^{ p, 1 } } & \le { { ( e _{ i } ^{ p } ) } ^{ T } \phi _{ i } - \kappa _1 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) - \kappa _2 ^{ \chi } { ( e _{ i } ^{ p } ) } ^{ T } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } ) + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \overline { F } _O ^{ p } ) } ^{ 2 } } \\
+& \le { { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 1 } { 2 } { ( \overline { F } _O ^{ p } ) } ^{ 2 } }
+\end{aligned}
+\quad\quad(1.9)
+$$<br/>
+
+
+
 
 ## 5.2 $\text{  }$ Controller implementation procedure <br/>
 
