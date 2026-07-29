@@ -96,7 +96,9 @@ $$
 \quad\quad(1.6)
 $$<br/>
 
-where $K _{ \beta } ^{ 1 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{ \beta } } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. We can introduce $- \kappa _1 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } )$ and $- \kappa _2 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } )$ into $e _{ i } ^{ v }$ to provide upper bounds for partial terms in $e _{ i } ^{ v }$ according to Eq.(1.6), and further we transform ${ ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ v }$ into terms including $L _i ^{ p, 1 }$, and thereafter expect to obtain inequalities in the form of **Lemma 2**. This indicates that the velocity tracking error should be set as 
+where $K _{ \beta } ^{ 1 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{ \beta } } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. <br/>
+
+We can introduce $- \kappa _1 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } )$ and $- \kappa _2 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } )$ into $e _{ i } ^{ v }$ to provide upper bounds for partial terms in $e _{ i } ^{ v }$ according to Eq.(1.6), and further we transform ${ ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ v }$ into terms including $L _i ^{ p, 1 }$, and thereafter expect to obtain inequalities in the form of **Lemma 2**. This indicates that the velocity tracking error should be set as 
 
 $$
 \begin{aligned}
@@ -107,7 +109,7 @@ $$<br/>
 
 where $\chi _{ i } = - \kappa _1 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) - \kappa _2 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } )$ and $\phi _{ i } = e _{ i } ^{ v } - \chi _{ i }$ are defined. <br/>
 
-Moreover, the 
+
 
 
 
