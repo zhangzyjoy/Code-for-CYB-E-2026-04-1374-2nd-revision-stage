@@ -115,10 +115,6 @@ $$<br/>
 where $\chi _{ i } = - \kappa _1 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 1 }, \mu _c ^{ p } ) - \kappa _2 ^{ \chi } \vartheta ( e _{ i } ^{ p }, \beta _{ 2 }, \mu _c ^{ p } )$ and $\phi _{ i } = e _{ i } ^{ v } - \chi _{ i }$ are provided. <br/>
 
 
-
-
-
-
 ## 5.2 $\text{  }$ Controller implementation procedure <br/>
 
 
