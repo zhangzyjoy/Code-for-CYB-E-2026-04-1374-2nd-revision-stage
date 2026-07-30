@@ -183,7 +183,8 @@ Then the term to be specified can be scaled as
 $$
 \begin{aligned}
 & { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } + d _{ i } ^{ v } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i } ) \\
-& \le { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + \overset { \frown } { u } _{ i } + g \overline { e } _{ 3 } - \hat { d } _i ^{ v } + \dot { \chi } _{ i } + d _{ i } ^{ v } - \dot { \chi } _{ i } ) + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } \\
+& \le { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + \overset { \frown } { u } _{ i } + g \overline { e } _{ 3 } - \hat { d } _i ^{ v } + \dot { \chi } _{ i } + d _{ i } ^{ v } - \dot { \chi } _{ i } ) \\
+& \quad \quad + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } \\
 & \le { ( \phi _{ i } ) } ^{ T } ( \overset { \frown } { u } _{ i } + \tilde { d } _i ^{ v } ) + { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 }
 \end{aligned}
 $$<br/>
