@@ -200,7 +200,9 @@ $$
 \quad\quad(1.12)
 $$<br/>
 
-It can be find easily that. In order to turn the positive definite term $\frac { 7 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$ into a term with negative sign for guaranteeing pratical fixed-time stability. <br/>
+Since $\beta _{ 1 } > 1$ and $\beta _{ 2 } \in \lbrace 0, 1 \rbrace$, we can deduce that if $\frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } \in \lbrace 0, 1 \rbrace$ holds, there exists $\frac { 3 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } \le 3 { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }$, and if $\frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } > 1$ holds, there exists $\frac { 3 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } \le 3 { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } }$. Besides, the same deduction can be obtained such that if $\frac { 1 } { 2 } { ( \phi ^{ i } ) } ^{ T } \phi ^{ i } \in \lbrace 0, 1 \rbrace$ holds, there exists $\frac { 7 } { 4 } { ( \phi ^{ i } ) } ^{ T } \phi ^{ i } \le \frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi ^{ i } ) } ^{ T } \phi ^{ i } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }$, and if $\frac { 1 } { 2 } { ( \phi ^{ i } ) } ^{ T } \phi ^{ i } > 1$, there exists $\frac { 7 } { 4 } { ( \phi ^{ i } ) } ^{ T } \phi ^{ i } \le \frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi ^{ i } ) } ^{ T } \phi ^{ i } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } }$. <br/>
+
+In order to turn the positive definite term $\frac { 7 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$ into a term with negative sign for guaranteeing pratical fixed-time stability. <br/>
 
 
 
