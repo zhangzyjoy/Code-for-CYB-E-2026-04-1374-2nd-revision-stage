@@ -163,7 +163,7 @@ $$
 \end{aligned}
 $$<br/>
 
-There is no assumption that the unknown translational external disturbance is bounded, and thus the disturbance observer, namely, the translational FxTDO $\hat { d } _i ^{ v }$ proposed in **Section 4** is required to be introduced into the translational thrust control input $u _i$ as a compensation for the external disturbance $d _i ^{ v }$. <br/>
+There is no assumption that the unknown translational external disturbance is bounded, and thus the disturbance observer, namely, the translational FxTDO $\hat { d } _i ^{ v }$ proposed in **Section 4** is required to be introduced into the translational thrust control input $u _i$ as $u _{ i } = \overset { \frown } { u } _{ i } + \hat { d } _i ^{ v }$ to be the compensation for the external disturbance $d _i ^{ v }$. Then we can yield that the observation error $\tilde { d } _i ^{ v } = d _i ^{ v } - \hat { d } _i ^{ v }$ can be reached within fixed time, and such that the translational disturbance observation error is bounded by $\tilde { d } _i ^{ v } \le \overline { D } _v$. <br/>
 
 Invoking Young's inequality and the upper bound for the redundant rotational error $\lVert T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } \rVert \le \overline { \Gamma } _{ u }$, we can obtain that
 
