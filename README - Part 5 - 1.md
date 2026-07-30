@@ -258,6 +258,16 @@ $$<br/>
 
 Substitute the above deduction into Eq.(1.12) and yield that
 
+$$
+\begin{aligned}
+{ \dot { L } _i ^{ p } } & \le - ( 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } - 3 ) { ( L _{ i } ^{ p, 1 } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - ( 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } - 3 ) { ( L _{ i } ^{ p, 1 } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \\
+& \quad \quad - ( 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } ) { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - ( 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } ) { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }
+& \quad \quad + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 }
+\end{aligned}
+\quad\quad(1.14)
+$$<br/>
+
+
 
 
 
