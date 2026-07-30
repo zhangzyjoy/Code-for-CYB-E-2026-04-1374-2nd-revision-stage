@@ -211,9 +211,10 @@ $$
 & { \frac { 7 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } } \le { \frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } + \frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
+\quad\quad(1.13)
 $$<br/>
 
-In order to turn the positive definite term $\frac { 7 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$ into a term with negative sign for guaranteeing pratical fixed-time stability. <br/>
+We are required to turn the positive definite terms $\frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } }$ and $\frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }$ in Eq.(1.13) into terms with negative sign for guaranteeing pratical fixed-time stability. <br/>
 
 
 
