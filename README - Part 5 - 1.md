@@ -163,7 +163,7 @@ $$
 \end{aligned}
 $$<br/>
 
-There is no assumption that the unknown translational external disturbance is bounded, and thus the disturbance observer, namely, the translational FxTDO $\hat { d } _i ^{ v }$ proposed in **Section 4** is required to be introduced into the translational thrust control input $u _i$ as $u _{ i } = \overset { \frown } { u } _{ i } + \hat { d } _i ^{ v }$ to be the compensation for the external disturbance $d _i ^{ v }$. Then we can yield that the observation error $\tilde { d } _i ^{ v } = d _i ^{ v } - \hat { d } _i ^{ v }$ can be reached within fixed time, and such that the translational disturbance observation error is bounded by $\tilde { d } _i ^{ v } \le \overline { D } _v$. <br/>
+There is no existing assumption for that the unknown translational external disturbance is bounded, and thus the disturbance observer, namely the translational FxTDO $\hat { d } _i ^{ v }$ proposed in **Section 4**, is required to be introduced into the translational thrust control input $u _i$. Then we can yield that the observation error $\tilde { d } _i ^{ v } = d _i ^{ v } - \hat { d } _i ^{ v }$ can be reached within fixed time, and such that the translational disturbance observation error is bounded by $\lVert \tilde { d } _i ^{ v } \rVert \le \overline { D } _{ v }$. Besides, another redundant term $- { ( \phi _{ i } ) } ^{ T } \dot { \chi } _{ i }$ in the Lyapunov derivative $\dot { L } _i ^{ p }$ should be compensate by designing a $+ \dot { \chi } _{ i }$ term in the control input $u _i$. The thrust control input is specified as $u _{ i } = \overset { \frown } { u } _{ i } - \hat { d } _i ^{ v } + \dot { \chi } _{ i }$ to provide the compensation for both the external disturbance $d _i ^{ v }$ and the auxiliary derivative term $- \dot { \chi } _{ i }$. <br/>
 
 Invoking Young's inequality and the upper bound for the redundant rotational error $\lVert T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } \rVert \le \overline { \Gamma } _{ u }$, we can obtain that
 
@@ -181,18 +181,26 @@ Invoking Eq.(1.11), there exists an upper bound such that
 
 $$
 \begin{aligned}
-& { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i } ) \\
-& \le { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } ) + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } \\
-& \le { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } ) + { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 }
+& { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } + T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } + d _{ i } ^{ v } - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) - \dot { \chi } _{ i } ) \\
+& \le { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + \overset { \frown } { u } _{ i } - \hat { d } _i ^{ v } + \dot { \chi } _{ i } + d _{ i } ^{ v } - \dot { \chi } _{ i } ) + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } \\
+& \le { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + \overset { \frown } { u } _{ i } + \tilde { d } _i ^{ v } ) + { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 }
 \end{aligned}
 $$<br/>
 
-The upper bound for $\dot { L } _i ^{ p }$ is further derived as
+Invoking Young's inequality, there exists 
+
+$$
+\begin{aligned}
+{ ( \phi _{ i } ) } ^{ T } \tilde { d } _i ^{ v } \le \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 }
+\end{aligned}
+$$<br/>
+
+Therefore, the upper bound for $\dot { L } _i ^{ p }$ is further derived as
 
 $$
 \begin{aligned}
 { \dot { L } _i ^{ p } } & \le - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \\
-& \quad \quad + \frac { 3 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 5 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 }
+& \quad \quad + \frac { 3 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } + \frac { 7 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 } + { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + \overset { \frown } { u } _{ i } )
 \end{aligned}
 \quad\quad(1.12)
 $$<br/>
