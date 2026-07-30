@@ -241,6 +241,23 @@ where $K _{ \beta } ^{ 2 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{
 
 We can design the auxiliary control input as 
 
+$$
+\begin{aligned}
+\overset { \frown } { u } _{ i } = - \kappa _1 ^{ u } \vartheta ( \phi _{ i }, \beta _{ 1 }, \mu _c ^{ p } ) - \kappa _2 ^{ u } \vartheta ( \phi _{ i }, \beta _{ 2 }, \mu _c ^{ p } )
+\end{aligned}
+$$<br/>
+
+to maintain the following inequalities that
+
+$$
+\begin{aligned}
+{ ( \phi _{ i } ) } ^{ T } \overset { \frown } { u } _{ i } & = - \kappa _1 ^{ u } { ( \phi _{ i } ) } ^{ T } \vartheta ( \phi _{ i }, \beta _{ 1 }, \mu _c ^{ p } ) - \kappa _2 ^{ u } { ( \phi _{ i } ) } ^{ T } \vartheta ( \phi _{ i }, \beta _{ 2 }, \mu _c ^{ p } ) \\
+& \le - 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ u } K _{ \beta } ^{ 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ u } K _{ \beta } ^{ 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }
+\end{aligned}
+$$<br/>
+
+Substitute the above deduction into Eq.(1.12) and yield that
+
 
 
 
