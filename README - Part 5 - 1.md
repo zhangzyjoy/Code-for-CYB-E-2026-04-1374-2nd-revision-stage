@@ -186,7 +186,6 @@ $$
 & \le { { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } ) + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } } \\
 & \le { { ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } + u _{ i } ) + { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } }
 \end{aligned}
-\quad\quad(1.12)
 $$<br/>
 
 The upper bound for $\dot { L } _i ^{ p }$ is further derived as
