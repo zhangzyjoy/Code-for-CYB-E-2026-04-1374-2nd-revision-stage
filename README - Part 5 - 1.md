@@ -165,19 +165,20 @@ $$<br/>
 
 There is no existing assumption for that the unknown translational external disturbance is bounded, and thus the disturbance observer, namely the translational FxTDO $\hat { d } _i ^{ v }$ proposed in **Section 4**, is required to be introduced into the translational thrust control input $u _i$. Then we can yield that the observation error $\tilde { d } _i ^{ v } = d _i ^{ v } - \hat { d } _i ^{ v }$ can be reached within fixed time, and such that the translational disturbance observation error is bounded by $\lVert \tilde { d } _i ^{ v } \rVert \le \overline { D } _{ v }$. Besides, another redundant term $- { ( \phi _{ i } ) } ^{ T } \dot { \chi } _{ i }$ in the Lyapunov derivative $\dot { L } _i ^{ p }$ should be compensate by designing a $+ \dot { \chi } _{ i }$ term in the control input $u _i$. Moreover, the ${ ( \phi _{ i } ) } ^{ T } ( - g \overline { e } _{ 3 } )$ term should be compensated by the control input. The thrust control input is specified as $u _{ i } = \overset { \frown } { u } _{ i } + g \overline { e } _{ 3 } - \hat { d } _i ^{ v } + \dot { \chi } _{ i }$ to provide the compensation for both the external disturbance $d _i ^{ v }$ and the auxiliary derivative term $- \dot { \chi } _{ i }$. <br/>
 
-Invoking Young's inequality and the upper bound for the redundant rotational error $\lVert T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } \rVert \le \overline { \Gamma } _{ u }$, we can obtain that
+Invoking Young's inequality and considering the upper bound for the redundant rotational error $\lVert T _{ i } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } / m _{ i } \rVert \le \overline { \Gamma } _{ u }$, it can be yielded that
 
 $$
 \begin{aligned}
 \begin{cases}
 { { ( \phi _{ i } ) } ^{ T } ( \frac { T _{ i } } { m _{ i } } R ( Q _i ^{ c } ) ( R ( Q _i ^{ e } ) - I _{ 3 } ) \overline { e } _{ 3 } ) } \le { \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } } \\
-{ { ( \phi _{ i } ) } ^{ T } ( - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) ) } \le { \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } }
+{ { ( \phi _{ i } ) } ^{ T } ( - F _i ^{ \hat { v } } ( v _{ 0 }, \hat { v } _i ^{ d }, \hat { v } _j ^{ d } ) ) } \le { \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } } \\
+{ { ( \phi _{ i } ) } ^{ T } \tilde { d } _i ^{ v } } \le { \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 } }
 \end{cases}
 \end{aligned}
 \quad\quad(1.11)
 $$<br/>
 
-Invoking Eq.(1.11), there exists an upper bound such that
+Then the term to be specified can be scaled as
 
 $$
 \begin{aligned}
@@ -187,13 +188,6 @@ $$
 \end{aligned}
 $$<br/>
 
-Invoking Young's inequality, there exists 
-
-$$
-\begin{aligned}
-{ ( \phi _{ i } ) } ^{ T } \tilde { d } _i ^{ v } \le \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 }
-\end{aligned}
-$$<br/>
 
 Therefore, the upper bound for $\dot { L } _i ^{ p }$ is further derived as
 
@@ -205,7 +199,7 @@ $$
 \quad\quad(1.12)
 $$<br/>
 
-It can be find easily that . In order to turn the positive definite term $\frac { 7 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$ into a term with negative sign for guaranteeing pratical fixed-time stability. <br/>
+It can be find easily that. In order to turn the positive definite term $\frac { 7 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i }$ into a term with negative sign for guaranteeing pratical fixed-time stability. <br/>
 
 
 
