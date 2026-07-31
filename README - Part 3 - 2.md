@@ -43,6 +43,8 @@ $$<br/>
 
 where $l _1 ^{ P } = 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ p } K _{ \gamma } ^{ 2 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \min } ( \overline { L } ) / 4$ and $l _2 ^{ P } = 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ p } K _{ \gamma } ^{ 2 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \min } ( \overline { L } ) / 4$. <br/>
 
+To maintain the lower settling time upper bound, namely, $\overline { T } _O ^{ V } + \overline { T } _O ^{ P }$, it is required to design the parameters according to <br/>
+
 
 
 
