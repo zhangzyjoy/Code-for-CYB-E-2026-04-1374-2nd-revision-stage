@@ -43,10 +43,6 @@ $$<br/>
 
 where $l _1 ^{ P } = 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ p } K _{ \gamma } ^{ 2 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \min } ( \overline { L } ) / 4$ and $l _2 ^{ P } = 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ p } K _{ \gamma } ^{ 2 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \min } ( \overline { L } ) / 4$. <br/> <br/>
 
-To maintain the lower settling time upper bound, namely, $\overline { T } _O ^{ V } + \overline { T } _O ^{ P } \downarrow$, we are required to design the parameters according to the tuning principle as $\gamma _{ 1 } \uparrow$, $\gamma _{ 2 } \downarrow$ and $\gamma _{ 2 } \in ( 0, 1 )$, $\ell _1 ^{ p } \uparrow$, $\ell _2 ^{ p } \uparrow$, $\ell _1 ^{ v } \uparrow$, $\ell _2 ^{ v } \uparrow$. <br/>
-
-
-
-
+To maintain the lower settling time upper bound, namely, $\overline { T } _O ^{ V } + \overline { T } _O ^{ P } \downarrow$, we are required to design the parameters according to the tuning principle as $\gamma _{ 1 } \uparrow$, $\gamma _{ 2 } \downarrow$ and $\gamma _{ 2 } \in ( 0, 1 )$, $\ell _1 ^{ p } \uparrow$, $\ell _2 ^{ p } \uparrow$, $\ell _1 ^{ v } \uparrow$, $\ell _2 ^{ v } \uparrow$. Since the aforementioned parameters for the observers are relevant to the final residual set that the observation error $e _{ i,p } ^{ d }$ and $e _{ i,v } ^{ d }$ will finally converge into, the width of the residual set is required to reduce to a relatively lower level. **It is required to achieve a balance between the lower settling time and the lower residual set width when tuning the parameters for the PFxTDSO.** <br/>
 
 
