@@ -4,7 +4,9 @@ This markdown file **< README - Part 5 - 1.md >** includes the Lyapunov-based th
 
 Please refer to **< README - Part 5 - 2.md >** the implementation procedure of the proposed distributed control scheme in **Chapter 5.2**, and also for the parameter settings and validation of the proposed distributed control scheme in **Chapter 5.3**. <br/>
 
-Refer to **< README - Part 5 - 3.md >** for comparative simulation studies in **Chapter 5.4** against some representitive distributed controllers published recently in IEEE Transactions. <br/> <br/>
+Refer to **< README - Part 5 - 3.md >** for comparative simulation studies in **Chapter 5.4** against some representitive distributed controllers published recently in IEEE Transactions. <br/> 
+
+The Appendix includes some significant mathematical definitions and lemmas that are essential in the theoretical proof. Please refer to **< README - Part 5 - 2.md >** for the Appendix after Chapter 5.2 and before Chapter 5.3. <br/> <br/>
 
 ## 5.1 $\text{  }$ Theories and design principles <br/>
 
