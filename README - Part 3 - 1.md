@@ -80,7 +80,7 @@ Leveraging Young's inequality and yield
 
 $$
 \begin{aligned}
-{ - { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( 1 _{ N } \otimes u _0 ) } & \le { \frac { 1 } { 2 } \cdot \frac { 1 } { 2 } ( { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ) { ( { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ) } ^{ T } + \frac { 1 } { 2 } 2 \cdot N \cdot { \overline { u } } ^{ 2 } } \\
+{ - { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ( 1 _{ N } \otimes u _0 ) } & \le { \frac { 1 } { 2 } \cdot \frac { 1 } { 2 } ( { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ) { ( { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) ) } ^{ T } + \frac { 1 } { 2 } \cdot 2 \cdot N \cdot { \overline { u } } ^{ 2 } } \\
 & \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) ( { ( E _v ^d ) } ^{ T } ( \overline { L } ^{ T } \otimes I _{ 3 } ) E _v ^d ) + N { \overline u _{ 0 } } ^{ 2 } } \\
 & \le { \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } + \frac { 1 } { 4 } \lambda _{ max } ( \overline { L } ) { ( V _o ^{ v } ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } + N { \overline u _{ 0 } } ^{ 2 } }
 \end{aligned}
