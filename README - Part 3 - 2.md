@@ -23,13 +23,25 @@ $$
 \end{aligned}
 $$<br/>
 
-the distributed desired velocity observation of the $i$-th follower can be reached as $v _i ^{ d } \to v _{ 0 } + \dot { \delta } _{ i }$ in a practical fixed time given by
+the distributed desired velocity observation of the $i$-th follower can be reached as $v _i ^{ d } \to v _{ 0 } + \dot { \delta } _{ i }$ in a practical fixed time upper bounded given by
 
 $$
 \begin{aligned}
-T _O ^{ V } \le \overline \overline { T } _O ^{ V } =  
+T _O ^{ V } \le \overline { T } _O ^{ V } = \frac { 2 } { l _1 ^{ V } \eta _O ^{ V } ( \gamma _{ 1 } - 1 ) } + \frac { 2 } { l _2 ^{ V } \eta _O ^{ V } ( 1 - \gamma _{ 2 } ) }
 \end{aligned}
 $$<br/>
+
+where $l _1 ^{ V } = 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ v } K _{ \gamma } ^{ 1 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \min } ( \overline { L } ) / 4$ and $l _2 ^{ V } = 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ v } K _{ \gamma } ^{ 1 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \min } ( \overline { L } ) / 4$. <br/>
+
+Moreover, when the stability of velocity observation is already reached after practical fixed time $\overline { T } _O ^{ V }$, the desired position observation of $i$-th follower will be reached in practical fixed time after achieving the velocity observation, and the convergence time is upper bounded by
+
+$$
+\begin{aligned}
+T _O ^{ P } \le \overline { T } _O ^{ V } + \overline { T } _O ^{ P }, \quad \overline { T } _O ^{ P } = \frac { 2 } { l _1 ^{ P } \eta _O ^{ P } ( \gamma _{ 1 } - 1 ) } + \frac { 2 } { l _2 ^{ P } \eta _O ^{ P } ( 1 - \gamma _{ 2 } ) }
+\end{aligned}
+$$<br/>
+
+where $l _1 ^{ P } = 2 ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \gamma _{ 1 } } { 2 } } \ell _1 ^{ p } K _{ \gamma } ^{ 2 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } - \lambda _{ \min } ( \overline { L } ) / 4$ and $l _2 ^{ P } = 2 ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } \ell _2 ^{ p } K _{ \gamma } ^{ 2 } { ( \lambda _{ \min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } - \lambda _{ \min } ( \overline { L } ) / 4$. <br/>
 
 
 
