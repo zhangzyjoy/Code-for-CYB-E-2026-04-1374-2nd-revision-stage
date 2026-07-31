@@ -1,11 +1,5 @@
 # 5. $\text{  }$ Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
 
-This markdown file **< README - Part 5 - 1.md >** includes the Lyapunov-based theoretical instruction for the distributed controller design according to the stability proof in **Chapter 5.1**. <br/> 
-
-Please refer to **< README - Part 5 - 2.md >** the implementation procedure of the proposed distributed control scheme in **Chapter 5.2**, and also for the parameter settings and validation of the proposed distributed control scheme in **Chapter 5.3**. <br/>
-
-Refer to **< README - Part 5 - 3.md >** for comparative simulation studies in **Chapter 5.4** against some representitive distributed controllers published recently in IEEE Transactions. <br/> <br/>
-
 ## 5.1 $\text{  }$ Theories and design principles <br/>
 
 For each vertex $i \in \lbrace 1, ..., N \rbrace$, the formation tracking error is originally defined as $e _i ^{ p } = p _{ i } - p _{ 0 } - \delta _{ i }$ and $e _i ^{ v } = v _{ i } - v _{ 0 } - \dot { \delta } _{ i }$. <br/>
@@ -262,8 +256,10 @@ We select two coefficients as $A _{ 1 } = \min \lbrace 2 ^{ \frac { \beta _{ 1 }
 
 $$
 \begin{aligned}
+\begin{cases}
 & - ( 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } - 3 ) { ( L _{ i } ^{ p, 1 } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - ( 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } ) { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } \le - A _{ 1 } { ( L _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } \\
 & - ( 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } - 3 ) { ( L _{ i } ^{ p, 1 } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } - ( 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } ) { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \le - A _{ 2 } { ( L _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }
+\end{cases}
 \end{aligned}
 $$<br/>
 
