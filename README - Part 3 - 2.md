@@ -9,7 +9,25 @@ Refer to **< README - Part 3 - 3.md >** for comparative simulation studies in **
 
 ## 3.3 $\text{  }$ Parameter settings and validation <br/>
 
-The desired linear velocity $v _{ 0 } + \dot { \delta } _{ i }$ of the $i$-th uncrewed aerial vehicle is estimated by the distributed observer denoted by Eq.(2.5) in practical fixed time. 
+The desired linear velocity $v _{ 0 } + \dot { \delta } _{ i }$ of the $i$-th uncrewed aerial vehicle is estimated by the distributed observer denoted by Eq.(2.5) in practical fixed time. According to **Lemma 2**, if we select the parameters that are constrained by
+
+$$
+\begin{aligned}
+\begin{cases}
+\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 2 } > 0 \\
+\ell _1 ^{ p } & > \frac { 3 ^{ \frac { \gamma _{ 1 } - 1 } { 2 } } \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 1 } + 3 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
+\ell _2 ^{ p } & > \frac { \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 2 } + 3 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } }
+\end{cases}
+\end{aligned}
+$$<br/>
+
+the distributed desired velocity observation of the $i$-th follower can be reached in a practical fixed time given by
+
+$$
+\begin{aligned}
+
+\end{aligned}
+$$<br/>
 
 
 
