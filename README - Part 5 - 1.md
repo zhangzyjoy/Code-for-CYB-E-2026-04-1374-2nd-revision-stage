@@ -1,5 +1,11 @@
 # 5. $\text{  }$ Practical fixed-time decentralized formation controller (PFxTDFC) <br/>
 
+This markdown file **< README - Part 5 - 1.md >** includes the Lyapunov-based theoretical instruction for the distributed controller design according to the stability proof in **Chapter 5.1**. <br/> 
+
+Please refer to **< README - Part 5 - 2.md >** the implementation procedure of the proposed distributed control scheme in **Chapter 5.2**, and also for the parameter settings and validation of the proposed distributed control scheme in **Chapter 5.3**. <br/>
+
+Refer to **< README - Part 5 - 3.md >** for comparative simulation studies in **Chapter 5.4** against some representitive distributed controllers published recently in IEEE Transactions. <br/> <br/>
+
 ## 5.1 $\text{  }$ Theories and design principles <br/>
 
 For each vertex $i \in \lbrace 1, ..., N \rbrace$, the formation tracking error is originally defined as $e _i ^{ p } = p _{ i } - p _{ 0 } - \delta _{ i }$ and $e _i ^{ v } = v _{ i } - v _{ 0 } - \dot { \delta } _{ i }$. <br/>
@@ -210,7 +216,7 @@ $$<br/>
 
 In the aforementioned design, we employ the inequalities from Eq.(1.6) to develop the upper bound $- 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }$ for some terms in the derivative $\dot { L } _{ i } ^{ p,1 } = { ( e _{ i } ^{ p } ) } ^{ T } \dot { e } _{ i } ^{ p }$. Now we are required to turn the positive definite terms $\frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } }$ and $\frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }$ in Eq.(1.13) into terms with negative sign for guaranteeing pratical fixed-time stability. Therefore, we need to take design an appropriate translational control input $\overset { \frown } { u } _{ i }$ to introduce an upper bound for the term ${ ( \phi _{ i } ) } ^{ T } \overset { \frown } { u } _{ i }$. <br/>
 
-Similar to the inequalities derived in Eq.(1.6), we can select the parameters to guarantee that $\beta _{ 1 } > 1$, $0 < \beta _{ 2 } < 1$, $\kappa _1 ^{ u } > 0$, $\kappa _2 ^{ u } > 0$, $\mu _c ^{ p } > 0$, we invoke **Lemma 4** and thereafter yield that
+Similar to the inequalities derived in Eq.(1.6), we can select the parameters to guarantee that $\kappa _1 ^{ u } > 0$, $\kappa _2 ^{ u } > 0$, we invoke **Lemma 4** and thereafter yield that
 
 $$
 \begin{aligned}
