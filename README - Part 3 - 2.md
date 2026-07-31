@@ -9,4 +9,7 @@ Refer to **< README - Part 3 - 3.md >** for comparative simulation studies in **
 
 ## 3.3 $\text{  }$ Parameter settings and validation <br/>
 
+The desired linear velocity $v _{ 0 } + \dot { \delta } _{ i }$ of the $i$-th uncrewed aerial vehicle is estimated by the distributed observer denoted by Eq.(2.5)
+
+
 
