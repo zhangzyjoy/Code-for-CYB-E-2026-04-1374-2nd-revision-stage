@@ -14,7 +14,7 @@ The desired linear velocity $v _{ 0 } + \dot { \delta } _{ i }$ of the $i$-th un
 $$
 \begin{aligned}
 \begin{cases}
-\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 2 } > 0 \\
+\gamma _{ 1 } & > 1, \quad 0 < \gamma _{ 2 } < 1, \quad K _{ \gamma } ^{ 1 } > 0, \quad K _{ \gamma } ^{ 2 } > 0 \\
 \ell _1 ^{ v } & > \frac { 3 ^{ \frac { \gamma _{ 1 } - 1 } { 2 } } \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 1 } + 3 } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
 \ell _2 ^{ v } & > \frac { \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 2 } + 3 } { 2 } } K _{ \gamma } ^{ 1 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 2 } + 1 } { 2 } } } \\
 \ell _1 ^{ p } & > \frac { 3 ^{ \frac { \gamma _{ 1 } - 1 } { 2 } } \lambda _{ max } ( \overline { L } ) } { 2 ^{ \frac { \gamma _{ 1 } + 3 } { 2 } } K _{ \gamma } ^{ 2 } { ( \lambda _{ min } ( \overline { L } ) ) } ^{ \frac { \gamma _{ 1 } + 1 } { 2 } } } \\
@@ -23,11 +23,11 @@ $$
 \end{aligned}
 $$<br/>
 
-the distributed desired velocity observation of the $i$-th follower can be reached in a practical fixed time given by
+the distributed desired velocity observation of the $i$-th follower can be reached as $v _i ^{ d } \to v _{ 0 } + \dot { \delta } _{ i }$ in a practical fixed time given by
 
 $$
 \begin{aligned}
-
+T _O ^{ V } \le \overline \overline { T } _O ^{ V } =  
 \end{aligned}
 $$<br/>
 
