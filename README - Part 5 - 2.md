@@ -95,9 +95,9 @@ $$<br/>
 
 **Note : Appendix are indicated first, and Chapter 5.3 are given behind Appendix.** <br/> <br/>
 
-# Appendix 1 : $\text{  }$ Significant theories <br/>
+## Appendix 1 : $\text{  }$ Significant theories <br/>
 
-## A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
+### A.1 $\text{  }$ Fixed-time / Practical fixed-time stability lemmas <br/>
 
 Consider a nonlinear system as <br/>
 
@@ -127,7 +127,7 @@ $$
 $$<br/>
 
 
-## A.2 $\text{  }$ Design of nonlinear smooth sigmoid function <br/>
+### A.2 $\text{  }$ Design of nonlinear smooth sigmoid function <br/>
 
 A newly introduced **nonlinear smooth sigmoid vector** is defined as <br/>
 
@@ -172,7 +172,7 @@ $$<br/>
 
 where $K _{ \alpha } = min \lbrace \frac { 1 } { \overline \epsilon } , \underline \epsilon \rbrace$, $\overline \epsilon$ and $\underline \epsilon$ are positive constants. <br/>
 
-## A.3 $\text{  }$ System dynamics of a quadrotor UAV <br/>
+### A.3 $\text{  }$ System dynamics of a quadrotor UAV <br/>
 
 Each agent in the UAV team is considered as a quadrotor, which can be decoupled into rotational and translational subsystems as
 
@@ -197,7 +197,7 @@ $$
 Each quadcopter UAV node is decoupled into rotational and translational subsystems. <br/> <br/> 
 
 
-# Appendix 2 : $\text{  }$ Symbol definition list <br/>
+## Appendix 2 : $\text{  }$ Symbol definition list <br/>
 
 - $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
