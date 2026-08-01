@@ -229,5 +229,15 @@ $$
 \quad\quad(3.1)
 $$<br/>
 
-According to **Lemma 2**, Eq.(1.15) and Eq.(3.1), 
+According to **Lemma 2**, it can be deduced from Eq.(1.15) that the formation control error will converge in practical fixed time if given Eq.(3.1) as the constraints to set the parameters. Then the upper bound for the practical fixed time stability of the position and velocity tracking errors, $e _{ i } ^{ p }$ and $e _{ i } ^{ v }$, are depicted as
+
+$$
+\begin{aligned}
+& T \le \overline { T } _{ d } ^{ \varpi } + \overline { T } _{ c } ^{ \varpi } + \overline { T } _{ O } ^{ V } + \overline { T } _{ O } ^{ P } + \overline { T } _{ d } ^{ v } + \overline { T } _{ c } ^{ p } \\
+& \overline { T } _{ c } ^{ p } = \frac { 2 } { A _{ 1 } \eta _{ c } ^{ P } ( \beta _{ 1 } - 1 ) } + \frac { 2 } { A _{ 2 } \eta _{ c } ^{ P } ( 1 - \beta _{ 2 } ) }
+\end{aligned}
+\quad\quad(3.2)
+$$<br/>
+
+
 
