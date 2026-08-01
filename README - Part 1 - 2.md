@@ -21,7 +21,12 @@ T _d ^{ \varpi } \le \overline { T } _d ^{ \varpi } = \frac { 3 ^ { \frac { \alp
 \quad\quad(3.1)
 $$<br/>
 
-To maintain a lower settling time upper bound for the rotational disturbance observation, the tuning principles for the observer parameters should be set as $\alpha _1 ^{ \varpi } \uparrow$ and $\alpha _2 ^{ \varpi } \downarrow$
+It can be deduced from $\lambda _{ k } ( x _{ k }, \gamma ) = -1 + \frac { 2 } { 1 + exp( - \gamma x _{ k } ) }$ that the larger $\gamma$ we select, the increasing rate near zero $\lambda _{ k }$ will hold. Since $\lambda _{ k }$ approaches 1 when $x _{ k }$ moves away from the origin, we can assume that the function $y = x _{ k } / \overline { \epsilon }$ intersects with $y = \lambda _{ k } ( x _{ k }, \gamma )$ at $( x _{ k }, y ) = ( \pm \overline { \epsilon }, 1 )$. <br/>
+
+It can be yielded from the function property that when $\gamma \uparrow$, the value of $\overline { \epsilon } \downarrow$ and the value of $\underline { \epsilon } \downarrow$. $K _{ \alpha } = \min \lbrace 1 / \overline { \epsilon } \uparrow, \underline { \epsilon } \rbrace$ should be larger according to Eq.(3.1), and thus we should choose a relatively larger $\gamma$ for the nonlinear smooth function $y = \lambda _{ k } ( x _{ k }, \gamma )$. <br/>
+
+To maintain the upper bound for a lower settling time for the rotational disturbance observation, the tuning principles for the observer parameters should be set as $\alpha _1 ^{ \varpi } \uparrow$, $\alpha _2 ^{ \varpi } \downarrow$, 
+
 
 
 
