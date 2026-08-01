@@ -23,4 +23,6 @@ Consider the nonlinear smooth function $\lambda _{ k } ( x _{ k }, \gamma )$ emp
 
 It can be yielded from the function property that when $\gamma \uparrow$, the value of $\overline { \epsilon } \downarrow$ and the value of $\underline { \epsilon } \downarrow$. $K _{ \alpha } = \min \lbrace 1 / \overline { \epsilon } \uparrow, \underline { \epsilon } \rbrace$ should be larger according to Eq.(3.1), and thus we should choose a relatively larger $\gamma$ for the nonlinear smooth function $y = \lambda _{ k } ( x _{ k }, \gamma )$. <br/>
 
+To maintain a lower upper bound for the settling time for the fixed-time stability of the rotational disturbance observation, the tuning principles for the observer parameters should be set as $\alpha _1 ^{ v } \uparrow$, $\alpha _2 ^{ v } \downarrow$, $\mu _{ d } ^{ v } \uparrow$, $c _{ i } ^{ v, 1 } \uparrow$, $c _{ i } ^{ v, 2 } \uparrow$, and $c _{ i } ^{ v, 3 } \downarrow$.
+
 
