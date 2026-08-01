@@ -253,7 +253,7 @@ $$
 \quad\quad(3.3)
 $$<br/>
 
-In order to maintain the practical fixed-time stability for $e _i ^{ p }$ and $e _i ^{ v }$ according to Eq.(3.2), we can obtain that  <br/>
+In order to maintain the practical fixed-time stability for $e _i ^{ p }$ and $e _i ^{ v }$ according to Eq.(3.2), we can summarize the tuning principles for the parameters of PFxTDFC as $\beta _{ 1 } \uparrow$, $\beta _{ 2 } \downarrow$, $\mu _{ c } ^{ P } \uparrow$, $\kappa _{ 1 } ^{ \chi } \uparrow$, and $\kappa _{ 2 } ^{ \chi } \uparrow$. <br/>
 
 
 
