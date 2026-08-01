@@ -257,7 +257,6 @@ $$
 & \quad \quad - ( 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } ) { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - ( 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } ) { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \\
 & \quad \quad + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 }
 \end{aligned}
-\quad\quad(1.14)
 $$<br/>
 
 We select two coefficients as $A _{ 1 } = \min \lbrace 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } - 3 , 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } \rbrace$ and $A _{ 2 } = \min \lbrace 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } - 3 , 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } \rbrace$. It is easy to find the following inequalities hold
@@ -271,4 +270,14 @@ $$
 \end{aligned}
 $$<br/>
 
-Define $A _{ 3 } = \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 }$, and thus we can derive from Eq.(1.14) that $\dot { L } \le - A _{ 1 } { ( L _{ i } ^{ p, 1 } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - A _{ 2 } { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + A _{ 3 }$. It can be yielded from **Lemma 2** that $e _i ^{ p }$ and $\phi _{ i }$ can reach practical fixed-time stable in fixed time. Since $\chi _{ i }$ shares the same convergence property as $e _i ^{ p }$, then the convergence of $\phi _{ i }$ is equivalent to $e _{ i } ^{ v }$. <br/>
+Define $A _{ 3 } = \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { \Gamma } _{ u } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 }$, and thus we can derive from the above theories that 
+
+$$
+\begin{aligned}
+\dot { L } \le - A _{ 1 } { ( L _{ i } ^{ p, 1 } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - A _{ 2 } { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + A _{ 3 }
+\end{aligned}
+\quad\quad(1.14)
+$$<br/>
+
+Therefore, it can be yielded from **Lemma 2** that $e _i ^{ p }$ and $\phi _{ i }$ can reach practical fixed-time stable in fixed time. Since $\chi _{ i }$ shares the same convergence property as $e _i ^{ p }$, then the convergence of $\phi _{ i }$ is equivalent to $e _{ i } ^{ v }$. <br/>
+
