@@ -18,7 +18,8 @@ $$
 \begin{aligned}
 T _d ^{ \varpi } \le \overline { T } _d ^{ \varpi } = \frac { 3 ^ { \frac { \alpha _1 ^{ \varpi } - 1 } { 2 } } } { 2 ^ { \frac { \alpha _1 ^{ \varpi } - 1 } { 2 }  } c _i ^{ \varpi, 1 } K _{ \alpha } ^{ d, \varpi } ( \alpha _1 ^{ \varpi } - 1 ) } + \frac { 1 } { 2 ^ { \frac { \alpha _2 ^{ \varpi } - 1 } { 2 }  } c _i ^{ \varpi, 2 } K _{ \alpha } ^{ d, \varpi } ( 1 - \alpha _2 ^{ \varpi } ) }
 \end{aligned}
-\quad\quad(3.1)$$<br/>
+\quad\quad(3.1)
+$$<br/>
 
 To maintain a lower settling time upper bound for the rotational disturbance observation, the tuning principles for the observer parameters should be set as $\alpha _1 ^{ \varpi } \uparrow$ and $\alpha _2 ^{ \varpi } \downarrow$
 
