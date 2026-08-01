@@ -253,5 +253,9 @@ $$
 \quad\quad(3.3)
 $$<br/>
 
+In order to maintain the practical fixed-time stability for $e _i ^{ p }$ and $e _i ^{ v }$ according to Eq.(3.2), we can obtain that  <br/>
+
+
+
 
 
