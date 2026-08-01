@@ -216,4 +216,18 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 
 ## 5.3 $\text{  }$ Parameter settings and validation
 
-According to **Lemma 2** and 
+The parameters of PFxTDFC are required to be set according to the following inequalities <br/>
+
+$$
+\begin{aligned}
+\begin{cases}
+& \beta _{ 1 } > 1, \quad 0 < \beta _{ 2 } < 1 , \quad \mu _{ c } ^{ p } > 0 \\
+& \kappa _{ 1 } ^{ \chi } > \frac { 3 ^{ ( \beta _{ 1 } + 1 ) / 2 } } { 2 ^{ ( \beta _{ 1 } + 1 ) / 2 } K _{ \beta } ^{ 1 } } , \quad \kappa _{ 2 } ^{ \chi } > \frac { 3 } { 2 ^{ ( \beta _{ 2 } + 1 ) / 2 } K _{ \beta } ^{ 1 } } \\
+& \kappa _{ 1 } ^{ u } > \frac { 5 \cdot 3 ^{ ( \beta _{ 1 } - 1 ) / 2 } } { 2 ^{ ( \beta _{ 1 } + 3 ) / 2 } K _{ \beta } ^{ 2 } } , \quad \kappa _{ 2 } ^{ u } > \frac { 5 } { 2 ^{ ( \beta _{ 2 } + 3 ) / 2 } K _{ \beta } ^{ 2 } }
+\end{cases}
+\end{aligned}
+\quad\quad(3.1)
+$$<br/>
+
+According to **Lemma 2**, Eq.(1.15) and Eq.(3.1), 
+
