@@ -241,5 +241,15 @@ $$
 \quad\quad(3.2)
 $$<br/>
 
+where $A _{ 1 }$ and $A _{ 2 }$ are defined in Chapter 5.1 as 
+
+$$
+\begin{aligned}
+& A _{ 1 } = \min \lbrace 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } - 3 , 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } \rbrace \\
+& A _{ 2 } = \min \lbrace 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } - 3 , 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ u } K _{ \beta } ^{ 2 } - \frac { 7 } { 2 } \rbrace
+\end{aligned}
+\quad\quad(3.3)
+$$<br/>
+
 
 
