@@ -216,4 +216,4 @@ Each quadcopter UAV node is decoupled into rotational and translational subsyste
 
 ## 5.3 $\text{  }$ Parameter settings and validation
 
-
+According to **Lemma 2** and 
