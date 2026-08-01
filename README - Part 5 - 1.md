@@ -213,10 +213,10 @@ $$
 { \dot { L } _i ^{ p } } & \le - ( 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } - 3 ) { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - ( 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } - 3 ) { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \\
 & \quad \quad + \frac { 7 } { 4 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ v } ) } ^{ 2 } + \frac { 1 } { 2 } { ( \overline { D } _{ v } ) } ^{ 2 } + { ( \phi _{ i } ) } ^{ T } \overset { \frown } { u } _{ i }
 \end{aligned}
-\quad\quad(1.12)
+\quad\quad(1.13)
 $$<br/>
 
-In the aforementioned design, we employ the inequalities from Eq.(1.6) to develop the upper bound $- 2 ^{ \frac { \beta _{ 1 } + 1 } { 2 } } 3 ^{ \frac { 1 - \beta _{ 1 } } { 2 } } \kappa _1 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ \chi } K _{ \beta } ^{ 1 } { ( \frac { 1 } { 2 } { ( e _{ i } ^{ p } ) } ^{ T } e _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }$ for some terms in the derivative $\dot { L } _{ i } ^{ p,1 } = { ( e _{ i } ^{ p } ) } ^{ T } \dot { e } _{ i } ^{ p }$. Now we are required to turn the positive definite terms $\frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } }$ and $\frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }$ in Eq.(1.13) into terms with negative sign for guaranteeing pratical fixed-time stability. Therefore, we need to take design an appropriate translational control input $\overset { \frown } { u } _{ i }$ to introduce an upper bound for the term ${ ( \phi _{ i } ) } ^{ T } \overset { \frown } { u } _{ i }$. <br/>
+In the aforementioned design, we employ the inequalities from Eq.(1.6) to develop the upper bound for some terms in the derivative $\dot { L } _{ i } ^{ p,1 } = { ( e _{ i } ^{ p } ) } ^{ T } \dot { e } _{ i } ^{ p }$. Now we are required to turn the positive definite terms $\frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } }$ and $\frac { 7 } { 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } }$ in Eq.(1.13) into terms with negative sign for guaranteeing pratical fixed-time stability. Therefore, we need to take design an appropriate translational control input $\overset { \frown } { u } _{ i }$ to introduce an upper bound for the term ${ ( \phi _{ i } ) } ^{ T } \overset { \frown } { u } _{ i }$. <br/>
 
 Similar to the inequalities derived in Eq.(1.6), we can select the parameters to guarantee that $\kappa _1 ^{ u } > 0$, $\kappa _2 ^{ u } > 0$, we invoke **Lemma 4** and thereafter yield that
 
@@ -227,7 +227,7 @@ $$
 & { - \kappa _2 ^{ u } { ( \phi _{ i } ) } ^{ T } \vartheta ( \phi _{ i }, \beta _{ 2 }, \mu _c ^{ p } ) } \le { - 2 ^{ \frac { \beta _{ 2 } + 1 } { 2 } } \kappa _2 ^{ u } K _{ \beta } ^{ 2 } { ( \frac { 1 } { 2 } { ( \phi _{ i } ) } ^{ T } \phi _{ i } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } }
 \end{cases}
 \end{aligned}
-\quad\quad(1.13)
+\quad\quad(1.14)
 $$<br/>
 
 where $K _{ \beta } ^{ 2 } = min \lbrace \frac { 1 } { \overline { \epsilon } _{ \beta } } , \underline { \epsilon } _{ \beta } \rbrace$ is selected according to **Lemma 4**. <br/>
@@ -276,7 +276,7 @@ $$
 \begin{aligned}
 \dot { L } _{ i } ^{ p } \le - A _{ 1 } { ( L _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - A _{ 2 } { ( L _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + A _{ 3 }
 \end{aligned}
-\quad\quad(1.14)
+\quad\quad(1.15)
 $$<br/>
 
 Therefore, it can be yielded from **Lemma 2** that $e _i ^{ p }$ and $\phi _{ i }$ can reach practical fixed-time stable in fixed time. Since $\chi _{ i }$ shares the same convergence property as $e _i ^{ p }$, then the convergence of $\phi _{ i }$ is equivalent to $e _{ i } ^{ v }$. Finally we can obtain that the formation tracking error in position and velocity can achieve convergence in practical fixed time by designing **translational control input** as shown in **Chapter 5.2**. <br/>
