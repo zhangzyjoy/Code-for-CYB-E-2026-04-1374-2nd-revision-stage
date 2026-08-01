@@ -78,6 +78,8 @@ It can be yielded from the function property that when $\gamma \uparrow$, the va
 
 According to the settling time formula Eq.(3.1) which depicts the practical fixed-time convergence of Eq.(2.3) to reach the sliding mode surface $S _{ i } = 0$ driven by the applied torque Eq.(2.5) ~ Eq.(2.6), we should tune the parameters as $\beta _{ \varpi } ^{ 1 } \uparrow$, $\beta _{ \varpi } ^{ 2 } \downarrow$, $\mu _{ c } ^{ \Theta } \uparrow$, $c _{ i } ^{ \varpi, 1 } \uparrow$, $c _{ i } ^{ \varpi, 2 } \uparrow$, $c _{ i } ^{ \varpi, 3 } \downarrow$. <br/> <br/>
 
+According to the settling time formula Eq.(3.2) which depicts the fixed-time convergence of Eq.(3.2) which depicts the fixed-time convergence of the rotational errors $\varpi _{ i } ^{ e }$ and $\psi _{ i } ^{ e }$ when already arrived at the sliding phase, we should tune the parameters as $p \to 1 / 2$ and $p \to 1 - p$ is better, $\gamma _{ \psi } \uparrow$, $\epsilon _{ i,k } ^{ S } \downarrow$, $c _{ i } ^{ S } \uparrow$.
+
 
 
 
