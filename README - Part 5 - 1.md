@@ -279,5 +279,5 @@ $$
 \quad\quad(1.14)
 $$<br/>
 
-Therefore, it can be yielded from **Lemma 2** that $e _i ^{ p }$ and $\phi _{ i }$ can reach practical fixed-time stable in fixed time. Since $\chi _{ i }$ shares the same convergence property as $e _i ^{ p }$, then the convergence of $\phi _{ i }$ is equivalent to $e _{ i } ^{ v }$. <br/>
+Therefore, it can be yielded from **Lemma 2** that $e _i ^{ p }$ and $\phi _{ i }$ can reach practical fixed-time stable in fixed time. Since $\chi _{ i }$ shares the same convergence property as $e _i ^{ p }$, then the convergence of $\phi _{ i }$ is equivalent to $e _{ i } ^{ v }$. Finally we can obtain that the formation tracking error in position and velocity can achieve convergence in practical fixed time by designing proper **translational control input** as shown in **Chapter 5.2**. <br/>
 
