@@ -274,7 +274,7 @@ Define $A _{ 3 } = \frac { 1 } { 2 } { ( \overline { F } _{ O } ^{ p } ) } ^{ 2 
 
 $$
 \begin{aligned}
-\dot { L } \le - A _{ 1 } { ( L _{ i } ^{ p, 1 } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - A _{ 2 } { ( L _{ i } ^{ p, 2 } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + A _{ 3 }
+\dot { L } _{ i } ^{ p } \le - A _{ 1 } { ( L _{ i } ^{ p } ) } ^{ \frac { \beta _{ 1 } + 1 } { 2 } } - A _{ 2 } { ( L _{ i } ^{ p } ) } ^{ \frac { \beta _{ 2 } + 1 } { 2 } } + A _{ 3 }
 \end{aligned}
 \quad\quad(1.14)
 $$<br/>
