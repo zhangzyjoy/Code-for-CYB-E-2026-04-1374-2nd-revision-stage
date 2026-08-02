@@ -31,7 +31,7 @@ The rotational FxTDO in Chapter 2.2 is proposed for estimating the **external di
 
 [1]	Y. Yu, H. Xu, and X. Yao, “Disturbance rejection event-triggered robust model predictive control for tracking of constrained uncertain robotic manipulators,” *IEEE Transactions on Cybernetics*, vol. 54, no. 6, pp. 3540–3552, Jun. 2024. <br/> <br/>
 
-In the paper IEEE TCYB (2024), the second-order system dynamics can be formulated as
+In paper IEEE TCYB (2024), we define the angular displacement, angular velocity, angular acceleration as $x _{ 1 } = \theta$, $x _{ 2 } = \dot { x } _{ 1 } = \dot { \theta }$ and $\dot { x } _{ 2 } = \ddot { \theta }$, the second-order system dynamics can be formulated as
 
 $$
 \begin{aligned}
@@ -40,7 +40,9 @@ $$
 & \dot { x } _{ 2 } = - M ^{ -1 } ( x _{ 1 } ) H ( x _{ 1 }, x _{ 2 } ) + M ^{ -1 } ( x _{ 1 } ) \tau + M ^{ -1 } ( x _{ 1 } ) d
 \end{cases}
 \end{aligned}
+\quad\quad(4.1)
 $$<br/>
 
+Define the tracking errors as 
 
 
