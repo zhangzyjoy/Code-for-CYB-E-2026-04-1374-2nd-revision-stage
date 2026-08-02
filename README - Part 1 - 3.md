@@ -47,7 +47,7 @@ Consider the disturbance observer in Ref.[2] :
 
 [2]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite disturbance rejection attitude control for quadrotor with unknown disturbance,” *IEEE Transactions on Industrial Electronics*, vol. 67, no. 8, pp. 6894–6903, Aug. 2020. <br/>
 
-The rotational dynamics Eq.(4.1) is reformulated as $\Lambda _{ i } \dot \varpi _{ i } = -( \varpi _{ i } ) _{\times} \Lambda _{ i } \varpi _{ i } + \tau _{ i } + d _{ i } ^{\varpi}$. Define the first-order state variable as $x _{ i } ^{ 1 } = \Lambda _{ i } \varpi _{ i }$ and the second-order state variable as $x _{ i } ^{ 2 } = d _{ i } ^{ \varpi }$. For simplicity we define an auxiliary control input other than $\tau _{ i }$ as $\tilde { \tau } _{ i } = - { \varpi _{ i } } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i }$, $b _{ i } = I _{ 3 }$, and $\dot { x } _{ i } ^{ 2 } = \dot { d } _{ i } ^{ \varpi } = D _{ i } ^{ \varpi }$. The extended state system is denoted as
+The rotational dynamics Eq.(4.1) is reformulated as $\Lambda _{ i } \dot \varpi _{ i } = -( \varpi _{ i } ) _{\times} \Lambda _{ i } \varpi _{ i } + \tau _{ i } + d _{ i } ^{\varpi}$. Define the first-order state variable as $x _{ i } ^{ 1 } = \Lambda _{ i } \varpi _{ i }$ and the second-order state variable as $x _{ i } ^{ 2 } = d _{ i } ^{ \varpi }$. For simplicity we define an auxiliary control input other than $\tau _{ i }$ as $\tilde { \tau } _{ i } = - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i }$, $b _{ i } = I _{ 3 }$, and $\dot { x } _{ i } ^{ 2 } = \dot { d } _{ i } ^{ \varpi } = D _{ i } ^{ \varpi }$. The extended state system is denoted as
 
 $$
 \begin{aligned}
@@ -57,6 +57,21 @@ $$
 \end{cases}
 \end{aligned}
 $$<br/>
+
+To facilitate the design of the disturbance observer, we employ a piecewise continuous function as
+
+$$
+\begin{aligned}
+\phi ( x _{ k } ) = 
+\begin{cases}
+& -1 , \quad x _{ k } \le - \pi / 2 \\
+& sin ( x _{ k } ), \quad  - \pi / 2 \le x _{ k } \le pi / 2 \\
+& 1 , \quad x _{ k } \ge \pi / 2
+\end{cases}
+\end{aligned}
+$$<br/>
+
+We introduce $\hat { x } _{ i } ^{ 1 }$ and $\hat { x } _{ i } ^{ 2 }$ to estimate $x _{ i } ^{ 1 }$ and $x _{ i } ^{ 2 }$, respectively.
 
 
 
