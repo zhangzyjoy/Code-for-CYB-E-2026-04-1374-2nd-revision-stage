@@ -105,7 +105,7 @@ The rotational dynamics Eq.(4.1) is reformulated as $\Lambda _{ i } \dot \varpi 
 $$
 \begin{aligned}
 \begin{cases}
-& \Lambda _{ i } \dot { \hat { \varpi } } _{ i } = 
+& \Lambda _{ i } \dot { \hat { \varpi } } _{ i } = - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i } + \hat { d } _{ i } ^{ \varpi } + \lambda _{ 1 } ( \frac { \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) } { p _{ 1 } } + \lt q \gt )
 \end{cases}
 \end{aligned}
 $$<br/>
