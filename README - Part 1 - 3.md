@@ -25,9 +25,11 @@ $$
 \quad\quad(4.1)
 $$<br/>
 
-The rotational FxTDO in Chapter 2.2 is proposed for estimating the **external disturbance term $d _i ^{ \varpi }$**. The **first-order rotational disturbance observers** from the three aforementioned references are employed as comparison against the rotational FxTDO. The detailed implementation procedure of the first-order rotational disturbance observers in Ref.[1] ~ Ref.[3] are elaborated as follows for comparison. <br/>
+The rotational FxTDO in Chapter 2.2 is proposed for estimating the **external disturbance term $d _i ^{ \varpi }$**. The **first-order rotational disturbance observers** from the three aforementioned references are employed as comparison against the rotational FxTDO. The detailed implementation procedure of the first-order rotational disturbance observers in Ref.[1] ~ Ref.[3] are elaborated as follows for comparison. <br/> <br/>
 
-[1]	Y. Yu, H. Xu, and X. Yao, “Disturbance rejection event-triggered robust model predictive control for tracking of constrained uncertain robotic manipulators,” *IEEE Transactions on Cybernetics*, vol. 54, no. 6, pp. 3540–3552, Jun. 2024. <br/> <br/>
+Consider the disturbance observer in Ref.[1] :
+
+[1]	Y. Yu, H. Xu, and X. Yao, “Disturbance rejection event-triggered robust model predictive control for tracking of constrained uncertain robotic manipulators,” *IEEE Transactions on Cybernetics*, vol. 54, no. 6, pp. 3540–3552, Jun. 2024. <br/>
 
 In paper IEEE TCYB (2024), the disturbance observer for Eq.(4.1) is depicted as
 
@@ -41,6 +43,19 @@ $$
 \quad\quad(4.2)
 $$<br/>
 
+Consider the disturbance observer in Ref.[2] :
 
+[2]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite disturbance rejection attitude control for quadrotor with unknown disturbance,” *IEEE Transactions on Industrial Electronics*, vol. 67, no. 8, pp. 6894–6903, Aug. 2020. <br/>
+
+The rotational dynamics Eq.(4.1) is reformulated as $\Lambda _{ i } \dot \varpi _{ i } = -( \varpi _{ i } ) _{\times} \Lambda _{ i } \varpi _{ i } + \tau _{ i } + d _{ i } ^{\varpi}$. Define the first-order state variable as $x _{ i } ^{ 1 } = \Lambda _{ i } \varpi _{ i }$ and the second-order state variable as $x _{ i } ^{ 2 } = d _{ i } ^{ \varpi }$. For simplicity we define an auxiliary control input other than $\tau _{ i }$ as $\tilde { \tau } _{ i } = - { \varpi _{ i } } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i }$, $b _{ i } = I _{ 3 }$, and $\dot { x } _{ i } ^{ 2 } = \dot { d } _{ i } ^{ \varpi } = D _{ i } ^{ \varpi }$. The extended state system is denoted as
+
+$$
+\begin{aligned}
+\begin{cases}
+& \dot { x } _{ i } ^{ 1 } = x _{ i } ^{ 2 } + b _{ i } \tilde { \tau } _{ i } \\
+& \dot { x } _{ i } ^{ 2 } = D _{ i } ^{ \varpi }
+\end{cases}
+\end{aligned}
+$$<br/>
 
 
