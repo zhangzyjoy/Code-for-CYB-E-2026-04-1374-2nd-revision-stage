@@ -16,6 +16,18 @@ Some approaches published in IEEE Transactions in recent years are introduced fo
 [2]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite disturbance rejection attitude control for quadrotor with unknown disturbance,” *IEEE Transactions on Industrial Electronics*, vol. 67, no. 8, pp. 6894–6903, Aug. 2020. <br/>
 [3]	X. Liu, X. Zhang, F. Xu, S. Gu, and J. Zhang, “Fixed-time angle tracking control for multi-DOF manipulator driven by pneumatic artificial muscles,” *IEEE Transactions on Industrial Electronics*, vol. 72, no. 4, pp. 4137–4146, Apr. 2025. <br/>
 
+Each agent in the UAV team is considered as a quadrotor, and its rotational subsystem can be decoupled as
+
+$$
+\begin{aligned}
+\begin{cases}
+&\dot R ( Q _i ) = R ( Q _i ) ( \varpi _i ) _{\times}  \\
+&\dot \varpi _i = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + d _i ^{\varpi} )
+\end{cases}
+\end{aligned}
+$$<br/>
+
+The rotational FxTDO in Chapter 2.2 is proposed for estimating the external disturbance term $d _i ^{ \varpi }$. The first-order disturbance observers from the three aforementioned references are employed as comparison against the rotational FxTDO. The detailed implementation procedure can be  <br/>
 
 
 
