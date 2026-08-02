@@ -35,7 +35,12 @@ In the paper IEEE TCYB (2024), the second-order system dynamics can be formulate
 
 $$
 \begin{aligned}
-
+\begin{cases}
+& \dot { x } _{ 1 } = x _{ 2 } \\
+& \dot { x } _{ 2 } = - M ^{ -1 } ( x _{ 1 } ) H ( x _{ 1 }, x _{ 2 } ) + M ^{ -1 } ( x _{ 1 } ) \tau + M ^{ -1 } ( x _{ 1 } ) d
+\end{cases}
 \end{aligned}
 $$<br/>
+
+
 
