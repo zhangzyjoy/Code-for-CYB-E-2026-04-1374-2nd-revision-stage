@@ -64,9 +64,9 @@ $$
 \begin{aligned}
 \phi ( x _{ k } ) = 
 \begin{cases}
-& -1 , \quad x _{ k } \le - \pi / 2 \\
+& -1 , \quad \quad x _{ k } \le - \pi / 2 \\
 & sin ( x _{ k } ), \quad  - \pi / 2 \le x _{ k } \le pi / 2 \\
-& 1 , \quad x _{ k } \ge \pi / 2
+& 1 , \quad \quad x _{ k } \ge \pi / 2
 \end{cases}
 \end{aligned}
 $$<br/>
