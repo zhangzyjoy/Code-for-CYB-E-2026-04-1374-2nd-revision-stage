@@ -1,18 +1,21 @@
 We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised manuscript for **IEEE Transactions on Cybernetics** with a submission ID **CYB-E-2026-04-1374**. <br/> 
 
-**Note** : this link contains five different markdown files. **Click each markdown file <README - Part X.md> under the main branch of this github repository to check the elaboration of theories and validation for each part of the formation control framework, respectively.** <br/>
+**Note** : this link contains five different markdown files. **Click each markdown file <README - Part X - X.md> under the main branch of this github repository to check the elaboration of theories and validation for each part of the formation control framework, respectively.** <br/>
 
-**The five main sections listed below are divided into five markdown files <README - Part 1 ~ Part 5 .md>, respectively.** Since **the Section no.6**, **the Appendix of significant theories**, is utilized as a guidance in establishing the overall control framework, it is attached **at the back of each markdown file** for the reviewers' convenience to check the definitions and lemmas. <br/>
+**The five main sections listed below are divided into five markdown files <README - Part 1 ~ Part 5 .md>, respectively.** <br/>
 
-**Note** : Source code and instructions for the proposed control scheme during the first revision with Revised & Resubmit decision can be accessed at **https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git**. <br/>
+**The Appendix of significant theories and lemmas**, is utilized as an auxiliary instruction part in establishing the overall control framework, it is attached **at the back of each markdown file** for the reviewers' convenience to check the definitions and lemmas. <br/>
+
+**Note** : Source code and instructions of the overall control framework deposited during **the 1st revision with Revised & Resubmit decision** can be accessed at **https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git** for your convenience. <br/>
 
 **The video for real-world experimental validation can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/** <br/> <br/>
+
 **If there exist any question about this webpage or having interest on the source code of this paper, please do not hesitate to contact us and to discuss potential academic collaboration at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com** <br/> <br/>
 
 This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. **To address the reviewer's comments, the logical connection between theory and validation has been strengthened.** <br/> <br/>
 
 The narrative follows a systematic progression. <br/> 
-**<1>** The **theoretical basis** for controller design is introduced and fundamental lemmas are included. <br/> 
+**<1>** The **theories and design principles** for controller design is introduced and fundamental lemmas are included. <br/> 
 **<2>** The **admissible range and tuning principle** for parameters to maintain control stability are deduced. <br/> 
 **<3>** The **comparative simulation or experimental validation** results are presented and discussed. <br/> <br/> 
 
