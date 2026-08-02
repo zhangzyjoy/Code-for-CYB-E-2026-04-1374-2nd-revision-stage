@@ -10,4 +10,7 @@ Refer to **< README - Part 1 - 2.md >** for the parameter settings and validatio
 
 ## 1.4 $\text{  }$ Validation for Comparison <br/>
 
+Some approaches published in IEEE Transactions in recent years are introduced for comparison in this chapter. The translational FxTDO is proposed <br/>
+
+
 
