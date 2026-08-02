@@ -84,5 +84,30 @@ $$
 \end{aligned}
 $$<br/>
 
+Substitute $x _{ i } ^{ 1 } = \Lambda _{ i } \varpi _{ i }$, $x _{ i } ^{ 2 } = d _{ i } ^{ \varpi }$, $\hat { x } _{ i } ^{ 1 } = \Lambda _{ i } \hat { \varpi } _{ i }$ and $\hat { x } _{ i } ^{ 2 } = \hat { d } _{ i } ^{ \varpi }$ into the observer above and then yield the proper form of the first-order rotational disturbance observer
+
+$$
+\begin{aligned}
+\begin{cases}
+& \Lambda _{ i } \dot { \varpi } _{ i } = \hat { d } _{ i } ^{ \varpi } + \frac { l _{ i } ^{ 1 } } { \epsilon _{ i } } \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i } \\
+& \dot { \hat { d } } _{ i } ^{ \varpi } = \frac { l _{ i } ^{ 2 } } { { ( \epsilon _{ i } ) } ^{ 2 } } \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) + \frac { 1 } { \epsilon _{ i } } \phi ( \kappa _{ i } \cdot \Lambda _{ i } \frac { \varpi _{ i } - \hat { \varpi } _{ i } } { \epsilon _{ i } } )
+\end{cases}
+\end{aligned}
+$$<br/>
+
+
+**Thirdly, consider the disturbance observer in Ref.[3] :**
+
+[3]	X. Liu, X. Zhang, F. Xu, S. Gu, and J. Zhang, “Fixed-time angle tracking control for multi-DOF manipulator driven by pneumatic artificial muscles,” *IEEE Transactions on Industrial Electronics*, vol. 72, no. 4, pp. 4137–4146, Apr. 2025. <br/>
+
+The rotational dynamics Eq.(4.1) is reformulated as $\Lambda _{ i } \dot \varpi _{ i } = -( \varpi _{ i } ) _{\times} \Lambda _{ i } \varpi _{ i } + \tau _{ i } + d _{ i } ^{\varpi}$. Select $p _{ 1 } > 0$, $\lambda _{ 1 } > 0$, $\lambda _{ 2 } > 0$, $1 / 2 < \mu < 1$. The rotational disturbance observer is formulated as
+
+$$
+\begin{aligned}
+\begin{cases}
+& \Lambda _{ i } 
+\end{cases}
+\end{aligned}
+$$<br/>
 
 
