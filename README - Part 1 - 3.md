@@ -34,7 +34,7 @@ In paper IEEE TCYB (2024), the disturbance observer for Eq.(4.1) is depicted as
 $$
 \begin{aligned}
 \begin{cases}
-& \dot { \hat { \varepsilon } } _{ i } ^{ \varpi } = - { ( \Lambda _{ i } ) } ^{ -1 } r _{ i } ^{ \varpi } ( \hat { \varepsilon } _{ i } ^{ \varpi } - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i } + r _{ i } ^{ \varpi } + \varpi _{ i } ) \\
+& \dot { \hat { \varepsilon } } _{ i } ^{ \varpi } = - { ( \Lambda _{ i } ) } ^{ -1 } r _{ i } ^{ \varpi } ( \hat { \varepsilon } _{ i } ^{ \varpi } - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i } + r _{ i } ^{ \varpi } \varpi _{ i } ) \\
 & \hat { d } _{ i } ^{ \varpi } = \hat { \varepsilon } _{ i } ^{ \varpi } + r _{ i } ^{ \varpi } \varpi _{ i }
 \end{cases}
 \end{aligned}
