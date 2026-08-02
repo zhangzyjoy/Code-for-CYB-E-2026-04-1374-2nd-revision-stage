@@ -111,4 +111,8 @@ $$
 \end{aligned}
 $$<br/>
 
+where $\lt \cdot \gt$ is defined as the operator to apply on each component.
+
+
+
 
