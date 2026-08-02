@@ -2,15 +2,13 @@ We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** 
 
 **Note** : this link contains five different markdown files. **Click each markdown file <README - Part X - X.md> under the main branch of this github repository to check the elaboration of theories and validation for each part of the formation control framework, respectively.** <br/>
 
-**The five main sections listed below are divided into five markdown files <README - Part 1 ~ Part 5 .md>, respectively.** <br/>
+**The five main sections listed below are divided into several markdown files < README - Part 1.X .md > ~ < README - Part 5.X .md >, respectively.** <br/>
 
 **The Appendix of significant theories and lemmas**, is utilized as an auxiliary instruction part in establishing the overall control framework, it is attached **at the back of each markdown file** for the reviewers' convenience to check the definitions and lemmas. <br/>
 
+Since **too many equations included in a single Markdown file may cause rendering errors or garbled output**, the theoretical design, implementation methodology, theory-guided parameter tuning, simulation experiments and comparative validation of the proposed control scheme are divided into multiple Markdown files to avoid this issue. Therefore, **each section < README - Part X .md > is divided into several subsections < README - Part X.X .md >**. <br/> <br/>
+
 **Note** : Source code and instructions of the overall control framework deposited during **the 1st revision with Revised & Resubmit decision** can be accessed at **https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage.git** for your convenience. <br/>
-
-**The video for real-world experimental validation can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/** <br/> <br/>
-
-**If there exist any question about this webpage or having interest on the source code of this paper, please do not hesitate to contact us and to discuss potential academic collaboration at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com** <br/> <br/>
 
 This link demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. **To address the reviewer's comments, the logical connection between theory and validation has been strengthened.** <br/> <br/>
 
@@ -22,13 +20,13 @@ The narrative follows a systematic progression. <br/>
 **Each section in this link follows the logic above, where the link theory-validation is enhanced.** <br/> 
 
 **This link includes six main sections.** <br/>
-Each of the latter five ones indicates a specific module of the proposed control scheme. <br/>
+Each of the first five items indicates a specific module of the proposed control scheme. <br/>
 1. Fixed-time rotational disturbance observer (FxTDO). <br/>
 2. Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC). <br/>
 3. Practical fixed-time distributed state observer (PFxTDSO). <br/>
 4. Fixed-time translational disturbance observer (FxTDO). <br/>
 5. Practical fixed-time decentralized formation controller (PFxTDFC). <br/>
-6. Appendix : Significant lemmas and deductions. <br/><br/>
+Appendix : Significant lemmas and deductions. <br/><br/>
 
 Each section contains four chapters, including : <br/>
 <1>. Theories and design principles. <br/>
@@ -46,4 +44,7 @@ Each section contains four chapters, including : <br/>
 
 Specifically, the rotational control (NLSMAC) and rotational disturbance observation (Rotational FxTDO) are validated only through **numerical simulation**, whereas the translational control (PFxTDFC), translational distributed observer (PFxTDSO), and translational disturbance observer (Translational FxTDO) are validated through **both numerical simulation and real-world experiment**. <br/> <br/>
 
+**The video for real-world experimental validation can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/** <br/> <br/>
+
+**If there exist any question about this webpage or having interest on the source code of this paper, please do not hesitate to contact us and to discuss potential academic collaboration at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com** <br/> <br/>
 
