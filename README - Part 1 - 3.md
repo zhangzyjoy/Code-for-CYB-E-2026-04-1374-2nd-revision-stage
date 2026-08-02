@@ -65,13 +65,24 @@ $$
 \phi ( x _{ k } ) = 
 \begin{cases}
 & -1 , \quad \quad x _{ k } \le - \pi / 2 \\
-& sin ( x _{ k } ), \quad  - \pi / 2 \le x _{ k } \le pi / 2 \\
+& sin ( x _{ k } ), \quad  - \pi / 2 \le x _{ k } \le \pi / 2 \\
 & 1 , \quad \quad x _{ k } \ge \pi / 2
 \end{cases}
 \end{aligned}
 $$<br/>
 
-We introduce $\hat { x } _{ i } ^{ 1 }$ and $\hat { x } _{ i } ^{ 2 }$ to estimate $x _{ i } ^{ 1 }$ and $x _{ i } ^{ 2 }$, respectively.
+and the vector form is defined as $\phi ( x ) = { [ \phi ( x _{ 1 } ) , \phi ( x _{ 2 } ), ... , \phi ( x _{ n } ) ] ^{ T } }$
+
+We introduce $\hat { x } _{ i } ^{ 1 }$ and $\hat { x } _{ i } ^{ 2 }$ to estimate $x _{ i } ^{ 1 }$ and $x _{ i } ^{ 2 }$, respectively. The rotational disturbance observation is provided as
+
+$$
+\begin{aligned}
+\begin{cases}
+& \dot { \hat { x } } _{ i } ^{ 1 } = \hat { x } _{ i } ^{ 2 } + \frac { l _{ i } ^{ 1 } } { \epsilon _{ i } } ( x _{ i } ^{ 1 } - \hat { x } _{ i } ^{ 1 } ) - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i } \\
+& \dot { \hat { x } } _{ i } ^{ 2 } = \frac { l _{ i } ^{ 2 } } { { ( \epsilon _{ i } ) } ^{ 2 } } ( x _{ i } ^{ 1 } - \hat { x } _{ i } ^{ 1 } ) + \frac { 1 } { \epsilon _{ i } } \phi ( \kappa _{ i } \cdot \frac { x _{ i } ^{ 1 } - \hat { x } _{ i } ^{ 1 } } { \epsilon _{ i } } )
+\end{cases}
+\end{aligned}
+$$<br/>
 
 
 
