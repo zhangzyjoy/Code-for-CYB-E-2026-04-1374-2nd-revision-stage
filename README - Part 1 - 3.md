@@ -16,33 +16,31 @@ Some approaches published in IEEE Transactions in recent years are introduced fo
 [2]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite disturbance rejection attitude control for quadrotor with unknown disturbance,” *IEEE Transactions on Industrial Electronics*, vol. 67, no. 8, pp. 6894–6903, Aug. 2020. <br/>
 [3]	X. Liu, X. Zhang, F. Xu, S. Gu, and J. Zhang, “Fixed-time angle tracking control for multi-DOF manipulator driven by pneumatic artificial muscles,” *IEEE Transactions on Industrial Electronics*, vol. 72, no. 4, pp. 4137–4146, Apr. 2025. <br/>
 
-Each agent in the UAV team is considered as a quadrotor, and its rotational subsystem can be decoupled as
+Each agent in the UAV team is considered as a quadrotor, and the rotational dynamics that contains the disturbance term is denoted as
 
 $$
 \begin{aligned}
-\begin{cases}
-&\dot R ( Q _i ) = R ( Q _i ) ( \varpi _i ) _{\times}  \\
-&\dot \varpi _i = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + d _i ^{\varpi} )
-\end{cases}
+\dot \varpi _i = ( \Lambda _i ) ^{-1} ( -( \varpi _i ) _{\times} \Lambda _i \varpi _i + \tau _i + d _i ^{\varpi} )
 \end{aligned}
+\quad\quad(4.1)
 $$<br/>
 
 The rotational FxTDO in Chapter 2.2 is proposed for estimating the **external disturbance term $d _i ^{ \varpi }$**. The **first-order rotational disturbance observers** from the three aforementioned references are employed as comparison against the rotational FxTDO. The detailed implementation procedure of the first-order rotational disturbance observers in Ref.[1] ~ Ref.[3] are elaborated as follows for comparison. <br/>
 
 [1]	Y. Yu, H. Xu, and X. Yao, “Disturbance rejection event-triggered robust model predictive control for tracking of constrained uncertain robotic manipulators,” *IEEE Transactions on Cybernetics*, vol. 54, no. 6, pp. 3540–3552, Jun. 2024. <br/> <br/>
 
-In paper IEEE TCYB (2024), we define the angular displacement, angular velocity, angular acceleration as $x _{ 1 } = \theta$, $x _{ 2 } = \dot { x } _{ 1 } = \dot { \theta }$ and $\dot { x } _{ 2 } = \ddot { \theta }$, the second-order system dynamics can be formulated as
+In paper IEEE TCYB (2024), the disturbance observer for Eq.(4.1) is depicted as
 
 $$
 \begin{aligned}
 \begin{cases}
-& \dot { x } _{ 1 } = x _{ 2 } \\
-& \dot { x } _{ 2 } = - M ^{ -1 } ( x _{ 1 } ) H ( x _{ 1 }, x _{ 2 } ) + M ^{ -1 } ( x _{ 1 } ) \tau + M ^{ -1 } ( x _{ 1 } ) d
+& \dot { \hat { \varepsilon } } _{ i } ^{ \varpi } = - { ( \Lambda _{ i } ) } ^{ -1 } r _{ i } ^{ \varpi } ( \hat { \varepsilon } _{ i } ^{ \varpi } - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i } + r _{ i } ^{ \varpi } + \varpi _{ i } ) \\
+& \hat { d } _{ i } ^{ \varpi } = \hat { \varepsilon } _{ i } ^{ \varpi } + r _{ i } ^{ \varpi } \varpi _{ i }
 \end{cases}
 \end{aligned}
-\quad\quad(4.1)
+\quad\quad(4.2)
 $$<br/>
 
-Define the tracking errors as 
+
 
 
