@@ -89,7 +89,7 @@ Substitute $x _{ i } ^{ 1 } = \Lambda _{ i } \varpi _{ i }$, $x _{ i } ^{ 2 } = 
 $$
 \begin{aligned}
 \begin{cases}
-& \Lambda _{ i } \dot { \varpi } _{ i } = \hat { d } _{ i } ^{ \varpi } + \frac { l _{ i } ^{ 1 } } { \epsilon _{ i } } \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i } \\
+& \Lambda _{ i } \dot { \hat { \varpi } } _{ i } = \hat { d } _{ i } ^{ \varpi } + \frac { l _{ i } ^{ 1 } } { \epsilon _{ i } } \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) - { ( \varpi _{ i } ) } _{ \times } \Lambda _{ i } \varpi _{ i } + \tau _{ i } \\
 & \dot { \hat { d } } _{ i } ^{ \varpi } = \frac { l _{ i } ^{ 2 } } { { ( \epsilon _{ i } ) } ^{ 2 } } \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) + \frac { 1 } { \epsilon _{ i } } \phi ( \kappa _{ i } \cdot \Lambda _{ i } \frac { \varpi _{ i } - \hat { \varpi } _{ i } } { \epsilon _{ i } } )
 \end{cases}
 \end{aligned}
