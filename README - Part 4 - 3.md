@@ -11,9 +11,9 @@ Refer to **< README - Part 4 - 2.md >** for the parameter settings and validatio
 
 Some approaches published in IEEE Transactions in recent years are introduced for comparison in this chapter. The proposed translational FxTDO is compared against the following approaches : <br/>
 
-[1]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite nonlinear extended state observer-based trajectory tracking control for quadrotor under input constraints,” *IEEE Transactions on Circuits and Systems I, Regular Papers*, vol. 70, no. 10, pp. 4126–4136, Oct. 2023.
-[2]	A. Zou, Y. Liu, Z. Hou, and Z. Hu, “Practical predefined-time output-feedback consensus tracking control for multiagent systems,” *IEEE Transactions on Cybernetics*, vol. 53, no. 8, pp. 5311–5322, Aug. 2023.
-[3]	B. Tian, H. Zhang, Z. Wang, and H. Yan, “Fixed-time formation-containment of nonlinear systems using intermittent output and connectivity,” *IEEE Transactions on Industrial Electronics*, vol. 72, no. 1, pp. 845–856, Jan. 2025.
+[1]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite nonlinear extended state observer-based trajectory tracking control for quadrotor under input constraints,” *IEEE Transactions on Circuits and Systems I, Regular Papers*, vol. 70, no. 10, pp. 4126–4136, Oct. 2023. <br/>
+[2]	A. Zou, Y. Liu, Z. Hou, and Z. Hu, “Practical predefined-time output-feedback consensus tracking control for multiagent systems,” *IEEE Transactions on Cybernetics*, vol. 53, no. 8, pp. 5311–5322, Aug. 2023. <br/>
+[3]	B. Tian, H. Zhang, Z. Wang, and H. Yan, “Fixed-time formation-containment of nonlinear systems using intermittent output and connectivity,” *IEEE Transactions on Industrial Electronics*, vol. 72, no. 1, pp. 845–856, Jan. 2025. <br/>
 
 Each agent in the UAV team is considered as a quadrotor, and the translational dynamics that contains the disturbance term is denoted as
 
