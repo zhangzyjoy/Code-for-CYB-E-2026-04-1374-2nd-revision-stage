@@ -94,6 +94,7 @@ $$
 & \dot { \hat { d } } _{ i } ^{ \varpi } = \frac { l _{ i } ^{ 2 } } { { ( \epsilon _{ i } ) } ^{ 2 } } \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) + \frac { 1 } { \epsilon _{ i } } \phi ( \kappa _{ i } \cdot \Lambda _{ i } \frac { \varpi _{ i } - \hat { \varpi } _{ i } } { \epsilon _{ i } } )
 \end{cases}
 \end{aligned}
+\quad\quad(4.3)
 $$<br/>
 
 
@@ -110,6 +111,7 @@ $$
 & \hat { d } _{ i } ^{ \varpi } = \frac { \lambda _{ 2 } } { p _{ 1 } } ( \frac { \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) } { p _{ 1 } } + \lt \frac { \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) } { p _{ 1 } } \gt ^{ 2 \mu - 1 } + \lt \frac { \Lambda _{ i } ( \varpi _{ i } - \hat { \varpi } _{ i } ) } { p _{ 1 } } \gt ^{ 3 - 2 \mu } )
 \end{cases}
 \end{aligned}
+\quad\quad(4.4)
 $$<br/>
 
 where $\lt \cdot \gt$ is defined as an operator to apply on each entry of a vector. <br/>
