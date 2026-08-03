@@ -27,7 +27,7 @@ $$<br/>
 
 The rotational FxTDO in Chapter 2.2 is proposed for estimating the **external disturbance term $d _i ^{ \varpi }$**. The **first-order rotational disturbance observers** from the three aforementioned references are employed as comparison against the rotational FxTDO. The detailed implementation procedure of the first-order rotational disturbance observers in Ref.[1] ~ Ref.[3] are elaborated as follows for comparison. <br/> <br/>
 
-**Firstly, consider the first-order external disturbance observer in Ref.[1] :**
+**Firstly, consider the first-order external disturbance observer in Ref.[1] :** <br/>
 
 [1]	Y. Yu, H. Xu, and X. Yao, “Disturbance rejection event-triggered robust model predictive control for tracking of constrained uncertain robotic manipulators,” *IEEE Transactions on Cybernetics*, vol. 54, no. 6, pp. 3540–3552, Jun. 2024. <br/>
 
@@ -44,7 +44,7 @@ $$
 $$<br/>
 
 
-**Secondly, consider the first-order external disturbance observer in Ref.[2] :**
+**Secondly, consider the first-order external disturbance observer in Ref.[2] :** <br/>
 
 [2]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite disturbance rejection attitude control for quadrotor with unknown disturbance,” *IEEE Transactions on Industrial Electronics*, vol. 67, no. 8, pp. 6894–6903, Aug. 2020. <br/>
 
@@ -97,7 +97,7 @@ $$
 $$<br/>
 
 
-**Thirdly, consider the first-order external disturbance observer in Ref.[3] :**
+**Thirdly, consider the first-order external disturbance observer in Ref.[3] :** <br/>
 
 [3]	X. Liu, X. Zhang, F. Xu, S. Gu, and J. Zhang, “Fixed-time angle tracking control for multi-DOF manipulator driven by pneumatic artificial muscles,” *IEEE Transactions on Industrial Electronics*, vol. 72, no. 4, pp. 4137–4146, Apr. 2025. <br/>
 
