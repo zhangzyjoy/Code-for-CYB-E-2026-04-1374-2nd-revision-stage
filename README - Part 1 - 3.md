@@ -31,7 +31,7 @@ The rotational FxTDO in Chapter 2.2 is proposed for estimating the **external di
 
 [1]	Y. Yu, H. Xu, and X. Yao, “Disturbance rejection event-triggered robust model predictive control for tracking of constrained uncertain robotic manipulators,” *IEEE Transactions on Cybernetics*, vol. 54, no. 6, pp. 3540–3552, Jun. 2024. <br/>
 
-In paper IEEE TCYB (2024), the disturbance observer for Eq.(4.1) is depicted as
+In paper *IEEE TCYB (2024)*, the disturbance observer for Eq.(4.1) is depicted as
 
 $$
 \begin{aligned}
@@ -59,7 +59,7 @@ $$
 \end{aligned}
 $$<br/>
 
-To facilitate the design of the disturbance observer, we employ a piecewise continuous function as
+To facilitate the design of the disturbance observer, a piecewise continuous function is employed as
 
 $$
 \begin{aligned}
@@ -85,7 +85,7 @@ $$
 \end{aligned}
 $$<br/>
 
-Substitute $x _{ i } ^{ 1 } = \Lambda _{ i } \varpi _{ i }$, $x _{ i } ^{ 2 } = d _{ i } ^{ \varpi }$, $\hat { x } _{ i } ^{ 1 } = \Lambda _{ i } \hat { \varpi } _{ i }$ and $\hat { x } _{ i } ^{ 2 } = \hat { d } _{ i } ^{ \varpi }$ into the observer above and then yield the proper form of the first-order rotational disturbance observer
+Substitute $x _{ i } ^{ 1 } = \Lambda _{ i } \varpi _{ i }$, $x _{ i } ^{ 2 } = d _{ i } ^{ \varpi }$, $\hat { x } _{ i } ^{ 1 } = \Lambda _{ i } \hat { \varpi } _{ i }$ and $\hat { x } _{ i } ^{ 2 } = \hat { d } _{ i } ^{ \varpi }$ into the observer above and then yield the proper form of the first-order rotational disturbance observer in paper *IEEE TIE (2020)* as
 
 $$
 \begin{aligned}
@@ -101,7 +101,7 @@ $$<br/>
 
 [3]	X. Liu, X. Zhang, F. Xu, S. Gu, and J. Zhang, “Fixed-time angle tracking control for multi-DOF manipulator driven by pneumatic artificial muscles,” *IEEE Transactions on Industrial Electronics*, vol. 72, no. 4, pp. 4137–4146, Apr. 2025. <br/>
 
-The rotational dynamics Eq.(4.1) is reformulated as $\Lambda _{ i } \dot \varpi _{ i } = -( \varpi _{ i } ) _{\times} \Lambda _{ i } \varpi _{ i } + \tau _{ i } + d _{ i } ^{\varpi}$. Select $p _{ 1 } > 0$, $\lambda _{ 1 } > 0$, $\lambda _{ 2 } > 0$, $1 / 2 < \mu < 1$. The rotational disturbance observer is formulated as
+The rotational dynamics Eq.(4.1) is reformulated as $\Lambda _{ i } \dot \varpi _{ i } = -( \varpi _{ i } ) _{\times} \Lambda _{ i } \varpi _{ i } + \tau _{ i } + d _{ i } ^{\varpi}$. Select $p _{ 1 } > 0$, $\lambda _{ 1 } > 0$, $\lambda _{ 2 } > 0$, $1 / 2 < \mu < 1$. In paper *IEEE TIE (2025)*, the rotational disturbance observer is formulated as
 
 $$
 \begin{aligned}
