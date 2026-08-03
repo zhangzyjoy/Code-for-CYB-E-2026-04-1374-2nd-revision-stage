@@ -24,14 +24,15 @@ $$
 &\dot v _i = - g \overline e _3 + \frac { T _i } { m _i } R ( Q _i ) \overline e _3 + d _i ^v
 \end{cases}
 \end{aligned}
+\quad\quad(4.1)
 $$<br/>
 
 The translational FxTDO in Chapter 4.2 is proposed for estimating the **external disturbance term $d _i ^{ v }$**. The **first-order translational disturbance observers** from the three aforementioned references are employed as comparison against the translational FxTDO. The detailed implementation procedure of the second-order translational disturbance observers in Ref.[1] ~ Ref.[3] are elaborated as follows for comparison. <br/> <br/>
 
 **Firstly, consider the first-order external disturbance observer in Ref.[1] :** <br/>
 
-[1]	Y. Yu, H. Xu, and X. Yao, “Disturbance rejection event-triggered robust model predictive control for tracking of constrained uncertain robotic manipulators,” *IEEE Transactions on Cybernetics*, vol. 54, no. 6, pp. 3540–3552, Jun. 2024. <br/>
+[1]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite nonlinear extended state observer-based trajectory tracking control for quadrotor under input constraints,” *IEEE Transactions on Circuits and Systems I, Regular Papers*, vol. 70, no. 10, pp. 4126–4136, Oct. 2023. <br/>
 
-In paper IEEE TCYB (2024), the disturbance observer for Eq.(4.1) is depicted as
+In paper IEEE TCAS-I (2023), the disturbance observer for Eq.(4.1) is depicted as
 
 
