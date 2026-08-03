@@ -33,7 +33,7 @@ The translational FxTDO in Chapter 4.2 is proposed for estimating the **external
 
 [1]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite nonlinear extended state observer-based trajectory tracking control for quadrotor under input constraints,” *IEEE Transactions on Circuits and Systems I, Regular Papers*, vol. 70, no. 10, pp. 4126–4136, Oct. 2023. <br/>
 
-In paper IEEE TCAS-I (2023), the disturbance observer for Eq.(4.1) is depicted as
+The extended state variable in the disturbance observer is defined as $x _i ^1 = p _i \in \mathbb { R } ^3 $. In the paper *IEEE TCAS-I (2023)*, the disturbance observer for Eq.(4.1) is depicted as
 
 
 
