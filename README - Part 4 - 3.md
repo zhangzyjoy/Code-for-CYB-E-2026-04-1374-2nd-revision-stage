@@ -33,21 +33,32 @@ The translational FxTDO in Chapter 4.2 is proposed for estimating the **external
 
 [1]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite nonlinear extended state observer-based trajectory tracking control for quadrotor under input constraints,” *IEEE Transactions on Circuits and Systems I, Regular Papers*, vol. 70, no. 10, pp. 4126–4136, Oct. 2023. <br/>
 
-The extended state variables in the disturbance observer are defined as $x _i ^1 = p _i$, $x _i ^2 = v _i$, and $x _i ^3 = d _i ^v$. Moreover, the estimation value of the extended states are denoted as $\hat { x } = _i ^1 = \hat { p } _i$, $\hat { x } _i ^2 = \hat { v } _i$, and $\hat { x } _i ^3 = \hat { d } _i ^v$. In the paper *IEEE TCAS-I (2023)*, the disturbance observer for Eq.(4.1) is depicted as
+The extended state variables in the disturbance observer are defined as $x _i ^1 = p _i$, $x _i ^2 = v _i$, and $x _i ^3 = d _i ^v$. Moreover, the estimation value of the extended states are denoted as $\hat { x } _i ^1 = \hat { p } _i$, $\hat { x } _i ^2 = \hat { v } _i$, and $\hat { x } _i ^3 = \hat { d } _i ^v$. In the paper *IEEE TCAS-I (2023)*, the disturbance observer for Eq.(4.1) is depicted as
 
 $$
 \begin{aligned}
 \begin{cases}
 & { \dot { \hat { x } } _i ^1 } = { \hat { x } _i ^2 + l _1 [ \frac { x _i ^1 - \hat { x } _i ^1 } { \epsilon _i } + \epsilon _i l _0 \ell _1 G ( \frac { x _i ^1 - \hat { x } _i ^1 } { \ell _{ 1 } { ( \epsilon _i ) } ^{ 2 } } ) ] } \\
-& { \dot { \hat { x } } _i ^2 } = \hat { x } _3 ( t ) + l _2 [ { ( l _0 ) } ^2 \ell _{ 2 } G ( \frac { x _i ^1 - \hat { x } _i ^1 } { \ell _{ 2 } { ( \epsilon _i ) } ^2 } ) ] \\
-& \quad \quad + ( - g \overline { e } _3 + u _i + \frac { T _i } { m _i } R ( Q _i ^c ) ( R ( Q _i ^e ) - I _3 ) \overline { e } _3 ) \\
+& { \dot { \hat { x } } _i ^2 } = \hat { x } _i ^3 + l _2 [ \frac { x _i ^1 - \hat { x } _i ^1 } { { ( \epsilon _i ) } ^{ 2 } } + { ( l _0 ) } ^2 \ell _{ 2 } G ( \frac { x _i ^1 - \hat { x } _i ^1 } { \ell _{ 2 } { ( \epsilon _i ) } ^2 } ) ] \\
+& \quad \quad + [ - g \overline { e } _3 + u _i + \frac { T _i } { m _i } R ( Q _i ^c ) ( R ( Q _i ^e ) - I _3 ) \overline { e } _3 ] \\
 & { \dot { \hat { x } } _i ^3 } = { l _3 [ \frac { x _i ^1 - \hat { x } _i ^1 } { { ( \epsilon _i ) } ^3 } + \frac { { ( l _0 ) } ^3 } { \ell _{ 3 } \epsilon _i } G ( \ell _3 \frac { x _i ^1 - \hat { x } _i ^1 } { { ( \epsilon _i ) } ^2 } ) ] }
+\end{cases}
+\end{aligned}
+$$<br/>
+
+where the nonlinear function $G ( s ) = \tanh ( \lvert s \rvert ^{ 1 - \alpha } sign ( s ) )$ is defined with $0 < \alpha < 1$, and $\tilde { x } _1 ( t ) = x _1 ( t ) - \hat { x } _1 ( t )$ denotes the observation error. Substitute $\hat { x } _i ^j$ and $x _i ^j$ with the corresponding definition and further yield the external disturbance observer in *IEEE TCAS-I ( 2023 )* as
+
+$$
+\begin{aligned}
+\begin{cases}
+& { \dot { \hat { p } } _i } = { \hat { v } _i + l _1 [ \frac { p _i - \hat { p } _i } { \epsilon _i } + \epsilon _{ i } l _{ 0 } \ell _{ 1 } G ( \frac { p _i - \hat { p } _i } { \ell _{ 1 } { ( \epsilon _i ) } ^{ 2 } } ) ] } \\
+& { \dot { \hat { v } } _i } = \hat { d } _i ^{ v } + l _{ 2 } [ { ( l _0 ) } ^2 \ell _{ 2 } G ( \frac { p _i - \hat { p } _i } { \ell _{ 2 } { ( \epsilon _i ) } ^2 } ) ] \\
+& \quad \quad + [ - g \overline { e } _3 + u _i + \frac { T _i } { m _i } R ( Q _i ^c ) ( R ( Q _i ^e ) - I _3 ) \overline { e } _3 ] \\
+& { \dot { \hat { d } } _i ^v } = { l _3 [ \frac { p _i - \hat { p } _i } { { ( \epsilon _i ) } ^3 } + \frac { { ( l _0 ) } ^3 } { \ell _{ 3 } \epsilon _i } G ( \ell _3 \frac { p _i - \hat { p } _i } { { ( \epsilon _i ) } ^2 } ) ] }
 \end{cases}
 \end{aligned}
 \quad\quad(4.2)
 $$<br/>
-
-where the nonlinear function $G ( s ) = \tanh ( \lvert s \rvert ^{ 1 - \alpha } sign ( s ) )$ is defined with $0 < \alpha < 1$, and $\tilde { x } _1 ( t ) = x _1 ( t ) - \hat { x } _1 ( t )$ denotes the observation error.
 
 
 
