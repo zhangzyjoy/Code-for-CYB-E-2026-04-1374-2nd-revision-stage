@@ -33,9 +33,17 @@ The translational FxTDO in Chapter 4.2 is proposed for estimating the **external
 
 [1]	K. Zhao, J. Zhang, D. Ma, and Y. Xia, “Composite nonlinear extended state observer-based trajectory tracking control for quadrotor under input constraints,” *IEEE Transactions on Circuits and Systems I, Regular Papers*, vol. 70, no. 10, pp. 4126–4136, Oct. 2023. <br/>
 
-A extended
+The extended state variables in the disturbance observer are defined as $x _i ^1 = p _i$, $x _i ^2 = v _i$, and $x _i ^3 = d _i ^v$. Moreover, the estimation value of the extended states are denoted as $\hat { x } = _i ^1 = \hat { p } _i$, $\hat { x } _i ^2 = \hat { v } _i$, and $\hat { x } _i ^3 = \hat { d } _i ^v$. In the paper *IEEE TCAS-I (2023)*, the disturbance observer for Eq.(4.1) is depicted as
 
-The extended state variable in the disturbance observer is defined as $x _i ^1 = p _i \in \mathbb { R } ^3$, $x _i ^2 = v _i \in \mathbb { R } ^3$, $x _i ^3 = d _i ^v \mathbb { R } ^3$. In the paper *IEEE TCAS-I (2023)*, the disturbance observer for Eq.(4.1) is depicted as
+$$
+\begin{aligned}
+\begin{cases}
+& { \dot { \hat { x } } _i ^1 } = { \hat { x } _i ^2 + l _1 [ \frac { x _i ^1 - \hat { x } _i ^1 } { \epsilon _i } + \epsilon _i l _0 \ell _1 G ( \frac { x _i ^1 - \hat { x } _i ^1 } { \ell _{ 1 } { ( \epsilon _i ) } ^{ 2 } } ) ] } \\
+& 
+\end{cases}
+\end{aligned}
+\quad\quad(4.2)
+$$<br/>
 
 
 
