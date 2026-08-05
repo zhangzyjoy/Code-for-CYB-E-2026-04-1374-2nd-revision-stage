@@ -39,11 +39,14 @@ $$
 \begin{aligned}
 \begin{cases}
 & { \dot { \hat { x } } _i ^1 } = { \hat { x } _i ^2 + l _1 [ \frac { x _i ^1 - \hat { x } _i ^1 } { \epsilon _i } + \epsilon _i l _0 \ell _1 G ( \frac { x _i ^1 - \hat { x } _i ^1 } { \ell _{ 1 } { ( \epsilon _i ) } ^{ 2 } } ) ] } \\
-& 
+& { \dot { \hat { x } } _i ^2 } = { \hat { x } _3 ( t ) + l _2 [ { ( l _0 ) } ^2 \ell _{ 2 } G ( \frac { x _i ^1 - \hat { x } _i ^1 } { \ell _{ 2 } { ( \epsilon _i ) } ^2 } ) ] + ( - g \overline { e } _3 + u _i + \frac { T _i } { m _i } R ( Q _i ^c ) ( R ( Q _i ^e ) - I _3 ) \overline { e } _3 ) } \\
+& { \dot { \hat { x } } _i ^3 } = { l _3 [ \frac { x _i ^1 - \hat { x } _i ^1 } { { ( \epsilon _i ) } ^3 } + \frac { { ( l _0 ) } ^3 } { \ell _{ 3 } \epsilon _i } G ( \ell _3 \frac { x _i ^1 - \hat { x } _i ^1 } { { ( \epsilon _i ) } ^2 } ) ] }
 \end{cases}
 \end{aligned}
 \quad\quad(4.2)
 $$<br/>
+
+where the nonlinear function $G ( s ) = \tanh ( \lvert s \rvert ^{ 1 - \alpha } sign ( s ) )$ is defined with $0 < \alpha < 1$, and $\tilde { x } _1 ( t ) = x _1 ( t ) - \hat { x } _1 ( t )$ denotes the observation error.
 
 
 
