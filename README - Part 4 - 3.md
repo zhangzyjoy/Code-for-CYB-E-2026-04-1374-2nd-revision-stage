@@ -64,7 +64,7 @@ $$<br/>
 
 [2]	A. Zou, Y. Liu, Z. Hou, and Z. Hu, “Practical predefined-time output-feedback consensus tracking control for multiagent systems,” *IEEE Transactions on Cybernetics*, vol. 53, no. 8, pp. 5311–5322, Aug. 2023. <br/>
 
-The extended state variables in the disturbance observer are defined as $x _i ^1 = p _i$, $x _i ^2 = v _i$, $x _i ^3 = d _i ^v$. Moreover, the estimation value of the extended states are denoted as $\hat { x } _i ^1 = \hat { p } _i$, $\hat { x } _i ^2 = \hat { v } _i$, 
+The extended state variables in the disturbance observer are defined as $x _i ^1 = p _i$, $x _i ^2 = v _i$, $x _i ^3 = d _i ^v$. Moreover, the estimation value of the extended states are denoted as $\hat { x } _i ^1 = \hat { p } _i$, $\hat { x } _i ^2 = \hat { v } _i$, $\hat { x } _i ^3 = \hat { d } _i ^v$. 
 
 
 
