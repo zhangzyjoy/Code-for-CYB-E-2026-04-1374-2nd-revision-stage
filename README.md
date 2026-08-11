@@ -36,17 +36,6 @@ Each section contains four chapters, including : <br/>
 
 Specifically, the rotational control (NLSMAC) and rotational disturbance observation (Rotational FxTDO) are validated only through **numerical simulation**, whereas the translational control (PFxTDFC), translational distributed observer (PFxTDSO), and translational disturbance observer (Translational FxTDO) are validated through **both numerical simulation and real-world experiment**. <br/> <br/>
 
-# Numerical simulation settings <br/> <br/>
-
-The 
-
-
-
-# Real-world experimetal settings <br/> <br/>
-
-
-
-
 **The video for real-world experimental validation can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/** <br/> <br/>
 
 **If there exist any question about this webpage or having interest on the source code of this paper, please do not hesitate to contact us and to discuss potential academic collaboration at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com** <br/> <br/>
