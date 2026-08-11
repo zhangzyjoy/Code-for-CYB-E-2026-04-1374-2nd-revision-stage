@@ -79,7 +79,15 @@ e ^{ -1 / x }, \quad \quad  x \in ( 0, + \infty )
 \quad\quad(4.3)
 $$<br/>
 
-Introduce a 
+Introduce a predefined-time driven function as
+
+$$
+\begin{aligned}
+\varsigma ( t, t _{ f }, \epsilon ) = \frac { \varsigma _{ 0 } ( t _{ f } - t ) + \varsigma _{ 0 } ( t ) } { ( 1 + \epsilon ) \varsigma _{ 0 } ( t _{ f } - t ) + \epsilon \varsigma _{ 0 } ( t ) }
+\end{aligned}
+\quad\quad(4.4)
+$$<br/>
+
 
 
 
