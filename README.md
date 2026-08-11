@@ -2,7 +2,14 @@ This Github repository demonstrates the proposed control approach for the format
 
 We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised manuscript for **IEEE Transactions on Cybernetics** with a submission ID **CYB-E-2026-04-1374**. <br/> 
 
-**There exist the code of comparison approaches for numerical simulation in five submodules of the overall control scheme in the directory < ./Comparison Simulation Code/ >. Specifically, in the directory < Comparison on Distributed State Observation > ** <br/> <br/>
+**There exist the code of comparison approaches for numerical simulation on five submodules of the overall control scheme in the directory < ./Comparison Simulation Code/ >. All the Matlab/Simulink code for comparison methods has been reproduced based on the IEEE Transactions papers provided in PDF format in the corresponding subfolders, and the methods presented in these papers were implemented under the simulation settings of this paper for comparative experiments.** <br/> <br/>
+
+Specifically, the code of **rotational disturbance observation** for comparison against **Fixed-time rotational disturbance observer (FxTDO)** is uploaded in the directory < ./Comparison Simulation Code/Fixed-time translational disturbance observer (FxTDO) >. <br/>
+The code of **rotational control** for comparison against **Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)** is uploaded in the directory < ./Comparison Simulation Code/Comparison on Rotational Control >. <br/>
+The code of **distributed state observers** for comparison against **Practical fixed-time distributed state observer (PFxTDSO)** is uploaded in the directory < ./Comparison Simulation Code/Comparison on Distributed State Observation >. <br/>
+The code of **translational disturbance observation** for comparison against **Fixed-time translational disturbance observer (FxTDO)** is uploaded in the directory < ./Comparison Simulation Code/Comparison on Translational Disturbance Observation >. <br/>
+The code of **translational formation control** for comparison against **Practical fixed-time decentralized formation controller (PFxTDFC)** is uploaded in the directory < ./Comparison Simulation Code/Comparison on Translational Control >. <br/> <br/>
+
 
 **Note :** Since **too many equations included in a single Markdown file may cause rendering errors or garbled output**, the theoretical design, implementation methodology, theory-guided parameter tuning, simulation experiments and comparative validation of the proposed control scheme are divided into multiple Markdown files to avoid this issue. Therefore, **each section < README - Part X .md > is divided into several subsections < README - Part X.X .md >**. <br/> <br/>
 
