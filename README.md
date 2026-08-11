@@ -2,6 +2,8 @@ This Github repository demonstrates the proposed control approach for the format
 
 We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised manuscript for **IEEE Transactions on Cybernetics** with a submission ID **CYB-E-2026-04-1374**. <br/> 
 
+**There exist the code of comparison approaches for numerical simulation in five submodules of the overall control scheme in the directory < ./Comparison Simulation Code/ >. Specifically, in the directory < Comparison on Distributed State Observation > ** <br/> <br/>
+
 **Note :** Since **too many equations included in a single Markdown file may cause rendering errors or garbled output**, the theoretical design, implementation methodology, theory-guided parameter tuning, simulation experiments and comparative validation of the proposed control scheme are divided into multiple Markdown files to avoid this issue. Therefore, **each section < README - Part X .md > is divided into several subsections < README - Part X.X .md >**. <br/> <br/>
 
 **The five main sections listed below are divided into several markdown files < README - Part 1.X .md > ~ < README - Part 5.X .md >, respectively.** <br/>
