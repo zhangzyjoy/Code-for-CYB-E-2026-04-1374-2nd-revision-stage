@@ -70,10 +70,10 @@ Introduce a piecewise function as
 
 $$
 \begin{aligned}
-\varsigma _{ 0 } ( x ) = 
+\varsigma _{ 0 } ( t ) = 
 \begin{cases}
-0, \quad \quad  x \in ( - \infty , 0 ] \\
-e ^{ -1 / x }, \quad \quad  x \in ( 0, + \infty )
+0, \quad \quad  t \in ( - \infty , 0 ] \\
+e ^{ -1 / t }, \quad \quad  t \in ( 0, + \infty )
 \end{cases}
 \end{aligned}
 \quad\quad(4.3)
@@ -87,6 +87,8 @@ $$
 \end{aligned}
 \quad\quad(4.4)
 $$<br/>
+
+Take the derivatives for $\varsigma _{ 0 } ( t )$ and $\varsigma _{ 0 } ( t _{ f } - t )$. When $t \le 0$ holds, $\dot { \varsigma } _{ 0 } = 0$ and $\dot { \varsigma } ( t _{ f } - t ) = - \varsigma _{ 0 } ( t _{ f } - t ) / { ( t _{ f } - t ) } ^{ 2 }$ holds. When $0 < t < t _{ f }$ holds, $\dot { \varsigma } ( t ) = \frac { 1 } { t ^2 } e ^{ 1 / t } = \frac { 1 } { t ^2 } \varsigma _{ 0 } ( t )$ and $\dot { \varsigma } ( t _{ f } - t ) = - e ^{ - 1 / ( t _{ f } - t ) } / ( t _{ f } - t )$
 
 
 
