@@ -90,7 +90,19 @@ $$<br/>
 
 Take the derivatives for $\varsigma _{ 0 } ( t )$ and $\varsigma _{ 0 } ( t _{ f } - t )$. When $t \le 0$ holds, $\dot { \varsigma } _{ 0 } = 0$ and $\dot { \varsigma } ( t _{ f } - t ) = = - \frac { 1 } { { ( t _{ f } - t ) } ^2 } e ^{ - 1 / ( t _{ f } - t ) } = - \frac { 1 } { { ( t _{ f } - t ) } ^2 } \varsigma _{ 0 } ( t _{ f } - t )$ are yielded. When $0 < t < t _{ f }$ holds, it can be derived that $\dot { \varsigma } ( t ) = \frac { 1 } { t ^2 } e ^{ - 1 / t } = \frac { 1 } { t ^2 } \varsigma _{ 0 } ( t )$ and $\dot { \varsigma } ( t _{ f } - t ) = - \frac { 1 } { { ( t _{ f } - t ) } ^2 } e ^{ - 1 / ( t _{ f } - t ) } = - \frac { 1 } { { ( t _{ f } - t ) } ^2 } \varsigma _{ 0 } ( t _{ f } - t )$ hold. When $t \ge t _{ f }$, the derivatives are yielded as $\dot { \varsigma } _{ 0 } ( t ) = \frac { 1 } { t ^{ 2 } } e ^{ - 1 / t } = \frac { 1 } { t ^{ 2 } } { \varsigma } _{ 0 } ( t )$ and $\dot { \varsigma } _0 ( t _{ f } - t ) = 0$. <br/>
 
-Then take the derivatives of $\varsigma ( t, t _{ f }, \epsilon )$ to be $\dot { \varsigma } ( t, t _{ f }, \epsilon ) = \frac { \dot { \varsigma } ( t ) \varsigma _{ 0 } ( t _{ f2 } - t ) - \varsigma _{ 0 } ( t ) \dot { \varsigma } _{ 0 } ( t _{ f2 } - t ) } { { [ ( 1 + \epsilon ) \varsigma _{ 0 } ( t _{ f } - t ) + \epsilon \varsigma _{ 0 } ( t ) ] } ^2 }$. 
+Then take the derivatives of $\varsigma ( t, t _{ f }, \epsilon )$ to be $\dot { \varsigma } ( t, t _{ f }, \epsilon ) = \frac { \dot { \varsigma } ( t ) \varsigma _{ 0 } ( t _{ f2 } - t ) - \varsigma _{ 0 } ( t ) \dot { \varsigma } _{ 0 } ( t _{ f2 } - t ) } { { [ ( 1 + \epsilon ) \varsigma _{ 0 } ( t _{ f } - t ) + \epsilon \varsigma _{ 0 } ( t ) ] } ^2 }$. <br/>
+
+Define the predefined-time extended state observer as
+
+$$
+\begin{aligned}
+\begin{cases}
+& \dot { \hat { x } } _{ i } ^{ 1 } = \hat { x } _{ i } ^{ 2 } + \gamma _{ 1 } \varsigma _{ 2 } ( x _{ i } ^{ 1 } - \hat { x } _{ i } ^{ 1 } ) + 2 \frac { \dot { \varsigma } _{ 2 } } { \varsigma _{ 2 } } ( x _{ i } ^{ 1 } - \hat { x } _{ i } ^{ 1 } ) \\
+& \dot { \hat { x } } _{ i } ^{ 2 } = \hat { x } _{ i } ^{ 3 } + f _{ i } ( \hat { x } _{ i } ^{ 1 }, \hat { x } _{ i } ^{ 2 } ) + g _{ i } ( x _{ i } ^{ 1 } ) u _{ i } + 
+\end{cases}
+\end{aligned}
+\quad\quad(4.5)
+$$<br/>
 
 
 
