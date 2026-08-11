@@ -66,5 +66,21 @@ $$<br/>
 
 The extended state variables in the disturbance observer are defined as $x _i ^1 = p _i$, $x _i ^2 = v _i$, $x _i ^3 = d _i ^v$. Moreover, the estimation value of the extended states are denoted as $\hat { x } _i ^1 = \hat { p } _i$, $\hat { x } _i ^2 = \hat { v } _i$, $\hat { x } _i ^3 = \hat { d } _i ^v$. 
 
+Introduce a piecewise function as
+
+$$
+\begin{aligned}
+\varsigma _{ 0 } ( x ) = 
+\begin{cases}
+0, \quad \quad  x \in ( - \infty , 0 ] \\
+e ^{ -1 / x }, \quad \quad  x \in ( 0, + \infty )
+\end{cases}
+\end{aligned}
+\quad\quad(4.3)
+$$<br/>
+
+
+
+
 
 
