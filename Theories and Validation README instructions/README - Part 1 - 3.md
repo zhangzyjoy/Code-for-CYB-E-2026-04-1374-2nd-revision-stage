@@ -118,10 +118,15 @@ where $\lt \cdot \gt$ is defined as an operator to apply on each entry of a vect
 
 The comparison simulation is promoted by reproducing the disturbance observer from Ref.[1], and the simulation results are depicted by <br/>
 
-![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Pics/control_scheme_diagram.png)  <br/> <br/>
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Disturbance%20Observation/Results%20IEEE_TCYB_2024/Disturbunce%20Observation%20IEEE_TCYB_2024.png) <br/> <br/>
 
+Fig.1 $\quad$ Rotational Disturbance Observation by Ref.[1]. <br/> <br/>
 
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Disturbance%20Observation/Results%20IEEE_TIE_2020/Disturbunce%20Observation%20IEEE_TIE_2020.png) <br/> <br/>
 
+Fig.2 $\quad$ Rotational Disturbance Observation by Ref.[2]. <br/> <br/>
 
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Disturbance%20Observation/Results%20IEEE_TIE_2025/Disturbunce%20Observation%20IEEE_TIE_2025.png) <br/> <br/>
 
+Fig.3 $\quad$ Rotational Disturbance Observation by Ref.[3]. <br/> <br/>
 
