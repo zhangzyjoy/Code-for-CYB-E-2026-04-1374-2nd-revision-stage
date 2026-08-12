@@ -59,10 +59,9 @@ The simulation results are obtained for comparison from the reference paper Ref.
 
 Fig.7 Angular Velocity Tracking Errors for Comparison Methods in Ref.[3]. <br/>
 
-![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCST_2024/Exponential%20Coordinate%20Rotational%20Error%20IEEE_TCST_2024.png) <br/> <br/>
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCST_2024/Exponential%20Coordinate%20Rotation%20Error%20IEEE_TCST_2024.png) <br/> <br/>
 
 Fig.8 Exponential Coordinate Rotational Tracking Errors for Comparison Methods in Ref.[3]. <br/>
-
 
 ![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCST_2024/Auxiliary%20Rotational%20Error%20IEEE_TCST_2024.png) <br/> <br/>
 
