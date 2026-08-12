@@ -21,7 +21,36 @@ The comparison methods for **rotational control** of UAV system is reproduced fr
 
 The simulation results are obtained for comparison from the reference paper Ref.[1] as follows. <br/>
 
-![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Pics/control_scheme_diagram.png)  <br/> <br/>
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TAES_2023/Angular%20Velocity%20Error%20IEEE_TAES_2023.png) <br/> <br/>
+
+Fig.1 Angular Velocity Tracking Errors for Comparison Methods in Ref.[1]. <br/>
+
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TAES_2023/Exponential%20Coordinate%20Rotation%20Error%20IEEE_TAES_2023.png) <br/> <br/>
+
+Fig.2 Exponential Coordinate Rotational Tracking Errors for Comparison Methods in Ref.[1]. <br/> <br/>
+
+
+The simulation results are obtained for comparison from the reference paper Ref.[2] as follows. <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TASE_2025/Angular%20Velocity%20Error%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.3 Angular Velocity Tracking Errors for Comparison Methods in Ref.[2]. <br/>
+
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TASE_2025/Exponential%20Coordinate%20Rotation%20Error%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.4 Exponential Coordinate Rotational Tracking Errors for Comparison Methods in Ref.[2]. <br/>
+
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TASE_2025/Quaternion%20Error%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.5 Quaternion Errors for Comparison Methods in Ref.[2]. <br/>
+
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TASE_2025/Auxiliary%20Rotational%20Error%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.6 Auxiliary Rotational Errors for Comparison Methods in Ref.[2]. <br/>
 
 
 
