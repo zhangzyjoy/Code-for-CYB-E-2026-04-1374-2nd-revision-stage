@@ -9,5 +9,18 @@ Refer to **< README - Part 3 - 2.md >** for the parameter settings and validatio
 
 ## 3.4 $\text{  }$ Validation for comparison <br/>
 
+Three comparison methods are given in the references listed as follows. <br/>
+
+[1]	Q. Chen, Y. Zhao, G. Wen, G. Shi, and X. Yu, “Fixed-time coop erative tracking control for double-integrator multiagent systems: A time-based generator approach,” *IEEE Transactions on Cybernetics*, vol. 53, no. 9, pp. 5970–5983, Sep. 2023. <br/>
+[2]	H. Gao, Y. Xia, K. Liu, J. Zhang, and B. Cui, “Resilient neuroadaptive distributed fixed-time attitude coordination control for multiple spacecraft,” *IEEE Transactions on Cybernetics*, vol. 54, no. 9, pp. 4973–4985, Sep. 2024. <br/>
+[3]	G. Li, X. Wang, Z. Zuo, Y. Wu, and J. L¨u, “Distributed extended state observer-based formation control of flight vehicles subject to constraints on speed and acceleration,” *IEEE Transactions on Cybernetics*, vol. 55, no. 3, pp. 1250–1263, Mar. 2025. <br/>
+
+The distributed observer proposed in Ref.[1] is employed and we can obtain the results as follows. <br/>
+
+![image] (  https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Distributed%20Observation/Results%20IEEE_TCYB_2023/IEEE_TCYB_2023_Position_Observation.png ) <br/> <br/>
+
+Fig. 1 $\quad$ Distributed Position Observation Results <br/>
+
+
 
 
