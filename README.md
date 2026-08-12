@@ -2,7 +2,7 @@ This Github repository demonstrates the proposed control approach for the format
 
 The folder < ***Theories and Validation README instructions*** > in the main branch includes markdown files that demonstrate theories and design principles. <br/> 
 
-The folder < ***Simulation Results Pictures*** > contains all the simulation results of different methods for comparison. <br/> <br/>
+The folder < ***Simulation Results Pictures*** > contains all the simulation results of different methods for comparison. <br/>
 
 We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised manuscript for **IEEE Transactions on Cybernetics** with a submission ID **CYB-E-2026-04-1374**. <br/>
 
