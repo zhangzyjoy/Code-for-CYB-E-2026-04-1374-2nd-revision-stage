@@ -1,5 +1,13 @@
 This Github repository demonstrates the proposed control approach for the formation control issue of uncrewed aerial vehicle (UAV) teams. **To address the reviewer's comments, the logical connection between theory and validation has been strengthened. Besides, the source code and implementation procedure of the approaches for comparison are given in this link.** <br/> <br/>
 
+The folder < ***Theories and Validation README instructions*** > in the main branch includes markdown files that demonstrate theories and design principles. <br/> 
+
+The folder < ***Comparison Simulation Code*** > contains the Matlab/Simulink Code for comparison methods. <br/>
+
+The folder < ***Experimental Validation Code*** > and < ***Proposed Method Simulation Code*** > contains the validation source code in Python 3 / ROS 1 environment and simulation source code in Matlab/Simulink environment of the proposed control scheme, respectively. <br/> <br/>
+
+The folder < ***Simulation Results Pictures*** > contains all the simulation results of different methods for comparison. <br/>
+
 We upload **Matlab/Simulink** source code for **simulation** and **Python/ROS** code package for **experimental validation** in this webpage link to enhance the instructions on the relationship between theoretical contribution and further verification according to the reviewers' suggestions for our revised manuscript for **IEEE Transactions on Cybernetics** with a submission ID **CYB-E-2026-04-1374**. <br/> 
 
 **There exist the code of comparison approaches for numerical simulation on five submodules of the overall control scheme in the directory *< ./Comparison Simulation Code/ >*. All the Matlab/Simulink code for comparison methods has been *reproduced based on the IEEE Transactions papers* provided in PDF format in the corresponding subfolders, and the methods presented in these papers were implemented under the simulation settings of this paper for comparative experiments.** <br/> <br/>
