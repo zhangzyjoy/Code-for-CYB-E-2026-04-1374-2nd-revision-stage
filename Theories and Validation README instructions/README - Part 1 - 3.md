@@ -116,6 +116,12 @@ $$<br/>
 
 where $\lt \cdot \gt$ is defined as an operator to apply on each entry of a vector. <br/>
 
+The comparison simulation is promoted by reproducing the disturbance observer from Ref.[1], and the simulation results are depicted by <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Pics/control_scheme_diagram.png)  <br/> <br/>
+
+
+
 
 
 
