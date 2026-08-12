@@ -50,8 +50,36 @@ Fig.5 Quaternion Errors for Comparison Methods in Ref.[2]. <br/>
 
 ![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TASE_2025/Auxiliary%20Rotational%20Error%20IEEE_TASE_2025.png) <br/> <br/>
 
-Fig.6 Auxiliary Rotational Errors for Comparison Methods in Ref.[2]. <br/>
+Fig.6 Auxiliary Rotational Errors for Comparison Methods in Ref.[2]. <br/> <br/>
 
 
+The simulation results are obtained for comparison from the reference paper Ref.[3] as follows. <br/>
 
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCST_2024/Angular%20Velocity%20Error%20IEEE_TCST_2024.png) <br/> <br/>
+
+Fig.7 Angular Velocity Tracking Errors for Comparison Methods in Ref.[3]. <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCST_2024/Exponential%20Coordinate%20Rotational%20Error%20IEEE_TCST_2024.png) <br/> <br/>
+
+Fig.8 Exponential Coordinate Rotational Tracking Errors for Comparison Methods in Ref.[3]. <br/>
+
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCST_2024/Auxiliary%20Rotational%20Error%20IEEE_TCST_2024.png) <br/> <br/>
+
+Fig.9 Auxiliary Rotational Tracking Errors for Comparison Methods in Ref.[3]. <br/>
+
+The simulation results are obtained for comparison from the reference paper Ref.[4] as follows. <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCYB_2024/Angular%20Velocity%20Error%20IEEE_TCYB_2024.png) <br/> <br/>
+
+Fig.10 Angular Velocity Tracking Errors for Comparison Methods in Ref.[4]. <br/>
+
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCYB_2024/Rodrigue%20Parameter%20Rotational%20Error%20IEEE_TCYB_2024.png) <br/> <br/>
+
+Fig.11 Rodrigue Parmeter Rotational Tracking Errors for Comparison Methods in Ref.[4]. <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Rotational%20Control/Results%20IEEE_TCYB_2024/Auxiliary%20Rotational%20Error%20IEEE_TCYB_2024.png) <br/> <br/>
+
+Fig.12 Auxiliary Rotational Tracking Errors for Comparison Methods in Ref.[4]. <br/>
 
