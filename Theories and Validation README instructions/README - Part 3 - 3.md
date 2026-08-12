@@ -21,6 +21,8 @@ The distributed observer proposed in Ref.[1] is employed and we can obtain the r
 
 Fig. 1 $\quad$ Distributed Position Observation Results <br/>
 
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Distributed%20Observation/Results%20IEEE_TCYB_2023/IEEE_TCYB_2023_Velocity_Observation.png) <br/> <br/>
 
+Fig. 1 $\quad$ Distributed Position Observation Results <br/>
 
 
