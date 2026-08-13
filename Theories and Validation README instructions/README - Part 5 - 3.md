@@ -18,7 +18,86 @@ The comparison approaches for distributed translational formation control are pr
 
 Refering to Ref.[1], the comparison controller is deployed on UAV formation systems, we can obtain the comparison simulation results as follows. <br/>
 
-![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Pics/control_scheme_diagram.png)  <br/> <br/>
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TASE_2025/3-D%20Trajectory%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.1 $\quad$ Three-Dimensional Trajectory Tracking Results for Ref.[1] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TASE_2025/Position%20Estimation%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.2 $\quad$ Position Estimation Results for Ref.[1] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TASE_2025/Velocity%20Estimation%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.3 $\quad$ Velocity Estimation Results for Ref.[1] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TASE_2025/Position%20Error%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.4 $\quad$ Position Tracking Error Results for Ref.[1] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TASE_2025/Velocity%20Error%20IEEE_TASE_2025.png) <br/> <br/>
+
+Fig.5 $\quad$ Velocity Tracking Error Results for Ref.[1] <br/>
+
+
+Refering to Ref.[2], the comparison controller is deployed on UAV formation systems, we can obtain the comparison simulation results as follows. <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TCYB_2024/3-D%20Trajectory%20IEEE_TCYB_2024.png) <br/> <br/>
+
+Fig.6 $\quad$ Three-Dimensional Trajectory Tracking Results for Ref.[2] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TCYB_2024/Position%20Error%20IEEE_TCYB_2024.png) <br/> <br/>
+
+Fig.7 $\quad$ Position Tracking Error Results for Ref.[2] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TCYB_2024/Velocity%20Error%20IEEE_TCYB_2024.png) <br/> <br/>
+
+Fig.8 $\quad$ Velocity Tracking Error Results for Ref.[2] <br/>
+
+
+Refering to Ref.[3], the comparison controller is deployed on UAV formation systems, we can obtain the comparison simulation results as follows. <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/3-D%20Trajectory%20IEEE_TNSE_2024.png) <br/> <br/>
+
+Fig.9 $\quad$ Three-Dimensional Trajectory Tracking Results for Ref.[3] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/Position%20Estimation%20IEEE_TNSE_2024.png) <br/> <br/>
+
+Fig.10 $\quad$ Position Estimation Results for Ref.[3] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/Velocity%20Estimation%20IEEE_TNSE_2024.png) <br/> <br/>
+
+Fig.11 $\quad$ Velocity Estimation Results for Ref.[3] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/Position%20Error%20IEEE_TNSE_2024.png) <br/> <br/>
+
+Fig.12 $\quad$ Position Tracking Error Results for Ref.[3] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/Velocity%20Error%20IEEE_TNSE_2024.png) <br/> <br/>
+
+Fig.13 $\quad$ Velocity Tracking Error Results for Ref.[3] <br/>
+
+
+Refering to Ref.[4], the comparison controller is deployed on UAV formation systems, we can obtain the comparison simulation results as follows. <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TVT_2025/3-D%20Trajectory%20IEEE_TVT_2025.png) <br/> <br/>
+
+Fig.14 $\quad$ Three-Dimensional Trajectory Tracking Results for Ref.[4] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TVT_2025/Event-Trigger%20Output%20Estimation%20IEEE_TVT_2025.png) <br/> <br/>
+
+Fig.15 $\quad$ Event-Triggered Output Estimation Results for Ref.[4] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TVT_2025/Event-Trigger%20Position%20Estimation%20IEEE_TVT_2025.png) <br/> <br/>
+
+Fig.16 $\quad$ Event-Triggered Position Estimation Results for Ref.[4] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TVT_2025/Position%20Error%20IEEE_TVT_2025.png) <br/> <br/>
+
+Fig.17 $\quad$ Position Tracking Error Results for Ref.[4] <br/>
+
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TVT_2025/Velocity%20Error%20IEEE_TVT_2025.png) <br/> <br/>
+
+Fig.18 $\quad$ Velocity Tracking Error Results for Ref.[4] <br/>
 
 
 
