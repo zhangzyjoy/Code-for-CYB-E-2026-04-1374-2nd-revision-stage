@@ -16,7 +16,7 @@ The comparison approaches for distributed translational formation control are pr
 [3]	Y. Huang, X. Xu, Z. Meng, and J. Sun, “A smooth distributed formation control method for quadrotor UAVs under event-triggering mechanism and switching topologies,” *IEEE Transactions on Vehicular Technology*, vol. 74, no. 7, pp. 10081–10091, Jul. 2025. <br/>
 [4]	Y. Hu, Z. Miao, Y. Wang, H. Tang, X. Wang, and W. He, “L1 adaptive control-based formation tracking of multiple quadrotors without linear velocity feedback under unknown disturbances,” *IEEE Transactions on Automation Science and Engineering*, vol. 22, pp. 5804–5815, Jul. 2024. <br/> <br/>
 
-**Please refer to < *Comparison Simulation Code/Comparison on Translational Control/* > directory for the source code of four typical method that is published in IEEE Transactions and is used for comparison.** <br/>
+**Please refer to < *Comparison Simulation Code/Comparison on Translational Control/* > directory for the source code of four typical method that is published in IEEE Transactions and is used for comparison.** <br/> <br/>
 
 Refering to Ref.[1], the comparison controller is deployed on UAV formation systems, we can obtain the comparison simulation results as follows. <br/>
 
