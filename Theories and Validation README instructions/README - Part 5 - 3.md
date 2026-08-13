@@ -62,13 +62,13 @@ Fig.9 $\quad$ Three-Dimensional Trajectory Tracking Results for Ref.[3] <br/>
 
 ![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/Position%20Estimation%20IEEE_TNSE_2024.png) <br/> <br/>
 
-Fig.10 $\quad$ Position Estimation Results for Ref.[3] <br/>
+Fig.10 $\quad$ Sliding Surface $r _i$ Results for Ref.[3] <br/>
 
-![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/Velocity%20Estimation%20IEEE_TNSE_2024.png) <br/> <br/>
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/sliding%20surface%20ri%20IEEE_TNSE_2024.png) <br/> <br/>
 
-Fig.11 $\quad$ Velocity Estimation Results for Ref.[3] <br/>
+Fig.11 $\quad$ Sliding Surface $s _i$ Results for Ref.[3] <br/>
 
-![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/Position%20Error%20IEEE_TNSE_2024.png) <br/> <br/>
+![image](https://github.com/zhangzyjoy/Code-for-CYB-E-2026-04-1374-2nd-revision-stage/blob/main/Simulation%20Results%20Pictures/Comparison%20Translational%20Control/Results%20IEEE_TNSE_2024/sliding%20surface%20si%20IEEE_TNSE_2024.png) <br/> <br/>
 
 Fig.12 $\quad$ Position Tracking Error Results for Ref.[3] <br/>
 
